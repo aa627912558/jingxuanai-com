@@ -39,11 +39,11 @@ function ToolCard({ tool }: { tool: AiTool }) {
 }
 
 export default function HomePageClient() {
-  const [activeCategory, setActiveCategory] = useState<ToolCategory>('All')
+  const [activeCategory, setActiveCategory] = useState<ToolCategory>('全部')
   const [searchQuery, setSearchQuery] = useState('')
 
   const filteredTools = useMemo(() => {
-    let tools = activeCategory === 'All'
+    let tools = activeCategory === '全部'
       ? TOOLS_DATA
       : TOOLS_DATA.filter(t => t.type === activeCategory)
 
@@ -130,7 +130,7 @@ export default function HomePageClient() {
           <p className="text-lg text-slate-600 font-medium">没有找到相关工具</p>
           <p className="text-sm text-slate-400 mt-1">换个关键词试试，或者浏览全部工具</p>
           <button
-            onClick={() => { setSearchQuery(''); setActiveCategory('All') }}
+            onClick={() => { setSearchQuery(''); setActiveCategory('全部') }}
             className="mt-4 px-4 py-2 bg-indigo-600 text-white rounded-lg text-sm font-medium hover:bg-indigo-700 transition-colors"
           >
             查看全部工具
