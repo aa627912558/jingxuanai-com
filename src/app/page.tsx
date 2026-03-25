@@ -1,101 +1,145 @@
-import Image from "next/image";
+'use client'
 
-export default function Home() {
+import { useState, useMemo } from 'react'
+import { TOOLS_DATA, CATEGORIES, CATEGORY_COLORS } from '@/lib/tools-data'
+import { AiTool, ToolCategory } from '@/types'
+import { ExternalLink, Star, Search, X } from 'lucide-react'
+import clsx from 'clsx'
+
+function ToolCard({ tool }: { tool: AiTool }) {
+  const categoryColor = CATEGORY_COLORS[tool.type] || 'bg-gray-100 text-gray-700'
+  const affiliateUrl = `${tool.website}?ref=jingxuanai`
+
   return (
-    <div className="grid grid-rows-[20px_1fr_20px] items-center justify-items-center min-h-screen p-8 pb-20 gap-16 sm:p-20 font-[family-name:var(--font-geist-sans)]">
-      <main className="flex flex-col gap-8 row-start-2 items-center sm:items-start">
-        <Image
-          className="dark:invert"
-          src="https://nextjs.org/icons/next.svg"
-          alt="Next.js logo"
-          width={180}
-          height={38}
-          priority
-        />
-        <ol className="list-inside list-decimal text-sm text-center sm:text-left font-[family-name:var(--font-geist-mono)]">
-          <li className="mb-2">
-            Get started by editing{" "}
-            <code className="bg-black/[.05] dark:bg-white/[.06] px-1 py-0.5 rounded font-semibold">
-              src/app/page.tsx
-            </code>
-            .
-          </li>
-          <li>Save and see your changes instantly.</li>
-        </ol>
-
-        <div className="flex gap-4 items-center flex-col sm:flex-row">
-          <a
-            className="rounded-full border border-solid border-transparent transition-colors flex items-center justify-center bg-foreground text-background gap-2 hover:bg-[#383838] dark:hover:bg-[#ccc] text-sm sm:text-base h-10 sm:h-12 px-4 sm:px-5"
-            href="https://vercel.com/new?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <Image
-              className="dark:invert"
-              src="https://nextjs.org/icons/vercel.svg"
-              alt="Vercel logomark"
-              width={20}
-              height={20}
-            />
-            Deploy now
-          </a>
-          <a
-            className="rounded-full border border-solid border-black/[.08] dark:border-white/[.145] transition-colors flex items-center justify-center hover:bg-[#f2f2f2] dark:hover:bg-[#1a1a1a] hover:border-transparent text-sm sm:text-base h-10 sm:h-12 px-4 sm:px-5 sm:min-w-44"
-            href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Read our docs
-          </a>
+    <a
+      href={affiliateUrl}
+      target="_blank"
+      rel="noopener noreferrer"
+      className="group bg-white rounded-2xl border border-slate-200 p-5 hover:border-indigo-300 hover:shadow-lg hover:shadow-indigo-100 transition-all duration-300 flex flex-col gap-3"
+    >
+      <div className="flex items-start justify-between gap-2">
+        <div className="w-11 h-11 rounded-xl bg-gradient-to-br from-slate-100 to-slate-200 flex items-center justify-center flex-shrink-0">
+          <span className="text-base font-bold text-slate-600">
+            {tool.name.charAt(0)}
+          </span>
         </div>
-      </main>
-      <footer className="row-start-3 flex gap-6 flex-wrap items-center justify-center">
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="https://nextjs.org/icons/file.svg"
-            alt="File icon"
-            width={16}
-            height={16}
+        <span className={clsx('text-xs font-medium px-2 py-0.5 rounded-full flex-shrink-0', categoryColor)}>
+          {tool.type}
+        </span>
+      </div>
+
+      <div className="flex-1">
+        <h3 className="font-semibold text-slate-900 group-hover:text-indigo-600 transition-colors flex items-center gap-1.5">
+          {tool.name}
+          <ExternalLink size={13} className="opacity-0 group-hover:opacity-100 transition-opacity text-indigo-400 flex-shrink-0" />
+        </h3>
+        <p className="text-sm text-slate-500 mt-1 line-clamp-2 leading-relaxed">
+          {tool.description}
+        </p>
+      </div>
+    </a>
+  )
+}
+
+export default function HomePage() {
+  const [activeCategory, setActiveCategory] = useState<ToolCategory>('All')
+  const [searchQuery, setSearchQuery] = useState('')
+
+  const filteredTools = useMemo(() => {
+    let tools = activeCategory === 'All'
+      ? TOOLS_DATA
+      : TOOLS_DATA.filter(t => t.type === activeCategory)
+
+    if (searchQuery.trim()) {
+      const q = searchQuery.toLowerCase()
+      tools = tools.filter(t =>
+        t.name.toLowerCase().includes(q) ||
+        t.description.toLowerCase().includes(q) ||
+        t.type.toLowerCase().includes(q)
+      )
+    }
+
+    return tools
+  }, [activeCategory, searchQuery])
+
+  return (
+    <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-10">
+      {/* Hero */}
+      <div className="text-center mb-8">
+        <h2 className="text-3xl sm:text-4xl font-extrabold text-slate-900 mb-3">
+          发现优质AI工具
+        </h2>
+        <p className="text-slate-500 text-base sm:text-lg max-w-2xl mx-auto">
+          汇集全网热门AI工具，按类型分类展示，方便你快速找到合适的产品。<br className="hidden sm:block" />
+          点击卡片即可跳转到工具官网。
+        </p>
+        <div className="flex items-center justify-center gap-2 mt-4">
+          <Star size={14} className="text-amber-500" />
+          <span className="text-sm text-slate-500">共收录 {TOOLS_DATA.length} 个优质AI工具</span>
+        </div>
+      </div>
+
+      {/* Search Bar */}
+      <div className="max-w-2xl mx-auto mb-8">
+        <div className="relative">
+          <Search size={18} className="absolute left-4 top-1/2 -translate-y-1/2 text-slate-400 pointer-events-none" />
+          <input
+            type="text"
+            placeholder="搜索工具名称或类型，如「写作」「配音」..."
+            value={searchQuery}
+            onChange={e => setSearchQuery(e.target.value)}
+            className="w-full pl-11 pr-10 py-3 bg-white border border-slate-200 rounded-xl text-sm text-slate-900 placeholder-slate-400 focus:outline-none focus:ring-2 focus:ring-indigo-500 focus:border-transparent transition-shadow shadow-sm"
           />
-          Learn
-        </a>
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="https://nextjs.org/icons/window.svg"
-            alt="Window icon"
-            width={16}
-            height={16}
-          />
-          Examples
-        </a>
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://nextjs.org?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="https://nextjs.org/icons/globe.svg"
-            alt="Globe icon"
-            width={16}
-            height={16}
-          />
-          Go to nextjs.org →
-        </a>
-      </footer>
+          {searchQuery && (
+            <button
+              onClick={() => setSearchQuery('')}
+              className="absolute right-3 top-1/2 -translate-y-1/2 text-slate-400 hover:text-slate-600 transition-colors"
+            >
+              <X size={16} />
+            </button>
+          )}
+        </div>
+        {searchQuery && (
+          <p className="text-sm text-slate-500 mt-2 text-center">
+            找到 <span className="font-semibold text-indigo-600">{filteredTools.length}</span> 个相关工具
+          </p>
+        )}
+      </div>
+
+      {/* Category Filter */}
+      <div className="flex gap-2 overflow-x-auto pb-2 mb-8 scrollbar-hide">
+        {CATEGORIES.map(cat => (
+          <button
+            key={cat}
+            onClick={() => setActiveCategory(cat as ToolCategory)}
+            className={clsx('category-pill', activeCategory === cat && 'active')}
+          >
+            {cat}
+          </button>
+        ))}
+      </div>
+
+      {/* Tools Grid */}
+      <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-4">
+        {filteredTools.map(tool => (
+          <ToolCard key={tool.id} tool={tool} />
+        ))}
+      </div>
+
+      {/* Empty state */}
+      {filteredTools.length === 0 && (
+        <div className="text-center py-20">
+          <div className="text-5xl mb-4">🔍</div>
+          <p className="text-lg text-slate-600 font-medium">没有找到相关工具</p>
+          <p className="text-sm text-slate-400 mt-1">换个关键词试试，或者浏览全部工具</p>
+          <button
+            onClick={() => { setSearchQuery(''); setActiveCategory('All') }}
+            className="mt-4 px-4 py-2 bg-indigo-600 text-white rounded-lg text-sm font-medium hover:bg-indigo-700 transition-colors"
+          >
+            查看全部工具
+          </button>
+        </div>
+      )}
     </div>
-  );
+  )
 }
