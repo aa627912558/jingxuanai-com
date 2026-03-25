@@ -1,6 +1,24 @@
 {
   "news": [
     {
+      "title": "The AI Hype Index: AI goes to war",
+      "link": "https://www.technologyreview.com/2026/03/25/1134571/the-ai-hype-index-ai-goes-to-war/",
+      "pubDate": "Wed, 25 Mar 2026 09:00:00 +0000",
+      "source": "MIT Technology Review",
+      "lang": "en",
+      "snippet": "AI is at war. Anthropic and the Pentagon feuded over how to weaponize Anthropic’s AI model Claude; then OpenAI swept the Pentagon off its feet with an “opportunistic and sloppy” deal. Users quit ChatGPT in droves. People marched through London in the biggest protest against AI to date. If you’re keeping score, Anthropic—the company founded…",
+      "slug": "the-ai-hype-index-ai-goes-to-war"
+    },
+    {
+      "title": "从“被动感知”到“理解接触”，它石智航联合六大机构发布OmniVTA视触觉世界模型",
+      "link": "https://www.qbitai.com/2026/03/392105.html",
+      "pubDate": "Wed, 25 Mar 2026 08:43:16 +0000",
+      "source": "量子位",
+      "lang": "zh",
+      "snippet": "",
+      "slug": "从被动感知到理解接触它石智航联合六大机构发布omnivta视触觉世界模型"
+    },
+    {
       "title": "DeepSeek急招Agent方向！一口气放17个岗位，重度Vibe Coding优先",
       "link": "https://www.qbitai.com/2026/03/392024.html",
       "pubDate": "Wed, 25 Mar 2026 06:39:13 +0000",
@@ -262,15 +280,6 @@
       "slug": "黄仁勋暴论核弹agi已经实现ilya错了程序员有10亿"
     },
     {
-      "title": "你的模型真的会”举一反三”吗？RoboChallenge Table30 V2 正式发布，泛化时代开幕",
-      "link": "https://www.qbitai.com/2026/03/391744.html",
-      "pubDate": "Tue, 24 Mar 2026 08:33:52 +0000",
-      "source": "量子位",
-      "lang": "zh",
-      "snippet": "Table30 V2将为全球具身智能研究者打造了一个精准的“泛化标尺”与公平、开放的真机竞技场",
-      "slug": "你的模型真的会举一反三吗robochallenge-table30-v2-正式发布泛化时代开幕"
-    },
-    {
       "title": "A New Framework for Evaluating Voice Agents (EVA)",
       "link": "https://huggingface.co/blog/ServiceNow-AI/eva",
       "pubDate": "Tue, 24 Mar 2026 02:01:52 GMT",
@@ -413,15 +422,6 @@
       "lang": "en",
       "snippet": "This week I want to look at where we are with psychedelics, the mind-altering substances that have somehow made the leap from counterculture to major focus of clinical research. Compounds like psilocybin—which is found in magic mushrooms—are being explored for all sorts of health applications, including treatments for depression, PTSD, addiction, and even obesity. Over…",
       "slug": "mind-altering-substances-are-still-falling-short-in-clinical-trials"
-    },
-    {
-      "title": "The Download: Quantum computing for health, and why the world doesn’t recycle more nuclear waste",
-      "link": "https://www.technologyreview.com/2026/03/19/1134413/the-download-quantum-computing-health-recycling-nuclear-waste/",
-      "pubDate": "Thu, 19 Mar 2026 12:17:02 +0000",
-      "source": "MIT Technology Review",
-      "lang": "en",
-      "snippet": "This is today’s edition of The Download, our weekday newsletter that provides a daily dose of what’s going on in the world of technology. A $5 million prize awaits proof that quantum computers can solve health care problems  In a laboratory on the outskirts of Oxford, a quantum computer built from atoms and light awaits…",
-      "slug": "the-download-quantum-computing-for-health-and-why-the-world-doesnt-recycle-more-"
     },
     {
       "title": "How we monitor internal coding agents for misalignment",
@@ -605,5 +605,5 @@
     }
   ],
   "total": 67,
-  "fetchedAt": "2026-03-25T08:35:03.196Z"
+  "fetchedAt": "2026-03-25T09:44:41.571Z"
 }

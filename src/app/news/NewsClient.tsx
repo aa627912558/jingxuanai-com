@@ -19,15 +19,6 @@ interface NewsClientProps {
   initialFetchedAt?: string
 }
 
-function slugify(title: string): string {
-  return title
-    .toLowerCase()
-    .replace(/[^\w\s\u4e00-\u9fff-]/g, '')
-    .replace(/\s+/g, '-')
-    .replace(/-+/g, '-')
-    .slice(0, 80)
-}
-
 const PAGE_SIZE = 20
 
 function formatDate(dateStr: string): string {
@@ -61,8 +52,8 @@ function formatFullDate(dateStr: string): string {
   }
 }
 
-function NewsCard({ item }: { item: NewsItem }) {
-  const detailUrl = `/news/${slugify(item.title)}`
+function NewsCard({ item, index }: { item: NewsItem; index: number }) {
+  const detailUrl = `/news/${index}`
   return (
     <div className="group bg-white rounded-xl border border-slate-200 p-5 hover:border-indigo-300 hover:shadow-md hover:shadow-indigo-100 transition-all duration-200">
       <Link href={detailUrl} className="block">
@@ -240,7 +231,7 @@ export default function NewsClient({ initialNews = [], initialFetchedAt = '' }: 
         <>
           <div className="flex flex-col gap-3">
             {pagedNews.map((item, idx) => (
-              <NewsCard key={`${item.link}-${idx}`} item={item} />
+              <NewsCard key={`${item.link}-${idx}`} item={item} index={(page - 1) * PAGE_SIZE + idx} />
             ))}
           </div>
 

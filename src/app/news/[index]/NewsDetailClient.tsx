@@ -29,7 +29,7 @@ function formatFullDate(dateStr: string): string {
 
 interface NewsDetailClientProps {
   item: NewsItem
-  summary: string
+  summary?: string
 }
 
 export default function NewsDetailClient({ item, summary }: NewsDetailClientProps) {
@@ -85,7 +85,7 @@ export default function NewsDetailClient({ item, summary }: NewsDetailClientProp
             <span className="text-sm font-semibold text-indigo-700">AI 摘要</span>
           </div>
           <p className="text-slate-700 leading-relaxed text-[15px] whitespace-pre-line">
-            {summary}
+            {summary || '摘要生成中，请稍后刷新页面...'}
           </p>
         </div>
 
