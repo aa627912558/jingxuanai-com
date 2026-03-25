@@ -1,12 +1,12 @@
 export type ToolCategory = 
-  | 'All'
-  | 'Writing'
-  | 'Image Generation'
-  | 'Video Generation'
-  | 'Audio/TTS'
-  | 'Productivity'
+  | '全部'
+  | '写作AI'
+  | '图片AI'
+  | '视频AI'
+  | '音频AI'
+  | '效率办公'
   | 'AI大模型'
-  | 'Code';
+  | '编程代码';
 
 export interface AiTool {
   id: string;

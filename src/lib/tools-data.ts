@@ -7,7 +7,7 @@ export const TOOLS_DATA: AiTool[] = [
     name: "ElevenLabs",
     website: "https://elevenlabs.io",
     description: "AI语音合成与配音，支持逼真多语言TTS声音生成",
-    type: "Audio/TTS",
+    type: "音频AI",
     affiliateUrl: "https://impact.com/brand-profile/elevenlabs/",
     commissionRate: "首单$5-$25 + 续订20-30%",
     features: [
@@ -31,7 +31,7 @@ export const TOOLS_DATA: AiTool[] = [
     name: "VEED",
     website: "https://www.veed.io",
     description: "在线AI视频编辑工具，快速生成字幕、配音和视频特效",
-    type: "Video Generation",
+    type: "视频AI",
     affiliateUrl: "https://www.veed.io/affiliate",
     commissionRate: "首单20% + 续订20%",
     features: [
@@ -55,7 +55,7 @@ export const TOOLS_DATA: AiTool[] = [
     name: "Murf AI",
     website: "https://murf.ai",
     description: "专业AI语音生成器，适用于视频旁白、广告和电子学习",
-    type: "Audio/TTS",
+    type: "音频AI",
     affiliateUrl: "https://murf.ai/partner-with-us/affiliate",
     commissionRate: "20% x 24个月",
     features: [
@@ -79,7 +79,7 @@ export const TOOLS_DATA: AiTool[] = [
     name: "Synthesia",
     website: "https://www.synthesia.io",
     description: "AI数字人视频生成，输入文字即可生成专业讲解视频",
-    type: "Video Generation",
+    type: "视频AI",
     affiliateUrl: "https://www.synthesia.io/partners/affiliates",
     commissionRate: "25%佣金",
     features: [
@@ -103,7 +103,7 @@ export const TOOLS_DATA: AiTool[] = [
     name: "Writesonic",
     website: "https://writesonic.com",
     description: "AI写作助手，快速生成文章、博客、广告文案和社交内容",
-    type: "Writing",
+    type: "写作AI",
     affiliateUrl: "https://writesonic.com",
     commissionRate: "30%续订佣金",
     features: [
@@ -127,7 +127,7 @@ export const TOOLS_DATA: AiTool[] = [
     name: "Notion",
     website: "https://www.notion.so",
     description: "AI增强的笔记与协作平台，集成知识库、任务管理和数据库",
-    type: "Productivity",
+    type: "效率办公",
     affiliateUrl: "https://www.notion.so/affiliates",
     commissionRate: "首年50%",
     features: [
@@ -151,7 +151,7 @@ export const TOOLS_DATA: AiTool[] = [
     name: "Surfer SEO",
     website: "https://surferseo.com",
     description: "AI SEO分析工具，优化内容结构与关键词布局提升搜索排名",
-    type: "Productivity",
+    type: "效率办公",
     affiliateUrl: "https://www.surferseo.com/affiliate-program",
     commissionRate: "25%续佣 + $5/试用",
     features: [
@@ -175,7 +175,7 @@ export const TOOLS_DATA: AiTool[] = [
     name: "remove.bg",
     website: "https://www.remove.bg",
     description: "AI一键去除图片背景，保留主体轮廓精细边缘处理",
-    type: "Image Generation",
+    type: "图片AI",
     affiliateUrl: "https://www.remove.bg/affiliates",
     commissionRate: "15%佣金",
     features: [
@@ -199,7 +199,7 @@ export const TOOLS_DATA: AiTool[] = [
     name: "FlexClip",
     website: "https://www.flexclip.com",
     description: "在线AI视频制作平台，模板丰富，支持文字转视频和配音",
-    type: "Video Generation",
+    type: "视频AI",
     affiliateUrl: "https://www.flexclip.com/partner",
     commissionRate: "比例依协议",
     features: [
@@ -223,7 +223,7 @@ export const TOOLS_DATA: AiTool[] = [
     name: "InVideo",
     website: "https://invideo.io",
     description: "AI视频生成平台，文字转视频、模板丰富、操作简单",
-    type: "Video Generation",
+    type: "视频AI",
     affiliateUrl: "https://invideo.io/affiliate-program",
     commissionRate: "比例依协议",
     features: [
@@ -247,7 +247,7 @@ export const TOOLS_DATA: AiTool[] = [
     name: "QuillBot",
     website: "https://quillbot.com",
     description: "AI写作润色与改写工具，提供同义词替换和句式优化",
-    type: "Writing",
+    type: "写作AI",
     affiliateUrl: "https://quillbot.com",
     commissionRate: "标准SaaS佣金",
     features: [
@@ -271,7 +271,7 @@ export const TOOLS_DATA: AiTool[] = [
     name: "Jasper",
     website: "https://www.jasper.ai",
     description: "企业级AI内容生成平台，支持品牌声音定制和批量创作",
-    type: "Writing",
+    type: "写作AI",
     affiliateUrl: "https://www.jasper.ai",
     commissionRate: "25-30%续佣",
     features: [
@@ -295,7 +295,7 @@ export const TOOLS_DATA: AiTool[] = [
     name: "Copy.ai",
     website: "https://www.copy.ai",
     description: "AI文案生成工具，覆盖营销、销售和运营全场景文案需求",
-    type: "Writing",
+    type: "写作AI",
     affiliateUrl: "https://www.copy.ai",
     commissionRate: "25%续佣",
     features: [
@@ -319,7 +319,7 @@ export const TOOLS_DATA: AiTool[] = [
     name: "Rytr",
     website: "https://www.rytr.me",
     description: "经济实惠的AI写作助手，支持30+语言和20+写作场景",
-    type: "Writing",
+    type: "写作AI",
     affiliateUrl: "https://www.rytr.me",
     commissionRate: "30%续佣",
     features: [
@@ -343,7 +343,7 @@ export const TOOLS_DATA: AiTool[] = [
     name: "Pictory",
     website: "https://www.pictory.ai",
     description: "AI文章转视频工具，自动从长文本提取精彩片段生成短视频",
-    type: "Video Generation",
+    type: "视频AI",
     affiliateUrl: "https://www.pictory.ai",
     commissionRate: "比例依协议",
     features: [
@@ -367,7 +367,7 @@ export const TOOLS_DATA: AiTool[] = [
     name: "Fliki",
     website: "https://www.fliki.ai",
     description: "AI文字转视频+配音平台，支持1000+逼真AI voices",
-    type: "Video Generation",
+    type: "视频AI",
     affiliateUrl: "https://www.fliki.ai",
     commissionRate: "比例依协议",
     features: [
@@ -391,7 +391,7 @@ export const TOOLS_DATA: AiTool[] = [
     name: "HeyGen",
     website: "https://www.heygen.com",
     description: "AI数字人视频生成，支持多语言和个性化虚拟形象创建",
-    type: "Video Generation",
+    type: "视频AI",
     affiliateUrl: "https://www.heygen.com",
     commissionRate: "比例依协议",
     features: [
@@ -415,7 +415,7 @@ export const TOOLS_DATA: AiTool[] = [
     name: "Speechify",
     website: "https://speechify.com",
     description: "AI文字转语音阅读应用，支持网页、文档和电子书朗读",
-    type: "Audio/TTS",
+    type: "音频AI",
     affiliateUrl: "https://speechify.com",
     commissionRate: "30%续佣",
     features: [
@@ -439,7 +439,7 @@ export const TOOLS_DATA: AiTool[] = [
     name: "Play.ht",
     website: "https://play.ht",
     description: "AI文本转语音API，支持824种声音和135种语言",
-    type: "Audio/TTS",
+    type: "音频AI",
     affiliateUrl: "https://play.ht",
     commissionRate: "比例依协议",
     features: [
@@ -463,7 +463,7 @@ export const TOOLS_DATA: AiTool[] = [
     name: "Descript",
     website: "https://www.descript.com",
     description: "AI视频和播客编辑工具，集视频剪辑、转录和配音于一体",
-    type: "Video Generation",
+    type: "视频AI",
     affiliateUrl: "https://descript.partnerstack.com",
     commissionRate: "约20%终身佣金",
     features: [
@@ -487,7 +487,7 @@ export const TOOLS_DATA: AiTool[] = [
     name: "Canva",
     website: "https://www.canva.com",
     description: "AI设计平台，图片海报、演示文稿和社交媒体图文一键生成",
-    type: "Image Generation",
+    type: "图片AI",
     affiliateUrl: "https://www.canva.com/affiliates",
     commissionRate: "20-30%",
     features: [
@@ -511,7 +511,7 @@ export const TOOLS_DATA: AiTool[] = [
     name: "Adobe Creative Cloud",
     website: "https://www.adobe.com",
     description: "Adobe全家桶，Photoshop、Figma等创意工具AI增强版",
-    type: "Image Generation",
+    type: "图片AI",
     affiliateUrl: "https://www.adobe.com/affiliates.html",
     commissionRate: "月订85%/年订8.33%",
     features: [
@@ -535,7 +535,7 @@ export const TOOLS_DATA: AiTool[] = [
     name: "Grammarly",
     website: "https://www.grammarly.com",
     description: "AI英语写作助手，语法纠错、风格建议和语气优化",
-    type: "Writing",
+    type: "写作AI",
     affiliateUrl: "https://www.grammarly.com/",
     commissionRate: "约$20-50/单",
     features: [
@@ -559,7 +559,7 @@ export const TOOLS_DATA: AiTool[] = [
     name: "Leonardo AI",
     website: "https://leonardo.ai",
     description: "AI图像生成平台，专注游戏和创意内容，支持风格控制",
-    type: "Image Generation",
+    type: "图片AI",
     affiliateUrl: "https://leonardo.ai",
     commissionRate: "比例依协议",
     features: [
@@ -583,7 +583,7 @@ export const TOOLS_DATA: AiTool[] = [
     name: "PhotoRoom",
     website: "https://www.photoroom.com",
     description: "AI产品图编辑工具，一键生成商业级产品展示图",
-    type: "Image Generation",
+    type: "图片AI",
     affiliateUrl: "https://www.photoroom.com",
     commissionRate: "比例依协议",
     features: [
@@ -607,7 +607,7 @@ export const TOOLS_DATA: AiTool[] = [
     name: "Pixlr",
     website: "https://www.pixlr.com",
     description: "在线AI图像编辑器，PS替代品，支持AI生成和修图",
-    type: "Image Generation",
+    type: "图片AI",
     affiliateUrl: "https://www.pixlr.com",
     commissionRate: "比例依协议",
     features: [
@@ -631,7 +631,7 @@ export const TOOLS_DATA: AiTool[] = [
     name: "Anyword",
     website: "https://www.anyword.com",
     description: "AI数据驱动文案生成，优化内容转化率的营销文案工具",
-    type: "Writing",
+    type: "写作AI",
     affiliateUrl: "https://www.anyword.com",
     commissionRate: "比例依协议",
     features: [
@@ -655,7 +655,7 @@ export const TOOLS_DATA: AiTool[] = [
     name: "Copymatic",
     website: "https://www.copymatic.ai",
     description: "AI长文章生成器，支持SEO优化和批量内容生产",
-    type: "Writing",
+    type: "写作AI",
     affiliateUrl: "https://www.copymatic.ai",
     commissionRate: "比例依协议",
     features: [
@@ -679,7 +679,7 @@ export const TOOLS_DATA: AiTool[] = [
     name: "Kittl",
     website: "https://www.kittl.com",
     description: "AI设计平台，支持图像生成、矢量设计和插画创作",
-    type: "Image Generation",
+    type: "图片AI",
     affiliateUrl: "https://www.kittl.com/@affiliate",
     commissionRate: "比例依协议",
     features: [
@@ -703,7 +703,7 @@ export const TOOLS_DATA: AiTool[] = [
     name: "Kapwing",
     website: "https://www.kapwing.com",
     description: "在线AI视频编辑器，支持字幕生成、视频剪辑和协作",
-    type: "Video Generation",
+    type: "视频AI",
     affiliateUrl: "https://www.kapwing.com",
     commissionRate: "比例依协议",
     features: [
@@ -727,7 +727,7 @@ export const TOOLS_DATA: AiTool[] = [
     name: "Kits.ai",
     website: "https://www.kits.ai",
     description: "AI音乐生成和声音克隆平台，创作无版权音乐",
-    type: "Audio/TTS",
+    type: "音频AI",
     affiliateUrl: "https://www.kits.ai",
     commissionRate: "比例依协议",
     features: [
@@ -751,7 +751,7 @@ export const TOOLS_DATA: AiTool[] = [
     name: "Tensor.art",
     website: "https://tensor.art",
     description: "基于Stable Diffusion的AI图像生成平台，风格多样",
-    type: "Image Generation",
+    type: "图片AI",
     affiliateUrl: "https://tensor.art",
     commissionRate: "比例依协议",
     features: [
@@ -1014,23 +1014,23 @@ export const TOOLS_DATA: AiTool[] = [
 
 
 export const CATEGORIES = [
-  'All',
-  'Writing',
-  'Image Generation',
-  'Video Generation',
-  'Audio/TTS',
-  'Productivity',
+  '全部',
+  '写作AI',
+  '图片AI',
+  '视频AI',
+  '音频AI',
+  '效率办公',
   'AI大模型',
-  'Code',
+  '编程代码',
 ] as const
 
 
 export const CATEGORY_COLORS: Record<string, string> = {
-  'Writing': 'bg-blue-100 text-blue-700',
-  'Image Generation': 'bg-purple-100 text-purple-700',
-  'Video Generation': 'bg-pink-100 text-pink-700',
-  'Audio/TTS': 'bg-green-100 text-green-700',
-  'Productivity': 'bg-orange-100 text-orange-700',
+  '写作AI': 'bg-blue-100 text-blue-700',
+  '图片AI': 'bg-purple-100 text-purple-700',
+  '视频AI': 'bg-pink-100 text-pink-700',
+  '音频AI': 'bg-green-100 text-green-700',
+  '效率办公': 'bg-orange-100 text-orange-700',
   'AI大模型': 'bg-red-100 text-red-700',
-  'Code': 'bg-gray-100 text-gray-700',
+  '编程代码': 'bg-gray-100 text-gray-700',
 }
