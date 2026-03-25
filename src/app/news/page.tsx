@@ -1,5 +1,6 @@
 import type { Metadata } from 'next'
 import NewsClient from './NewsClient'
+import { getNewsData } from '@/lib/news-data'
 
 export const dynamic = 'force-dynamic'
 
@@ -14,22 +15,7 @@ export const metadata: Metadata = {
   },
 }
 
-// Fetch news server-side
-async function getNews() {
-  try {
-    const baseUrl = process.env.NEXT_PUBLIC_BASE_URL || 'https://jingxuanai-com.vercel.app'
-    const res = await fetch(`${baseUrl}/api/news`, {
-      next: { revalidate: 3600 },
-    })
-    if (!res.ok) return { news: [], fetchedAt: '' }
-    return await res.json()
-  } catch {
-    return { news: [], fetchedAt: '' }
-  }
-}
-
 export default async function NewsPage() {
-  const { news, fetchedAt } = await getNews()
-
+  const { news, fetchedAt } = await getNewsData()
   return <NewsClient initialNews={news} initialFetchedAt={fetchedAt} />
 }

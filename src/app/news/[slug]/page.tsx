@@ -2,39 +2,15 @@ import type { Metadata } from 'next'
 import { notFound } from 'next/navigation'
 import { slugify } from '@/lib/slug'
 import { generateSummary } from '@/lib/minimax'
+import { getNewsData } from '@/lib/news-data'
 import NewsDetailClient from './NewsDetailClient'
-
-interface NewsItem {
-  title: string
-  link: string
-  pubDate: string
-  source: string
-  lang: string
-  snippet?: string
-}
 
 interface PageProps {
   params: { slug: string }
 }
 
-// Fetch all news from API (server-side)
-async function getAllNews(): Promise<NewsItem[]> {
-  try {
-    // In production, use absolute URL; in dev, use relative
-    const baseUrl = process.env.NEXT_PUBLIC_BASE_URL || 'https://jingxuanai-com.vercel.app'
-    const res = await fetch(`${baseUrl}/api/news`, {
-      next: { revalidate: 3600 }, // ISR: revalidate every hour
-    })
-    if (!res.ok) return []
-    const data = await res.json()
-    return data.news || []
-  } catch {
-    return []
-  }
-}
-
 export async function generateMetadata({ params }: PageProps): Promise<Metadata> {
-  const news = await getAllNews()
+  const { news } = await getNewsData()
   const item = news.find(n => slugify(n.title) === params.slug)
 
   if (!item) {
@@ -65,7 +41,7 @@ export async function generateMetadata({ params }: PageProps): Promise<Metadata>
 }
 
 export default async function NewsDetailPage({ params }: PageProps) {
-  const news = await getAllNews()
+  const { news } = await getNewsData()
   const item = news.find(n => slugify(n.title) === params.slug)
 
   if (!item) {
