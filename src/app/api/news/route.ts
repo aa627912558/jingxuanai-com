@@ -1,11 +1,12 @@
 import { NextResponse } from 'next/server'
-import { getNewsData } from '@/lib/news-data'
+import { getNewsData, refreshNewsCache } from '@/lib/news-data'
 
 export const revalidate = 3600 // ISR: revalidate every hour
 
 export async function GET() {
   try {
-    const data = await getNewsData()
+    // Always try to get fresh data for API response, use cache in getNewsData
+    const data = await refreshNewsCache()
     return NextResponse.json(
       data,
       {
@@ -16,6 +17,12 @@ export async function GET() {
     )
   } catch (err) {
     console.error('News API error:', err)
-    return NextResponse.json({ error: 'Failed to fetch news', news: [], total: 0, fetchedAt: '' }, { status: 500 })
+    // Fallback to cached data even if refresh fails
+    try {
+      const data = await getNewsData()
+      return NextResponse.json(data, { status: 200 })
+    } catch {
+      return NextResponse.json({ error: 'Failed to fetch news', news: [], total: 0, fetchedAt: '' }, { status: 500 })
+    }
   }
 }
