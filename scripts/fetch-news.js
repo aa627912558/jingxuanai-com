@@ -6,6 +6,15 @@ const Parser = require('rss-parser')
 const fs = require('fs')
 const path = require('path')
 
+function slugify(title) {
+  return title
+    .toLowerCase()
+    .replace(/[^\w\s\u4e00-\u9fff-]/g, '') // remove special chars but keep CJK
+    .replace(/\s+/g, '-')                   // spaces to hyphens
+    .replace(/-+/g, '-')                   // multiple hyphens to one
+    .slice(0, 80)                          // limit length
+}
+
 const parser = new Parser({
   headers: {
     'User-Agent': 'Mozilla/5.0 (compatible; JingXuanAI/1.0; +https://jingxuanai.com)',
@@ -43,6 +52,7 @@ async function main() {
           source: feed.name,
           lang: feed.lang,
           snippet: item.contentSnippet || item.content || item.summary || '',
+          slug: slugify(item.title || '无标题'),
         }))
       } catch (err) {
         console.error(`Failed to fetch ${feed.name}:`, err)
