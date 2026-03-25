@@ -1,0 +1,14 @@
+User-agent: *
+Allow: /
+Disallow:
+
+User-agent: CCBot
+Allow: /
+
+User-agent: CommonCrawl
+Allow: /
+
+User-agent: GPTBot
+Allow: /
+
+Sitemap: https://jingxuanai-com.vercel.app/sitemap.xml

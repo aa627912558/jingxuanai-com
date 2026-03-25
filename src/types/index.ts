@@ -5,6 +5,7 @@ export type ToolCategory =
   | 'Video Generation'
   | 'Audio/TTS'
   | 'Productivity'
+  | 'AI大模型'
   | 'Code';
 
 export interface AiTool {

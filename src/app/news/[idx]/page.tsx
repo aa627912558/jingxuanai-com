@@ -1,3 +1,4 @@
+import Script from 'next/script'
 import type { Metadata } from 'next'
 import { notFound } from 'next/navigation'
 import NewsDetailClient from './NewsDetailClient'
@@ -8,7 +9,6 @@ interface PageProps {
 }
 
 // Fallback news data - hardcoded for reliability
-// This is used when the static JSON can't be fetched
 const FALLBACK_NEWS = [
   {
     title: 'DeepSeek急招Agent方向！一口气放17个岗位，重度Vibe Coding优先',
@@ -36,13 +36,14 @@ const FALLBACK_NEWS = [
   },
 ]
 
+const BASE_URL = 'https://jingxuanai-com.vercel.app'
+
 async function getNewsItem(idx: string) {
   const index = parseInt(idx)
   if (isNaN(index) || index < 0) return null
 
   try {
-    // Try to fetch from static JSON
-    const baseUrl = process.env.NEXT_PUBLIC_BASE_URL || 'https://jingxuanai-com.vercel.app'
+    const baseUrl = process.env.NEXT_PUBLIC_BASE_URL || BASE_URL
     const res = await fetch(`${baseUrl}/news-data.json`, {
       cache: 'no-store',
       next: { revalidate: 0 },
@@ -61,12 +62,11 @@ async function getNewsItem(idx: string) {
     // Fetch failed, use fallback
   }
 
-  // Fallback to hardcoded data
   if (index < FALLBACK_NEWS.length) {
     const item = FALLBACK_NEWS[index]
     return {
       ...item,
-      slug: item.slug || slugify(item.title),
+      slug: slugify(item.title),
     }
   }
 
@@ -74,7 +74,7 @@ async function getNewsItem(idx: string) {
 }
 
 export async function generateMetadata({ params }: PageProps): Promise<Metadata> {
-  const item = await getNewsItem(params.idx)
+  const item = await getNewsItem(params.idx as string)
 
   if (!item) {
     return { title: '资讯未找到 - 精选AI工具站' }
@@ -108,5 +108,38 @@ export default async function NewsDetailPage({ params }: PageProps) {
     notFound()
   }
 
-  return <NewsDetailClient item={item} />
+  const articleJsonLd = {
+    '@context': 'https://schema.org',
+    '@type': 'Article',
+    headline: item.title,
+    description: item.snippet || item.title,
+    url: item.link,
+    datePublished: new Date(item.pubDate).toISOString(),
+    author: {
+      '@type': 'Organization',
+      name: item.source,
+    },
+    publisher: {
+      '@type': 'Organization',
+      name: '精选AI工具站',
+      url: BASE_URL,
+    },
+    sourceOrganization: {
+      '@type': 'Organization',
+      name: item.source,
+      url: item.link,
+    },
+    inLanguage: item.lang === 'zh' ? 'zh-CN' : 'en-US',
+  }
+
+  return (
+    <>
+      <Script
+        id="article-jsonld"
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(articleJsonLd) }}
+      />
+      <NewsDetailClient item={item} />
+    </>
+  )
 }
