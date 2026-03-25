@@ -3,7 +3,7 @@ import { notFound } from 'next/navigation'
 import NewsDetailClient from './NewsDetailClient'
 
 interface PageProps {
-  params: { index: string }
+  params: { idx: string }
 }
 
 async function getNewsItems() {
@@ -17,7 +17,7 @@ async function getNewsItems() {
 }
 
 export async function generateMetadata({ params }: PageProps): Promise<Metadata> {
-  const idx = parseInt(params.index)
+  const idx = parseInt(params.idx)
   if (isNaN(idx) || idx < 0) {
     return { title: '资讯未找到 - 精选AI工具站' }
   }
@@ -47,13 +47,13 @@ export async function generateMetadata({ params }: PageProps): Promise<Metadata>
       description,
     },
     alternates: {
-      canonical: `/news/${params.index}`,
+      canonical: `/news/${params.idx}`,
     },
   }
 }
 
 export default async function NewsDetailPage({ params }: PageProps) {
-  const idx = parseInt(params.index)
+  const idx = parseInt(params.idx)
   if (isNaN(idx) || idx < 0) {
     notFound()
   }
