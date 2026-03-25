@@ -2,16 +2,32 @@ import type { Metadata } from 'next'
 import { notFound } from 'next/navigation'
 import { slugify } from '@/lib/slug'
 import { generateSummary } from '@/lib/minimax'
-import { getNewsData } from '@/lib/news-data'
 import NewsDetailClient from './NewsDetailClient'
 
 interface PageProps {
   params: { slug: string }
 }
 
+async function getNewsItems() {
+  // Call our own API (which uses the pre-generated static JSON)
+  // Using absolute URL ensures we hit Vercel Edge Cache consistently
+  const baseUrl = process.env.NEXT_PUBLIC_BASE_URL || 'https://jingxuanai-com.vercel.app'
+  const res = await fetch(`${baseUrl}/news-data.json`, {
+    // Don't use Next.js cache - fetch fresh each time from CDN
+    cache: 'no-store',
+  })
+  if (!res.ok) return []
+  const data = await res.json()
+  // Ensure every item has a slug (regenerate if missing)
+  return (data.news || []).map((item: any) => ({
+    ...item,
+    slug: item.slug || slugify(item.title),
+  }))
+}
+
 export async function generateMetadata({ params }: PageProps): Promise<Metadata> {
-  const { news } = await getNewsData()
-  const item = news.find((n) => slugify(n.title) === params.slug)
+  const news = await getNewsItems()
+  const item = news.find((n: any) => n.slug === params.slug)
 
   if (!item) {
     return {
@@ -41,14 +57,13 @@ export async function generateMetadata({ params }: PageProps): Promise<Metadata>
 }
 
 export default async function NewsDetailPage({ params }: PageProps) {
-  const { news } = await getNewsData()
-  const item = news.find((n) => slugify(n.title) === params.slug)
+  const news = await getNewsItems()
+  const item = news.find((n: any) => n.slug === params.slug)
 
   if (!item) {
     notFound()
   }
 
-  // Generate summary (will be cached)
   const summary = await generateSummary(item.title, item.snippet || '', item.source)
 
   return <NewsDetailClient item={item} summary={summary} />

@@ -5,7 +5,8 @@ export const revalidate = 3600 // ISR: revalidate every hour
 
 export async function GET() {
   try {
-    // getNewsData now uses in-memory globalThis cache within Lambda instance
+    // Force refresh by calling getNewsData which checks file cache first,
+    // but the file cache TTL ensures fresh-ish data
     const data = await getNewsData()
     return NextResponse.json(data, {
       headers: {

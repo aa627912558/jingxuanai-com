@@ -1,4 +1,9 @@
 import Parser from 'rss-parser'
+import { readFileSync, existsSync } from 'fs'
+import { join } from 'path'
+import { slugify } from './slug'
+
+// ─── Parser & Feeds ─────────────────────────────────────────────────────────
 
 const parser = new Parser({
   headers: {
@@ -14,42 +19,16 @@ const parser = new Parser({
 })
 
 const FEEDS = [
-  {
-    name: '量子位',
-    url: 'https://www.qbitai.com/feed',
-    lang: 'zh',
-  },
-  {
-    name: 'MIT Technology Review',
-    url: 'https://www.technologyreview.com/feed/',
-    lang: 'en',
-  },
-  {
-    name: 'VentureBeat AI',
-    url: 'https://venturebeat.com/category/ai/feed/',
-    lang: 'en',
-  },
-  {
-    name: 'Hugging Face Blog',
-    url: 'https://huggingface.co/blog/feed.xml',
-    lang: 'en',
-  },
-  {
-    name: 'OpenAI Blog',
-    url: 'https://openai.com/blog/rss.xml',
-    lang: 'en',
-  },
-  {
-    name: 'The Verge AI',
-    url: 'https://www.theverge.com/rss/ai-artificial-intelligence/index.xml',
-    lang: 'en',
-  },
-  {
-    name: 'TechCrunch AI',
-    url: 'https://techcrunch.com/category/artificial-intelligence/feed/',
-    lang: 'en',
-  },
+  { name: '量子位', url: 'https://www.qbitai.com/feed', lang: 'zh' },
+  { name: 'MIT Technology Review', url: 'https://www.technologyreview.com/feed/', lang: 'en' },
+  { name: 'VentureBeat AI', url: 'https://venturebeat.com/category/ai/feed/', lang: 'en' },
+  { name: 'Hugging Face Blog', url: 'https://huggingface.co/blog/feed.xml', lang: 'en' },
+  { name: 'OpenAI Blog', url: 'https://openai.com/blog/rss.xml', lang: 'en' },
+  { name: 'The Verge AI', url: 'https://www.theverge.com/rss/ai-artificial-intelligence/index.xml', lang: 'en' },
+  { name: 'TechCrunch AI', url: 'https://techcrunch.com/category/artificial-intelligence/feed/', lang: 'en' },
 ]
+
+// ─── Types ───────────────────────────────────────────────────────────────────
 
 export interface NewsItem {
   title: string
@@ -58,23 +37,7 @@ export interface NewsItem {
   source: string
   lang: string
   snippet?: string
-}
-
-async function fetchFeed(feed: { name: string; url: string; lang: string }): Promise<NewsItem[]> {
-  try {
-    const parsed = await parser.parseURL(feed.url)
-    return (parsed.items || []).slice(0, 10).map(item => ({
-      title: item.title || '无标题',
-      link: item.link || '',
-      pubDate: item.pubDate || item.isoDate || new Date().toISOString(),
-      source: feed.name,
-      lang: feed.lang,
-      snippet: item.contentSnippet || item.content || item.summary || '',
-    }))
-  } catch (err) {
-    console.error(`Failed to fetch ${feed.name}:`, err)
-    return []
-  }
+  slug: string
 }
 
 export interface NewsResponse {
@@ -83,70 +46,104 @@ export interface NewsResponse {
   fetchedAt: string
 }
 
-// Use globalThis to cache news within the same Lambda instance.
-// This persists across requests in the same serverless warm instance.
-const GLOBAL_CACHE_KEY = '__news_cache__' as any
-const CACHE_TTL_MS = 30 * 60 * 1000 // 30 minutes
+// ─── Static JSON (production) ────────────────────────────────────────────────
 
-interface CacheEntry {
-  data: NewsResponse
-  cachedAt: number
+const STATIC_NEWS_PATH = join(process.cwd(), 'public', 'news-data.json')
+
+function loadStaticNews(): NewsResponse | null {
+  try {
+    if (!existsSync(STATIC_NEWS_PATH)) return null
+    const raw = readFileSync(STATIC_NEWS_PATH, 'utf-8')
+    return JSON.parse(raw) as NewsResponse
+  } catch {
+    return null
+  }
 }
 
+// ─── Live RSS fetch (development fallback) ──────────────────────────────────
+
+async function fetchFromFeeds(): Promise<NewsItem[]> {
+  const results = await Promise.allSettled(FEEDS.map(async (feed) => {
+    try {
+      const parsed = await parser.parseURL(feed.url)
+      return (parsed.items || []).slice(0, 10).map((item): NewsItem => ({
+        title: item.title || '无标题',
+        link: item.link || '',
+        pubDate: item.pubDate || item.isoDate || new Date().toISOString(),
+        source: feed.name,
+        lang: feed.lang,
+        snippet: item.contentSnippet || item.content || item.summary || '',
+        slug: slugify(item.title || '无标题'),
+      }))
+    } catch (err) {
+      console.error(`Failed to fetch ${feed.name}:`, err)
+      return []
+    }
+  }))
+
+  const allNews: NewsItem[] = []
+  results.forEach((r) => { if (r.status === 'fulfilled') allNews.push(...r.value) })
+
+  allNews.sort((a, b) => new Date(b.pubDate).getTime() - new Date(a.pubDate).getTime())
+
+  const seen = new Set<string>()
+  return allNews.filter((item) => {
+    const key = item.title.slice(0, 50).toLowerCase()
+    if (seen.has(key)) return false
+    seen.add(key)
+    return true
+  })
+}
+
+// ─── Global in-memory cache (within same Lambda warm instance) ───────────────
+
+type CacheEntry = { data: NewsResponse; cachedAt: number }
+const GLOBAL_KEY = '__news_cache__'
+const CACHE_TTL_MS = 30 * 60 * 1000
+
 function getGlobalCache(): CacheEntry | undefined {
-  const g = global as any
-  const entry = g[GLOBAL_CACHE_KEY]
+  const entry = (global as Record<string, unknown>)[GLOBAL_KEY] as CacheEntry | undefined
   if (!entry) return undefined
   if (Date.now() - entry.cachedAt > CACHE_TTL_MS) {
-    delete g[GLOBAL_CACHE_KEY]
+    ;(global as Record<string, unknown>)[GLOBAL_KEY] = undefined
     return undefined
   }
   return entry
 }
 
 function setGlobalCache(data: NewsResponse): void {
-  const g = global as any
-  g[GLOBAL_CACHE_KEY] = { data, cachedAt: Date.now() }
+  ;(global as Record<string, unknown>)[GLOBAL_KEY] = { data, cachedAt: Date.now() }
 }
 
+// ─── Main export ────────────────────────────────────────────────────────────
+
 export async function getNewsData(): Promise<NewsResponse> {
-  // Check in-memory global cache first (persists within Lambda instance)
+  // 1. In-memory cache (warm Lambda reuse)
   const cached = getGlobalCache()
-  if (cached) {
-    console.log(`[news-data] Using in-memory cache (${cached.data.news.length} items)`)
-    return cached.data
+  if (cached) return cached.data
+
+  // 2. Static JSON file (deployed with the app, always consistent)
+  const staticData = loadStaticNews()
+  if (staticData && staticData.news.length > 0) {
+    // Ensure every item has a slug (regenerate if missing)
+    const newsWithSlugs = staticData.news.map((item) => ({
+      ...item,
+      slug: item.slug || slugify(item.title),
+    }))
+    const dataWithSlugs = { ...staticData, news: newsWithSlugs }
+    console.log(`[news-data] Using static JSON (${staticData.news.length} items)`)
+    setGlobalCache(dataWithSlugs)
+    return dataWithSlugs
   }
 
-  console.log('[news-data] Cache miss, fetching from RSS feeds...')
-  const results = await Promise.allSettled(FEEDS.map(fetchFeed))
-  const allNews: NewsItem[] = []
-
-  results.forEach((result) => {
-    if (result.status === 'fulfilled') {
-      allNews.push(...result.value)
-    }
-  })
-
-  // Sort by date, newest first
-  allNews.sort((a, b) => new Date(b.pubDate).getTime() - new Date(a.pubDate).getTime())
-
-  // Deduplicate by title similarity
-  const seen = new Set<string>()
-  const deduped = allNews.filter(item => {
-    const key = item.title.slice(0, 50).toLowerCase()
-    if (seen.has(key)) return false
-    seen.add(key)
-    return true
-  })
-
+  // 3. Live RSS (development only, or if static file missing)
+  console.log('[news-data] Static JSON not found, fetching live RSS...')
+  const news = await fetchFromFeeds()
   const response: NewsResponse = {
-    news: deduped,
-    total: deduped.length,
+    news,
+    total: news.length,
     fetchedAt: new Date().toISOString(),
   }
-
   setGlobalCache(response)
-  console.log(`[news-data] Fetched and cached ${response.news.length} items`)
-
   return response
 }

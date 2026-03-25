@@ -1,6 +1,5 @@
 import type { Metadata } from 'next'
 import NewsClient from './NewsClient'
-import { getNewsData } from '@/lib/news-data'
 
 export const dynamic = 'force-dynamic'
 
@@ -13,6 +12,14 @@ export const metadata: Metadata = {
     description: '全球AI最新资讯与新闻，技术动态一网打尽',
     type: 'website',
   },
+}
+
+async function getNewsData() {
+  const baseUrl = process.env.NEXT_PUBLIC_BASE_URL || 'https://jingxuanai-com.vercel.app'
+  const res = await fetch(`${baseUrl}/news-data.json`, { cache: 'no-store' })
+  if (!res.ok) return { news: [], fetchedAt: '' }
+  const data = await res.json()
+  return { news: data.news || [], fetchedAt: data.fetchedAt || '' }
 }
 
 export default async function NewsPage() {
