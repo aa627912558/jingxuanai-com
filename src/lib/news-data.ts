@@ -1,6 +1,5 @@
 import Parser from 'rss-parser'
 import { readFileSync, writeFileSync, existsSync } from 'fs'
-import { join } from 'path'
 
 const parser = new Parser({
   headers: {
