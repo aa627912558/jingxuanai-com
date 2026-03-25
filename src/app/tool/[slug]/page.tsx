@@ -16,6 +16,7 @@ export async function generateMetadata({ params }: { params: Promise<{ slug: str
   return {
     title: `${tool.name} - 精选AI工具站`,
     description: `${tool.description} | ${tool.features.slice(0, 2).join('，')}`,
+    keywords: [tool.name, tool.type, ...tool.features.slice(0, 3).map(f => f.replace(/[^\u4e00-\u9fa5a-zA-Z0-9]/g, '').slice(0, 20)), 'AI工具', '精选AI工具站'],
     openGraph: {
       title: `${tool.name} - 精选AI工具站`,
       description: tool.description,

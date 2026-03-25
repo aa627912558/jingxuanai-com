@@ -8,13 +8,10 @@ import clsx from 'clsx'
 
 function ToolCard({ tool }: { tool: AiTool }) {
   const categoryColor = CATEGORY_COLORS[tool.type] || 'bg-gray-100 text-gray-700'
-  const affiliateUrl = `${tool.website}?ref=jingxuanai`
 
   return (
     <a
-      href={affiliateUrl}
-      target="_blank"
-      rel="noopener noreferrer"
+      href={`/tool/${tool.slug}`}
       className="group bg-white rounded-2xl border border-slate-200 p-5 hover:border-indigo-300 hover:shadow-lg hover:shadow-indigo-100 transition-all duration-300 flex flex-col gap-3"
     >
       <div className="flex items-start justify-between gap-2">
