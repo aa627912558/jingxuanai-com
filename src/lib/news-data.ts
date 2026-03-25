@@ -85,7 +85,7 @@ export interface NewsResponse {
   fetchedAt: string
 }
 
-const CACHE_FILE = join(process.cwd(), '.news-cache.json')
+const CACHE_FILE = '/tmp/.news-cache.json'
 const CACHE_TTL_MS = 30 * 60 * 1000 // 30 minutes
 
 interface CacheData {
