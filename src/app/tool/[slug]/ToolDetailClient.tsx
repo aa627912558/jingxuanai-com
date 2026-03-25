@@ -61,12 +61,7 @@ export default function ToolDetailClient({ tool }: ToolDetailClientProps) {
                 <ExternalLink size={15} />
                 官方网站直达
               </a>
-              {tool.commissionRate && (
-                <div className="inline-flex items-center gap-1.5 px-3 py-2 bg-amber-50 border border-amber-200 text-amber-700 text-sm rounded-xl">
-                  <span className="text-amber-500">💰</span>
-                  佣金：{tool.commissionRate}
-                </div>
-              )}
+
             </div>
           </div>
         </div>
@@ -139,10 +134,7 @@ export default function ToolDetailClient({ tool }: ToolDetailClientProps) {
                   </span>
                 </dd>
               </div>
-              <div className="flex justify-between items-start gap-2">
-                <dt className="text-xs text-slate-500 uppercase tracking-wide">佣金比例</dt>
-                <dd className="text-xs text-slate-700 text-right">{tool.commissionRate}</dd>
-              </div>
+
               <div className="pt-2 border-t border-slate-100">
                 <a
                   href={affiliateUrl}
