@@ -14,6 +14,11 @@ interface NewsItem {
   snippet?: string
 }
 
+interface NewsClientProps {
+  initialNews?: NewsItem[]
+  initialFetchedAt?: string
+}
+
 function slugify(title: string): string {
   return title
     .toLowerCase()
@@ -101,16 +106,19 @@ function NewsCard({ item }: { item: NewsItem }) {
     </div>
   )
 }
-export default function NewsClient() {
-  const [news, setNews] = useState<NewsItem[]>([])
-  const [loading, setLoading] = useState(true)
+export default function NewsClient({ initialNews = [], initialFetchedAt = '' }: NewsClientProps) {
+  const [news, setNews] = useState<NewsItem[]>(initialNews)
+  const [loading, setLoading] = useState(initialNews.length === 0)
   const [error, setError] = useState('')
-  const [fetchedAt, setFetchedAt] = useState('')
+  const [fetchedAt, setFetchedAt] = useState(initialFetchedAt)
   const [page, setPage] = useState(1)
   const [langFilter, setLangFilter] = useState<'all' | 'zh' | 'en'>('all')
   const [sourceFilter, setSourceFilter] = useState<string>('all')
 
   useEffect(() => {
+    // Only fetch if no initial news (server fetch failed or wasn't provided)
+    if (initialNews.length > 0) return
+
     fetch('/api/news')
       .then(r => r.json())
       .then(data => {
@@ -119,10 +127,12 @@ export default function NewsClient() {
         setLoading(false)
       })
       .catch(() => {
-        setError('资讯加载失败，请稍后刷新重试')
+        if (initialNews.length === 0) {
+          setError('资讯加载失败，请稍后刷新重试')
+        }
         setLoading(false)
       })
-  }, [])
+  }, [initialNews.length])
 
   const sources = useMemo(() => {
     const srcs = Array.from(new Set(news.map(n => n.source)))

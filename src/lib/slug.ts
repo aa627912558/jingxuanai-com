@@ -15,3 +15,4 @@ export function slugify(title: string): string {
  */
 export function decodeSlug(slug: string): string {
   return slug.replace(/-/g, ' ')
+}

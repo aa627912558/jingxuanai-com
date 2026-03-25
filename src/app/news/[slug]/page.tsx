@@ -1,7 +1,5 @@
 import type { Metadata } from 'next'
 import { notFound } from 'next/navigation'
-import Link from 'next/link'
-import { ArrowLeft, ExternalLink, Clock, Globe } from 'lucide-react'
 import { slugify } from '@/lib/slug'
 import { generateSummary } from '@/lib/minimax'
 import NewsDetailClient from './NewsDetailClient'
