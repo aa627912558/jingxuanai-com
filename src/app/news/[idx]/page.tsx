@@ -1,33 +1,80 @@
 import type { Metadata } from 'next'
 import { notFound } from 'next/navigation'
-import { readFileSync, existsSync } from 'fs'
-import { join } from 'path'
 import NewsDetailClient from './NewsDetailClient'
+import { slugify } from '@/lib/slug'
 
 interface PageProps {
   params: { idx: string }
 }
 
-function getNewsItems() {
+// Fallback news data - hardcoded for reliability
+// This is used when the static JSON can't be fetched
+const FALLBACK_NEWS = [
+  {
+    title: 'DeepSeek急招Agent方向！一口气放17个岗位，重度Vibe Coding优先',
+    link: 'https://www.qbitai.com/2026/03/392024.html',
+    pubDate: 'Wed, 25 Mar 2026 06:39:13 +0000',
+    source: '量子位',
+    lang: 'zh',
+    snippet: '明显从"基础模型研究"向"Agent产品化"倾斜',
+  },
+  {
+    title: '中国AI音乐，悄悄把全球第一拿走了',
+    link: 'https://www.qbitai.com/2026/03/391839.html',
+    pubDate: 'Wed, 25 Mar 2026 06:36:11 +0000',
+    source: '量子位',
+    lang: 'zh',
+    snippet: '还是人声、器乐双料第一',
+  },
+  {
+    title: 'OpenAI关停Sora！25个月从封神到退场',
+    link: 'https://www.qbitai.com/2026/03/391799.html',
+    pubDate: 'Wed, 25 Mar 2026 00:13:11 +0000',
+    source: '量子位',
+    lang: 'zh',
+    snippet: 'AI视频正在进入"中国时间"',
+  },
+]
+
+async function getNewsItem(idx: string) {
+  const index = parseInt(idx)
+  if (isNaN(index) || index < 0) return null
+
   try {
-    // Read directly from public/news-data.json
-    const filePath = join(process.cwd(), 'public', 'news-data.json')
-    if (!existsSync(filePath)) return []
-    const raw = readFileSync(filePath, 'utf-8')
-    const data = JSON.parse(raw)
-    return data.news || []
+    // Try to fetch from static JSON
+    const baseUrl = process.env.NEXT_PUBLIC_BASE_URL || 'https://jingxuanai-com.vercel.app'
+    const res = await fetch(`${baseUrl}/news-data.json`, {
+      cache: 'no-store',
+      next: { revalidate: 0 },
+    })
+    if (res.ok) {
+      const data = await res.json()
+      const item = (data.news || [])[index]
+      if (item) {
+        return {
+          ...item,
+          slug: item.slug || slugify(item.title),
+        }
+      }
+    }
   } catch {
-    return []
+    // Fetch failed, use fallback
   }
+
+  // Fallback to hardcoded data
+  if (index < FALLBACK_NEWS.length) {
+    const item = FALLBACK_NEWS[index]
+    return {
+      ...item,
+      slug: item.slug || slugify(item.title),
+    }
+  }
+
+  return null
 }
 
 export async function generateMetadata({ params }: PageProps): Promise<Metadata> {
-  const idx = parseInt(params.idx)
-  if (isNaN(idx) || idx < 0) {
-    return { title: '资讯未找到 - 精选AI工具站' }
-  }
-  const news = getNewsItems()
-  const item = news[idx]
+  const item = await getNewsItem(params.idx)
 
   if (!item) {
     return { title: '资讯未找到 - 精选AI工具站' }
@@ -51,20 +98,11 @@ export async function generateMetadata({ params }: PageProps): Promise<Metadata>
       title: item.title,
       description,
     },
-    alternates: {
-      canonical: `/news/${params.idx}`,
-    },
   }
 }
 
 export default async function NewsDetailPage({ params }: PageProps) {
-  const idx = parseInt(params.idx)
-  if (isNaN(idx) || idx < 0) {
-    notFound()
-  }
-
-  const news = getNewsItems()
-  const item = news[idx]
+  const item = await getNewsItem(params.idx)
 
   if (!item) {
     notFound()
