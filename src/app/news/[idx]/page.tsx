@@ -1,19 +1,24 @@
 import type { Metadata } from 'next'
 import { notFound } from 'next/navigation'
+import { readFileSync, existsSync } from 'fs'
+import { join } from 'path'
 import NewsDetailClient from './NewsDetailClient'
 
 interface PageProps {
   params: { idx: string }
 }
 
-async function getNewsItems() {
-  const baseUrl = process.env.NEXT_PUBLIC_BASE_URL || 'https://jingxuanai-com.vercel.app'
-  const res = await fetch(`${baseUrl}/news-data.json`, {
-    cache: 'no-store',
-  })
-  if (!res.ok) return []
-  const data = await res.json()
-  return data.news || []
+function getNewsItems() {
+  try {
+    // Read directly from public/news-data.json
+    const filePath = join(process.cwd(), 'public', 'news-data.json')
+    if (!existsSync(filePath)) return []
+    const raw = readFileSync(filePath, 'utf-8')
+    const data = JSON.parse(raw)
+    return data.news || []
+  } catch {
+    return []
+  }
 }
 
 export async function generateMetadata({ params }: PageProps): Promise<Metadata> {
@@ -21,7 +26,7 @@ export async function generateMetadata({ params }: PageProps): Promise<Metadata>
   if (isNaN(idx) || idx < 0) {
     return { title: '资讯未找到 - 精选AI工具站' }
   }
-  const news = await getNewsItems()
+  const news = getNewsItems()
   const item = news[idx]
 
   if (!item) {
@@ -58,7 +63,7 @@ export default async function NewsDetailPage({ params }: PageProps) {
     notFound()
   }
 
-  const news = await getNewsItems()
+  const news = getNewsItems()
   const item = news[idx]
 
   if (!item) {
