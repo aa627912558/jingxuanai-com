@@ -3,6 +3,7 @@ import { AiTool } from '@/types'
 export const TOOLS_DATA: AiTool[] = [
   {
     id: "elevenlabs",
+    icon: "/tool-icons/elevenlabs.png",
     slug: "elevenlabs",
     name: "ElevenLabs",
     website: "https://elevenlabs.io",
@@ -27,6 +28,7 @@ export const TOOLS_DATA: AiTool[] = [
   },
   {
     id: "veed",
+    icon: "/tool-icons/veed.png",
     slug: "veed",
     name: "VEED",
     website: "https://www.veed.io",
@@ -51,6 +53,7 @@ export const TOOLS_DATA: AiTool[] = [
   },
   {
     id: "murf-ai",
+    icon: "/tool-icons/murf-ai.png",
     slug: "murf-ai",
     name: "Murf AI",
     website: "https://murf.ai",
@@ -75,6 +78,7 @@ export const TOOLS_DATA: AiTool[] = [
   },
   {
     id: "synthesia",
+    icon: "/tool-icons/synthesia.png",
     slug: "synthesia",
     name: "Synthesia",
     website: "https://www.synthesia.io",
@@ -99,6 +103,7 @@ export const TOOLS_DATA: AiTool[] = [
   },
   {
     id: "writesonic",
+    icon: "/tool-icons/writesonic.png",
     slug: "writesonic",
     name: "Writesonic",
     website: "https://writesonic.com",
@@ -123,6 +128,7 @@ export const TOOLS_DATA: AiTool[] = [
   },
   {
     id: "notion",
+    icon: "/tool-icons/notion.png",
     slug: "notion",
     name: "Notion",
     website: "https://www.notion.so",
@@ -147,6 +153,7 @@ export const TOOLS_DATA: AiTool[] = [
   },
   {
     id: "surfer-seo",
+    icon: "/tool-icons/surfer-seo.png",
     slug: "surfer-seo",
     name: "Surfer SEO",
     website: "https://surferseo.com",
@@ -171,6 +178,7 @@ export const TOOLS_DATA: AiTool[] = [
   },
   {
     id: "remove-bg",
+    icon: "/tool-icons/remove-bg.png",
     slug: "remove-bg",
     name: "remove.bg",
     website: "https://www.remove.bg",
@@ -195,6 +203,7 @@ export const TOOLS_DATA: AiTool[] = [
   },
   {
     id: "flexclip",
+    icon: "/tool-icons/flexclip.png",
     slug: "flexclip",
     name: "FlexClip",
     website: "https://www.flexclip.com",
@@ -219,6 +228,7 @@ export const TOOLS_DATA: AiTool[] = [
   },
   {
     id: "invideo",
+    icon: "/tool-icons/invideo.png",
     slug: "invideo",
     name: "InVideo",
     website: "https://invideo.io",
@@ -243,6 +253,7 @@ export const TOOLS_DATA: AiTool[] = [
   },
   {
     id: "quillbot",
+    icon: "/tool-icons/quillbot.png",
     slug: "quillbot",
     name: "QuillBot",
     website: "https://quillbot.com",
@@ -267,6 +278,7 @@ export const TOOLS_DATA: AiTool[] = [
   },
   {
     id: "jasper",
+    icon: "/tool-icons/jasper.png",
     slug: "jasper",
     name: "Jasper",
     website: "https://www.jasper.ai",
@@ -291,6 +303,7 @@ export const TOOLS_DATA: AiTool[] = [
   },
   {
     id: "copy-ai",
+    icon: "/tool-icons/copy-ai.png",
     slug: "copy-ai",
     name: "Copy.ai",
     website: "https://www.copy.ai",
@@ -315,6 +328,7 @@ export const TOOLS_DATA: AiTool[] = [
   },
   {
     id: "rytr",
+    icon: "/tool-icons/rytr.png",
     slug: "rytr",
     name: "Rytr",
     website: "https://www.rytr.me",
@@ -339,6 +353,7 @@ export const TOOLS_DATA: AiTool[] = [
   },
   {
     id: "pictory",
+    icon: "/tool-icons/pictory.png",
     slug: "pictory",
     name: "Pictory",
     website: "https://www.pictory.ai",
@@ -363,6 +378,7 @@ export const TOOLS_DATA: AiTool[] = [
   },
   {
     id: "fliki",
+    icon: "/tool-icons/fliki.png",
     slug: "fliki",
     name: "Fliki",
     website: "https://www.fliki.ai",
@@ -387,6 +403,7 @@ export const TOOLS_DATA: AiTool[] = [
   },
   {
     id: "heygen",
+    icon: "/tool-icons/heygen.png",
     slug: "heygen",
     name: "HeyGen",
     website: "https://www.heygen.com",
@@ -411,6 +428,7 @@ export const TOOLS_DATA: AiTool[] = [
   },
   {
     id: "speechify",
+    icon: "/tool-icons/speechify.png",
     slug: "speechify",
     name: "Speechify",
     website: "https://speechify.com",
@@ -435,6 +453,7 @@ export const TOOLS_DATA: AiTool[] = [
   },
   {
     id: "play-ht",
+    icon: "/tool-icons/play-ht.png",
     slug: "play-ht",
     name: "Play.ht",
     website: "https://play.ht",
@@ -459,6 +478,7 @@ export const TOOLS_DATA: AiTool[] = [
   },
   {
     id: "descript",
+    icon: "/tool-icons/descript.png",
     slug: "descript",
     name: "Descript",
     website: "https://www.descript.com",
@@ -483,6 +503,7 @@ export const TOOLS_DATA: AiTool[] = [
   },
   {
     id: "canva",
+    icon: "/tool-icons/canva.png",
     slug: "canva",
     name: "Canva",
     website: "https://www.canva.com",
@@ -507,6 +528,7 @@ export const TOOLS_DATA: AiTool[] = [
   },
   {
     id: "adobe-cc",
+    icon: "/tool-icons/adobe-cc.png",
     slug: "adobe-cc",
     name: "Adobe Creative Cloud",
     website: "https://www.adobe.com",
@@ -531,6 +553,7 @@ export const TOOLS_DATA: AiTool[] = [
   },
   {
     id: "grammarly",
+    icon: "/tool-icons/grammarly.png",
     slug: "grammarly",
     name: "Grammarly",
     website: "https://www.grammarly.com",
@@ -555,6 +578,7 @@ export const TOOLS_DATA: AiTool[] = [
   },
   {
     id: "leonardo-ai",
+    icon: "/tool-icons/leonardo-ai.png",
     slug: "leonardo-ai",
     name: "Leonardo AI",
     website: "https://leonardo.ai",
@@ -579,6 +603,7 @@ export const TOOLS_DATA: AiTool[] = [
   },
   {
     id: "photoroom",
+    icon: "/tool-icons/photoroom.png",
     slug: "photoroom",
     name: "PhotoRoom",
     website: "https://www.photoroom.com",
@@ -603,6 +628,7 @@ export const TOOLS_DATA: AiTool[] = [
   },
   {
     id: "pixlr",
+    icon: "/tool-icons/pixlr.png",
     slug: "pixlr",
     name: "Pixlr",
     website: "https://www.pixlr.com",
@@ -627,6 +653,7 @@ export const TOOLS_DATA: AiTool[] = [
   },
   {
     id: "anyword",
+    icon: "/tool-icons/anyword.png",
     slug: "anyword",
     name: "Anyword",
     website: "https://www.anyword.com",
@@ -651,6 +678,7 @@ export const TOOLS_DATA: AiTool[] = [
   },
   {
     id: "copymatic",
+    icon: "/tool-icons/copymatic.png",
     slug: "copymatic",
     name: "Copymatic",
     website: "https://www.copymatic.ai",
@@ -675,6 +703,7 @@ export const TOOLS_DATA: AiTool[] = [
   },
   {
     id: "kittl",
+    icon: "/tool-icons/kittl.png",
     slug: "kittl",
     name: "Kittl",
     website: "https://www.kittl.com",
@@ -699,6 +728,7 @@ export const TOOLS_DATA: AiTool[] = [
   },
   {
     id: "kapwing",
+    icon: "/tool-icons/kapwing.png",
     slug: "kapwing",
     name: "Kapwing",
     website: "https://www.kapwing.com",
@@ -723,6 +753,7 @@ export const TOOLS_DATA: AiTool[] = [
   },
   {
     id: "kits-ai",
+    icon: "/tool-icons/kits-ai.png",
     slug: "kits-ai",
     name: "Kits.ai",
     website: "https://www.kits.ai",
@@ -747,6 +778,7 @@ export const TOOLS_DATA: AiTool[] = [
   },
   {
     id: "tensor-art",
+    icon: "/tool-icons/tensor-art.png",
     slug: "tensor-art",
     name: "Tensor.art",
     website: "https://tensor.art",
@@ -771,6 +803,7 @@ export const TOOLS_DATA: AiTool[] = [
   },
   {
     id: "kimi",
+    icon: "/tool-icons/kimi.png",
     slug: "kimi",
     name: "Kimi",
     website: "https://kimi.moonshot.cn",
@@ -795,6 +828,7 @@ export const TOOLS_DATA: AiTool[] = [
   },
   {
     id: "yiyan",
+    icon: "/tool-icons/yiyan.png",
     slug: "yiyan",
     name: "文心一言",
     website: "https://yiyan.baidu.com",
@@ -819,6 +853,7 @@ export const TOOLS_DATA: AiTool[] = [
   },
   {
     id: "tongyi",
+    icon: "/tool-icons/tongyi.png",
     slug: "tongyi",
     name: "通义千问",
     website: "https://tongyi.aliyun.com",
@@ -843,6 +878,7 @@ export const TOOLS_DATA: AiTool[] = [
   },
   {
     id: "xinghuo",
+    icon: "/tool-icons/xinghuo.png",
     slug: "xinghuo",
     name: "讯飞星火",
     website: "https://www.xunfei.cn",
@@ -867,6 +903,7 @@ export const TOOLS_DATA: AiTool[] = [
   },
   {
     id: "zhipuai",
+    icon: "/tool-icons/zhipuai.png",
     slug: "zhipuai",
     name: "智谱AI",
     website: "https://www.zhipuai.cn",
@@ -891,6 +928,7 @@ export const TOOLS_DATA: AiTool[] = [
   },
   {
     id: "doubao",
+    icon: "/tool-icons/doubao.png",
     slug: "doubao",
     name: "字节豆包",
     website: "https://www.doubao.com",
@@ -915,6 +953,7 @@ export const TOOLS_DATA: AiTool[] = [
   },
   {
     id: "hunyuan",
+    icon: "/tool-icons/hunyuan.png",
     slug: "hunyuan",
     name: "腾讯混元",
     website: "https://hunyuan.tencent.com",
@@ -939,6 +978,7 @@ export const TOOLS_DATA: AiTool[] = [
   },
   {
     id: "shangtong",
+    icon: "/tool-icons/shangtong.png",
     slug: "shangtong",
     name: "商量",
     website: "https://www.shangtong.cn",
@@ -963,6 +1003,7 @@ export const TOOLS_DATA: AiTool[] = [
   },
   {
     id: "baichuan",
+    icon: "/tool-icons/baichuan.png",
     slug: "baichuan",
     name: "百川AI",
     website: "https://www.baichuan-ai.com",
@@ -987,6 +1028,7 @@ export const TOOLS_DATA: AiTool[] = [
   },
   {
     id: "lingyi",
+    icon: "/tool-icons/lingyi.png",
     slug: "lingyi",
     name: "零一万物",
     website: "https://www.01.ai",
