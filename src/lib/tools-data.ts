@@ -769,6 +769,246 @@ export const TOOLS_DATA: AiTool[] = [
     ],
     related_tools: ["leonardo-ai", "kittl", "pixlr"],
   },
+  {
+    id: "kimi",
+    slug: "kimi",
+    name: "Kimi",
+    website: "https://kimi.moonshot.cn",
+    description: "月之暗面推出的AI助手，支持超长上下文（200万字）",
+    type: "AI大模型",
+    affiliateUrl: "",
+    commissionRate: "暂无佣金（使用有额度赠送）",
+    features: [
+      "超长上下文窗口，支持200万字无损理解",
+      "支持上传PDF、Word、PPT等文件并深度解读",
+      "搜索增强模式，实时获取互联网信息",
+      "多轮对话能力强，适合复杂任务拆解",
+      "支持代码解读和调试辅助"
+    ],
+    usage_guide: "第一步：访问kimi.moonshot.cn，点击右上角登录/注册。\\n\\n第二步：进入主界面，在对话框输入问题或需求。\\n\\n第三步：上传文件（可选）：点击对话框左侧回形针图标，上传PDF/Word/PPT。\\n\\n第四步：开启搜索模式：输入问题时点击右侧搜索图标，Kimi会结合实时信息回答。",
+    use_cases: [
+      "长文档总结与深度分析",
+      "代码解读与调试",
+      "深度研究与资料整理"
+    ],
+    related_tools: ["zhipuai", "tongyi", "yiyan"],
+  },
+  {
+    id: "yiyan",
+    slug: "yiyan",
+    name: "文心一言",
+    website: "https://yiyan.baidu.com",
+    description: "百度推出的AI大模型，中文理解与创作能力强",
+    type: "AI大模型",
+    affiliateUrl: "",
+    commissionRate: "暂无佣金",
+    features: [
+      "百度自研文心大模型，中文语言理解表现优秀",
+      "支持多模态：文字、图像生成、代码解释",
+      "集成百度搜索，实时获取最新信息",
+      "丰富的创作模板：文案、诗歌、故事、营销内容",
+      "企业版提供API接入，支持二次开发"
+    ],
+    usage_guide: "第一步：访问yiyan.baidu.com，使用百度账号登录。\\n\\n第二步：在对话框输入问题或选择预设场景（文案创作、代码助手等）。\\n\\n第三步：开启插件模式：可使用PPT生成、图片生成等扩展功能。\\n\\n第四步：企业用户可在控制台申请API Key，接入自身业务系统。",
+    use_cases: [
+      "中文内容创作与文案撰写",
+      "知识问答与信息检索",
+      "企业智能化接入"
+    ],
+    related_tools: ["kimi", "tongyi", "hunyuan"],
+  },
+  {
+    id: "tongyi",
+    slug: "tongyi",
+    name: "通义千问",
+    website: "https://tongyi.aliyun.com",
+    description: "阿里云推出的大语言模型，免费额度充足",
+    type: "AI大模型",
+    affiliateUrl: "",
+    commissionRate: "暂无佣金",
+    features: [
+      "阿里云自研大模型，支持中英双语及多轮对话",
+      "免费额度充足，新用户注册送大量Token",
+      "支持通义万相：AI图像生成与编辑",
+      "提供API接口，支持企业级应用接入",
+      "通义听悟：会议录音转文字与摘要"
+    ],
+    usage_guide: "第一步：访问tongyi.aliyun.com，点击立即开始。\\n\\n第二步：使用淘宝/支付宝账号扫码登录。\\n\\n第三步：在对话框输入问题，体验文字对话、代码辅助等功能。\\n\\n第四步：开发者可进入控制台申请API，调用通义千问和通义万相能力。",
+    use_cases: [
+      "日常问答与知识查询",
+      "内容创作与文案生成",
+      "企业应用接入与开发"
+    ],
+    related_tools: ["kimi", "yiyan", "xinghuo"],
+  },
+  {
+    id: "xinghuo",
+    slug: "xinghuo",
+    name: "讯飞星火",
+    website: "https://www.xunfei.cn",
+    description: "科大讯飞推出的AI大模型，语音交互能力强",
+    type: "AI大模型",
+    affiliateUrl: "",
+    commissionRate: "暂无佣金",
+    features: [
+      "科大讯飞自研星火大模型，语音识别技术领先",
+      "强大的语音交互能力，支持语音输入和播报",
+      "多语种翻译，支持100+语言实时互译",
+      "集成讯飞听见：录音转写、会议纪要一键生成",
+      "提供API和企业定制化服务"
+    ],
+    usage_guide: "第一步：访问xinghuo.xunfei.cn或下载讯飞星火APP。\\n\\n第二步：注册并登录（网页版支持账号密码，APP需手机号）。\\n\\n第三步：输入问题，支持文字或语音输入，体验多轮对话。\\n\\n第四步：使用翻译、文档处理等插件功能提升效率。",
+    use_cases: [
+      "语音交互与实时翻译",
+      "会议记录与内容整理",
+      "智能客服与知识问答"
+    ],
+    related_tools: ["tongyi", "kimi", "zhipuai"],
+  },
+  {
+    id: "zhipuai",
+    slug: "zhipuai",
+    name: "智谱AI",
+    website: "https://www.zhipuai.cn",
+    description: "清华系AI大模型，对标GPT-4，性能强劲",
+    type: "AI大模型",
+    affiliateUrl: "",
+    commissionRate: "暂无佣金",
+    features: [
+      "清华大学知识工程实验室出品，对标GPT-4水平",
+      "支持128K超长上下文，复杂任务处理能力强",
+      "GLM-4V多模态模型，支持图像理解和分析",
+      "开源ChatGLM系列，开发者友好",
+      "提供API和企业私有化部署方案"
+    ],
+    usage_guide: "第一步：访问bigmodel.cn注册账号。\\n\\n第二步：进入控制台，创建API Key。\\n\\n第三步：使用API或在线体验：输入问题/上传图片，体验GLM模型能力。\\n\\n第四步：开发者可调用GLM-4、GLM-4V、CogView等模型能力。",
+    use_cases: [
+      "复杂推理与深度分析",
+      "多模态内容理解",
+      "企业AI能力接入"
+    ],
+    related_tools: ["kimi", "baichuan", "lingyi"],
+  },
+  {
+    id: "doubao",
+    slug: "doubao",
+    name: "字节豆包",
+    website: "https://www.doubao.com",
+    description: "字节跳动推出的AI助手，豆包APP体验好",
+    type: "AI大模型",
+    affiliateUrl: "",
+    commissionRate: "暂无佣金",
+    features: [
+      "字节跳动自研大模型，豆包APP体验流畅",
+      "支持多轮对话、文件分析、搜索增强",
+      "豆包Mars AI助手：抖音生态内集成",
+      "AI写作辅助，覆盖文案、邮件、社交内容",
+      "免费使用，额度充足"
+    ],
+    usage_guide: "第一步：访问doubao.com或下载豆包APP。\\n\\n第二步：使用手机号注册登录。\\n\\n第三步：在对话框输入问题，可上传图片或文件进行分析。\\n\\n第四步：探索抖音内的豆包AI助手，在抖音生态下直接使用。",
+    use_cases: [
+      "日常问答与内容创作",
+      "抖音生态内AI互动",
+      "文件解读与信息整理"
+    ],
+    related_tools: ["kimi", "tongyi", "hunyuan"],
+  },
+  {
+    id: "hunyuan",
+    slug: "hunyuan",
+    name: "腾讯混元",
+    website: "https://hunyuan.tencent.com",
+    description: "腾讯推出的大模型，与微信等腾讯产品深度整合",
+    type: "AI大模型",
+    affiliateUrl: "",
+    commissionRate: "暂无佣金",
+    features: [
+      "腾讯自研大模型，支持中英双语和长文本理解",
+      "与微信、企业微信、腾讯文档等深度整合",
+      "支持多模态：图像理解和代码生成",
+      "混元助手：智能对话、创作辅助、翻译等",
+      "企业版提供API接入，支持腾讯云集成"
+    ],
+    usage_guide: "第一步：访问hunyuan.tencent.com，点击开始体验。\\n\\n第二步：使用微信扫码或QQ账号登录。\\n\\n第三步：输入问题，体验对话、创作、翻译等功能。\\n\\n第四步：企业用户可在腾讯云控制台申请API接入。",
+    use_cases: [
+      "微信生态内AI辅助",
+      "企业办公与文档处理",
+      "内容创作与营销文案"
+    ],
+    related_tools: ["yiyan", "doubao", "tongyi"],
+  },
+  {
+    id: "shangtong",
+    slug: "shangtong",
+    name: "商量",
+    website: "https://www.shangtong.cn",
+    description: "商汤科技推出的大语言模型，AI能力全面",
+    type: "AI大模型",
+    affiliateUrl: "",
+    commissionRate: "暂无佣金",
+    features: [
+      "商汤科技自研大模型，AI综合能力全面",
+      "支持长文本理解、多轮对话、代码生成",
+      "商量AI助手网页版直接使用，无需注册",
+      "提供企业级API，支持行业定制化",
+      "与商汤AI绘画、AI数字人等产品协同"
+    ],
+    usage_guide: "第一步：访问shangtong.cn，点击开始使用。\\n\\n第二步：无需注册，直接在对话框输入问题。\\n\\n第三步：体验对话、创作、代码等各类功能。\\n\\n第四步：企业用户可申请API接入，集成到自身业务系统。",
+    use_cases: [
+      "日常问答与知识查询",
+      "代码编写与调试",
+      "企业AI能力集成"
+    ],
+    related_tools: ["kimi", "zhipuai", "baichuan"],
+  },
+  {
+    id: "baichuan",
+    slug: "baichuan",
+    name: "百川AI",
+    website: "https://www.baichuan-ai.com",
+    description: "王小川团队推出的大模型，对标GPT-4",
+    type: "AI大模型",
+    affiliateUrl: "",
+    commissionRate: "暂无佣金",
+    features: [
+      "搜狗创始人王小川创立，对标GPT-4性能",
+      "支持中英双语、超长上下文和多轮对话",
+      "百川智能系列：Base/Chat/Insight多版本",
+      "开源友好，提供开源模型供社区使用",
+      "企业版提供API和私有化部署"
+    ],
+    usage_guide: "第一步：访问baichuan-ai.com注册账号。\\n\\n第二步：进入控制台，创建API Key。\\n\\n第三步：使用API或网页版体验百川大模型能力。\\n\\n第四步：开发者可接入开源模型或使用企业版API服务。",
+    use_cases: [
+      "复杂推理与深度分析",
+      "多语言内容处理",
+      "企业AI能力接入"
+    ],
+    related_tools: ["zhipuai", "lingyi", "shangtong"],
+  },
+  {
+    id: "lingyi",
+    slug: "lingyi",
+    name: "零一万物",
+    website: "https://www.01.ai",
+    description: "李开复创办的AI 2.0平台，Yi系列大模型性能优异",
+    type: "AI大模型",
+    affiliateUrl: "",
+    commissionRate: "暂无佣金",
+    features: [
+      "李开复创办，AI 2.0技术路线，实力雄厚",
+      "Yi系列大模型：Yi-34B、Yi-9B等多规格可选",
+      "开源模型性能优异，Yi-34B多项评测领先",
+      "支持200K超长上下文，适合长文档处理",
+      "提供API和云服务，企业友好"
+    ],
+    usage_guide: "第一步：访问01.ai注册开发者账号。\\n\\n第二步：进入控制台申请API Key。\\n\\n第三步：使用API调用Yi系列模型，支持多种使用方式。\\n\\n第四步：开源模型可在HuggingFace获取，私有部署使用。",
+    use_cases: [
+      "大规模语言处理任务",
+      "长文档分析与总结",
+      "企业AI能力集成"
+    ],
+    related_tools: ["baichuan", "zhipuai", "kimi"],
+  },
 ]
 
 
@@ -780,6 +1020,7 @@ export const CATEGORIES = [
   'Video Generation',
   'Audio/TTS',
   'Productivity',
+  'AI大模型',
   'Code',
 ] as const
 
@@ -790,5 +1031,6 @@ export const CATEGORY_COLORS: Record<string, string> = {
   'Video Generation': 'bg-pink-100 text-pink-700',
   'Audio/TTS': 'bg-green-100 text-green-700',
   'Productivity': 'bg-orange-100 text-orange-700',
+  'AI大模型': 'bg-red-100 text-red-700',
   'Code': 'bg-gray-100 text-gray-700',
 }
