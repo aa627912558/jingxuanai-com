@@ -1,6 +1,51 @@
 {
   "news": [
     {
+      "title": "字节跳动Dreamina Seedance 2.0登陆CapCut：AI视频生成进入「有保护」时代",
+      "link": "https://techcrunch.com/2026/03/26/bytedances-new-ai-video-generation-model-dreamina-seedance-2-0-comes-to-capcut/",
+      "pubDate": "2026-03-26T15:25:13.000Z",
+      "source": "TechCrunch AI",
+      "lang": "zh",
+      "snippet": "字节跳动发布Dreamina Seedance 2.0，已集成到剪映（CapCut）中。新模型内置面部保护和知识产权防护，可从真实人脸或未授权IP生成视频。这是即梦AI的全新版本，也是中国AI视频工具与OpenAI Sora正面对决的里程碑事件。",
+      "slug": "bytedance-dreamina-seedance-2-0-capcut-ai-video"
+    },
+    {
+      "title": "Cohere开源 transcription 模型：仅20亿参数，支持14语言，消费级GPU即可运行",
+      "link": "https://techcrunch.com/2026/03/26/cohere-launches-an-open-source-voice-model-specifically-for-transcription/",
+      "pubDate": "2026-03-26T13:30:00.000Z",
+      "source": "TechCrunch AI",
+      "lang": "zh",
+      "snippet": "AI公司Cohere发布了一款专用于转录的开源语音模型，仅20亿参数，支持14种语言。该模型针对消费级GPU优化，适合自托管部署。与云端转录服务相比，本地运行更保护隐私，对企业用户有吸引力。",
+      "slug": "cohere-open-source-transcription-voice-model-2b"
+    },
+    {
+      "title": "OpenAI启动安全漏洞赏金计划：AI滥用、提示词注入、数据泄露均在奖励范围",
+      "link": "https://openai.com/index/safety-bug-bounty",
+      "pubDate": "2026-03-25T00:00:00.000Z",
+      "source": "OpenAI Blog",
+      "lang": "zh",
+      "snippet": "OpenAI宣布推出安全漏洞赏金计划（Safety Bug Bounty），公开邀请研究人员挖掘AI系统的滥用风险、提示词注入漏洞和数据泄露问题。这标志着AI安全研究进入「众包」模式，也反映了行业对AI安全的高度重视。",
+      "slug": "openai-safety-bug-bounty-program-ai-security"
+    },
+    {
+      "title": "Meta宣布裁员数百人，将更多资源转向AI领域",
+      "link": "https://www.theverge.com/tech/900946/meta-layoffs-hundreds-employees",
+      "pubDate": "2026-03-25T15:00:00.000Z",
+      "source": "The Verge AI",
+      "lang": "zh",
+      "snippet": "Meta正在裁员数百名员工，同时加大AI领域的投资。据纽约时报和NBC报道，这是Meta在AI竞争加剧背景下的战略调整，意味着公司正在从传统互联网业务向AI优先转型。",
+      "slug": "meta-layoffs-hundreds-pivot-ai"
+    },
+    {
+      "title": "Google发布TurboQuant：内存压缩6倍，KV cache迎来重大突破",
+      "link": "https://techcrunch.com/2026/03/25/google-turboquant-ai-memory-compression-silicon-valley-pied-piper/",
+      "pubDate": "2026-03-25T14:00:00.000Z",
+      "source": "TechCrunch AI",
+      "lang": "zh",
+      "snippet": "Google发布TurboQuant，这是一种新型AI内存压缩算法，可将KV cache压缩6倍，显著降低大模型推理的GPU内存需求。该技术因名字与《硅谷》剧中压缩算法「Pied Piper」相似，引发网友热议，被称为「Pied Piper成真」。",
+      "slug": "google-turboquant-kv-cache-compression-6x"
+    },
+    {
       "title": "Can you monitor a situation without monitors? The Polymarket sports bar tried",
       "link": "https://www.theverge.com/column/900536/alliance-for-a-better-future-polymarket",
       "pubDate": "2026-03-25T18:19:32.000Z",
@@ -604,6 +649,6 @@
       "slug": "the-creator-of-claude-code-just-revealed-his-workflow-and-developers-are-losing-"
     }
   ],
-  "total": 67,
-  "fetchedAt": "2026-03-25T18:53:04.179Z"
+  "total": 72,
+  "fetchedAt": "2026-03-26T16:30:22.997Z"
 }
