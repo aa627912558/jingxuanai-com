@@ -15,8 +15,26 @@ function ToolCard({ tool }: { tool: AiTool }) {
       className="group bg-white rounded-2xl border border-slate-200 p-5 hover:border-indigo-300 hover:shadow-lg hover:shadow-indigo-100 transition-all duration-300 flex flex-col gap-3"
     >
       <div className="flex items-start justify-between gap-2">
-        <div className="w-11 h-11 rounded-xl bg-gradient-to-br from-slate-100 to-slate-200 flex items-center justify-center flex-shrink-0">
-          <span className="text-base font-bold text-slate-600">
+        <div className="w-11 h-11 rounded-xl bg-gradient-to-br from-slate-100 to-slate-200 flex items-center justify-center flex-shrink-0 overflow-hidden">
+          {tool.icon ? (
+            // Use img tag for tool icons (public folder)
+            // eslint-disable-next-line @next/next/no-img-element
+            <img
+              src={tool.icon}
+              alt={tool.name}
+              className="w-8 h-8 object-contain"
+              onError={(e) => {
+                // Fallback to first letter if image fails to load
+                const target = e.target as HTMLImageElement
+                target.style.display = 'none'
+                target.nextElementSibling?.removeAttribute('hidden')
+              }}
+            />
+          ) : null}
+          <span
+            className="text-base font-bold text-slate-600"
+            hidden={!!tool.icon}
+          >
             {tool.name.charAt(0)}
           </span>
         </div>
