@@ -1,8 +1,10 @@
 /**
  * Pre-generate news data at build time.
  * Runs before `next build` via `npm run prebuild && npm run build`
+ * Also syncs to Supabase for real-time delivery.
  */
 const Parser = require('rss-parser')
+const { createClient } = require('@supabase/supabase-js')
 const fs = require('fs')
 const path = require('path')
 
@@ -69,6 +71,44 @@ const ORIGINAL_ARTICLES = [
   },
 ]
 
+async function syncToSupabase(newsItems) {
+  const supabaseUrl = process.env.NEXT_PUBLIC_SUPABASE_URL
+  const serviceRoleKey = process.env.SUPABASE_SERVICE_ROLE_KEY
+
+  if (!supabaseUrl || !serviceRoleKey) {
+    console.log('[fetch-news] Supabase not configured, skipping sync...')
+    return
+  }
+
+  console.log('[fetch-news] Syncing to Supabase...')
+  const supabase = createClient(supabaseUrl, serviceRoleKey)
+
+  // Clear existing news and insert fresh
+  const { error: deleteError } = await supabase.from('news').delete().neq('id', '00000000-0000-0000-0000-000000000000')
+  if (deleteError) {
+    console.error('[fetch-news] Failed to clear news:', deleteError)
+    return
+  }
+
+  const insertData = newsItems.map((item) => ({
+    title: item.title,
+    link: item.link,
+    pub_date: item.pubDate,
+    source: item.source,
+    lang: item.lang,
+    snippet: item.snippet || '',
+    slug: item.slug || slugify(item.title),
+  }))
+
+  const { error: insertError } = await supabase.from('news').insert(insertData)
+  if (insertError) {
+    console.error('[fetch-news] Failed to insert news:', insertError)
+    return
+  }
+
+  console.log(`[fetch-news] Synced ${newsItems.length} items to Supabase`)
+}
+
 async function main() {
   console.log('Fetching news data for pre-build...')
 
@@ -119,6 +159,9 @@ async function main() {
   const outPath = path.join(outDir, 'news-data.json')
   fs.writeFileSync(outPath, JSON.stringify(output, null, 2), 'utf-8')
   console.log(`Wrote ${output.total} items to ${outPath}`)
+
+  // Also sync to Supabase
+  await syncToSupabase(output.news)
 }
 
 main().catch(console.error)

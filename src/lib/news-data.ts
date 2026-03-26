@@ -2,6 +2,7 @@ import Parser from 'rss-parser'
 import { readFileSync, existsSync } from 'fs'
 import { join } from 'path'
 import { slugify } from './slug'
+import { getSupabaseAdmin } from './supabase'
 
 // ─── Parser & Feeds ─────────────────────────────────────────────────────────
 
@@ -31,6 +32,7 @@ const FEEDS = [
 // ─── Types ───────────────────────────────────────────────────────────────────
 
 export interface NewsItem {
+  id?: string
   title: string
   link: string
   pubDate: string
@@ -46,7 +48,7 @@ export interface NewsResponse {
   fetchedAt: string
 }
 
-// ─── Static JSON (production) ────────────────────────────────────────────────
+// ─── Static JSON (backup/fallback) ─────────────────────────────────────────
 
 const STATIC_NEWS_PATH = join(process.cwd(), 'public', 'news-data.json')
 
@@ -60,7 +62,41 @@ function loadStaticNews(): NewsResponse | null {
   }
 }
 
-// ─── Live RSS fetch (development fallback) ──────────────────────────────────
+// ─── Supabase ────────────────────────────────────────────────────────────────
+
+async function loadFromSupabase(): Promise<NewsItem[] | null> {
+  try {
+    const supabase = getSupabaseAdmin()
+    const { data, error } = await supabase
+      .from('news')
+      .select('id, title, link, pub_date, source, lang, snippet, slug')
+      .order('pub_date', { ascending: false })
+      .limit(100)
+
+    if (error) {
+      console.error('[news-data] Supabase error:', error)
+      return null
+    }
+
+    if (!data || data.length === 0) return null
+
+    return data.map((row) => ({
+      id: row.id,
+      title: row.title,
+      link: row.link,
+      pubDate: row.pub_date,
+      source: row.source,
+      lang: row.lang,
+      snippet: row.snippet || '',
+      slug: row.slug || slugify(row.title),
+    }))
+  } catch (err) {
+    console.error('[news-data] Supabase fetch failed:', err)
+    return null
+  }
+}
+
+// ─── Live RSS fetch (last resort) ────────────────────────────────────────────
 
 async function fetchFromFeeds(): Promise<NewsItem[]> {
   const results = await Promise.allSettled(FEEDS.map(async (feed) => {
@@ -95,7 +131,7 @@ async function fetchFromFeeds(): Promise<NewsItem[]> {
   })
 }
 
-// ─── Global in-memory cache (within same Lambda warm instance) ───────────────
+// ─── Global in-memory cache ──────────────────────────────────────────────────
 
 type CacheEntry = { data: NewsResponse; cachedAt: number }
 const GLOBAL_KEY = '__news_cache__'
@@ -122,10 +158,26 @@ export async function getNewsData(): Promise<NewsResponse> {
   const cached = getGlobalCache()
   if (cached) return cached.data
 
-  // 2. Static JSON file (deployed with the app, always consistent)
+  // 2. Supabase (primary source)
+  const supabaseNews = await loadFromSupabase()
+  if (supabaseNews && supabaseNews.length > 0) {
+    const newsWithSlugs = supabaseNews.map((item) => ({
+      ...item,
+      slug: item.slug || slugify(item.title),
+    }))
+    const data: NewsResponse = {
+      news: newsWithSlugs,
+      total: newsWithSlugs.length,
+      fetchedAt: new Date().toISOString(),
+    }
+    console.log(`[news-data] Using Supabase (${supabaseNews.length} items)`)
+    setGlobalCache(data)
+    return data
+  }
+
+  // 3. Static JSON file (fallback)
   const staticData = loadStaticNews()
   if (staticData && staticData.news.length > 0) {
-    // Ensure every item has a slug (regenerate if missing)
     const newsWithSlugs = staticData.news.map((item) => ({
       ...item,
       slug: item.slug || slugify(item.title),
@@ -136,8 +188,8 @@ export async function getNewsData(): Promise<NewsResponse> {
     return dataWithSlugs
   }
 
-  // 3. Live RSS (development only, or if static file missing)
-  console.log('[news-data] Static JSON not found, fetching live RSS...')
+  // 4. Live RSS (last resort)
+  console.log('[news-data] All sources failed, fetching live RSS...')
   const news = await fetchFromFeeds()
   const response: NewsResponse = {
     news,
@@ -146,4 +198,76 @@ export async function getNewsData(): Promise<NewsResponse> {
   }
   setGlobalCache(response)
   return response
+}
+
+// ─── Admin helpers (for API routes) ────────────────────────────────────────
+
+export async function insertNewsItem(item: Omit<NewsItem, 'id'>): Promise<boolean> {
+  try {
+    const supabase = getSupabaseAdmin()
+    if (!process.env.SUPABASE_SERVICE_ROLE_KEY) return false
+    const { error } = await supabase.from('news').insert([{
+      title: item.title,
+      link: item.link,
+      pub_date: item.pubDate,
+      source: item.source,
+      lang: item.lang,
+      snippet: item.snippet || '',
+      slug: item.slug || slugify(item.title),
+    }])
+    if (error) {
+      console.error('[news-data] Insert error:', error)
+      return false
+    }
+    // Invalidate cache
+    ;(global as Record<string, unknown>)[GLOBAL_KEY] = undefined
+    return true
+  } catch (err) {
+    console.error('[news-data] Insert failed:', err)
+    return false
+  }
+}
+
+export async function updateNewsItem(id: string, updates: Partial<NewsItem>): Promise<boolean> {
+  try {
+    const supabase = getSupabaseAdmin()
+    if (!process.env.SUPABASE_SERVICE_ROLE_KEY) return false
+    const updateData: Record<string, unknown> = {}
+    if (updates.title !== undefined) updateData.title = updates.title
+    if (updates.link !== undefined) updateData.link = updates.link
+    if (updates.pubDate !== undefined) updateData.pub_date = updates.pubDate
+    if (updates.source !== undefined) updateData.source = updates.source
+    if (updates.lang !== undefined) updateData.lang = updates.lang
+    if (updates.snippet !== undefined) updateData.snippet = updates.snippet
+    if (updates.slug !== undefined) updateData.slug = updates.slug
+    updateData.updated_at = new Date().toISOString()
+
+    const { error } = await supabase.from('news').update(updateData).eq('id', id)
+    if (error) {
+      console.error('[news-data] Update error:', error)
+      return false
+    }
+    ;(global as Record<string, unknown>)[GLOBAL_KEY] = undefined
+    return true
+  } catch (err) {
+    console.error('[news-data] Update failed:', err)
+    return false
+  }
+}
+
+export async function deleteNewsItem(id: string): Promise<boolean> {
+  try {
+    const supabase = getSupabaseAdmin()
+    if (!process.env.SUPABASE_SERVICE_ROLE_KEY) return false
+    const { error } = await supabase.from('news').delete().eq('id', id)
+    if (error) {
+      console.error('[news-data] Delete error:', error)
+      return false
+    }
+    ;(global as Record<string, unknown>)[GLOBAL_KEY] = undefined
+    return true
+  } catch (err) {
+    console.error('[news-data] Delete failed:', err)
+    return false
+  }
 }
