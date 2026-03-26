@@ -3,7 +3,7 @@ import { TOOLS_DATA } from '@/lib/tools-data'
 import { promises as fs } from 'fs'
 import path from 'path'
 
-const BASE_URL = 'https://jingxuanai-com.vercel.app'
+const BASE_URL = 'https://jingxuanai.com'
 
 export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
   // Load news count from pre-built news-data.json
