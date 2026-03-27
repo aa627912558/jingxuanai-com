@@ -3,6 +3,7 @@ import type { Metadata } from 'next'
 import { notFound } from 'next/navigation'
 import NewsDetailClient from './NewsDetailClient'
 import { slugify } from '@/lib/slug'
+import { generateSummary } from '@/lib/minimax'
 
 interface PageProps {
   params: { idx: string }
@@ -132,6 +133,9 @@ export default async function NewsDetailPage({ params }: PageProps) {
     inLanguage: item.lang === 'zh' ? 'zh-CN' : 'en-US',
   }
 
+  // Generate AI summary on-the-fly
+  const summary = await generateSummary(item.title, item.snippet || '', item.source)
+
   return (
     <>
       <Script
@@ -139,7 +143,7 @@ export default async function NewsDetailPage({ params }: PageProps) {
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(articleJsonLd) }}
       />
-      <NewsDetailClient item={item} />
+      <NewsDetailClient item={item} summary={summary} />
     </>
   )
 }
