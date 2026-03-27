@@ -31,7 +31,7 @@ export default function ToolDetailClient({ tool }: ToolDetailClientProps) {
   // Build affiliate URL with ref
   const affiliateUrl = `${tool.affiliateUrl}?ref=jingxuanai`
 
-  // Fetch published articles for the "文章标题" section
+  // Fetch published articles for the "文章标题" section (filtered by tool slug)
   useEffect(() => {
     async function fetchArticles() {
       try {
@@ -39,6 +39,7 @@ export default function ToolDetailClient({ tool }: ToolDetailClientProps) {
           .from('articles')
           .select('id, title, slug, status')
           .eq('status', 'published')
+          .ilike('link', `%/tool/${tool.slug}`)
           .order('created_at', { ascending: false })
           .limit(10)
         if (!error && data) {
@@ -49,7 +50,7 @@ export default function ToolDetailClient({ tool }: ToolDetailClientProps) {
       }
     }
     fetchArticles()
-  }, [])
+  }, [tool.slug])
 
   return (
     <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 py-8">
