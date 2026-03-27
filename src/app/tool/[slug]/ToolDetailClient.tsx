@@ -133,21 +133,66 @@ export default function ToolDetailClient({ tool, initialArticles = [] }: ToolDet
           <BookOpen size={18} className="text-indigo-500" />
           使用方法/教程
         </h2>
-        {articles.length > 0 ? (
-          <ul className="space-y-2">
-            {articles.map((article) => (
-              <li key={article.id}>
-                <Link
-                  href={`/news/${article.slug}`}
-                  className="flex items-center gap-2 text-slate-700 text-sm hover:text-indigo-600 transition-colors group"
-                >
-                  <ChevronRight size={14} className="text-slate-400 group-hover:text-indigo-400 flex-shrink-0" />
-                  {article.title}
-                </Link>
-              </li>
-            ))}
-          </ul>
+        {/* Show usage_guide from tools-data.ts */}
+        {tool.usage_guide ? (
+          <div className="mb-4">
+            {tool.usage_guide.split('\\n').filter(Boolean).map((line: string, i: number) => {
+              // Convert Markdown-like headers to styled elements
+              if (line.startsWith('## ')) {
+                return (
+                  <h3 key={i} className="text-base font-bold text-slate-800 mt-4 mb-2 first:mt-0">
+                    {line.replace('## ', '')}
+                  </h3>
+                )
+              }
+              if (line.startsWith('**') && line.endsWith('**')) {
+                return (
+                  <p key={i} className="text-sm font-bold text-slate-700 mt-2 mb-1">
+                    {line.replace(/\*\*/g, '')}
+                  </p>
+                )
+              }
+              // Handle bullet points starting with -
+              if (line.startsWith('- ') || line.match(/^\d+\.\s/)) {
+                return (
+                  <li key={i} className="text-sm text-slate-600 ml-4 list-item list-disc mb-1">
+                    {line.replace(/^-\s/, '').replace(/^\d+\.\s/, '')}
+                  </li>
+                )
+              }
+              // Skip standalone dashes or empty-ish lines
+              if (line.trim() === '' || line.trim() === '-') return null
+              // Regular paragraph
+              return (
+                <p key={i} className="text-sm text-slate-600 leading-relaxed mb-1">
+                  {line}
+                </p>
+              )
+            })}
+          </div>
         ) : (
+          <p className="text-slate-400 text-sm">暂无教程信息</p>
+        )}
+        {/* Show articles from Supabase */}
+        {articles.length > 0 && (
+          <div className="border-t border-slate-100 pt-4 mt-4">
+            <p className="text-xs text-slate-400 mb-2">更多教程文章：</p>
+            <ul className="space-y-2">
+              {articles.map((article) => (
+                <li key={article.id}>
+                  <Link
+                    href={`/news/${article.slug}`}
+                    className="flex items-center gap-2 text-slate-700 text-sm hover:text-indigo-600 transition-colors group"
+                  >
+                    <ChevronRight size={14} className="text-slate-400 group-hover:text-indigo-400 flex-shrink-0" />
+                    {article.title}
+                  </Link>
+                </li>
+              ))}
+            </ul>
+          </div>
+        )}
+        {(!tool.usage_guide || tool.usage_guide.trim() === '') && articles.length === 0 && (
           <p className="text-slate-400 text-sm">暂无相关文章</p>
         )}
       </section>
