@@ -137,7 +137,7 @@ export default async function NewsDetailPage({ params }: PageProps) {
   let summary = 'DEBUG_SUMMARY_PLACEHOLDER';
   try {
     summary = await generateSummary(item.title, item.snippet || '', item.source);
-  } catch (_e) {
+  } catch {
     summary = 'ERROR_FALLBACK: ' + (item.snippet || '').slice(0, 100);
   }
 
