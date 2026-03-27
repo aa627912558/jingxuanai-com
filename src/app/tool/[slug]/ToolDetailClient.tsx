@@ -121,31 +121,6 @@ export default function ToolDetailClient({ tool }: ToolDetailClientProps) {
               ))}
             </ul>
           </section>
-
-          {/* 文章标题 */}
-          <section className="bg-white rounded-2xl border border-slate-200 p-6">
-            <h2 className="text-lg font-bold text-slate-900 mb-4 flex items-center gap-2">
-              <BookOpen size={18} className="text-indigo-500" />
-              文章标题
-            </h2>
-            {articles.length > 0 ? (
-              <ul className="space-y-2">
-                {articles.map((article) => (
-                  <li key={article.id}>
-                    <Link
-                      href={`/news/${article.slug}`}
-                      className="flex items-center gap-2 text-slate-700 text-sm hover:text-indigo-600 transition-colors group"
-                    >
-                      <ChevronRight size={14} className="text-slate-400 group-hover:text-indigo-400 flex-shrink-0" />
-                      {article.title}
-                    </Link>
-                  </li>
-                ))}
-              </ul>
-            ) : (
-              <p className="text-slate-400 text-sm">暂无相关文章</p>
-            )}
-          </section>
         </div>
 
         {/* Sidebar - Right col */}
@@ -169,6 +144,31 @@ export default function ToolDetailClient({ tool }: ToolDetailClientProps) {
 
         </div>
       </div>
+
+      {/* 使用方法/教程 - Full Width */}
+      <section className="bg-white rounded-2xl border border-slate-200 p-6 mt-6">
+        <h2 className="text-lg font-bold text-slate-900 mb-4 flex items-center gap-2">
+          <BookOpen size={18} className="text-indigo-500" />
+          使用方法/教程
+        </h2>
+        {articles.length > 0 ? (
+          <ul className="space-y-2">
+            {articles.map((article) => (
+              <li key={article.id}>
+                <Link
+                  href={`/news/${article.slug}`}
+                  className="flex items-center gap-2 text-slate-700 text-sm hover:text-indigo-600 transition-colors group"
+                >
+                  <ChevronRight size={14} className="text-slate-400 group-hover:text-indigo-400 flex-shrink-0" />
+                  {article.title}
+                </Link>
+              </li>
+            ))}
+          </ul>
+        ) : (
+          <p className="text-slate-400 text-sm">暂无相关文章</p>
+        )}
+      </section>
 
       {/* Related Tools */}
       {relatedTools.length > 0 && (
