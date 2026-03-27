@@ -133,8 +133,13 @@ export default async function NewsDetailPage({ params }: PageProps) {
     inLanguage: item.lang === 'zh' ? 'zh-CN' : 'en-US',
   }
 
-  // Generate AI summary on-the-fly
-  const summary = await generateSummary(item.title, item.snippet || '', item.source)
+  // Generate AI summary on-the-fly - DEBUG TEST
+  let summary = 'DEBUG_SUMMARY_PLACEHOLDER';
+  try {
+    summary = await generateSummary(item.title, item.snippet || '', item.source);
+  } catch (e) {
+    summary = 'ERROR_FALLBACK: ' + (item.snippet || '').slice(0, 100);
+  }
 
   return (
     <>
