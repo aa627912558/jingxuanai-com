@@ -11,4 +11,4 @@ Allow: /
 User-agent: GPTBot
 Allow: /
 
-Sitemap: https://jingxuanai-com.vercel.app/sitemap.xml
+Sitemap: https://jingxuanai.com/sitemap.xml
