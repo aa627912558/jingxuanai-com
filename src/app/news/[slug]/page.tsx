@@ -59,7 +59,7 @@ async function getArticleBySlug(slug: string): Promise<{ type: 'article'; data: 
   // First try Supabase articles table (tutorial articles)
   try {
     const supabaseAdmin = getSupabaseAdmin()
-    const { data, error } = await supabaseAdmin
+    const { data } = await supabaseAdmin
       .from('articles')
       .select('id, title, slug, content, source, link, lang, status, created_at')
       .eq('slug', slug)
