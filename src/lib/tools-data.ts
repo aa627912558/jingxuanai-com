@@ -1051,6 +1051,506 @@ export const TOOLS_DATA: AiTool[] = [
     ],
     related_tools: ["baichuan", "zhipuai", "kimi"],
   },
+  {
+    id: "gamma",
+    icon: "/tool-icons/gamma.png",
+    slug: "gamma",
+    name: "Gamma",
+    website: "https://gamma.app",
+    description: "AI演示文稿生成工具，输入主题即可快速生成专业PPT和网页",
+    type: "效率办公",
+    affiliateUrl: "https://gamma.app",
+    commissionRate: "暂无佣金计划",
+    features: [
+      "AI一键生成演示文稿，输入主题或粘贴文本即可生成完整PPT",
+      "内置丰富模板库，涵盖商业、教育、营销等多种场景",
+      "支持嵌入图片、视频、图表和网页，内容表现力丰富",
+      "实时协作功能，团队成员可同时编辑同一份演示",
+      "一键切换主题风格，快速适配不同品牌调性"
+    ],
+    usage_guide: "第一步：访问 gamma.app，点击 Sign up 免费注册账号。\\n\\n第二步：创建新演示：点击 New Gamma，选择 Generate（AI生成）或 Paste（粘贴文本）。\\n\\n第三步：输入主题描述，例如：输入「2024年Q1电商增长策略」，AI自动生成10+页PPT大纲。\\n\\n第四步：编辑内容：选择模板后，可直接修改文字、添加图片、嵌入视频、调整布局。\\n\\n第五步：分享与导出：点击 Share 生成链接，或导出为 PDF/PPT 格式。",
+    use_cases: [
+      "商业提案与融资路演",
+      "教育教学课件制作",
+      "营销方案展示"
+    ],
+    related_tools: ["beautiful-ai", "canva", "microsoft-designer"],
+  },
+  {
+    id: "midjourney",
+    icon: "/tool-icons/midjourney.png",
+    slug: "midjourney",
+    name: "Midjourney",
+    website: "https://www.midjourney.com",
+    description: "AI图像生成工具，通过文字描述创作高质量艺术图像",
+    type: "图片AI",
+    affiliateUrl: "https://www.midjourney.com",
+    commissionRate: "暂无官方佣金计划（可关注Discord社区活动）",
+    features: [
+      "输入文字描述（Prompt）即可生成精美艺术图像",
+      "支持多种风格：写实、插画、动漫、概念艺术等",
+      "Vary Region功能，局部修改图像特定区域",
+      "Pan和Zoom功能，无限延展图像边缘",
+      "社区画廊可参考他人提示词，学习高效创作方法"
+    ],
+    usage_guide: "第一步：注册 Discord 账号，加入 Midjourney Discord 服务器。\\n\\n第二步：在左侧栏找到 #general-channels，选择任一 generat e 频道。\\n\\n第三步：输入 /imagine 指令，在 prompt 后输入描述性文字，例如：a serene Japanese garden with cherry blossoms, soft lighting, 4k。\\n\\n第四步：等待约30秒，生成4张图像，使用 U1-U4 放大某张，V1-V4 生成变体。\\n\\n第五步：点击图片可保存高清版本，配合 --ar 16:9 等参数调整画面比例。",
+    use_cases: [
+      "插画师灵感创作",
+      "游戏原画概念设计",
+      "社交媒体配图"
+    ],
+    related_tools: ["leonardo-ai", "dalle", "stable-diffusion"],
+  },
+  {
+    id: "runway",
+    icon: "/tool-icons/runway.png",
+    slug: "runway",
+    name: "Runway",
+    website: "https://runwayml.com",
+    description: "AI视频生成与编辑平台，支持文生视频、图生视频和高级后期处理",
+    type: "视频AI",
+    affiliateUrl: "https://runwayml.com",
+    commissionRate: "暂无佣金计划",
+    features: [
+      "Gen-2/Gen-3文生视频：输入文字描述生成高质量视频片段",
+      "图生视频（Image to Video），让静态图片动起来",
+      "AI高级后期：擦除物体、生成空白背景、智能调色",
+      "运动跟踪（Motion Tracking），自动跟踪视频中移动的物体",
+      "支持视频片段拼接和配音，适合完整短片制作"
+    ],
+    usage_guide: "第一步：访问 runwayml.com，注册并登录账号。\\n\\n第二步：进入主界面，选择 AI Tools - Text to Video 或 Image to Video。\\n\\n第三步：输入文字描述或上传图片，设置时长（4秒或更长）和运动强度。\\n\\n第四步：点击 Generate，AI生成视频需要1-2分钟。\\n\\n第五步：下载视频或继续使用 Inpainting/Color Correct 等工具进行后期处理。",
+    use_cases: [
+      "短视频内容创作",
+      "广告片头生成",
+      "电影概念可视化"
+    ],
+    related_tools: ["pictory", "fliki", "invideo"],
+  },
+  {
+    id: "beautiful-ai",
+    icon: "/tool-icons/beautiful-ai.png",
+    slug: "beautiful-ai",
+    name: "Beautiful.ai",
+    website: "https://www.beautiful.ai",
+    description: "AI智能演示文稿工具，自动优化布局让每页幻灯片都美观专业",
+    type: "效率办公",
+    affiliateUrl: "https://www.beautiful.ai",
+    commissionRate: "暂无佣金计划",
+    features: [
+      "Smart Slide Templates：添加内容后AI自动匹配合适的布局",
+      "品牌控制中心，统一管理LOGO、配色、字体，确保品牌一致性",
+      "实时数据可视化，自动将数据转化为美观的图表",
+      "演讲者备注与计时器，辅助演讲者把控节奏",
+      "支持导出PDF/PPTX，离线使用"
+    ],
+    usage_guide: "第一步：访问 beautiful.ai，点击 Get Started 免费试用。\\n\\n第二步：选择 Presentation 创建一个空白演示，或从模板库选择。\\n\\n第三步：添加内容：点击 + 添加文字、图片或图表，AI自动调整位置和对齐。\\n\\n第四步：设置品牌：点击 Brand 标签页，上传LOGO、设置品牌色板，套用到所有幻灯片。\\n\\n第五步：点击 Present 或导出 PDF/PPT。",
+    use_cases: [
+      "企业级演示汇报",
+      "销售提案与方案展示",
+      "远程团队异步演示"
+    ],
+    related_tools: ["gamma", "canva", "notion"],
+  },
+  {
+    id: "chatpdf",
+    icon: "/tool-icons/chatpdf.png",
+    slug: "chatpdf",
+    name: "ChatPDF",
+    website: "https://www.chatpdf.com",
+    description: "AI文档阅读助手，上传PDF后用对话方式快速提取信息和总结",
+    type: "效率办公",
+    affiliateUrl: "https://www.chatpdf.com",
+    commissionRate: "暂无佣金计划",
+    features: [
+      "上传PDF后直接对话提问，AI从文档中提取精准答案",
+      "支持多文档同时分析，跨文档总结和对比",
+      "自动生成文档摘要，节省阅读时间",
+      "支持扫描件（OCR），图片格式的PDF也能处理",
+      "可导出问答结果，方便整理会议纪要和学习笔记"
+    ],
+    usage_guide: "第一步：访问 chatpdf.com，无需注册直接使用（免费额度有限）。\\n\\n第二步：拖拽或点击上传PDF文件，等待AI分析完成。\\n\\n第三步：在对话框输入问题，例如：「这份报告的核心结论是什么？」或「第三章的技术参数有哪些？」\\n\\n第四步：AI基于文档内容给出带出处的答案，点击引用可定位到原文位置。\\n\\n第五步：可将对话导出为摘要文档，或继续上传更多PDF进行对比分析。",
+    use_cases: [
+      "学术论文速读与总结",
+      "合同条款审查",
+      "市场报告快速分析"
+    ],
+    related_tools: ["kimi", "notion", "zhipuai"],
+  },
+  {
+    id: "perplexity",
+    icon: "/tool-icons/perplexity.png",
+    slug: "perplexity",
+    name: "Perplexity",
+    website: "https://www.perplexity.ai",
+    description: "AI驱动的搜索引擎，基于实时网络信息给出带来源引用的答案",
+    type: "AI大模型",
+    affiliateUrl: "https://www.perplexity.ai",
+    commissionRate: "暂无佣金计划",
+    features: [
+      "实时联网搜索，回答基于最新网络信息而非过时数据",
+      "每个答案附带来源链接，可直接跳转到原始网页",
+      "支持搜索建议和追问，深入挖掘信息",
+      "提供专注模式和简洁界面，无广告干扰",
+      "支持图片搜索和多语言，涵盖中英文查询"
+    ],
+    usage_guide: "第一步：访问 perplexity.ai，使用 Google 账号或邮箱注册登录。\\n\\n第二步：在搜索框输入问题，例如：「最新iPhone发布信息」或「2024年AI发展趋势」。\\n\\n第三步：查看AI生成的答案，每个论点后附有来源链接，点击可查看原始网页。\\n\\n第四步：使用追问功能，例如「能更详细解释吗？」或「还有其他相关信息吗？」\\n\\n第五步：切换侧边栏的 Collections 功能，可收藏和组织搜索结果。",
+    use_cases: [
+      "深度信息检索与调研",
+      "新闻事件快速了解",
+      "技术问题排查与解答"
+    ],
+    related_tools: ["kimi", "yiyan", "tongyi"],
+  },
+  {
+    id: "cursor",
+    icon: "/tool-icons/cursor.png",
+    slug: "cursor",
+    name: "Cursor",
+    website: "https://cursor.com",
+    description: "AI编程编辑器，基于VS Code内核内置GPT-4代码生成与重构",
+    type: "编程代码",
+    affiliateUrl: "https://cursor.com",
+    commissionRate: "暂无佣金计划",
+    features: [
+      "AI代码补全：输入时实时生成代码建议，大幅提升编码速度",
+      "Chat模式：直接用自然语言描述需求，AI生成完整代码模块",
+      "代码重构与调试：选中代码后AI给出优化建议和Bug修复方案",
+      "多文件理解：上传整个项目，AI理解代码结构后给出跨文件修改建议",
+      "支持Python、JavaScript、TypeScript、Go等主流编程语言"
+    ],
+    usage_guide: "第一步：访问 cursor.com，点击 Download 下载安装 Cursor 编辑器。\\n\\n第二步：打开编辑器，使用 GitHub 账号或邮箱登录。\\n\\n第三步：新建文件或打开现有项目，AI自动开始代码补全（Ctrl+L 打开 Chat 面板）。\\n\\n第四步：在 Chat 中输入需求，例如「帮我写一个Python快速排序函数」或「解释这段代码的作用」。\\n\\n第五步：使用 /edit 指令或选中代码后按 Ctrl+K 进行AI辅助编辑和重构。",
+    use_cases: [
+      "软件开发快速原型",
+      "代码审查与优化",
+      "学习新编程语言"
+    ],
+    related_tools: ["github-copilot", "claude", "chatgpt"],
+  },
+  {
+    id: "figma",
+    icon: "/tool-icons/figma.png",
+    slug: "figma",
+    name: "Figma AI",
+    website: "https://www.figma.com/ai",
+    description: "Figma内置的AI设计助手，支持文生UI、图标生成和设计建议",
+    type: "图片AI",
+    affiliateUrl: "https://figma.com",
+    commissionRate: "暂无佣金计划",
+    features: [
+      "Figma AI：平台原生AI功能，直接在设计文件中调用",
+      "图像生成：输入描述生成设计素材和图标",
+      "自动布局建议：AI分析设计稿给出优化建议",
+      "文生UI组件：根据描述生成可编辑的UI界面设计",
+      "样式转换：一键切换设计风格，保持组件一致性"
+    ],
+    usage_guide: "第一步：登录 figma.com，进入任意设计文件。\\n\\n第二步：点击右侧插件面板，搜索 Figma AI 或在工具栏找到 AI 入口。\\n\\n第三步：使用 Make Designs，输入描述如「移动端登录页面」，AI生成可编辑设计稿。\\n\\n第四步：使用 AI 图像生成，输入描述获得配图素材。\\n\\n第五步：选中任意图层，使用 AI 建议优化布局或生成变体版本。",
+    use_cases: [
+      "UI/UX设计师快速出稿",
+      "产品经理原型制作",
+      "创业团队快速验证概念"
+    ],
+    related_tools: ["canva", "framer-ai", "looka"],
+  },
+  {
+    id: "stable-audio",
+    icon: "/tool-icons/stable-audio.png",
+    slug: "stable-audio",
+    name: "Stable Audio",
+    website: "https://www.stableaudio.com",
+    description: "Stability AI推出的AI音乐生成工具，输入描述生成背景音乐和音效",
+    type: "音频AI",
+    affiliateUrl: "https://www.stableaudio.com",
+    commissionRate: "暂无佣金计划",
+    features: [
+      "文生音乐：输入描述如「轻松愉快的咖啡厅背景音乐」，AI生成完整曲目",
+      "支持多种风格和情绪选择，精准控制生成音乐的风格",
+      "可生成不同长度的音频，适合短视频配乐或长时背景音乐",
+      "支持音效生成：风雨声、脚步声、机器声等",
+      "生成的音乐可直接用于商业项目（需遵守使用条款）"
+    ],
+    usage_guide: "第一步：访问 stableaudio.com，注册并登录账号（免费额度可用）。\\n\\n第二步：进入 Create 页面，选择 Music Generation 或 Sound Effect。\\n\\n第三步：输入描述，例如：「uplifting corporate background music, 120bpm, positive energy」。\\n\\n第四步：设置时长（最长3分钟）和音频质量，点击 Generate 生成。\\n\\n第五步：下载生成的音频文件，用于视频配乐、游戏音效或播客背景音。",
+    use_cases: [
+      "视频创作者背景音乐",
+      "游戏音效设计",
+      "播客片头/片尾音乐"
+    ],
+    related_tools: ["suno", "kits-ai", "elevenlabs"],
+  },
+  {
+    id: "otter-ai",
+    icon: "/tool-icons/otter-ai.png",
+    slug: "otter-ai",
+    name: "Otter.ai",
+    website: "https://www.otter.ai",
+    description: "AI会议转录工具，实时将语音转换为文字并自动生成会议摘要",
+    type: "效率办公",
+    affiliateUrl: "https://www.otter.ai",
+    commissionRate: "暂无佣金计划",
+    features: [
+      "实时语音转文字，支持多人发言自动识别和分段",
+      "自动识别说话人，无需手动标注",
+      "AI会议摘要：自动提取关键议题、行动项和决策",
+      "与Google Meet、Zoom、Teams等会议工具集成",
+      "可导出为Word、PDF、SRT字幕格式"
+    ],
+    usage_guide: "第一步：访问 otter.ai，使用 Google 账号或微软账号注册登录。\\n\\n第二步：创建新会议或连接日历，自动加入即将开始的会议。\\n\\n第三步：会议开始后，Otter实时转录所有人的发言，显示在屏幕上。\\n\\n第四步：会议结束后，AI自动生成摘要（Summary），包含关键讨论点和行动项。\\n\\n第五步：点击任意文字跳转到对应音频位置，支持手动编辑和添加注释。",
+    use_cases: [
+      "商务会议记录",
+      "面试录音整理",
+      "学术讲座笔记"
+    ],
+    related_tools: ["tongyi", "notion", "perplexity"],
+  },
+  {
+    id: "suno",
+    icon: "/tool-icons/suno.png",
+    slug: "suno",
+    name: "Suno",
+    website: "https://www.suno.ai",
+    description: "AI音乐创作平台，支持文生歌曲，输入描述生成带人声和伴奏的完整音乐",
+    type: "音频AI",
+    affiliateUrl: "https://www.suno.ai",
+    commissionRate: "暂无佣金计划",
+    features: [
+      "文生歌曲：输入歌词或描述，AI生成完整歌曲（含人声和伴奏）",
+      "支持自定义歌词，可输入自己撰写的歌词让AI谱曲",
+      "多种音乐风格：流行、摇滚、古典、电子、HipHop等",
+      "生成的音乐片段可达2分钟以上，适合完整歌曲创作",
+      "社区分享功能，可收听和参考其他用户的创作"
+    ],
+    usage_guide: "第一步：访问 suno.ai，点击 Sign up 免费注册账号。\\n\\n第二步：进入 Create 页面，选择 Custom Mode（可输入自定义歌词）或选择 Instrumental（纯音乐）。\\n\\n第三步：在 Lyrics 框输入歌词，或在 Style of Music 输入音乐风格描述。\\n\\n第四步：点击 Create，系统生成两段完整歌曲（含人声演唱）。\\n\\n第五步：点击播放试听，可延伸（Extend）或下载为MP3格式。",
+    use_cases: [
+      "音乐爱好者创作",
+      "视频配乐自制",
+      "歌词创作灵感激发"
+    ],
+    related_tools: ["stable-audio", "kits-ai", "elevenlabs"],
+  },
+  {
+    id: "brandmark",
+    icon: "/tool-icons/brandmark.png",
+    slug: "brandmark",
+    name: "Brandmark",
+    website: "https://www.brandmark.io",
+    description: "AI品牌设计工具，快速生成Logo、配色方案和字体搭配",
+    type: "图片AI",
+    affiliateUrl: "https://www.brandmark.io",
+    commissionRate: "暂无佣金计划",
+    features: [
+      "AI Logo生成：输入公司名称和 tagline，自动生成多款Logo方案",
+      "智能配色方案：根据Logo风格自动推荐配套品牌色板",
+      "字体搭配建议：提供与品牌调性匹配的字体的组合",
+      "品牌素材下载：提供PNG、SVG、EPS等多种格式",
+      "社媒素材生成：一键生成社交媒体头像、封面等配套素材"
+    ],
+    usage_guide: "第一步：访问 brandmark.io，在输入框输入公司/项目名称。\\n\\n第二步：可选输入 tagline（品牌口号）和关键词，帮助AI更好理解品牌方向。\\n\\n第三步：点击 Generate，AI生成多款Logo设计方案。\\n\\n第四步：选择喜欢的方案，进入详情页查看配色、字体建议和品牌指南。\\n\\n第五步：下载所需素材（Logo、配色、字体建议书），免费版有水印。",
+    use_cases: [
+      "创业公司品牌建立",
+      "副业项目品牌形象",
+      "个人IP品牌设计"
+    ],
+    related_tools: ["looka", "canva", "figma"],
+  },
+  {
+    id: "looka",
+    icon: "/tool-icons/looka.png",
+    slug: "looka",
+    name: "Looka",
+    website: "https://www.looka.com",
+    description: "AI Logo设计平台，通过问答式交互生成个性化品牌Logo",
+    type: "图片AI",
+    affiliateUrl: "https://www.looka.com",
+    commissionRate: "暂无佣金计划",
+    features: [
+      "问答式Logo设计：通过偏好选择（行业、风格、颜色）缩小设计范围",
+      "海量图标库：提供数千个行业相关图标供参考选择",
+      "实时预览：Logo在不同场景（名片、网站、T恤）上的效果预览",
+      "品牌包服务：购买后获得完整品牌素材包",
+      "支持修改：可在线微调Logo的各个元素"
+    ],
+    usage_guide: "第一步：访问 looka.com，点击 Get Started。\\n\\n第二步：回答5个问题：行业、喜欢的Logo风格、颜色偏好、标语、公司名称。\\n\\n第三步：AI基于你的偏好生成数十款Logo方案，滑动浏览选择最喜欢的。\\n\\n第四步：进入编辑器，可调整图标、颜色、字体、布局。\\n\\n第五步：购买下载（基础包$20），获得PNG/SVG/PDF多格式文件和品牌指南。",
+    use_cases: [
+      "中小企业品牌Logo",
+      "个人工作室品牌建立",
+      "产品线统一形象"
+    ],
+    related_tools: ["brandmark", "canva", "framer-ai"],
+  },
+  {
+    id: "durable",
+    icon: "/tool-icons/durable.png",
+    slug: "durable",
+    name: "Durable",
+    website: "https://www.durable.co",
+    description: "AI网站生成器，输入公司信息30秒即可生成完整商业网站",
+    type: "效率办公",
+    affiliateUrl: "https://www.durable.co",
+    commissionRate: "暂无佣金计划",
+    features: [
+      "AI网站生成：输入公司名称、行业和描述，30秒生成完整网站",
+      "内置SEO优化，生成的网站对搜索引擎友好",
+      "支持在线编辑，可拖拽修改文字、图片和布局",
+      "提供多种配色和模板，一键切换网站风格",
+      "包含联系表单、地图、社交链接等商业必备功能"
+    ],
+    usage_guide: "第一步：访问 durable.co，点击 Generate my website。\\n\\n第二步：输入公司名称、行业描述和位置信息，AI自动生成网站。\\n\\n第三步：查看生成的网站，预览不同页面（首页、关于、服务、联系等）。\\n\\n第四步：进入编辑器修改内容，更换图片、调整文字、添加服务项目。\\n\\n第五步：绑定自定义域名（可选），发布网站。免费版有Durable品牌标识。",
+    use_cases: [
+      "小微企业快速建站",
+      "个人副业展示页",
+      "本地服务商线上 presence"
+    ],
+    related_tools: ["framer-ai", "gamma", "notion"],
+  },
+  {
+    id: "framer-ai",
+    icon: "/tool-icons/framer-ai.png",
+    slug: "framer-ai",
+    name: "Framer AI",
+    website: "https://www.framer.ai",
+    description: "AI网站设计工具，通过描述生成专业网站，支持高保真交互原型",
+    type: "效率办公",
+    affiliateUrl: "https://www.framer.ai",
+    commissionRate: "暂无佣金计划",
+    features: [
+      "AI网站生成：输入描述快速生成精美网站页面",
+      "专业动画系统：内置高质量页面过渡和元素动画",
+      "响应式设计：自动适配桌面、平板和手机",
+      "CMS内容管理：内置博客和产品展示管理系统",
+      "A/B测试：支持不同版本页面测试转化率"
+    ],
+    usage_guide: "第一步：访问 framer.ai/signup，注册并登录账号。\\n\\n第二步：点击 Create New Site，选择 AI Generate 或从模板开始。\\n\\n第三步：描述你的网站，例如「一个现代简约的UX设计工作室官网」。\\n\\n第四步：AI生成页面后，进入编辑器精细调整布局、文字、图片和动画。\\n\\n第五步：发布网站，使用 framer.io 子域名，或绑定自己的域名。",
+    use_cases: [
+      "设计师作品集",
+      "科技创业公司官网",
+      "产品落地页"
+    ],
+    related_tools: ["durable", "gamma", "canva"],
+  },
+  {
+    id: "shopify-magic",
+    icon: "/tool-icons/shopify-magic.png",
+    slug: "shopify-magic",
+    name: "Shopify Magic",
+    website: "https://www.shopify.com/magic",
+    description: "Shopify内置AI工具，智能生成商品描述、邮件营销内容和客户服务回复",
+    type: "效率办公",
+    affiliateUrl: "https://www.shopify.com",
+    commissionRate: "暂无佣金计划",
+    features: [
+      "AI商品描述生成：输入产品信息，自动生成吸引人的商品详情页文案",
+      "邮件营销内容生成：创建促销邮件、客户跟进邮件等",
+      "智能客服回复：AI辅助生成客户服务回复建议",
+      "图片增强：AI优化商品主图和场景图",
+      "多语言支持：自动翻译商品信息至多语言版本"
+    ],
+    usage_guide: "第一步：拥有 Shopify 店铺（14天免费试用），登录后台。\\n\\n第二步：在商品编辑页面，点击 Magic（魔法棒图标），AI自动生成商品描述。\\n\\n第三步：点击编辑描述，调整AI生成的内容或要求重新生成。\\n\\n第四步：在邮件营销模块（Email Marketing），使用AI生成促销邮件模板。\\n\\n第五步：在客服页面，AI根据客户问题生成回复建议，商家选择发送或修改。",
+    use_cases: [
+      "电商卖家快速上架",
+      "跨境电商多语言运营",
+      "Shopify店主效率提升"
+    ],
+    related_tools: ["notion", "writesonic", "canva"],
+  },
+  {
+    id: "microsoft-designer",
+    icon: "/tool-icons/microsoft-designer.png",
+    slug: "microsoft-designer",
+    name: "Microsoft Designer",
+    website: "https://designer.microsoft.com",
+    description: "微软AI设计工具，快速生成社交媒体图文、邀请函和营销海报",
+    type: "图片AI",
+    affiliateUrl: "https://designer.microsoft.com",
+    commissionRate: "暂无佣金计划",
+    features: [
+      "文生设计：输入描述自动生成多种设计方案",
+      "海量模板库：覆盖Instagram、Facebook、Twitter、小红书等社媒尺寸",
+      "品牌套件：上传LOGO和配色，自动套用到所有设计",
+      "AI图像生成（DALL-E）：直接在设计中使用AI生成的图片素材",
+      "免费使用：微软账号即可，无需订阅Microsoft 365"
+    ],
+    usage_guide: "第一步：访问 designer.microsoft.com，使用微软账号登录。\\n\\n第二步：点击 Create a design，选择设计类型（海报/社媒图文/邀请函等）。\\n\\n第三步：输入设计描述，例如「瑜伽课程推广海报，清新绿色风格」。\\n\\n第四步：AI生成多个设计方案，选择最喜欢的一个进入编辑。\\n\\n第五步：在编辑器中修改文字、图片、布局，完成后导出PNG/JPG格式。",
+    use_cases: [
+      "社媒运营图文制作",
+      "个人品牌视觉设计",
+      "活动推广物料"
+    ],
+    related_tools: ["canva", "looka", "gamma"],
+  },
+  {
+    id: "credo-ai",
+    icon: "/tool-icons/credo-ai.png",
+    slug: "credo-ai",
+    name: "Credo AI",
+    website: "https://www.credo.ai",
+    description: "AI治理与合规平台，帮助企业评估、监控和降低AI系统风险",
+    type: "效率办公",
+    affiliateUrl: "https://www.credo.ai",
+    commissionRate: "暂无佣金计划",
+    features: [
+      "AI风险评估：量化评估AI模型的公平性、隐私和安全性风险",
+      "合规报告生成：自动生成符合监管要求（EU AI Act等）的合规文档",
+      "模型监控：持续追踪AI模型在生产环境中的表现变化",
+      "策略管理：集中管理企业的AI使用政策和伦理准则",
+      "多方协作：支持法务、技术和业务团队共同管理AI合规"
+    ],
+    usage_guide: "第一步：访问 credo.ai，点击 Request Demo 或 Sign Up 注册账号。\\n\\n第二步：连接AI模型或系统，导入模型文档和数据样本。\\n\\n第三步：运行AI评估，Credo自动分析模型的偏差、隐私泄露和安全漏洞风险。\\n\\n第四步：查看可视化风险报告，获取具体的修复建议和优先级。\\n\\n第五步：生成合规文档，向监管机构或内部 stakeholders 展示AI系统的合规状态。",
+    use_cases: [
+      "企业AI合规管理",
+      "金融机构AI审计",
+      "政府AI项目评估"
+    ],
+    related_tools: ["notion", "zhipuai", "perplexity"],
+  },
+  {
+    id: "salesforce-einstein",
+    icon: "/tool-icons/salesforce-einstein.png",
+    slug: "salesforce-einstein",
+    name: "Salesforce Einstein",
+    website: "https://www.salesforce.com/einstein/",
+    description: "Salesforce内置AI平台，CRM数据驱动销售预测、客户服务和营销自动化",
+    type: "效率办公",
+    affiliateUrl: "https://www.salesforce.com",
+    commissionRate: "暂无佣金计划",
+    features: [
+      "Einstein Copilot：CRM内置AI助手，自然语言查询和数据解读",
+      "销售预测：基于历史数据AI预测商机转化率和收入",
+      "客户洞察：自动分析客户行为，识别交叉销售和追加销售机会",
+      "服务建议：AI推荐最佳客服回复和解决方案",
+      "营销优化：AI优化邮件发送时间和内容个性化"
+    ],
+    usage_guide: "第一步：使用 Salesforce 账号登录（需要 Einstein 1 Platform 或以上版本）。\\n\\n第二步：在任意 Salesforce 页面，点击 Einstein 图标打开 Copilot 对话框。\\n\\n第三步：用自然语言提问，例如「本月业绩最好的销售是哪些人？」或「有哪些商机超过30天未跟进？」\\n\\n第四步：Einstein 分析 CRM 数据，给出带有数据来源的回答和建议。\\n\\n第五步：在 Opportunity 页面，查看 Einstein 的 AI 评分和预测，辅助销售决策。",
+    use_cases: [
+      "销售团队业绩管理",
+      "客户服务智能化",
+      "营销自动化优化"
+    ],
+    related_tools: ["notion", "perplexity", "zapier"],
+  },
+  {
+    id: "zapier",
+    icon: "/tool-icons/zapier.png",
+    slug: "zapier",
+    name: "Zapier",
+    website: "https://www.zapier.com",
+    description: "AI工作流自动化平台，连接5000+应用实现业务流程自动化",
+    type: "效率办公",
+    affiliateUrl: "https://www.zapier.com",
+    commissionRate: "暂无佣金计划",
+    features: [
+      "应用集成：连接5000+应用（Slack、Google Sheets、Notion、Salesforce等）",
+      "自动化工作流（Zap）：当A应用发生某事件时，自动触发B应用的操作",
+      "AI支持：Zapier AI 可帮助构建复杂工作流和编写代码步骤",
+      "多步骤Zap：支持条件分支、延迟、格式转换等复杂逻辑",
+      "团队协作：共享Zap模板，团队成员共同管理自动化流程"
+    ],
+    usage_guide: "第一步：访问 zapier.com/sign-up，注册免费账号。\\n\\n第二步：点击 Make a Zap 开始创建自动化工作流。\\n\\n第三步：选择 Trigger App（触发应用）和 Event（例如「新邮件收到」），连接账号。\\n\\n第四步：添加 Action（执行应用），例如「将邮件附件保存到 Google Drive」。\\n\\n第五步：测试 Zap 是否正常工作，开启后即可自动化运行。可选升级付费版获取更多任务额度。",
+    use_cases: [
+      "办公自动化",
+      "数据同步",
+      "客户管理流程自动化"
+    ],
+    related_tools: ["notion", "salesforce-einstein", "chatpdf"],
+  },
 ]
 
 
