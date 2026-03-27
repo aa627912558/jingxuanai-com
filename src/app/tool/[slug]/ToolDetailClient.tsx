@@ -28,8 +28,10 @@ export default function ToolDetailClient({ tool, initialArticles = [] }: ToolDet
     .map((id: string) => TOOLS_DATA.find((t: AiTool) => t.id === id))
     .filter(Boolean) as AiTool[]
 
-  // Build affiliate URL with ref
-  const affiliateUrl = `${tool.affiliateUrl}?ref=jingxuanai`
+  // Build affiliate URL with ref (fallback to website if no affiliate link)
+  const affiliateUrl = tool.affiliateUrl
+    ? `${tool.affiliateUrl}?ref=jingxuanai`
+    : tool.website
 
   return (
     <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 py-8">
