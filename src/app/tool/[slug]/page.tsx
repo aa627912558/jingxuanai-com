@@ -1,11 +1,20 @@
 import Script from 'next/script'
 import { notFound } from 'next/navigation'
 import { TOOLS_DATA } from '@/lib/tools-data'
+import { getSupabaseAdmin } from '@/lib/supabase'
 import ToolDetailClient from './ToolDetailClient'
 
 // Generate static paths for all tools
 export async function generateStaticParams() {
   return TOOLS_DATA.map((tool) => ({ slug: tool.slug }))
+}
+
+// Article type for SSR-fetched data
+interface Article {
+  id: string
+  title: string
+  slug: string
+  status: string
 }
 
 // SEO metadata
@@ -31,6 +40,22 @@ export default async function ToolDetailPage({ params }: { params: Promise<{ slu
   const tool = TOOLS_DATA.find((t) => t.slug === slug)
 
   if (!tool) notFound()
+
+  // Fetch related articles server-side using admin key (more reliable, no client-side env vars needed)
+  let articles: Article[] = []
+  try {
+    const supabaseAdmin = getSupabaseAdmin()
+    const { data } = await supabaseAdmin
+      .from('articles')
+      .select('id, title, slug, status')
+      .eq('status', 'published')
+      .ilike('link', `%/tool/${tool.slug}`)
+      .order('created_at', { ascending: false })
+      .limit(10)
+    if (data) articles = data
+  } catch (e) {
+    console.error('[ToolDetailPage] Failed to fetch articles:', e)
+  }
 
   const toolJsonLd = {
     '@context': 'https://schema.org',
@@ -99,7 +124,7 @@ export default async function ToolDetailPage({ params }: { params: Promise<{ slu
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(faqJsonLd) }}
       />
-      <ToolDetailClient tool={tool} />
+      <ToolDetailClient tool={tool} initialArticles={articles} />
     </>
   )
 }

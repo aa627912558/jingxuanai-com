@@ -1,15 +1,14 @@
 'use client'
 
 import Link from 'next/link'
-import { useEffect, useState } from 'react'
+import { useState } from 'react'
 import { AiTool } from '@/types'
 import { CATEGORY_COLORS, TOOLS_DATA } from '@/lib/tools-data'
-import { supabase } from '@/lib/supabase'
 import { ExternalLink, ArrowLeft, ChevronRight, CheckCircle2, BookOpen, Users } from 'lucide-react'
 import clsx from 'clsx'
 
 interface Article {
-  id: number
+  id: string
   title: string
   slug: string
   status: string
@@ -17,11 +16,12 @@ interface Article {
 
 interface ToolDetailClientProps {
   tool: AiTool
+  initialArticles?: Article[]
 }
 
-export default function ToolDetailClient({ tool }: ToolDetailClientProps) {
+export default function ToolDetailClient({ tool, initialArticles = [] }: ToolDetailClientProps) {
   const categoryColor = CATEGORY_COLORS[tool.type] || 'bg-gray-100 text-gray-700'
-  const [articles, setArticles] = useState<Article[]>([])
+  const [articles] = useState<Article[]>(initialArticles)
 
   // Get related tools
   const relatedTools = (tool.related_tools || [])
@@ -30,27 +30,6 @@ export default function ToolDetailClient({ tool }: ToolDetailClientProps) {
 
   // Build affiliate URL with ref
   const affiliateUrl = `${tool.affiliateUrl}?ref=jingxuanai`
-
-  // Fetch published articles for the "文章标题" section (filtered by tool slug)
-  useEffect(() => {
-    async function fetchArticles() {
-      try {
-        const { data, error } = await supabase
-          .from('articles')
-          .select('id, title, slug, status')
-          .eq('status', 'published')
-          .ilike('link', `%/tool/${tool.slug}`)
-          .order('created_at', { ascending: false })
-          .limit(10)
-        if (!error && data) {
-          setArticles(data)
-        }
-      } catch {
-        // Silently fail - article section won't show if error
-      }
-    }
-    fetchArticles()
-  }, [tool.slug])
 
   return (
     <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 py-8">
