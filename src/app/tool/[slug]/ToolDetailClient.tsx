@@ -44,7 +44,7 @@ export default function ToolDetailClient({ tool }: ToolDetailClientProps) {
         if (!error && data) {
           setArticles(data)
         }
-      } catch (e) {
+      } catch (_e) {
         // Silently fail - article section won't show if error
       }
     }
