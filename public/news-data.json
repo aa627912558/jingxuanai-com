@@ -28,6 +28,15 @@
       "slug": "google-turboquant-ai-memory-compression-6x-zero-loss"
     },
     {
+      "title": "Stanford study outlines dangers of asking AI chatbots for personal advice",
+      "link": "https://techcrunch.com/2026/03/28/stanford-study-outlines-dangers-of-asking-ai-chatbots-for-personal-advice/",
+      "pubDate": "Sat, 28 Mar 2026 20:45:54 +0000",
+      "source": "TechCrunch AI",
+      "lang": "en",
+      "snippet": "While there’s been plenty of debate about AI sycophancy, a new study by Stanford computer scientists attempts to measure how harmful that tendency might be.",
+      "slug": "stanford-study-outlines-dangers-of-asking-ai-chatbots-for-personal-advice"
+    },
+    {
       "title": "Suno leans into customization with v5.5",
       "link": "https://www.theverge.com/entertainment/903056/suno-ai-music-v5-5-model",
       "pubDate": "2026-03-28T18:33:10.000Z",
@@ -296,15 +305,6 @@
       "lang": "en",
       "snippet": "David Sacks, the venture capitalist and tech billionaire who'd become Silicon Valley's primary advocate inside the White House and a key architect of its aggressive AI policy initiatives, revealed on Thursday that he was no longer a special government employee - and therefore no longer President Donald Trump's Special Advisor on AI and Crypto.\nSacks' official status as an SGE allowed him to work simultaneously in the private sector and for the government, but for no more than 130 days, raising questions about why he was still in the job more than a year after his appointment. But in an interview with Bloomberg Television discussing the Whit …\nRead the full story at The Verge.",
       "slug": "david-sacks-is-no-longer-the-white-house-ai-and-crypto-czar"
-    },
-    {
-      "title": "Wikipedia cracks down on the use of AI in article writing",
-      "link": "https://techcrunch.com/2026/03/26/wikipedia-cracks-down-on-the-use-of-ai-in-article-writing/",
-      "pubDate": "Thu, 26 Mar 2026 21:50:10 +0000",
-      "source": "TechCrunch AI",
-      "lang": "en",
-      "snippet": "The site, whose policies are subject to change, has struggled with the issue of AI-generated writing.",
-      "slug": "wikipedia-cracks-down-on-the-use-of-ai-in-article-writing"
     },
     {
       "title": "Google is making it easier to import another AI’s memory into Gemini",
@@ -632,5 +632,5 @@
     }
   ],
   "total": 70,
-  "fetchedAt": "2026-03-28T19:04:54.647Z"
+  "fetchedAt": "2026-03-28T22:04:57.012Z"
 }
