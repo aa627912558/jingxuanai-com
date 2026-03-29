@@ -23,6 +23,8 @@ interface NewsItem {
   source: string
   lang: string
   snippet?: string
+  summary?: string
+  deep_analysis?: string
 }
 
 // Fallback news data for numeric index access
@@ -55,7 +57,7 @@ const FALLBACK_NEWS: NewsItem[] = [
 
 const BASE_URL = 'https://jingxuanai-com.vercel.app'
 
-async function getArticleBySlug(slug: string): Promise<{ type: 'article'; data: Article } | { type: 'news'; data: NewsItem & { slug: string } } | null> {
+async function getArticleBySlug(slug: string): Promise<{ type: 'article'; data: Article } | { type: 'news'; data: NewsItem & { slug: string; deep_analysis: string; summary: string } } | null> {
   // First try Supabase articles table (tutorial articles)
   try {
     const supabaseAdmin = getSupabaseAdmin()
@@ -72,7 +74,35 @@ async function getArticleBySlug(slug: string): Promise<{ type: 'article'; data: 
     // Not found in articles, try news list
   }
 
-  // Try as numeric index into news-data.json
+  // Try as slug (title-based) in news-data.json
+  try {
+    const baseUrl = process.env.NEXT_PUBLIC_BASE_URL || BASE_URL
+    const res = await fetch(`${baseUrl}/news-data.json`, {
+      cache: 'no-store',
+      next: { revalidate: 0 },
+    })
+    if (res.ok) {
+      const data = await res.json()
+      const newsList = data.news || []
+      // Match by slugified title
+      const item = newsList.find((n: NewsItem) => slugify(n.title) === slug) as NewsItem | undefined
+      if (item) {
+        return {
+          type: 'news',
+          data: {
+            ...item,
+            slug: slugify(item.title),
+            deep_analysis: item.deep_analysis || item.summary || '',
+            summary: item.summary || (item as { snippet?: string }).snippet || '',
+          },
+        }
+      }
+    }
+  } catch {
+    // Fetch failed
+  }
+
+  // Try as numeric index (legacy support)
   const index = parseInt(slug)
   if (!isNaN(index) && index >= 0) {
     try {
@@ -85,17 +115,22 @@ async function getArticleBySlug(slug: string): Promise<{ type: 'article'; data: 
         const data = await res.json()
         const item = (data.news || [])[index] as NewsItem | undefined
         if (item) {
-          return { type: 'news', data: { ...item, slug: slugify(item.title) } }
+          return {
+            type: 'news',
+            data: {
+              ...item,
+              slug: slugify(item.title),
+              deep_analysis: item.deep_analysis || item.summary || '',
+              summary: item.summary || (item as { snippet?: string }).snippet || '',
+            },
+          }
         }
       }
-    } catch {
-      // Fetch failed
-    }
+    } catch { /* ignore */ }
 
-    // Fallback to hardcoded news
     if (index < FALLBACK_NEWS.length) {
       const item = FALLBACK_NEWS[index]
-      return { type: 'news', data: { ...item, slug: slugify(item.title) } }
+      return { type: 'news', data: { ...item, slug: slugify(item.title), deep_analysis: '', summary: '' } }
     }
   }
 
@@ -155,11 +190,14 @@ export default async function NewsArticlePage({ params }: { params: Promise<{ sl
 
   if (result.type === 'news') {
     const item = result.data
+    // deep_analysis 已在 getArticleBySlug 中获取
+    const newsContent = item.deep_analysis || item.summary || ''
+
     const articleJsonLd = {
       '@context': 'https://schema.org',
       '@type': 'Article',
       headline: item.title,
-      description: item.snippet || item.title,
+      description: summary || item.title,
       url: item.link,
       datePublished: new Date(item.pubDate).toISOString(),
       author: { '@type': 'Organization', name: item.source },
@@ -179,7 +217,7 @@ export default async function NewsArticlePage({ params }: { params: Promise<{ sl
             id: slug,
             title: item.title,
             slug: item.slug,
-            content: `> ${item.snippet || ''}\n\n**来源：** ${item.source}\n\n这是一篇来自 ${item.source} 的AI资讯。点击下方按钮阅读完整内容。`,
+            content: newsContent,
             source: item.source,
             link: item.link,
             lang: item.lang,

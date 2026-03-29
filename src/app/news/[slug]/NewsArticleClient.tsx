@@ -91,24 +91,23 @@ export default function NewsArticleClient({ article }: NewsArticleClientProps) {
         {/* Article content */}
         <div className="px-8 py-6">
           {isNewsItem ? (
-            /* News item: show as a CTA card */
-            <div className="text-center py-8">
-              <div className="w-16 h-16 bg-gradient-to-br from-indigo-100 to-purple-100 rounded-2xl flex items-center justify-center mx-auto mb-6">
-                <BookOpen size={28} className="text-indigo-500" />
-              </div>
-              <p className="text-slate-600 text-base leading-relaxed mb-8 max-w-md mx-auto">
+            /* News item: render deep_analysis as article content */
+            <div className="prose prose-slate prose-headings:text-slate-900 prose-p:text-slate-700 prose-li:text-slate-700 prose-strong:text-slate-900 prose-a:text-indigo-600 prose-code:text-indigo-600 prose-code:bg-indigo-50 prose-code:px-1.5 prose-code:py-0.5 prose-code:rounded prose-code:before:content-none prose-code:after:content-none max-w-none">
+              <ReactMarkdown remarkPlugins={[remarkGfm]}>
                 {article.content}
-              </p>
+              </ReactMarkdown>
               {article.link && (
-                <a
-                  href={article.link}
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="inline-flex items-center gap-2 px-6 py-3 bg-indigo-600 hover:bg-indigo-700 text-white font-medium rounded-xl transition-colors"
-                >
-                  <span>阅读原文</span>
-                  <ExternalLink size={15} />
-                </a>
+                <div className="mt-8 pt-6 border-t border-slate-100 text-center">
+                  <a
+                    href={article.link}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="inline-flex items-center gap-2 px-6 py-3 bg-indigo-600 hover:bg-indigo-700 text-white font-medium rounded-xl transition-colors"
+                  >
+                    <span>阅读原文</span>
+                    <ExternalLink size={15} />
+                  </a>
+                </div>
               )}
             </div>
           ) : (
