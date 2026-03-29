@@ -32,12 +32,13 @@ const parser = new Parser({
 
 const FEEDS = [
   { name: '量子位', url: 'https://www.qbitai.com/feed', lang: 'zh' },
-  { name: 'MIT Technology Review', url: 'https://www.technologyreview.com/feed/', lang: 'en' },
-  { name: 'VentureBeat AI', url: 'https://venturebeat.com/category/ai/feed/', lang: 'en' },
-  { name: 'Hugging Face Blog', url: 'https://huggingface.co/blog/feed.xml', lang: 'en' },
-  { name: 'OpenAI Blog', url: 'https://openai.com/blog/rss.xml', lang: 'en' },
-  { name: 'The Verge AI', url: 'https://www.theverge.com/rss/ai-artificial-intelligence/index.xml', lang: 'en' },
-  { name: 'TechCrunch AI', url: 'https://techcrunch.com/category/artificial-intelligence/feed/', lang: 'en' },
+  // 英文源已禁用 - 只保留中文内容
+  // { name: 'MIT Technology Review', url: 'https://www.technologyreview.com/feed/', lang: 'en' },
+  // { name: 'VentureBeat AI', url: 'https://venturebeat.com/category/ai/feed/', lang: 'en' },
+  // { name: 'Hugging Face Blog', url: 'https://huggingface.co/blog/feed.xml', lang: 'en' },
+  // { name: 'OpenAI Blog', url: 'https://openai.com/blog/rss.xml', lang: 'en' },
+  // { name: 'The Verge AI', url: 'https://www.theverge.com/rss/ai-artificial-intelligence/index.xml', lang: 'en' },
+  // { name: 'TechCrunch AI', url: 'https://techcrunch.com/category/artificial-intelligence/feed/', lang: 'en' },
 ]
 
 // 原创中文文章 - 每次构建时保留在顶部
