@@ -11,11 +11,10 @@ export const metadata: Metadata = {
     description: '汇集全网优质AI工具，按类型分类展示',
     type: 'website',
   },
-  verification: {
-    // jingxuanai.cn: codeva-22RwjncCAv
-    // jingxuanai.com: codeva-jgGA6LabNs
-    baidu: ['codeva-22RwjncCAv', 'codeva-jgGA6LabNs'],
-  },
+  other: [
+    { name: 'baidu-site-verification', content: 'codeva-22RwjncCAv' },
+    { name: 'baidu-site-verification', content: 'codeva-jgGA6LabNs' },
+  ],
 }
 
 export default function RootLayout({
