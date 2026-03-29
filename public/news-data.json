@@ -1,46 +1,7 @@
 {
-  "news": [
-    {
-      "title": "趋境ATaaS平台发布，打造日均万亿产能的“Token工厂”",
-      "link": "https://www.qbitai.com/2026/03/392988.html",
-      "pubDate": "Sat, 28 Mar 2026 13:58:24 +0000",
-      "source": "量子位",
-      "lang": "zh",
-      "snippet": "郑纬民院士领衔解读Token服务新趋势"
-    },
-    {
-      "title": "中关村论坛“AI2026：向人立心，向实立命”特邀闭门会顺利举办",
-      "link": "https://www.qbitai.com/2026/03/392981.html",
-      "pubDate": "Sat, 28 Mar 2026 10:51:46 +0000",
-      "source": "量子位",
-      "lang": "zh",
-      "snippet": "中关村论坛“AI2026：向人立心，向实立命”特邀闭门会在中关村国际创新中心举行"
-    },
-    {
-      "title": "8.68万新车普及车位到车位，世界模型不吃高算力！零跑夯爆了",
-      "link": "https://www.qbitai.com/2026/03/392948.html",
-      "pubDate": "Sat, 28 Mar 2026 06:16:49 +0000",
-      "source": "量子位",
-      "lang": "zh",
-      "snippet": "零跑开始尝试在智能化上问鼎了"
-    },
-    {
-      "title": "GLM-5.1上线，编程表现贴Opus 4.6开大，Coding plan瞬间断货",
-      "link": "https://www.qbitai.com/2026/03/392914.html",
-      "pubDate": "Sat, 28 Mar 2026 06:06:38 +0000",
-      "source": "量子位",
-      "lang": "zh",
-      "snippet": "在编程能力上相比上一代GLM-5直接飙升近10分"
-    },
-    {
-      "title": "华为盘古大模型负责人王云鹤离职，被曝Agent创业",
-      "link": "https://www.qbitai.com/2026/03/392903.html",
-      "pubDate": "Sat, 28 Mar 2026 06:01:23 +0000",
-      "source": "量子位",
-      "lang": "zh",
-      "snippet": "曾获华为“十大发明”奖"
-    }
-  ],
-  "total": 5,
-  "fetchedAt": "2026-03-29T01:08:10.269Z"
+  "news": [],
+  "total": 0,
+  "fetchedAt": "2026-03-29T01:30:00.000Z",
+  "version": "2.0",
+  "note": "已清空翻译型资讯，待补充深度解读版内容"
 }
