@@ -11,6 +11,9 @@ export const metadata: Metadata = {
     description: '汇集全网优质AI工具，按类型分类展示',
     type: 'website',
   },
+  verification: {
+    baidu: 'codeva-22RwjncCAv',
+  },
 }
 
 export default function RootLayout({
