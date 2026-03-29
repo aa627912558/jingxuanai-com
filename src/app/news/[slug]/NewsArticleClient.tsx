@@ -55,7 +55,7 @@ export default function NewsArticleClient({ article }: NewsArticleClientProps) {
       <article className="bg-white rounded-2xl border border-slate-200 shadow-sm overflow-hidden">
         {/* Header */}
         <div className="px-8 pt-8 pb-6 border-b border-slate-100">
-          {/* Source & lang badge */}
+          {/* Source badge */}
           <div className="flex items-center gap-3 mb-4">
             <span className={clsx(
               'text-xs font-semibold px-2.5 py-1 rounded-full',
@@ -64,10 +64,6 @@ export default function NewsArticleClient({ article }: NewsArticleClientProps) {
                 : 'bg-emerald-50 text-emerald-600'
             )}>
               {isNewsItem ? article.source : (article.source || '精选AI工具站')}
-            </span>
-            <span className="text-xs text-slate-400 flex items-center gap-1">
-              <Globe size={11} />
-              {article.lang === 'zh' ? '中文' : 'English'}
             </span>
             {isNewsItem && (
               <span className="text-xs font-medium px-2 py-0.5 rounded-full bg-slate-100 text-slate-500">
