@@ -12,8 +12,9 @@ export const metadata: Metadata = {
     type: 'website',
   },
   verification: {
-    // jingxuanai.cn
-    baidu: 'codeva-22RwjncCAv',
+    // jingxuanai.cn: codeva-22RwjncCAv
+    // jingxuanai.com: codeva-jgGA6LabNs
+    baidu: ['codeva-22RwjncCAv', 'codeva-jgGA6LabNs'],
   },
 }
 
