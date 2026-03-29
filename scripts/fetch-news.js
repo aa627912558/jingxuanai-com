@@ -1,20 +1,80 @@
 /**
- * Pre-generate news data at build time.
- * Runs before `next build` via `npm run prebuild && npm run build`
- * Also syncs to Supabase for real-time delivery.
+ * AI资讯抓取流程
+ * 
+ * 流程：
+ * 1. 从RSS源抓取原始资讯
+ * 2. Google Translate翻译标题+摘要为中文
+ * 3. 筛选3-5条最有价值的
+ * 4. 发布到Supabase
+ * 
+ * 运行方式：node scripts/fetch-news.js
  */
-const Parser = require('rss-parser')
-const { createClient } = require('@supabase/supabase-js')
+
+// 加载环境变量
 const fs = require('fs')
 const path = require('path')
+const envPath = path.join(process.cwd(), '.env.local')
+if (fs.existsSync(envPath)) {
+  const envContent = fs.readFileSync(envPath, 'utf-8')
+  envContent.split('\n').forEach(line => {
+    const [key, ...valueParts] = line.split('=')
+    if (key && valueParts.length > 0) {
+      const value = valueParts.join('=').trim()
+      if (!process.env[key]) process.env[key] = value
+    }
+  })
+}
+
+const Parser = require('rss-parser')
+const { createClient } = require('@supabase/supabase-js')
+
+// Google Translate API (免费额度每月500k字符)
+const GOOGLE_TRANSLATE_URL = 'https://translate.googleapis.com/translate_a/single?client=gtx&sl=en&tl=zh&dt=t&q='
 
 function slugify(title) {
   return title
     .toLowerCase()
-    .replace(/[^\w\s\u4e00-\u9fff-]/g, '') // remove special chars but keep CJK
-    .replace(/\s+/g, '-')                   // spaces to hyphens
-    .replace(/-+/g, '-')                   // multiple hyphens to one
-    .slice(0, 80)                          // limit length
+    .replace(/[^\w\s\u4e00-\u9fff-]/g, '')
+    .replace(/\s+/g, '-')
+    .replace(/-+/g, '-')
+    .slice(0, 80)
+}
+
+/**
+ * Google Translate 翻译
+ */
+async function translate(text) {
+  if (!text || text.trim() === '') return text
+  try {
+    const encoded = encodeURIComponent(text)
+    const response = await fetch(GOOGLE_TRANSLATE_URL + encoded)
+    const data = await response.json()
+    if (data && data[0]) {
+      return data[0].map(item => item[0]).join('')
+    }
+    return text
+  } catch (err) {
+    console.error('[translate] Error:', err.message)
+    return text
+  }
+}
+
+/**
+ * 批量翻译，带速率限制
+ */
+async function translateBatch(items, field = 'title') {
+  const results = []
+  for (let i = 0; i < items.length; i++) {
+    const item = items[i]
+    const original = item[field]
+    const translated = await translate(original)
+    results.push({ ...item, [field]: translated })
+    // 避免触发频率限制
+    if (i < items.length - 1) {
+      await new Promise(r => setTimeout(r, 100))
+    }
+  }
+  return results
 }
 
 const parser = new Parser({
@@ -30,104 +90,35 @@ const parser = new Parser({
   },
 })
 
+// RSS源配置
 const FEEDS = [
   { name: '量子位', url: 'https://www.qbitai.com/feed', lang: 'zh' },
-  // 英文源已禁用 - 只保留中文内容
-  // { name: 'MIT Technology Review', url: 'https://www.technologyreview.com/feed/', lang: 'en' },
-  // { name: 'VentureBeat AI', url: 'https://venturebeat.com/category/ai/feed/', lang: 'en' },
-  // { name: 'Hugging Face Blog', url: 'https://huggingface.co/blog/feed.xml', lang: 'en' },
-  // { name: 'OpenAI Blog', url: 'https://openai.com/blog/rss.xml', lang: 'en' },
-  // { name: 'The Verge AI', url: 'https://www.theverge.com/rss/ai-artificial-intelligence/index.xml', lang: 'en' },
-  // { name: 'TechCrunch AI', url: 'https://techcrunch.com/category/artificial-intelligence/feed/', lang: 'en' },
+  { name: 'MIT Technology Review', url: 'https://www.technologyreview.com/feed/', lang: 'en' },
+  { name: 'VentureBeat AI', url: 'https://venturebeat.com/category/ai/feed/', lang: 'en' },
+  { name: 'Hugging Face Blog', url: 'https://huggingface.co/blog/feed.xml', lang: 'en' },
+  { name: 'OpenAI Blog', url: 'https://openai.com/blog/rss.xml', lang: 'en' },
+  { name: 'The Verge AI', url: 'https://www.theverge.com/rss/ai-artificial-intelligence/index.xml', lang: 'en' },
+  { name: 'TechCrunch AI', url: 'https://techcrunch.com/category/artificial-intelligence/feed/', lang: 'en' },
 ]
 
-// 原创中文文章 - 每次构建时保留在顶部
-const ORIGINAL_ARTICLES = [
-  {
-    title: 'Apple与Google联手：Siri要借Gemini"弯道超车"了？',
-    link: 'https://www.theverge.com/2026/3/25/26068937/apple-google-gemini-ai-deal-training-models',
-    pubDate: '2026-03-26T16:00:00.000Z',
-    source: 'The Verge AI',
-    lang: 'zh',
-    snippet: 'Apple获得Google数据中心完全访问权限，可使用Gemini蒸馏技术训练本地小模型。Apple Intelligence战略再进一步，Siri进化可能比想象中更快。',
-    slug: 'apple-google-gemini-deal-siri-local-ai-models',
-  },
-  {
-    title: '黄仁勋突然宣布：我们已经实现AGI了！',
-    link: 'https://www.theverge.com/ai-artificial-intelligence/899086/jensen-huang-nvidia-agi',
-    pubDate: '2026-03-26T15:00:00.000Z',
-    source: 'The Verge AI',
-    lang: 'zh',
-    snippet: '英伟达CEO黄仁勋在Lex Fridman播客上宣布AGI已实现，但细看内容，AGI定义本身存在巨大争议。什么是AGI？谁来定义它？黄仁勋的宣布引发业内热议。',
-    slug: 'jensen-huang-nvidia-agi-declared-lex-fridman',
-  },
-  {
-    title: 'Google发布TurboQuant：内存暴降6倍，精度不损失',
-    link: 'https://research.google/blog/turboquant-redefining-ai-efficiency-with-extreme-compression/',
-    pubDate: '2026-03-26T14:00:00.000Z',
-    source: 'Google Research',
-    lang: 'zh',
-    snippet: 'Google发布TurboQuant压缩算法，通过PolarQuant+QJL两步走的方式，把大模型内存占用降低至少6倍且零精度损失。对AI部署方来说，这意味着同等硬件能跑更大的模型。',
-    slug: 'google-turboquant-ai-memory-compression-6x-zero-loss',
-  },
-]
-
-async function syncToSupabase(newsItems) {
-  const supabaseUrl = process.env.NEXT_PUBLIC_SUPABASE_URL
-  const serviceRoleKey = process.env.SUPABASE_SERVICE_ROLE_KEY
-
-  if (!supabaseUrl || !serviceRoleKey) {
-    console.log('[fetch-news] Supabase not configured, skipping sync...')
-    return
-  }
-
-  console.log('[fetch-news] Syncing to Supabase...')
-  const supabase = createClient(supabaseUrl, serviceRoleKey)
-
-  // Clear existing news and insert fresh
-  const { error: deleteError } = await supabase.from('news').delete().neq('id', '00000000-0000-0000-0000-000000000000')
-  if (deleteError) {
-    console.error('[fetch-news] Failed to clear news:', deleteError)
-    return
-  }
-
-  const insertData = newsItems.map((item) => ({
-    title: item.title,
-    link: item.link,
-    pub_date: item.pubDate,
-    source: item.source,
-    lang: item.lang,
-    snippet: item.snippet || '',
-    slug: item.slug || slugify(item.title),
-  }))
-
-  const { error: insertError } = await supabase.from('news').insert(insertData)
-  if (insertError) {
-    console.error('[fetch-news] Failed to insert news:', insertError)
-    return
-  }
-
-  console.log(`[fetch-news] Synced ${newsItems.length} items to Supabase`)
-}
-
-async function main() {
-  console.log('Fetching news data for pre-build...')
-
+/**
+ * 抓取所有RSS源
+ */
+async function fetchAllFeeds() {
   const results = await Promise.allSettled(
     FEEDS.map(async (feed) => {
       try {
         const parsed = await parser.parseURL(feed.url)
-        return (parsed.items || []).slice(0, 10).map((item) => ({
+        return (parsed.items || []).slice(0, 15).map((item) => ({
           title: item.title || '无标题',
           link: item.link || '',
           pubDate: item.pubDate || item.isoDate || new Date().toISOString(),
           source: feed.name,
           lang: feed.lang,
-          snippet: item.contentSnippet || item.content || item.summary || '',
-          slug: slugify(item.title || '无标题'),
+          snippet: (item.contentSnippet || item.content || item.summary || '').slice(0, 300),
         }))
       } catch (err) {
-        console.error(`Failed to fetch ${feed.name}:`, err)
+        console.error(`[fetch] Failed to fetch ${feed.name}:`, err.message)
         return []
       }
     })
@@ -138,20 +129,94 @@ async function main() {
     if (result.status === 'fulfilled') allNews.push(...result.value)
   })
 
+  // 按时间排序
   allNews.sort((a, b) => new Date(b.pubDate).getTime() - new Date(a.pubDate).getTime())
 
+  // 去重
   const seen = new Set()
-  const deduped = allNews.filter((item) => {
+  return allNews.filter((item) => {
     const key = item.title.slice(0, 50).toLowerCase()
     if (seen.has(key)) return false
     seen.add(key)
     return true
   })
+}
 
-  // 把原创文章插入到顶部
+/**
+ * 翻译英文文章
+ */
+async function translateArticles(items) {
+  const enItems = items.filter(item => item.lang === 'en')
+  const zhItems = items.filter(item => item.lang === 'zh')
+
+  console.log(`[translate] English: ${enItems.length}, Chinese: ${zhItems.length}`)
+
+  // 翻译英文标题和摘要
+  const translatedItems = []
+  for (const item of enItems) {
+    console.log(`[translate] ${item.title.slice(0, 40)}...`)
+    const translatedTitle = await translate(item.title)
+    const translatedSnippet = await translate(item.snippet)
+    translatedItems.push({
+      ...item,
+      title: translatedTitle,
+      snippet: translatedSnippet,
+      lang: 'zh', // 翻译后标记为中文
+    })
+  }
+
+  return [...zhItems, ...translatedItems]
+}
+
+/**
+ * 发布到Supabase
+ */
+async function publishToSupabase(newsItems) {
+  const supabaseUrl = process.env.NEXT_PUBLIC_SUPABASE_URL
+  const serviceRoleKey = process.env.SUPABASE_SERVICE_ROLE_KEY
+
+  if (!supabaseUrl || !serviceRoleKey) {
+    console.log('[publish] Supabase not configured, skipping...')
+    return false
+  }
+
+  const supabase = createClient(supabaseUrl, serviceRoleKey)
+
+  // 只保留最新的5条资讯（删旧留新）
+  console.log(`[publish] Clearing old news (keeping latest ${newsItems.length})...`)
+  const { error: deleteError } = await supabase.from('news').delete().neq('id', '00000000-0000-0000-0000-000000000000')
+  if (deleteError) {
+    console.error('[publish] Failed to clear news:', deleteError)
+    return false
+  }
+
+  // 插入新资讯
+  const insertData = newsItems.map((item) => ({
+    title: item.title,
+    link: item.link,
+    pub_date: item.pubDate,
+    source: item.source,
+    lang: item.lang,
+    snippet: item.snippet || '',
+    slug: slugify(item.title),
+  }))
+
+  const { error: insertError } = await supabase.from('news').insert(insertData)
+  if (insertError) {
+    console.error('[publish] Failed to insert news:', insertError)
+    return false
+  }
+
+  return true
+}
+
+/**
+ * 保存到本地文件（同时更新 news-data.json）
+ */
+function saveToLocal(newsItems) {
   const output = {
-    news: [...ORIGINAL_ARTICLES, ...deduped],
-    total: deduped.length + ORIGINAL_ARTICLES.length,
+    news: newsItems,
+    total: newsItems.length,
     fetchedAt: new Date().toISOString(),
   }
 
@@ -159,10 +224,44 @@ async function main() {
   fs.mkdirSync(outDir, { recursive: true })
   const outPath = path.join(outDir, 'news-data.json')
   fs.writeFileSync(outPath, JSON.stringify(output, null, 2), 'utf-8')
-  console.log(`Wrote ${output.total} items to ${outPath}`)
+  console.log(`[save] Wrote ${output.total} items to ${outPath}`)
+}
 
-  // Also sync to Supabase
-  await syncToSupabase(output.news)
+async function main() {
+  console.log('=== AI资讯抓取流程开始 ===')
+  console.log(`[${new Date().toISOString()}]`)
+
+  // Step 1: 抓取所有RSS源
+  console.log('\n[Step 1] 抓取RSS源...')
+  const allNews = await fetchAllFeeds()
+  console.log(`[Step 1] 共获取 ${allNews.length} 条资讯`)
+
+  // Step 2: 翻译英文资讯
+  console.log('\n[Step 2] 翻译英文资讯为中文...')
+  const translatedNews = await translateArticles(allNews)
+  console.log(`[Step 2] 翻译完成，共 ${translatedNews.length} 条`)
+
+  // Step 3: 取最新的5条（最有价值的）
+  const topNews = translatedNews.slice(0, 5)
+  console.log(`\n[Step 3] 筛选最新5条：`)
+  topNews.forEach((item, i) => {
+    console.log(`  ${i + 1}. [${item.source}] ${item.title.slice(0, 50)}`)
+  })
+
+  // Step 4: 发布到Supabase
+  console.log('\n[Step 4] 发布到Supabase...')
+  const published = await publishToSupabase(topNews)
+  if (published) {
+    console.log('[Step 4] ✅ 发布成功')
+  } else {
+    console.log('[Step 4] ⚠️ Supabase发布失败，仅保存本地')
+  }
+
+  // Step 5: 保存到本地
+  console.log('\n[Step 5] 保存到本地文件...')
+  saveToLocal(topNews)
+
+  console.log('\n=== AI资讯抓取流程完成 ===')
 }
 
 main().catch(console.error)
