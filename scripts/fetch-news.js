@@ -1,11 +1,12 @@
 /**
- * AI资讯抓取流程 v2.0
+ * AI资讯抓取流程 v3.0 - 资讯猴原创版
  *
- * 升级内容：
- * 1. 抓取RSS原文（保留英文内容）
- * 2. 调用MiniMax文本模型(MiniMax-M2.5)做深度分析和博主风格改写
- * 3. 生成高质量中文内容：标题+摘要+深度解读+标签
- * 4. 发布到Supabase和news-data.json
+ * 核心升级：
+ * 1. 只抓今天/昨天的RSS资讯（避免重复处理）
+ * 2. 按标题去重，已有的跳过
+ * 3. 调用MiniMax生成原创博客文（500-800字，有观点有分析）
+ * 4. 追加到 news-data.json（不覆盖，永久保存）
+ * 5. 每天最多加3-5篇新文章
  *
  * 运行方式：node scripts/fetch-news.js
  */
@@ -28,7 +29,6 @@ if (fs.existsSync(envPath)) {
 }
 
 const Parser = require('rss-parser')
-const { createClient } = require('@supabase/supabase-js')
 
 // ============================================================
 // MiniMax 文本模型 API (Anthropic Messages API 格式)
@@ -46,7 +46,7 @@ async function callMiniMax(messages, maxTokens) {
 
   const payload = {
     model: 'MiniMax-M2.5',
-    max_tokens: maxTokens || 1500,
+    max_tokens: maxTokens || 2000,
     thinking: { type: 'disabled' },
     messages: messages,
   }
@@ -73,29 +73,9 @@ async function callMiniMax(messages, maxTokens) {
     throw new Error('MiniMax API error: ' + (result.base_resp.status_msg || 'unknown'))
   }
 
-  // 解析 Anthropic content 格式，提取纯文本
   const content = result.content || []
   const textBlocks = content.filter(c => c.type === 'text')
   return textBlocks.map(c => c.text).join('')
-}
-
-/**
- * 从解析结果构建返回对象
- */
-function makeResultFromParsed(parsed, item) {
-  return {
-    title: parsed.title || item.title,
-    summary: parsed.summary || item.snippet,
-    deep_analysis: parsed.deep_analysis || item.snippet,
-    tags: parsed.tags || ['AI'],
-    target_audience: parsed.target_audience || 'AI从业者',
-    original_title: item.title,
-    original_snippet: item.snippet,
-    link: item.link,
-    pubDate: item.pubDate,
-    source: item.source,
-    lang: 'zh',
-  }
 }
 
 /**
@@ -126,60 +106,67 @@ function extractJsonByRegex(jsonStr) {
 }
 
 /**
- * 用MiniMax模型对单条资讯做深度分析和博主风格改写
+ * 用MiniMax模型对单条资讯生成原创博客文
  */
-async function analyzeWithMiniMax(item) {
-  var prompt = '你是一位专业的AI科技博主，擅长用通俗易懂的语言解读AI领域的最新动态。\n\n请对以下这篇资讯进行深度分析和改写，生成适合在中国社交媒体发布的高质量中文内容。\n\n## 原始资讯\n标题（英文）: ' + (item.title || '无标题') + '\n来源: ' + (item.source || '未知') + '\n发布时间: ' + (item.pubDate || '未知') + '\n摘要: ' + (item.snippet || item.rawContent || '无') + '\n\n## 输出要求\n请严格按照以下JSON格式输出，不要添加任何额外的注释或说明，只输出JSON：\n\n{\n  "title": "改写后的中文标题（吸引眼球，15-30字）",\n  "summary": "核心内容摘要，2-3句话，讲清楚这件事是什么",\n  "deep_analysis": "深度解读，300-500字，包含以下四个维度：\n    1. 这条新闻讲了什么（具体内容）\n    2. 对行业有什么影响（行业角度）\n    3. 未来会怎么发展（趋势预测）\n    4. 普通用户该怎么应对（实操建议）\n    要像专业博主写的内容，有观点、有态度、有价值，不要流水账。",\n  "tags": ["适合人群标签1", "适合人群标签2", "适合人群标签3"],\n  "target_audience": "适合哪类读者"\n}\n\n## 风格要求\n- 标题要吸引眼球，能引发好奇\n- 内容要有深度，不要浮于表面\n- 语言要通俗，但不失专业\n- 要有自己的观点和判断\n- 不要使用"首先、其次、最后"这种死板的连接词，要自然流畅\n\n请直接输出JSON，不要有任何前缀文字。'
+async function generateOriginalArticle(item) {
+  var prompt = '你是一位专业的AI科技博主，擅长用通俗易懂的语言解读AI领域的最新动态，写出有观点、有态度、有深度的原创博客文章。\n\n请对以下这篇资讯进行深度分析，写成一篇完整的原创博客文章。\n\n## 原始资讯\n标题: ' + (item.title || '无标题') + '\n来源: ' + (item.source || '未知') + '\n发布时间: ' + (item.pubDate || '未知') + '\n摘要: ' + (item.snippet || item.rawContent || '无') + '\n\n## 输出要求\n请严格按照以下JSON格式输出，只输出JSON，不要任何前缀：\n\n{\n  "title": "吸引眼球的中文标题（15-30字，能引发好奇）",\n  "summary": "100字左右的摘要，2-3句话讲清楚这件事是什么",\n  "deep_analysis": "500-800字的原创博客文章，包含：\n    1. 这条新闻具体讲了什么\n    2. 对行业有什么影响\n    3. 未来发展趋势\n    4. 读者应该如何应对\n    要像专业博主写的内容，有观点、有态度、有价值，语言自然流畅，不要流水账式的摘要",\n  "tags": ["标签1", "标签2", "标签3", "标签4"],\n  "target_audience": "适合哪类读者（15字以内）"\n}\n\n## 风格要求\n- 标题要吸引眼球，有悬念或冲突感\n- 内容要有深度分析，不是简单复述\n- 要有自己的观点和判断，敢于下结论\n- 语言通俗但不失专业，不要书面八股\n- 不要用"首先、其次、最后"这种死板连接词\n- 不要用列表，要像真正的博客文章段落连贯\n\n请直接输出JSON：'
 
   try {
     var content = await callMiniMax([
       { role: 'user', content: prompt }
-    ], 1500)
+    ], 2000)
 
-    // 提取JSON块并尝试多种方式解析
     var jsonStart = content.indexOf('{')
     var jsonEnd = content.lastIndexOf('}')
     if (jsonStart !== -1 && jsonEnd !== -1 && jsonEnd > jsonStart) {
       var jsonStr = content.substring(jsonStart, jsonEnd + 1)
-      // 方法1：直接解析（如果AI输出正确的话）
       try {
         var parsed = JSON.parse(jsonStr)
-        return makeResultFromParsed(parsed, item)
+        return {
+          title: parsed.title || item.title,
+          summary: parsed.summary || item.snippet,
+          deep_analysis: parsed.deep_analysis || item.snippet,
+          tags: Array.isArray(parsed.tags) ? parsed.tags : ['AI'],
+          target_audience: parsed.target_audience || 'AI从业者',
+        }
       } catch (parseErr1) {
-        // 方法2：清理控制字符后再试
         var cleaned = jsonStr.replace(/[\x00-\x09\x0b\x0c\x0e-\x1f\x7f]/g, ' ')
         try {
           var parsed = JSON.parse(cleaned)
-          return makeResultFromParsed(parsed, item)
+          return {
+            title: parsed.title || item.title,
+            summary: parsed.summary || item.snippet,
+            deep_analysis: parsed.deep_analysis || item.snippet,
+            tags: Array.isArray(parsed.tags) ? parsed.tags : ['AI'],
+            target_audience: parsed.target_audience || 'AI从业者',
+          }
         } catch (parseErr2) {
-          // 方法3：用正则提取每个字段的值
           var parsed = extractJsonByRegex(jsonStr)
           if (parsed) {
-            return makeResultFromParsed(parsed, item)
+            return {
+              title: parsed.title || item.title,
+              summary: parsed.summary || item.snippet,
+              deep_analysis: parsed.deep_analysis || item.snippet,
+              tags: Array.isArray(parsed.tags) ? parsed.tags : ['AI'],
+              target_audience: parsed.target_audience || 'AI从业者',
+            }
           }
-          console.error('[MiniMax] JSON解析异常(直接:' + parseErr1.message + ', 清理后:' + parseErr2.message + ')，使用原始内容')
+          console.error('[MiniMax] JSON解析异常，使用原始内容')
         }
       }
     } else {
       console.error('[MiniMax] 未找到JSON块，使用原始内容')
     }
   } catch (err) {
-    console.error('[MiniMax] 分析失败: ' + err.message + '，使用原始内容')
+    console.error('[MiniMax] 生成失败: ' + err.message + '，使用原始内容')
   }
 
-  // 降级返回原始内容
   return {
     title: item.title,
-    summary: item.snippet,
-    deep_analysis: item.snippet,
+    summary: item.snippet || '',
+    deep_analysis: item.snippet || '',
     tags: ['AI'],
     target_audience: 'AI从业者',
-    original_title: item.title,
-    original_snippet: item.snippet,
-    link: item.link,
-    pubDate: item.pubDate,
-    source: item.source,
-    lang: 'zh',
   }
 }
 
@@ -193,20 +180,11 @@ async function analyzeBatch(items) {
     if (i > 0) {
       await new Promise(function(r) { setTimeout(r, 2000) })
     }
-    console.log('[MiniMax] 正在分析 (' + (i + 1) + '/' + items.length + '): ' + item.title.slice(0, 40) + '...')
-    var analyzed = await analyzeWithMiniMax(item)
+    console.log('[MiniMax] 正在生成原创文章 (' + (i + 1) + '/' + items.length + '): ' + item.title.slice(0, 40) + '...')
+    var analyzed = await generateOriginalArticle(item)
     results.push(analyzed)
   }
   return results
-}
-
-function slugify(title) {
-  return title
-    .toLowerCase()
-    .replace(/[^\w\s\u4e00-\u9fff-]/g, '')
-    .replace(/\s+/g, '-')
-    .replace(/-+/g, '-')
-    .slice(0, 80)
 }
 
 var parser = new Parser({
@@ -234,14 +212,34 @@ var FEEDS = [
 ]
 
 /**
- * 抓取所有RSS源
+ * 判断日期是否是今天或昨天
+ */
+function isTodayOrYesterday(dateStr) {
+  try {
+    var itemDate = new Date(dateStr)
+    if (isNaN(itemDate.getTime())) return false
+
+    var now = new Date()
+    var today = new Date(now.getFullYear(), now.getMonth(), now.getDate())
+    var yesterday = new Date(today.getTime() - 24 * 60 * 60 * 1000)
+
+    var itemDay = new Date(itemDate.getFullYear(), itemDate.getMonth(), itemDate.getDate())
+
+    return itemDay.getTime() === today.getTime() || itemDay.getTime() === yesterday.getTime()
+  } catch (e) {
+    return false
+  }
+}
+
+/**
+ * 抓取所有RSS源（只取今天/昨天的）
  */
 async function fetchAllFeeds() {
   var results = await Promise.allSettled(
     FEEDS.map(async function(feed) {
       try {
         var parsed = await parser.parseURL(feed.url)
-        return (parsed.items || []).slice(0, 15).map(function(item) {
+        return (parsed.items || []).map(function(item) {
           return {
             title: item.title || '无标题',
             link: item.link || '',
@@ -251,6 +249,8 @@ async function fetchAllFeeds() {
             snippet: (item.contentSnippet || item.content || item.summary || '').slice(0, 500),
             rawContent: item.content || item.contentSnippet || '',
           }
+        }).filter(function(item) {
+          return isTodayOrYesterday(item.pubDate)
         })
       } catch (err) {
         console.error('[fetch] Failed to fetch ' + feed.name + ':', err.message)
@@ -271,186 +271,155 @@ async function fetchAllFeeds() {
     return new Date(b.pubDate).getTime() - new Date(a.pubDate).getTime()
   })
 
-  // 去重
-  var seen = {}
-  return allNews.filter(function(item) {
-    var key = item.title.slice(0, 50).toLowerCase()
-    if (seen[key]) return false
-    seen[key] = true
-    return true
+  return allNews
+}
+
+/**
+ * 读取现有 news-data.json，保留所有文章
+ */
+function loadExistingNews() {
+  var outPath = path.join(process.cwd(), 'public', 'news-data.json')
+  try {
+    if (fs.existsSync(outPath)) {
+      var data = JSON.parse(fs.readFileSync(outPath, 'utf-8'))
+      console.log('[load] 现有 ' + (data.news || []).length + ' 篇文章')
+      return data.news || []
+    }
+  } catch (e) {
+    console.error('[load] 读取现有文件失败: ' + e.message)
+  }
+  return []
+}
+
+/**
+ * 检查文章是否已存在（按标题去重）
+ */
+function isDuplicate(newItem, existingNews) {
+  var newTitle = (newItem.title || '').toLowerCase().trim()
+  var newTitleKey = newTitle.slice(0, 60)
+
+  return existingNews.some(function(existing) {
+    var existingTitle = (existing.title || '').toLowerCase().trim()
+    var existingTitleKey = existingTitle.slice(0, 60)
+    return existingTitleKey === newTitleKey
   })
 }
 
 /**
- * 发布到Supabase（只使用旧字段兼容新字段存储在JSON中）
+ * 保存到本地文件（追加模式：保留所有现有文章，只追加新文章）
  */
-async function publishToSupabase(newsItems) {
-  var supabaseUrl = process.env.NEXT_PUBLIC_SUPABASE_URL
-  var serviceRoleKey = process.env.SUPABASE_SERVICE_ROLE_KEY
-
-  if (!supabaseUrl || !serviceRoleKey) {
-    console.log('[publish] Supabase not configured, skipping...')
-    return false
-  }
-
-  var supabase = createClient(supabaseUrl, serviceRoleKey)
-
-  // 清空旧资讯
-  console.log('[publish] Clearing old news...')
-  var deleteResult = await supabase.from('news').delete().neq('id', '00000000-0000-0000-0000-000000000000')
-  if (deleteResult.error) {
-    console.error('[publish] Failed to clear news:', deleteResult.error)
-    return false
-  }
-
-  // 插入新资讯（使用snippet字段存储summary，slug存储deep_analysis的JSON）
-  var insertData = newsItems.map(function(item) {
-    var extra = {
-      original_title: item.original_title || item.title,
-      deep_analysis: item.deep_analysis || '',
-      tags: item.tags || [],
-      target_audience: item.target_audience || '',
-    }
-    return {
-      title: item.title,
-      link: item.link,
-      pub_date: item.pubDate,
-      source: item.source,
-      lang: item.lang,
-      snippet: item.summary || item.snippet || '',
-      slug: JSON.stringify(extra), // 将额外字段存入slug字段（临时方案，后续需扩展表结构）
-    }
-  })
-
-  var insertResult = await supabase.from('news').insert(insertData)
-  if (insertResult.error) {
-    console.error('[publish] Failed to insert news:', insertResult.error)
-    return false
-  }
-
-  return true
-}
-
-/**
- * 保存到本地文件（合并模式：保留手动添加的文章）
- */
-function saveToLocal(newsItems) {
+function saveToLocal(existingNews, newArticles) {
   var outDir = path.join(process.cwd(), 'public')
   var outPath = path.join(outDir, 'news-data.json')
 
-  // 读取现有数据，保留手动添加的文章
-  var existingNews = []
-  try {
-    if (fs.existsSync(outPath)) {
-      var existingData = JSON.parse(fs.readFileSync(outPath, 'utf-8'))
-      // 只保留标记为手动添加的文章
-      existingNews = (existingData.news || []).filter(function(item) {
-        return item.is_manual === true
-      })
-      console.log('[save] 保留 ' + existingNews.length + ' 篇手动添加的文章')
-    }
-  } catch (e) {
-    console.error('[save] 读取现有文件失败: ' + e.message)
-  }
-
-  // 合并：新文章去重后加入，手动文章保留
-  var newTitles = new Set(newsItems.map(function(item) { return item.title }))
-  var manualToKeep = existingNews.filter(function(item) { return !newTitles.has(item.title) })
-
-  var mergedNews = newsItems.concat(manualToKeep)
+  // 合并：现有文章 + 新文章
+  var allNews = existingNews.concat(newArticles)
 
   // 按时间排序
-  mergedNews.sort(function(a, b) {
+  allNews.sort(function(a, b) {
     return new Date(b.pubDate).getTime() - new Date(a.pubDate).getTime()
   })
 
   var output = {
-    news: mergedNews,
-    total: mergedNews.length,
+    news: allNews,
+    total: allNews.length,
     fetchedAt: new Date().toISOString(),
-    version: '2.0',
+    version: '3.0',
   }
 
   fs.mkdirSync(outDir, { recursive: true })
   fs.writeFileSync(outPath, JSON.stringify(output, null, 2), 'utf-8')
-  console.log('[save] 保存 ' + output.total + ' 篇（' + newsItems.length + ' 篇RSS + ' + manualToKeep.length + ' 篇手动）到 ' + outPath)
+  console.log('[save] 保存 ' + output.total + ' 篇（原有 ' + existingNews.length + ' 篇 + 新增 ' + newArticles.length + ' 篇）到 ' + outPath)
 }
 
 async function main() {
-  console.log('=== AI资讯抓取流程 v2.0 开始 ===')
+  console.log('=== AI资讯抓取流程 v3.0 开始 ===')
   console.log('[' + new Date().toISOString() + ']')
   console.log('[MiniMax API] ' + (MINIMAX_API_KEY ? '已配置 (MiniMax-M2.5)' : '未配置（将跳过MiniMax分析）'))
 
-  // Step 1: 抓取所有RSS源
-  console.log('\n[Step 1] 抓取RSS源...')
-  var allNews = await fetchAllFeeds()
-  console.log('[Step 1] 共获取 ' + allNews.length + ' 条资讯')
+  // Step 1: 读取现有文章（保留所有）
+  console.log('\n[Step 1] 读取现有文章...')
+  var existingNews = loadExistingNews()
 
-  // Step 2: 取最新的10条进行筛选
-  var candidates = allNews.slice(0, 10)
-  console.log('[Step 2] 候选资讯 ' + candidates.length + ' 条')
+  // Step 2: 抓取RSS（只取今天/昨天）
+  console.log('\n[Step 2] 抓取RSS源（仅今天/昨天）...')
+  var freshNews = await fetchAllFeeds()
+  console.log('[Step 2] 共获取 ' + freshNews.length + ' 条今日/昨日资讯')
 
-  // Step 3: MiniMax深度分析和改写
-  if (MINIMAX_API_KEY) {
-    console.log('\n[Step 3] MiniMax深度分析和博主风格改写...')
-    console.log('（每条间隔2秒，避免频率限制，请耐心等待）')
-    var analyzedNews = await analyzeBatch(candidates)
-
-    // 取分析结果最好的5条
-    var topNews = analyzedNews.slice(0, 5)
-    console.log('\n[Step 3] 分析完成，筛选Top ' + topNews.length + ' 条')
-
-    topNews.forEach(function(item, i) {
-      console.log('\n  ' + (i + 1) + '. [' + item.source + '] ' + item.title)
-      console.log('     标签: ' + ((item.tags || []).join(', ')))
-      console.log('     摘要: ' + (item.summary || '').slice(0, 60) + '...')
-    })
-
-    // Step 4: 发布到Supabase
-    console.log('\n[Step 4] 发布到Supabase...')
-    var published = await publishToSupabase(topNews)
-    if (published) {
-      console.log('[Step 4] ✅ 发布成功')
-    } else {
-      console.log('[Step 4] ⚠️ Supabase发布失败，仅保存本地')
-    }
-
-    // Step 5: 保存到本地
-    console.log('\n[Step 5] 保存到本地文件...')
-    saveToLocal(topNews)
-  } else {
-    // 没有API Key时降级到简单模式
-    console.log('\n[Step 3] ⚠️ 未配置MiniMax API Key，跳过深度分析')
-    var topNews = candidates.slice(0, 5).map(function(item) {
-      return {
-        title: item.title,
-        summary: item.snippet,
-        deep_analysis: item.snippet,
-        tags: ['AI'],
-        target_audience: 'AI从业者',
-        original_title: item.title,
-        original_snippet: item.snippet,
-        link: item.link,
-        pubDate: item.pubDate,
-        source: item.source,
-        lang: item.lang,
-      }
-    })
-
-    topNews.forEach(function(item, i) {
-      console.log('\n  ' + (i + 1) + '. [' + item.source + '] ' + item.title)
-    })
-
-    var published = await publishToSupabase(topNews)
-    console.log('[Step 4] ' + (published ? '✅ Supabase发布成功' : '⚠️ Supabase发布失败'))
-    console.log('\n[Step 5] 保存到本地文件...')
-    saveToLocal(topNews)
-
-    console.log('\n⚠️ 警告：当前运行在降级模式，资讯未经AI深度分析')
-    console.log('   请在 .env.local 中配置 MINIMAX_API_KEY 以启用完整功能')
+  if (freshNews.length === 0) {
+    console.log('\n⚠️ 今日暂无新资讯，流程结束')
+    return
   }
 
+  // Step 3: 去重（跳过已存在的）
+  var newCandidates = []
+  freshNews.forEach(function(item) {
+    if (!isDuplicate(item, existingNews)) {
+      newCandidates.push(item)
+    } else {
+      console.log('[dedup] 跳过已存在: ' + item.title.slice(0, 50) + '...')
+    }
+  })
+  console.log('[Step 3] 去重后候选 ' + newCandidates.length + ' 条')
+
+  if (newCandidates.length === 0) {
+    console.log('\n⚠️ 没有新资讯需要处理，流程结束')
+    return
+  }
+
+  // Step 4: 限制每天最多3-5篇
+  var MAX_NEW_ARTICLES = 5
+  var candidatesToProcess = newCandidates.slice(0, MAX_NEW_ARTICLES)
+  if (newCandidates.length > MAX_NEW_ARTICLES) {
+    console.log('[Step 4] 限制为每天最多 ' + MAX_NEW_ARTICLES + ' 篇，跳过 ' + (newCandidates.length - MAX_NEW_ARTICLES) + ' 条')
+  } else {
+    console.log('[Step 4] 处理 ' + candidatesToProcess.length + ' 条新资讯')
+  }
+
+  // Step 5: MiniMax生成原创文章
+  var newArticles = []
+  if (MINIMAX_API_KEY) {
+    console.log('\n[Step 5] MiniMax生成原创博客文（每条间隔2秒）...')
+    var analyzedArticles = await analyzeBatch(candidatesToProcess)
+
+    // 组装完整文章对象
+    analyzedArticles.forEach(function(parsed, i) {
+      var original = candidatesToProcess[i]
+      newArticles.push({
+        title: parsed.title,
+        summary: parsed.summary,
+        deep_analysis: parsed.deep_analysis,
+        tags: parsed.tags,
+        target_audience: parsed.target_audience,
+        original_title: original.title,
+        original_snippet: original.snippet,
+        link: original.link,
+        pubDate: original.pubDate,
+        source: original.source,
+        lang: 'zh',
+        is_manual: false, // 自动生成
+      })
+    })
+
+    console.log('\n[Step 5] 生成完成！新增 ' + newArticles.length + ' 篇原创文章')
+    newArticles.forEach(function(item, i) {
+      console.log('\n  ' + (i + 1) + '. [' + item.source + '] ' + item.title)
+      console.log('     标签: ' + (item.tags || []).join(', '))
+      console.log('     摘要: ' + (item.summary || '').slice(0, 60) + '...')
+    })
+  } else {
+    console.log('\n[Step 5] ⚠️ 未配置MiniMax API Key，跳过生成')
+    console.log('   请在 .env.local 中配置 MINIMAX_API_KEY')
+    return
+  }
+
+  // Step 6: 保存到本地（追加，不覆盖）
+  console.log('\n[Step 6] 保存到本地文件（追加模式）...')
+  saveToLocal(existingNews, newArticles)
+
   console.log('\n=== AI资讯抓取流程完成 ===')
+  console.log('✅ 新增 ' + newArticles.length + ' 篇原创文章')
+  console.log('📚 现有文章库共 ' + (existingNews.length + newArticles.length) + ' 篇')
 }
 
 main().catch(console.error)

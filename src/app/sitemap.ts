@@ -5,16 +5,25 @@ import path from 'path'
 
 const BASE_URL = 'https://jingxuanai.com'
 
+function slugify(text: string): string {
+  return text
+    .toLowerCase()
+    .replace(/[^\w\s\u4e00-\u9fff-]/g, '')
+    .replace(/[\s_]+/g, '-')
+    .replace(/^-+|-+$/g, '')
+    .slice(0, 80)
+}
+
 export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
-  // Load news count from pre-built news-data.json
-  let newsCount = 50 // default fallback
+  // Load news with titles from pre-built news-data.json
+  let newsItems: { title: string; pubDate?: string }[] = []
   try {
     const newsDataPath = path.join(process.cwd(), 'public', 'news-data.json')
     const content = await fs.readFile(newsDataPath, 'utf8')
     const data = JSON.parse(content)
-    newsCount = (data.news || []).length
+    newsItems = data.news || []
   } catch {
-    // use default
+    // use empty
   }
 
   const toolUrls = TOOLS_DATA.map((tool) => ({
@@ -24,9 +33,10 @@ export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
     priority: 0.8,
   }))
 
-  const newsUrls = Array.from({ length: Math.min(newsCount, 100) }, (_, i) => ({
-    url: `${BASE_URL}/news/${i}`,
-    lastModified: new Date(),
+  // Generate real news URLs using slugified titles
+  const newsUrls: MetadataRoute.Sitemap = newsItems.map((item) => ({
+    url: `${BASE_URL}/news/${slugify(item.title)}`,
+    lastModified: item.pubDate ? new Date(item.pubDate) : new Date(),
     changeFrequency: 'daily' as const,
     priority: 0.6,
   }))
