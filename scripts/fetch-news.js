@@ -332,21 +332,48 @@ async function publishToSupabase(newsItems) {
 }
 
 /**
- * 保存到本地文件
+ * 保存到本地文件（合并模式：保留手动添加的文章）
  */
 function saveToLocal(newsItems) {
+  var outDir = path.join(process.cwd(), 'public')
+  var outPath = path.join(outDir, 'news-data.json')
+
+  // 读取现有数据，保留手动添加的文章
+  var existingNews = []
+  try {
+    if (fs.existsSync(outPath)) {
+      var existingData = JSON.parse(fs.readFileSync(outPath, 'utf-8'))
+      // 只保留标记为手动添加的文章
+      existingNews = (existingData.news || []).filter(function(item) {
+        return item.is_manual === true
+      })
+      console.log('[save] 保留 ' + existingNews.length + ' 篇手动添加的文章')
+    }
+  } catch (e) {
+    console.error('[save] 读取现有文件失败: ' + e.message)
+  }
+
+  // 合并：新文章去重后加入，手动文章保留
+  var newTitles = new Set(newsItems.map(function(item) { return item.title }))
+  var manualToKeep = existingNews.filter(function(item) { return !newTitles.has(item.title) })
+
+  var mergedNews = newsItems.concat(manualToKeep)
+
+  // 按时间排序
+  mergedNews.sort(function(a, b) {
+    return new Date(b.pubDate).getTime() - new Date(a.pubDate).getTime()
+  })
+
   var output = {
-    news: newsItems,
-    total: newsItems.length,
+    news: mergedNews,
+    total: mergedNews.length,
     fetchedAt: new Date().toISOString(),
     version: '2.0',
   }
 
-  var outDir = path.join(process.cwd(), 'public')
   fs.mkdirSync(outDir, { recursive: true })
-  var outPath = path.join(outDir, 'news-data.json')
   fs.writeFileSync(outPath, JSON.stringify(output, null, 2), 'utf-8')
-  console.log('[save] Wrote ' + output.total + ' items to ' + outPath)
+  console.log('[save] 保存 ' + output.total + ' 篇（' + newsItems.length + ' 篇RSS + ' + manualToKeep.length + ' 篇手动）到 ' + outPath)
 }
 
 async function main() {
