@@ -1,3 +1,5 @@
+export const dynamic = 'force-dynamic'
+
 import { MetadataRoute } from 'next'
 import { TOOLS_DATA } from '@/lib/tools-data'
 import { promises as fs } from 'fs'
