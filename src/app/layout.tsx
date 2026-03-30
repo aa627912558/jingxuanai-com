@@ -12,7 +12,7 @@ export const metadata: Metadata = {
     type: 'website',
   },
   other: {
-    'baidu-site-verification': 'codeva-jgGA6LabNs',
+    'baidu-site-verification': 'codeva-22RwjncCAv',
   },
 }
 
