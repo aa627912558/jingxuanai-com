@@ -197,7 +197,7 @@ export default async function NewsArticlePage({ params }: { params: Promise<{ sl
       '@context': 'https://schema.org',
       '@type': 'Article',
       headline: item.title,
-      description: summary || item.title,
+      description: item.summary || item.title,
       url: item.link,
       datePublished: new Date(item.pubDate).toISOString(),
       author: { '@type': 'Organization', name: item.source },

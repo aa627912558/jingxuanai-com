@@ -3,7 +3,7 @@
 import Link from 'next/link'
 import ReactMarkdown from 'react-markdown'
 import remarkGfm from 'remark-gfm'
-import { ArrowLeft, ExternalLink, Clock, Globe, BookOpen } from 'lucide-react'
+import { ArrowLeft, ExternalLink, Clock, BookOpen } from 'lucide-react'
 import clsx from 'clsx'
 
 interface Article {
