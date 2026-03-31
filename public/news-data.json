@@ -1,6 +1,102 @@
 {
   "news": [
     {
+      "title": "AI不再打杂了！广告投放正在被它全盘接管",
+      "summary": "AI在广告投放领域的应用已从边缘工具升级为全链路核心引擎。从素材生成到策略制定、从预算分配到效果优化，AI正在逐步取代传统投放流程中的人工环节。这一变革将重新定义广告行业的核心竞争力。",
+      "deep_analysis": "这条新闻揭示了一个重要趋势：AI在广告投放领域正在从“辅助工具”跃升为“决策大脑”。过去，AI主要被用于生成文案、图片等素材工作，属于投放流程中的“杂活”。但现在，AI已经渗透到投放的全链路——从受众分析、预算分配、渠道选择到效果优化，每一个环节都在被AI重新定义。\n\n对行业的影响是深远的。首先，广告投放的效率将大幅提升。传统投放需要大量人工进行数据分析、策略调整，而AI可以在秒级时间内完成这些工作。其次，投放的精准度会显著提高。AI能够实时分析海量数据，精准识别目标受众，优化投放策略。这意味着那些依赖人工经验的广告公司和优化师将面临巨大挑战。\n\n从长远来看，AI接管投放全链路是大势所趋。未来三到五年，我们很可能看到这样一个场景：广告主只需输入营销目标，AI就能自动完成从策略制定到效果评估的全部工作。这不是危言耸听，而是正在发生的现实。\n\n对于从业者来说，单纯的执行技能正在贬值。真正有价值的是对AI工具的理解和运用能力，是能够站在更高视角制定营销策略的能力。与其抵抗变化，不如主动拥抱——学会与AI协作，让它成为你的效率放大器，而不是取代你的竞争者。",
+      "tags": [
+        "AI广告",
+        "数字营销",
+        "行业趋势",
+        "技术变革"
+      ],
+      "target_audience": "广告从业者和营销负责人",
+      "original_title": "别再让AI只干零活了！AI工具正在接管投放全链路",
+      "original_snippet": "从行业中来，到行业中去",
+      "link": "https://www.qbitai.com/2026/03/393471.html",
+      "pubDate": "Tue, 31 Mar 2026 01:03:38 +0000",
+      "source": "量子位",
+      "lang": "zh",
+      "is_manual": false
+    },
+    {
+      "title": "15%美国人愿意为AI打工：一场静悄悄的职场革命正在发生",
+      "summary": " Quinnipiac大学最新民调显示，15%的美国人愿意接受AI作为直接上司，由AI分配任务、设定日程。这不仅是技术渗透职场的信号，更揭示了人们对传统管理模式的深层不满。",
+      "deep_analysis": "当AI开始“管人”，你准备好了吗？这条看似简单的民调数据，实际上撕开了未来职场的一角真相。\n\n15%愿意为AI打工，这个数字看似不大，但考虑到美国3亿多劳动力人口，这意味着数千万美国人已经做好了心理准备。更值得玩味的是，民调针对的是“直接上司是AI”——不是辅助工具，而是决策者、考核者、任务分配者。这个比例说明，AI管理不是科幻，而是正在逼近的现实。\n\n为什么会有人愿意给AI打工？我认为恰恰反映了职场人对“人类上司”的普遍失望。传统管理中存在的偏心、情绪化、沟通成本、低效反馈等问题，AI反而能规避。算法不会因为心情不好刁难你，不会因为站队问题穿小鞋，一切按数据和规则来。这种“公平感”对很多打工人来说反而是一种解放。\n\n但这里有个巨大的矛盾：AI真的适合做管理者吗？管理不仅是派发任务，还涉及情感支持、团队协调、危机处理这些需要“人性”的维度。一个员工家里出了事，AI能给出人性化关怀吗？团队起冲突，AI能调解吗？答案是显然的。15%的人愿意接受，不等于85%的人坚决反对——中间还有一个巨大的“观望地带”。\n\n对行业来说，这意味着AI管理工具将迎来爆发期。已经有不少公司在试用AI进行绩效评估、项目分配、考勤监督，未来这些角色会进一步强化。对求职者而言，与其被动接受，不如主动学习与AI协作的能力——因为你的竞争对手不是AI，而是那些已经学会和AI高效配合的人。\n\n我的判断是：五年内，AI不会取代人类管理者，但会成为人类管理者的“超级助手”。十年后，情况可能完全不同。如果你现在的工作高度重复、依赖流程，那么也许是时候想想：除了技能，还能培养什么不可替代的能力？",
+      "tags": [
+        "AI管理",
+        "职场趋势",
+        "人工智能",
+        "未来工作"
+      ],
+      "target_audience": "职场人和科技爱好者",
+      "original_title": "15% of Americans say they’d be willing to work for an AI boss, according to new poll",
+      "original_snippet": "According to a Quinnipiac University poll, 15% of Americans say they'd be willing to have a job where their direct supervisor was an AI program that assigned tasks and set schedules.",
+      "link": "https://techcrunch.com/2026/03/30/ai-work-boss-supervisor-us-quinnipiac-poll/",
+      "pubDate": "Mon, 30 Mar 2026 23:41:48 +0000",
+      "source": "TechCrunch AI",
+      "lang": "zh",
+      "is_manual": false
+    },
+    {
+      "title": "AI网关明星LiteLLM与争议供应商“分手”，上周刚遭恶意软件攻击",
+      "summary": "热门AI网关初创公司LiteLLM近日宣布终止与合规认证供应商Delve的合作，此前LiteLLM通过Delve获得了两个安全认证，但上周遭遇了严重的凭证窃取恶意软件攻击。这一事件暴露了AI基础设施供应链安全风险，引发行业对合规认证可信度的质疑。",
+      "deep_analysis": "这则新闻看似只是一个简单的“合作终止”声明，但背后折射出的问题值得所有AI从业者警惕。\n\nLiteLLM作为AI网关领域的明星产品，它的选择在一定程度上代表了行业风向标。这次果断与Delve切割，反映出一个关键信号：在AI基础设施快速扩张的今天，安全合规不再是“加分项”，而是“生死线”。恶意软件攻击导致凭证泄露，这意味着攻击者可能获得了访问LiteLLM客户系统的权限，后果不堪设想。\n\n很多人可能会问：为什么通过正规渠道获得的安全认证，反而成了“坑”？这就涉及到供应链安全的老问题了。Delve作为提供合规认证的供应商，如果在安全审计过程中存在漏洞或不当行为，等于为LiteLLM埋下了定时炸弹。企业用户必须认识到：认证不等于安全，供应商的可靠性同样重要。\n\n这件事对行业的冲击是深远的。首先，所有依赖第三方合规认证的AI公司都会重新审视自己的供应链，谁也不想成为下一个“受害者”。其次，对于AI基础设施提供商来说，安全能力将成为核心竞争力的重要组成部分，客户不再只看功能，更看重背后的安全保障。最后，那些看似“中立”的合规认证机构也将面临信任危机，行业需要更透明、更严格的安全评估标准。\n\n那么作为从业者，我们该怎么做？第一，不要盲目迷信认证，选择供应商时要做深度的安全尽职调查，了解他们的安全实践和历史记录。第二，建立自己的安全监控体系，不能把所有信任都寄托在第三方认证上。第三，关注供应链安全，把上游供应商的风险纳入整体安全策略中。第四，对于已经使用LiteLLM或类似产品的企业，尽快检查是否有异常访问痕迹，必要时主动更换密钥。\n\nAI行业正处于高速增长期，但安全始终是悬在头顶的达摩克利斯之剑。LiteLLM这次事件不是个例，而是给整个行业敲响的警钟。",
+      "tags": [
+        "AI安全",
+        "供应链安全",
+        "恶意软件",
+        "合规认证",
+        "LiteLLM"
+      ],
+      "target_audience": "AI从业者、安全工程师、技术负责人",
+      "original_title": "Popular AI gateway startup LiteLLM ditches controversial startup Delve",
+      "original_snippet": "LiteLLM had obtained two security compliance certifications via Delve and fell victim to some horrific credential-stealing malware last week.",
+      "link": "https://techcrunch.com/2026/03/30/popular-ai-gateway-startup-litellm-ditches-controversial-startup-delve/",
+      "pubDate": "Mon, 30 Mar 2026 23:08:12 +0000",
+      "source": "TechCrunch AI",
+      "lang": "zh",
+      "is_manual": false
+    },
+    {
+      "title": "AI越普及，信任越稀缺：一场静悄悄的信任危机正在发酵",
+      "summary": "Quinnipiac最新民调显示，美国AI采用率持续攀升，但信任度却一路走低。超过半数受访者对AI的透明度、监管和社影响表示担忧。这种“越普及越不信任”的悖论，折射出AI行业面临的深层信任危机。",
+      "deep_analysis": "这场看似矛盾的数据背后，隐藏着一个被多数人忽视的关键信号：AI正在从技术尝鲜阶段走向社会大规模应用的关键转折期。\n\n为什么会产生这种分裂？答案藏在技术发展的规律里。当一项技术还停留在极客圈时，关注它的人大多能理解其边界和局限。但当它突然闯进普通人生活的每个角落——从写邮件到找工作，从看病到教育——认知鸿沟就出现了。人们发现AI什么都能做，却又不知道它是怎么做到的，这种信息不对称天然滋生不信任。更何况，过去几年AI“一本正经地胡说八道”、deepfake诈骗、算法歧视等负面新闻不断强化着人们的防御心态。\n\n对行业来说，这其实是比技术瓶颈更致命的威胁。AI公司可以迭代算法、加参数、堆算力，但用户信任一旦流失，采纳率的天花板就会压下来。看看现在多少人在用AI生成内容后会自己再核实一遍？多少企业部署AI时必须向客户反复解释“我们的AI不会作恶”？这种隐性成本正在侵蚀AI商业化的速度。\n\n那未来会怎么走？我判断会有三个明显趋势：一是监管加速落地，欧盟已经动起来，美国两党虽然分歧大，但在AI监管上共识在增加；二是“透明度”会成为核心竞争力，那些能解释自己、能审计自己的AI产品会获得更多市场信任；三是AI教育会下沉，从小学到退休人群，数字素养会成为基本技能。\n\n对普通读者，我的建议很直接：不要神话AI，也不要妖魔化AI。它就是一个工具，工具的价值取决于使用它的人。学会提问、学会验证、保持批判思维，这才是AI时代最重要的生存技能。",
+      "tags": [
+        "AI信任危机",
+        "人工智能",
+        "科技社会",
+        "Quinnipiac民调"
+      ],
+      "target_audience": "关注AI发展的普通读者",
+      "original_title": "As more Americans adopt AI tools, fewer say they can trust the results",
+      "original_snippet": "AI adoption is rising in the U.S., but trust remains low, with most Americans concerned about transparency, regulation, and the technology’s broader societal impact, according to a new Quinnipiac poll.",
+      "link": "https://techcrunch.com/2026/03/30/ai-trust-adoption-poll-more-americans-adopt-tools-fewer-say-they-can-trust-the-results/",
+      "pubDate": "Mon, 30 Mar 2026 20:24:53 +0000",
+      "source": "TechCrunch AI",
+      "lang": "zh",
+      "is_manual": false
+    },
+    {
+      "title": "科技巨头疯狂布局AI医疗，但你真的敢让它看病吗？",
+      "summary": "微软Copilot Health和亚马逊Health AI近期动作频频，AI健康工具迎来爆发式增长。然而，在这些科技巨头争相卡位的同时，AI诊断的准确性和安全性仍缺乏足够验证。面对这波AI医疗热潮，普通用户该如何理性看待？",
+      "deep_analysis": "最近AI医疗领域真是热闹非凡。微软刚发布的Copilot Health让用户可以直接在Copilot应用里连接自己的医疗记录，问各种健康问题。亚马逊更激进，之前仅限于One Medical会员的Health AI现在要向更广泛的用户开放了。科技巨头们显然把AI医疗当成了新的必争之地。\n\n这波浪潮背后是巨大的市场需求。大家平时有个头疼脑热，去医院挂号排队太麻烦，网上搜症状又担心不靠谱。AI工具理论上能解决这个问题——随时随地、秒级响应、费用低廉。微软和亚马逊的策略很清楚：先用免费或低成本的方式占领用户入口，等用户养成习惯后再考虑商业化。\n\n但这里有个关键问题：这些AI工具真的靠谱吗？MIT Technology Review的质疑不是没有道理。医疗容错率极低，AI给出错误的建议可能延误病情甚至危及生命。更棘手的是，很多AI健康工具缺乏大规模临床验证，它们的实际表现可能远不如宣传中那么光鲜。\n\n从行业角度看，科技巨头的涌入肯定会加速AI医疗的普及，但也会带来数据隐私、监管缺位、责任认定等一系列问题。当你的医疗数据被科技公司掌控，当AI给出了错误诊断，责任该由谁承担？这些问题的答案目前还不清晰。\n\n对于我们普通用户，我的建议是：可以尝鲜，但别依赖。AI健康工具作为获取健康信息的渠道没问题，但任何涉及诊断和治疗的建议都必须找正规医生核实。特别是涉及处方用药、手术建议等关键决策，AI永远无法替代专业医疗判断。\n\nAI医疗是大势所趋，但路还很长。在真正成熟之前，保持理性或许是最好的选择。",
+      "tags": [
+        "AI医疗",
+        "科技巨头",
+        "Copilot Health",
+        "数字健康"
+      ],
+      "target_audience": "关注科技与健康的读者",
+      "original_title": "There are more AI health tools than ever—but how well do they work?",
+      "original_snippet": "Earlier this month, Microsoft launched Copilot Health, a new space within its Copilot app where users will be able to connect their medical records and ask specific questions about their health. A couple of days earlier, Amazon had announced that Health AI, an LLM-based tool previously restricted to members of its One Medical service, would…",
+      "link": "https://www.technologyreview.com/2026/03/30/1134795/there-are-more-ai-health-tools-than-ever-but-how-well-do-they-work/",
+      "pubDate": "Mon, 30 Mar 2026 16:00:00 +0000",
+      "source": "MIT Technology Review",
+      "lang": "zh",
+      "is_manual": false
+    },
+    {
       "title": "Twitter杀手又进化：Bluesky用AI帮你DIY算法，这次要革平台的命",
       "summary": "Bluesky团队在Atmosphere大会上发布了全新AI助手Attie，用户可以用自然语言描述自己的兴趣，系统就能自动生成定制化的内容推送。这背后的逻辑很明确——把算法的权力还给用户。Attie由Claude驱动，基于Bluesky自己的AT Protocol构建，试图从底层协议层面解决平台算法垄断的问题。",
       "deep_analysis": "这两年社交媒体圈有个很有意思的趋势：用户对平台算法的不满越来越强烈。算法决定你看什么、什么时候看、看谁的，这种被动接受的模式正在被越来越多人质疑。Bluesky正是看准了这个痛点，推出了Attie这款产品。\n\n简单来说，Attie就是一个帮你定制信息流的AI助手。以前你想看特定类型的内容，得手动搜索、关注账号、反复调整设置。现在你只需要告诉Attie\\\"给我推送关于凯尔特传统音乐和神话的内容\\\"，它就能帮你搞定。听起来是不是很美好？但问题来了——这种AI定制 feed的模式，到底是真的把权力还给用户，还是换了一种形式继续控制用户？\n\n我觉得关键在于底层架构。Attie构建在AT Protocol上，这是一个去中心化的社交协议。这意味着用户创建的内容和社交关系不依附于某一个中心化的平台，你的数据可以被迁移、被带走。相比传统的社交平台，这是一个本质上的区别。传统平台你的粉丝、内容、社交关系都是平台的资产，平台随时可以修改规则甚至封杀你。但基于去中心化协议构建的服务，理论上给了用户更多的自主权。\n\n当然，这不代表Attie就是完美的解决方案。首先，自然语言生成feed的能力听起来很美好，但实际体验如何还得打个问号。AI的理解能力、推荐的相关性、以及是否会陷入\\\"信息茧房\\\"，这些都是未知数。其次，去中心化协议虽然理想很美好，但实际推广起来难度很大。普通用户根本不关心底层技术是去中心化还是中心化的，他们只关心产品好不好用、能不能找到想看的内容。\n\n从行业影响来看，Attie代表了一种新的思路：不再试图用更\\\"公平\\\"的算法取代现有算法，而是让用户自己定义自己的算法。这种思路如果成功，可能会对整个内容分发领域产生深远影响。想象一下，如果每个用户都能按照自己的意志定制信息流，那么平台的权力就会被大幅削弱，内容的分发可能会更加多元和分散。\n\n但我必须提醒的是，这条路并不好走。历史上不乏试图挑战平台霸权的项目，但大多数都失败了。Bluesky虽然背靠AT Protocol的技术优势，但最终能否赢得用户，还是要看产品体验和执行力。更重要的是，用户习惯一旦养成是很难改变的。大多数人已经习惯了被动接受算法推送，让他们主动定制自己的feed，这个门槛可能比想象中要高。\n\n对于普通用户来说，我的建议是保持开放但谨慎的态度。这类产品值得关注，但不必急于拥抱。新技术总是听起来很美好，但落地到实际使用又是另一回事。先观察一段时间，看看其他用户的反馈再做决定也不迟。",
@@ -350,7 +446,7 @@
       "is_manual": true
     }
   ],
-  "total": 18,
-  "fetchedAt": "2026-03-29T22:06:08.641Z",
+  "total": 23,
+  "fetchedAt": "2026-03-31T04:12:47.102Z",
   "version": "3.0"
 }
