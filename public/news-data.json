@@ -1,6 +1,65 @@
 {
   "news": [
     {
+      "title": "Meta建一座数据中心要烧10座气电厂，中国AI厂商怕不怕？",
+      "summary": "Meta宣布将建全球最大AI数据中心Hyperion，需要配套10座天然气发电厂供电。这暴露了AI算力狂飙背后的能源隐忧，也折射出大厂们在环保承诺与算力需求之间的艰难平衡。",
+      "deep_analysis": "先说清楚这件事。Meta这次不是在吹牛，是真的在下血本。Hyperion这个数据中心要建在南达科他州，官方说法是要用它来训练下一代大模型。问题来了——这么大规模的计算力从哪来？Meta的答案是：建10座新的天然气发电厂。\n\n这个消息一出来，环保组织肯定要炸锅。你Meta不是前几天还在说要碳中和吗？怎么转头就去烧天然气了？但你得承认，这就是目前AI行业的残酷现实。算力就是生产力，谁有更多电，谁就能训出更强的大模型。\n\n那这对中国意味着什么？我说实话，影响不小。现在国内AI竞争也卷得厉害，各大厂都在拼命堆算力。如果Meta这条路走得通，说明未来AI的竞争不仅是算法和数据的竞争，更是能源的竞争。南达科他州为什么被选中？电价便宜、地广人稀，这跟我国西部搞数据中心是一个道理。\n\n但这里有个大问题值得思考。AI公司一边喊着要用清洁能源，一边又不得不向化石燃料低头。这种矛盾说明什么？说明技术发展到了今天这个阶段，能源已经成了最大的瓶颈之一。英伟达再厉害，显卡再强，没电就是个铁疙瘩。\n\n我认为这种情况短期内不会改变。天然气相对 coal 来说还是干净一点的过渡方案，但长期来看肯定是要往核能、清洁能源方向走的。马斯克之前说要建小型核电站给数据中心供电，虽然被说是画饼，但我觉得这可能是未来五到十年的趋势。\n\n对普通读者来说，这意味着什么？你每天用的ChatGPT、DeepSeek，背后都是实实在在的能源消耗。下次看到科技公司吹环保的时候，心里要打个问号——他们真的做到位了吗？对于从业者来说，选公司的时候不能只看估值和团队，还得看看他们的能源策略，毕竟这关系到公司能不能可持续发展。\n\n总之这场AI的算力战争，现在已经打到能源层面了。谁能解决能源问题，谁才能笑到最后。",
+      "tags": [
+        "AI数据中心",
+        "能源消耗",
+        "Meta",
+        "天然气",
+        "碳排放",
+        "科技巨头"
+      ],
+      "target_audience": "科技爱好者、AI从业者、关注环保的读者",
+      "original_title": "Meta’s natural gas binge could power South Dakota",
+      "original_snippet": "Meta's upcoming Hyperion AI data center will be powered by 10 new natural gas plants.",
+      "link": "https://techcrunch.com/2026/04/01/metas-natural-gas-binge-could-power-south-dakota/",
+      "pubDate": "Wed, 01 Apr 2026 18:35:36 +0000",
+      "source": "TechCrunch AI",
+      "lang": "zh",
+      "is_manual": false
+    },
+    {
+      "title": "Hugging Face抛出重磅炸弹！Holo3要让AI自己操作电脑？",
+      "summary": "Hugging Face近日发布Holo3模型，标榜\"突破计算机使用前沿\"。这意味着AI不再局限于回答问题，而是能像人类一样自主操作电脑——点击、输入、搜索、填表。消息一出，开发者圈炸开了锅，有人兴奋这是AI代理时代的里程碑，也有人质疑这只是又一个概念炒作。真相究竟如何？",
+      "deep_analysis": "先说清楚Holo3到底做了什么。简单来讲，Hugging Face这次扔出的王炸，是一个能让AI直接控制计算机界面的模型。你不再需要它给出文字答案，而是让它自己动手：帮你填表、帮你订票、帮你批量处理文件。想象一下，你对AI说\"帮我把今天收到的邮件附件整理到对应文件夹\"，它就真的能自己打开邮件、点击附件、拖拽到指定位置——整个过程不需要你动一下手指。\n\n这听起来好像不新奇？不，市面上能做到\"执行命令\"的AI工具已经不少，但Holo3的突破在于，它是真正\"看\"着屏幕操作——就像人类一样通过视觉理解界面，然后用鼠标键盘完成动作，而不是靠API调用或者预设脚本。这意味着它理论上可以操作任何软件，不管有没有开放接口。\n\n对行业的影响，我判断至少有三个层面。第一，软件交互范式要变天。以前我们说\"人机交互\"，本质是人操作机器；以后可能是\"人-AI-机器\"，AI充当中间层，我们只要下达意图。这对普通人来说是好事，不用学各种软件操作了；但对软件厂商来说可能是噩耗——用户可能不再需要你的界面做得那么友好，因为AI可以替用户搞定一切。\n\n第二，AI代理（Agent）商业化进程加速。过去一年，所有人都在谈AI Agent，但真正能落地的场景有限，核心原因之一就是AI无法可靠地操作复杂界面。Holo3如果能解决这个问题，AI Agent的应用场景会从\"聊天\"扩展到\"办事\"，这个商业价值是完全不同的量级。\n\n第三，打不过就加入——微软、谷歌这些大厂怕是要紧张了。Hugging Face本身不做产品，但它开源模型的做法，会让它快速成为AI基础设施的\"水电煤\"。可以预见，接下来各大厂商会加速类似功能的研发，AI操作计算机这个赛道的竞争会更加激烈。\n\n至于未来，我认为一年内会出现\"AI同事\"这个概念——你不再是在线客服或者语音助手，而是一个能帮你干活、帮你操作的数字员工。当然，安全和隐私是最大的拦路虎，放心让AI操作你的电脑、你的账户、你的数据，这个信任建立需要时间，也需要技术验证。\n\n对普通读者来说，我的建议是：别急着激动，但也别急着无视。Holo3代表的方向，大概率是未来三到五年AI发展的主线之一。你可以现在开始熟悉这类工具的使用，但更重要的是思考：在AI能自己干活的时代，你的核心竞争力在哪里？答案可能不是和AI比谁操作电脑快，而是比谁能给AI下达更清晰的指令、谁能判断AI做得对不对。\n\n技术变革来的时候，要么拥抱它，要么被它超越。没有中间地带。",
+      "tags": [
+        "Hugging Face",
+        "人工智能",
+        "AI代理",
+        "计算机使用"
+      ],
+      "target_audience": "科技爱好者和开发者",
+      "original_title": "Holo3: Breaking the Computer Use Frontier",
+      "original_snippet": "",
+      "link": "https://huggingface.co/blog/Hcompany/holo3",
+      "pubDate": "Wed, 01 Apr 2026 16:36:15 GMT",
+      "source": "Hugging Face Blog",
+      "lang": "zh",
+      "is_manual": false
+    },
+    {
+      "title": "AI开始自己设计芯片了：这家刚融资6000万的公司，或将颠覆整个半导体行业",
+      "summary": "美国初创公司Cognichip宣布完成6000万美元融资，声称其AI系统可将芯片开发成本降低75%以上，开发周期缩短超过一半。这意味着AI已经不只是芯片的受益者，更开始成为芯片的设计者。传统芯片设计流程正面临前所未有的自动化变革。",
+      "deep_analysis": "当你以为AI只是在赋能各行各业时，它已经把手伸进了芯片产业最核心的领域——设计本身。最近一家名为Cognichip的美国初创公司完成6000万美元融资，其核心业务不是卖芯片，而是用AI来设计芯片。这条消息值得所有科技从业者警惕，因为它预示着一个危险的信号：AI正在形成自我循环的闭环。\n\n 先说说这家公司到底在做什么。芯片设计是一个极其复杂的工程过程，传统上需要数百名工程师耗费数年的时间，从架构定义到物理布局每一个环节都需要精密计算。任何一代旗舰芯片的研发成本往往高达数亿美元，时间跨度以年计算。而Cognichip声称他们的AI系统可以自动完成大部分设计工作，直接把成本砍掉75%，时间缩短一半。这个数字有多夸张？相当于把一场马拉松变成百米冲刺。\n\n 更深层的意义在于，这代表AI正在成为自己的推动力。芯片为AI提供算力，AI反过来设计芯片，这一轮循环一旦建立起来，迭代速度会呈指数级增长。AI设计的芯片可能更适合运行AI模型，而更强大的AI模型又能设计出更先进的芯片。这是一个自我强化的飞轮，而Cognichip试图卡住这个飞轮的关键节点。\n\n 对行业的影响是立竿见影的。首先受到冲击的是传统芯片设计公司， 它们引以为傲的设计团队和多年积累的工程经验很可能在AI面前变得一文不值。其次是整个半导体产业链，从EDA工具厂商到晶圆代工厂都可能面临重新洗牌。谁能更早接入AI设计能力，谁就能在未来竞争中占据优势。这不只是效率问题，而是生存问题。\n\n 当然现在说AI完全取代人类工程师还为时尚早。芯片设计涉及大量权衡取舍和特殊需求，某些关键环节仍然需要人类判断。但趋势已经很明显：AI正在从辅助工具变成核心设计力量。未来的芯片工程师可能不需要自己动手画图，而是学会如何提问、如何验证、如何在AI生成的方案中做出选择。\n\n 那么我们应该怎么做？如果你在半导体行业，现在就是转型的最后窗口期。理解AI、会用AI设计工具将成为基础技能而不是加分项。如果你只是普通读者也不用太远虑，但需要意识到 AI对各行各业的渗透比想象中更快，今天是芯片设计，明天可能就是你的行业。保持学习、保持开放，这是应对不确定未来的唯一确定方式。",
+      "tags": [
+        "AI芯片",
+        "半导体",
+        "自动化",
+        "行业趋势"
+      ],
+      "target_audience": "科技爱好者和从业者",
+      "original_title": "Cognichip wants AI to design the chips that power AI, and just raised $60M to try",
+      "original_snippet": "The firm says it can reduce the cost of chip development by more than 75% and cut the timeline by more than half.",
+      "link": "https://techcrunch.com/2026/04/01/cognichip-wants-ai-to-design-the-chips-that-power-ai-and-just-raised-60m-to-try/",
+      "pubDate": "Wed, 01 Apr 2026 16:00:00 +0000",
+      "source": "TechCrunch AI",
+      "lang": "zh",
+      "is_manual": false
+    },
+    {
       "title": "硅谷AI圈又一波闭门密会：风向标还是焦虑集中营？",
       "summary": "4月30日，StrictlyVC San Francisco将汇聚TDK Ventures、Replit等行业领袖。这是本月硅谷第二场重磅AI闭门活动。在AI投资趋于冷静的当下，这些高端密会的密集出现，究竟释放了什么信号？是行业风向标，还是投资者的焦虑集中营？",
       "deep_analysis": "四月的硅谷，AI圈有点热闹。继月初的某个闭门峰会后，StrictlyVC San Francisco又将在月底登场，TDK Ventures、Replit这些名字凑在一起，表面上看是一场普通的高端聚会，但如果你仔细观察，会发现这背后藏着一些有趣的门道。\n\n先说说TDK Ventures。这家机构的背景挺有意思——背靠日本电子巨头TDK，做的是产业资本的投资逻辑。他们看AI项目，不完全是财务投资者的那一套，更看重技术能否落地、能否和自身产业链形成协同。这意味着什么？说明当下的AI投资已经从“撒钱式”热捧，逐步转向“务实派”筛选。那些只会讲故事的项目，不好拿钱 了。\n\n再看Replit。这家公司从做在线编程IDE起家，后来All in AI代码生成，现在是AI编程赛道的明星玩家。他们出现在这类活动里，很大程度上代表着AI应用层的玩家心态——想看看投资人在关注什么，想办法对接资源。Replit的CEO在之前多次公开演讲中提到，AI编程工具已经进入“洗牌期”，中小玩家要么被收购，要么被淘汰。这种背景下，来闭门会探探风声、摸摸对手底盘，就显得很正常了。\n\n我个人的判断是，这类闭门高端会的密集出现，恰恰反映了AI行业的一个微妙节点：投资人和创业者都在“等方向”。过去一年多，市场经历了从极度乐观到逐步理性的过程，现在大家都在寻找下一个确定性的方向——是AI Agent？是垂直应用？还是底层基础设施？所以你会看到，闭门会的质量决定了它能否真正产出价值。高质量的闭门会应该是信息交换、思想碰撞的场所，而不是简单的名片交换会。从业者参与这类活动，关键不是去“认识人”，而是带着问题去——你想清楚自己的定位了吗？你想知道投资人到底在犹豫什么吗？如果这些都想清楚了再去，闭门会才有意义。\n\n至于行业趋势，我的判断是：AI投资会进一步分化。头部项目和头 部机构继续抱团，中间的项目融资难度会显著上升。接下来半年，我们会看到更多关于AI公司裁员、收缩的负面消息，但这不是坏事——挤掉泡沫，行业才能真正进入健康发展的轨道。",
@@ -20,6 +79,27 @@
       "is_manual": false
     },
     {
+      "title": "倒计时不到一个月！AI投资圈顶级峰会即将引爆旧金山",
+      "summary": "TechCrunch AI报道，StrictlyVC将于4月30日在旧金山举办闭门峰会，汇聚TDK Ventures、Replit等行业领袖。名额有限，AI从业者迎来年度最重要的Networking机会。",
+      "deep_analysis": "各位AI圈的朋友们，如果你们最近在关注AI投资和创业的动态，那这条消息绝对值得关注。\n\nStrictlyVC将于4月30日在旧金山举办一场闭门峰会，聚集了当下AI领域最重量级的玩家。看看参会名单：TDK Ventures——这家专注于硬科技和AI的投资机构，在过去几年可是频频出手；Replit——这家AI编程平台最近因为其强大的代码生成能力火遍整个科技圈。这样的组合意味着什么？投资人+明星创业公司，这是要聊大事的节奏。\n\n我个人判断，这场峰会的时间点非常微妙。2026年已经过去了四分之一，整个AI行业正处于一个关键的调整期。一方面，资本的狂热似乎开始降温，投资人对项目的挑选越来越严格；另一方面，AI技术的落地应用正在加速，从编程到内容创作，从企业服务到消费级产品，各个赛道都在经历洗牌。\n\n那么这场闭门峰会到底要聊什么？从参会方的背景来看，我猜测无非是这几个话题：AI投资的下半场该怎么玩？哪些赛道还有机会？创业公司和投资人如何更好地配合？特别是Replit这种已经在市场上证明自己的公司，它的选择可能会影响整个行业的风向。\n\n对咱们普通从业者来说，虽然可能没机会进场，但在社交媒体上关注这些大佬的观点输出，绝对能帮咱们理清思路。你看，每次这种级别的峰会过后，都会有各种分析文章和访谈流出，这就是咱们了解行业趋势的窗口。\n\n最后提醒一句：名额有限，想去的赶紧注册。科技圈这种级别的闭门活动，去不了现场也得关注现场传出来的声音。你觉得这次峰会会产生什么重磅消息？欢迎在评论区一起讨论。",
+      "tags": [
+        "AI投资",
+        "StrictlyVC",
+        "旧金山科技峰会",
+        "TDK Ventures",
+        "Replit",
+        "AI创业"
+      ],
+      "target_audience": "AI从业者与投资人",
+      "original_title": "Less than a month: StrictlyVC San Francisco brings leaders from TDK Ventures, Replit, and more together",
+      "original_snippet": "StrictlyVC San Francisco brings leaders from TDK Ventures, Replit, and more together on April 30. Space is limited. Register here for your pass.",
+      "link": "https://techcrunch.com/2026/04/01/join-the-first-strictlyvc-of-2026-in-sf-with-leaders-from-tdk-ventures-and-replits-co-founder/",
+      "pubDate": "Wed, 01 Apr 2026 14:00:00 +0000",
+      "source": "TechCrunch AI",
+      "lang": "zh",
+      "is_manual": false
+    },
+    {
       "title": "你的Stream Deck要被AI“抢走”了？",
       "summary": "Elgato在Stream Deck 7.4更新中引入了MCP协议，ChatGPT、Claude等AI助手现在可以直接帮你按按钮了。这不仅是交互方式的升级，更是AI Agent走向硬件控制的第一步。",
       "deep_analysis": "如果你是一名主播或内容创作者，估计手里都揣着一块Stream Deck——那个有十几个按钮的小方块，能一键切换场景、启动OBS、调节音量。但你有没有想过，某天这些按钮可能不用你亲手去按了？\n\n这事儿听起来有点离谱，但真的发生了。Elgato最近发布的Stream Deck 7.4更新，引入了Model Context Protocol（也就是MCP），直接让AI助手可以通过这个协议“找到”并“按下”你设置好的按钮。想象一下，你对ChatGPT说“帮我切换到游戏场景”，它真的就去帮你按了那个按钮，全程不需要你动一根手指。\n\n有人可能要问了：这有啥了不起的？不就是语音助手能做的事吗？\n\n还真不一样。以前的语音控制本质上是在调用预设好的指令，但现在的MCP让AI有了“理解”你的硬件设置的能力。AI不再只是执行命令，它能“看见”你的Stream Deck上有哪些按钮、每个按钮对应什么功能，然后自主判断该按哪个。这就像从“让你做什么”变成了“你自己看着办”。\n\n更深一层看，这其实是AI Agent（智能体）开始“染指”物理世界的一个信号。过去我们讨论AI，最多就是聊天、写文案、生成图片，但当AI能控制你的键盘、鼠标、摄像头、灯光——乃至各种硬件设备——这意味着AI第一次有了“手”。这不是在危言耸听，你想想看，如果AI既能帮你写代码，又能帮你测试；既能帮你剪辑视频，又能帮你调整参数；那它还需要你吗？\n\n当然，眼下这件事对普通用户来说冲击没那么大。Stream Deck的核心用户本来就是追求效率的内容创作者，现在只是多了一种触发方式。但如果你是个有前瞻性的人，应该能嗅到这里面的味道：AI正在从软件层面向硬件层面渗透，以后你买的每一个智能设备，可能都会成为AI的“手脚”。\n\n那我们该怎么做？我的建议很简单：别抗拒，但也别盲目追新。先把手头的 工作流梳理清楚，看看哪些环节确实适合交给AI来做。比如你每次直播都要切换三四个场景，让AI帮你一键完成，这很香。但如果你只是按几个按钮的事儿，自己动手也未必更慢。\n\n关键在于，AI不是来“替代”你的，而是来“扩展”你的。把AI当助理，而不是对手，这波红利才能真正吃到。",
@@ -30,6 +110,26 @@
         "智能硬件"
       ],
       "target_audience": "内容创作者和科技爱好者",
+      "original_title": "AI can push your Stream Deck buttons for you",
+      "original_snippet": "If you're tired of controlling Stream Deck devices by manually pushing buttons, then good news: Elgato will now let you delegate that task to a chatbot instead. The Stream Deck 7.4 software update released today introduces Model Context Protocol (MCP) support, allowing AI assistants like Claude, ChatGPT, and Nvidia G-Assist to find and activate Stream Deck actions on your behalf.\n\"You still set up actions in Stream Deck app the same way you always have. MCP adds a new way to trigger them,\" Elgat",
+      "link": "https://www.theverge.com/tech/905021/elgato-stream-deck-mcp-ai-agent-update",
+      "pubDate": "2026-04-01T12:38:58.000Z",
+      "source": "The Verge AI",
+      "lang": "zh",
+      "is_manual": false
+    },
+    {
+      "title": "你的Stream Deck按钮，可能由AI来按了",
+      "summary": "Elgato在4月1日发布的Stream Deck 7.4更新中引入了MCP（模型上下文协议）支持，首次允许Claude、ChatGPT、Nvidia G-Assist等AI助手直接控制你的Stream Deck设备。这意味着曾经需要手动点击的按钮，现在可以交给AI来触发，为创作者和专业人士打开了全新的自动化想象空间。",
+      "deep_analysis": "先说清楚这件事本身。Stream Deck是Elgato推出的专业级直播和创作控制面板，本质上就是一个可自定义的实体按钮键盘，用户可以给每个按钮设定不同的功能，比如切换场景、启动特效、控制音量等等。这次7.4版本的核心更新是支持了MCP——Model Context Protocol，这是Anthropic推出的一套标准，让AI模型能够“看到”并操作外部工具和软件。\n\n说得再直白一点，以前你得自己伸手去按Stream Deck上的按钮，现在你可以让AI助手代劳了。比如你可以对Claude说“帮我切换到游戏直播场景”，它就会自动找到对应的按钮并触发。这个过程对用户来说依然是先在Stream Deck应用里配置好动作，但触发的权力交给了AI。\n\n这件事的意义在哪里？我认为它标志着AI与硬件交互的一个关键转折点。过去我们谈AI助手，大部分场景还是对话、生成内容、回答问题，属于“软技能”。但MCP让AI开始具备“动手能力”，它不只和你聊聊天，而是能真真切切去操作你桌上的设备。这种变化对于内容创作者、直播主、专业办公人群来说，意义可能比很多人想象的要大。\n\n举个例子，直播过程中要切换场景、调整音频、启动OBS录制，这些操作以前需要手动按多个按钮，或者配合快捷键。现在你可以让AI根据场景需求自动完成——当你开始游戏时，G-Assist检测到画面变化，自动切到游戏场景并调低背景音乐；当你结束直播时，一句“结束直播”就能让AI帮你关闭录制、保存回放、关闭灯光。这种“动口不动手”的工作流，正在从概念走向现实。\n\n从行业角度看，Elgato这一步走得相当聪明。Stream Deck本身就是个小众但忠诚度极高的工具，它的用户画像很清楚——对效率有追求的内容创作者和专业用户。引入MCP支持，相当于给自己的产品装上了AI的大脑，从一个静态的物理控制器变成了可以被AI驱动的动态工具。这对于其他硬件厂商来说是个信号：如果你不做AI适配，未来很可能就会被用户抛弃。\n\n但我也得泼点冷水。目前这个功能还是有门槛的。你需要用支持MCP的AI客户端，需要在Stream Deck应用里配置好动作，需要理解Prompt怎么写。对于普通用户来说，这可能比直接按按钮还麻烦。所以短期内的影响主要还是集中在极客和早期 adopters 群体。\n\n展望未来一到两年，我判断几个趋势会出现：一是更多外设厂商会跟进MCP支持，键盘、鼠标、控制器都可能变得“AI可操作”；二是工作流自动化会更普及，AI不再只是生成内容，而是真正介入执行环节；三是普通人会用上“语音一键操作”的场景会越来越多，尽管现在还只是开始。\n\n对于普通读者，我的建议是：如果你已经是Stream Deck用户，可以去试试这个新功能，感受一下AI控制硬件是什么体验。如果你还没有这类设备但对效率工具有兴趣，可以关注这个趋势，因为它很可能改变我们与电脑交互的方式。不要小看这一步——AI从“能说会道”到“能说会做”，这个跨越可能比很多人预期的更快到来。",
+      "tags": [
+        "AI工具",
+        "Stream Deck",
+        "MCP协议",
+        "硬件自动化",
+        "Elgato"
+      ],
+      "target_audience": "科技爱好者、内容创作者",
       "original_title": "AI can push your Stream Deck buttons for you",
       "original_snippet": "If you're tired of controlling Stream Deck devices by manually pushing buttons, then good news: Elgato will now let you delegate that task to a chatbot instead. The Stream Deck 7.4 software update released today introduces Model Context Protocol (MCP) support, allowing AI assistants like Claude, ChatGPT, and Nvidia G-Assist to find and activate Stream Deck actions on your behalf.\n\"You still set up actions in Stream Deck app the same way you always have. MCP adds a new way to trigger them,\" Elgat",
       "link": "https://www.theverge.com/tech/905021/elgato-stream-deck-mcp-ai-agent-update",
@@ -1126,7 +1226,7 @@
       "is_manual": true
     }
   ],
-  "total": 58,
-  "fetchedAt": "2026-04-01T16:09:04.809Z",
+  "total": 63,
+  "fetchedAt": "2026-04-01T19:06:49.270Z",
   "version": "3.0"
 }
