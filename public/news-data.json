@@ -1,6 +1,102 @@
 {
   "news": [
     {
+      "title": "七年心血付诸东流：抑郁检测AI为何拿不到FDA“准生证”",
+      "summary": "加州创业公司Kintsugi用了整整七年时间开发语音检测抑郁的AI系统，却迟迟未能获得FDA批准，最终走向关闭并将技术开源。这件事折射出AI医疗产品面临的监管困境：技术前景很美好，但想要真正落地治病救人，远没有想象中那么简单。",
+      "deep_analysis": "Kintsugi的故事要从七年前说起。这家位于加州的初创公司声称，他们开发的AI可以通过分析人的语音特征来检测抑郁和焦虑的早期征兆。想象一下，以后做个语音检查就能发现心理问题，不用再填那些冗长的问卷，听起来是不是很诱人？然而现实很残酷——美国食品药品监督管理局（FDA）始终没有给这张“通行证”。\n\n为什么这么难？核心问题在于两个字：验证。语音AI诊断Depression不像做个血糖检测那样有明确的生物指标，抑郁本身就带有主观性，不同人表达情绪的方式千差万别。FDA要求的是严格的双盲临床试验数据，要证明这套系统在真实场景下的准确性和安全性。七年时间，Kintsugi烧掉了大量资金，却始终无法拿出足够说服监管机构的证据。\n\n这件事给整个AI医疗赛道泼了一盆冷水。近年来，无数公司宣称AI可以诊断心理疾病、预测健康风险，但真正能通过监管门槛的凤毛麟角。监管机构并不是故意刁难，而是医疗产品关乎人命，容不得半点闪失。一个误诊可能延误治疗，一个漏诊可能酿成悲剧。\n\n不过故事还没完。Kintsugi选择把技术开源，这意味着全球的研究者都可以免费使用这套语音分析系统。有意思的是，这项技术可能会在另一个领域找到新生命——检测深度伪造音频。想想看，现在AI合成声音泛滥，用同样的算法来识别假声音，倒是个绝妙的应用场景。\n\n对普通人来说这件事意味着什么？别盲目迷信所谓的“AI心理医生”。技术再先进，目前也取代不了专业的心理评估和临床诊断。如果你感到情绪低落、失眠焦虑，该去看医生还是得去，别被一些“AI检测”的花哨功能带偏了。当然，这个领域的探索不会停止，也许再过几年，真正的AI心理健康助手会出现，但前提是，它得先过了FDA这一关。",
+      "tags": [
+        "AI医疗",
+        "创业教训",
+        "FDA审批",
+        "心理健康"
+      ],
+      "target_audience": "关注AI和科技趋势的读者",
+      "original_title": "It’s not easy to get depression-detecting AI through the FDA",
+      "original_snippet": "For the past seven years, the California-based startup Kintsugi has been developing AI designed to detect signs of depression and anxiety from a person's speech. But after failing to secure FDA clearance in time, the company is shutting down and releasing most of its technology as open-source. Some elements may even find a second life beyond healthcare, like detecting deepfake audio. \nMental health assessments still largely rely on patient questionnaires and clinical interviews, rather than the ",
+      "link": "https://www.theverge.com/ai-artificial-intelligence/905864/depression-detecting-ai-kintsugi-clinical-ai-startup-shut-down",
+      "pubDate": "2026-04-02T15:33:23.000Z",
+      "source": "The Verge AI",
+      "lang": "zh",
+      "is_manual": false
+    },
+    {
+      "title": "微软AI掌门人的超级智能野望：Suleyman按下加速键",
+      "summary": "微软首任AI CEO Mustafa Suleyman在3月公司重组后悄然转型，将重心从日常管理转向追求超级智能。消息人士透露他已为此准备长达9个月，并与OpenAI重新谈判合作条款。这位曾主导Inflection AI的创始人，正带领微软走向AI战场的下一个制高点。",
+      "deep_analysis": "微软这次人事调整绝非偶然。Suleyman被推到超级智能赛道的背后，折射出整个AI行业正在经历一场深刻的方向转变。\n\n过去几年，微软在AI领域的布局主要围绕OpenAI展开——从投资到深度合作，再到产品整合，看起来一切都已步入正轨。但Suleyman的转向说明微软并不满足于做OpenAI的独家合作伙伴，而是要亲自下场，掌握通往超级智能的钥匙。\n\n这里有个有趣的矛盾：微软既与OpenAI保持深度合作，又在内部悄悄储备力量冲刺更遥远的目标。这种\\\"两条腿走路\\\"的策略背后，是微软对AI未来的深深焦虑——如果超级智能真的是AI的终极形态，那么依赖任何单一合作伙伴都存在风险。\n\n从行业影响来看，微软的这一步棋会加速AI巨头之间的军备竞赛。可以预见，Google、Meta、Anthropic等玩家都不会坐视微软独自奔向超级智能，它们必然会加大投入，整个行业的竞争门槛将被进一步抬高。\n\n对于普通从业者和关注AI的读者来说，这则新闻传递了一个明确信号：AI的发展正在从当前的\\\"生成式AI\\\"向更远的\\\"超级智能\\\"延伸。这意味着我们正在进入一个更激进的AI时代，技术突破的速度可能会远超预期。\n\n作为普通人，面对这样的趋势，无需过度焦虑但也不能完全置身事外。保持对AI发展的关注，理解这场技术变革可能带来的深远影响，比任何时候都更重要。超级智能不会明天到来，但微软已经在为它做准备了。",
+      "tags": [
+        "微软",
+        "Mustafa Suleyman",
+        "超级智能",
+        "AI行业趋势"
+      ],
+      "target_audience": "AI从业者和科技爱好者",
+      "original_title": "Microsoft’s new ‘superintelligence’ game plan is all about business",
+      "original_snippet": "Mustafa Suleyman has been preparing for his new job description for a long time. Suleyman is Microsoft's inaugural CEO of AI, but after the company underwent a large-scale restructuring in mid-March, he's handed off some duties and shifted focus to chasing superintelligence. Though the news was only made public last month, he tells The Verge, he'd been preparing for the transition for as many as nine months - and though renegotiating Microsoft's contract with OpenAI is the thing that officially ",
+      "link": "https://www.theverge.com/report/905791/mustafa-suleyman-microsoft-ai-transcription-model",
+      "pubDate": "2026-04-02T14:00:00.000Z",
+      "source": "The Verge AI",
+      "lang": "zh",
+      "is_manual": false
+    },
+    {
+      "title": "Google Home这次更新，让我看到了AI管家的未来",
+      "summary": "Google Home再次更新，Gemini AI现在能听懂“海洋色”这样的自然描述，并能用更日常的语言控制家电。这意味着我们与智能家居的交互正在从“冰冷指令”转向“自然对话”，这场交互革命正在悄悄改变我们的生活方式。",
+      "deep_analysis": "当我看到Google Home这次的更新公告时坦白说，我有点激动。不是因为又多了什么花哨功能，而是因为这次更新真正触及了智能家居最核心的问题：我们到底该怎么和这些设备“说话”。\n\n过去几年，智能家居设备给我最大的困扰不是功能不够强大，而是我必须得“学会”它们的语言。要调个灯光，你得说“将客厅灯亮度调到50%”，要开空调，你得说“将温度设置为24度”。仿佛不是我在指挥它们，而是我在配合它们。这种本末倒置的交互体验，一直让我觉得所谓的“智能”不过是伪智能。\n\n但这次不一样了。Gemini现在能理解“海洋的颜色”这样的抽象描述，这意味着AI开始具备理解人类自然语言的能力。你不再需要精确的指令，你只需要表达你的感受和需求。这让我想起了科幻电影里那种能听懂人话、猜透人心的AI管家——虽然还没那么夸张，但至少方向是对的。\n\n从行业角度看，Google这一招其实是在下一盘大棋。智能家居市场早就陷入同质化竞争，各家设备功能都差不多，真正能拉开差距的就是用户体验。而用户体验的核心，就是交互方式。Google显然想把Gemini打造成智能家居的“大脑”，让Google Home从单纯的遥控器变成真正能理解用户的助手。这对亚马逊Alexa和苹果HomeKit来说，都是不小的压力。\n\n但我更关心的是，这对普通人意味着什么。想象一下，以后你早上醒来，可以对着手机说“让家里有点日出的感觉”，灯光自动调成温暖的橙黄色；晚上睡前说一句“帮我营造星空的氛围”，卧室灯就能模拟星空的质感。这种体验，不再是冷冰冰的“执行命令”，而是一种有温度的“对话”。\n\n当然，现在谈完全颠覆还为时过早。Gemini能否准确理解各种奇奇怪怪的描述？不同用户的表达方式千差万别，它能不能做到真正“懂你”？这些都还需要时间检验。但至少，Google迈出了这一步，给整个行业指明了一个方向。\n\n对于普通用户，我的建议是：保持开放但理性的态度。新技术出来，别急着吹爆，也别急着否定。可以在日常生活中多尝试、多体验，看看这样的交互方式是否真的能让你的生活更便利。毕竟，科技最终是要服务于人的，而不是用来炫技的。",
+      "tags": [
+        "Google Home",
+        "Gemini AI",
+        "智能家居",
+        "人机交互"
+      ],
+      "target_audience": "科技爱好者和普通用户",
+      "original_title": "Google Home’s latest update makes Gemini better at understanding your commands",
+      "original_snippet": "Google is launching another update to its Home app, which is supposed to make controlling your smart home with its Gemini AI assistant \"more natural and reliable,\" according to this week's release notes. With the update, you can describe the type of lighting you want, such as \"the color of the ocean,\" and Gemini will pick the color based on your prompt.\nYou can also use more natural and precise language when asking Gemini to control your appliances or climate. That means you can now tell Gemini ",
+      "link": "https://www.theverge.com/tech/905805/google-home-gemini-temperature-controls-lighting",
+      "pubDate": "2026-04-02T13:30:12.000Z",
+      "source": "The Verge AI",
+      "lang": "zh",
+      "is_manual": false
+    },
+    {
+      "title": "每天120万亿Tokens！豆包这是要“烧穿”AI天花板？",
+      "summary": "字节跳动旗下AI产品豆包被曝每日处理高达120万亿Tokens，Seedance 2.0也开放公测。这意味着什么？AI算力军备竞赛已经进入白热化阶段，一个产品的日消耗就如此惊人，整个行业的能源和成本压力可见一斑。",
+      "deep_analysis": "先说个数：120万亿Tokens，这是个什么概念？如果把这些Tokens打印成文字，足以填满几百个大型图书馆。豆包作为字节跳动的核心AI产品，每天要处理这么多 Tokens，背后的算力投入堪称恐怖。\n\n这则新闻其实揭示了一个被很多人忽视的事实：AI时代真正的“燃料”不是代码，不是算法，而是算力，是Tokens。每一个我们跟AI的对话，每一次模型推理，都在消耗真实的计算资源。豆包敢这么烧，足以说明字节在AI这条路上是铁了心要all in。\n\n但这里有个问题：烧钱能烧多久？120万亿Tokens的日消耗，假设每个Token的推理成本是极其微小的，但乘以这个天文数字，运营成本必然是天价。AI公司现在普遍面临商业化变现的难题，花钱如流水，赚钱如针挑。如果只靠烧钱抢市场，一旦资本冷静下来，这些投入怎么收回？\n\n再说Seedance 2.0。这个产品我了解的信息不多，但从命名来看，应该是字节在AI生图或者多模态领域的另一张牌。多家产品同时推进，说明字节的AI布局是多点开花，不想把所有鸡蛋放在一个篮子里。\n\n对行业来说，豆包的算力消耗释放了几个信号：第一，头部玩家的投入已经不计成本了，这场竞赛普通人根本玩不起；第二，推理侧的优化将成为下一阶段的关键，毕竟训练是一次性的，但推理是每天都在发生的；第三，谁能解决算力成本和效率问题，谁就能在AI下半场占得先机。\n\n那我们普通人该怎么看这件事？我觉得有几个角度值得关注：一是别被表面的“AI万能”冲昏头脑，底层算力瓶颈真实存在；二是盯着那些能在效率和成本上做出突破的公司，这才是真正的技术护城河；三是AI应用层面的机会反而更大，毕竟算力再强，最后还是要落地到具体场景。\n\n总之，120万亿Tokens给我们提了个醒：AI很火，但火是有代价的。这场算力军备竞赛，最后拼的可能不是谁钱多，而是谁能先把成本打下来。",
+      "tags": [
+        "AI算力",
+        "豆包",
+        "字节跳动",
+        "行业观察"
+      ],
+      "target_audience": "AI爱好者与从业者",
+      "original_title": "我的天！豆包每天烧120万亿Tokens啊！",
+      "original_snippet": "Seedance 2.0也可以公测了",
+      "link": "https://www.qbitai.com/2026/04/395202.html",
+      "pubDate": "Thu, 02 Apr 2026 12:30:16 +0000",
+      "source": "量子位",
+      "lang": "zh",
+      "is_manual": false
+    },
+    {
+      "title": "油价飙升只是开始：一场战争如何让塑料变成下一个奢侈品",
+      "summary": "伊朗战争引发的油价飙升正在向产业链下游蔓延，塑料行业首当其冲。当石化原料成本持续攀升，从包装到汽车零部件的所有产品都将面临涨价压力。但危机中也藏着机遇——这可能是加速绿色新材料革命的转折点。",
+      "deep_analysis": "这场由地缘冲突引发的经济连锁反应，正在给全球制造业上课。伊朗作为重要的石油生产国，其持续的战争状态直接导致国际油价剧烈波动。而油价上涨的冲击波，很快就会传导到塑料产业——因为塑料的本质就是石油的衍生品。生产成本中，原料成本占据了大头，当石油价格攀升，乙烯、丙烯等基础化工原料的报价自然会水涨船高。\n\n这意味着什么？日常生活中几乎所有依赖塑料的产品都可能被波及。从矿泉水瓶到汽车内饰，从电子产品外壳到医疗器械，成本压力会层层传导至消费者端。但有意思的是，这场危机或许会成为行业转型的催化剂。过去几年，生物降解塑料、回收再生技术的商业化进程一直不温不火，核心原因就是传统塑料太便宜了，没有足够的成本压力推动企业改变。现在，当传统塑料的成本优势被削弱，可替代方案的经济性就会凸显。\n\n对于普通消费者来说，短期内可能需要接受某些塑料制品涨价的现实。但从更长的视角看，这反而可能是件好事——它逼迫整个社会加快寻找更可持续的解决方案。SpaceX的IPO消息则从另一个维度印证了科技创新仍然是资本市场最青睐的主题，即便在传统制造业面临成本压力的当下，硬科技和太空经济依然热度不减。\n\n作为普通人，我们需要意识到这不是单一事件，而是全球供应链重构的一个缩影。准备好迎接一波产品价格上涨的同时，也应该关注那些在材料创新领域有技术储备的企业，它们很可能在下一轮产业变革中成为赢家。",
+      "tags": [
+        "油价上涨",
+        "塑料行业",
+        "地缘政治",
+        "绿色材料",
+        "供应链"
+      ],
+      "target_audience": "关注科技产业和经济趋势的读者",
+      "original_title": "The Download: plastic’s problem with fuel prices, and SpaceX’s blockbuster IPO",
+      "original_snippet": "This is today’s edition of The Download, our weekday newsletter that provides a daily dose of what’s going on in the world of technology. Fuel prices are soaring. Plastic could be next.  As the war in Iran continues, one of the most visible global economic ripple effects has been fossil-fuel prices. But looking ahead, further consequences could…",
+      "link": "https://www.technologyreview.com/2026/04/02/1135049/the-download-plastic-problem-fuel-prices-spacex-ipo/",
+      "pubDate": "Thu, 02 Apr 2026 12:10:00 +0000",
+      "source": "MIT Technology Review",
+      "lang": "zh",
+      "is_manual": false
+    },
+    {
       "title": "油价飙升只是前奏：塑料危机正在路上",
       "summary": "伊朗战争持续，霍尔木兹海峡关闭，燃油价格已突破4美元/加仑。但这只是开始——石化原料成本上涨将传导至塑料产业，从日用品到工业品都面临涨价压力。这场危机将如何演变？我们普通人该如何应对？",
       "deep_analysis": "2026年的春天，中东局势的恶化正在以我们意想不到的方式影响着每个人的生活。霍尔木兹海峡这条全球能源运输的“主动脉”一旦受阻，带来的绝不仅仅是加油时肉疼一下那么简单。\n\n先说说发生了什么。伊朗战争导致霍尔木兹海峡关闭，这直接切断了全球约20%的石油供应通道。油价暴涨只是第一波冲击，更隐蔽的影响在于：石油不仅是燃料，更是化工产业的基石。我们日常生活中几乎所有的塑料制品——从矿泉水瓶到手机壳，从汽车内饰到医疗器械——都源自石油馏分。\n\n这就意味着，当油价上涨，乙烯、丙烯这些化工原料的价格必然跟涨。石化巨头们可不会做亏本买卖，成本压力会层层传导到产业链的每个环节。终端消费者最终会为这场地缘政治冲突买单。\n\n那塑料行业会受到多大影响？短期来看，通用塑料如PE、PP的价格已经出现明显上涨趋势。中期更值得关注的是供应链重构——依赖进口塑料原料的企业将面临成本失控的风险，可能被迫停产或转产。长期而言，这可能加速塑料替代材料的研发和应用，比如生物基塑料、可降解材料可能迎来发展窗口。\n\n但我想说的是，这次危机背后藏着更深的警示。我们对化石资源的依赖已经到了极其危险的地步。一次地区冲突就能让全球供应链如此被动，这本身就是一个系统性问题。\n\n对于普通人，我的建议是：短期别急着囤货，但可以关注哪些日用品可能涨价;中长期看，可以留意哪些企业在做可持续替代材料的布局——这可能是下一个投资机会;更重要的是，我们需要重新思考与塑料的关系能用替代品的就不用塑料，能少用的就少用。\n\n这场由战争引发的能源危机，最终可能成为推动行业变革的催化剂。有时候危机才是真正的转机。",
@@ -1715,7 +1811,7 @@
       "is_manual": true
     }
   ],
-  "total": 88,
-  "fetchedAt": "2026-04-02T10:10:03.331Z",
+  "total": 93,
+  "fetchedAt": "2026-04-02T16:06:08.961Z",
   "version": "3.0"
 }
