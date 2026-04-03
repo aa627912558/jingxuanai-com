@@ -39,6 +39,25 @@
       "is_manual": false
     },
     {
+      "title": "你的会议笔记正在被所有人围观！Granola默认设置酿隐私危机",
+      "summary": "AI笔记应用Granola被曝严重隐私漏洞——默认情况下，任何人只要拿到链接就能查看你的会议笔记。更惊人的是，你的笔记还会被自动用于AI模型训练，除非你手动关闭。隐私保护还是空谈？",
+      "deep_analysis": "这两天科技圈出了一个大事，AI笔记应用Granola被曝出了一个让所有用户脊背发凉的隐私漏洞。\n\n先说说Granola是什么。这两年AI会议工具特别火，Granola就是其中比较受欢迎的一个。它主打“AI记事本”，帮你自动整理开会的要点——只要授权它读取你的日历，它就能录制会议内容，然后用AI自动生成一份要点清单。对于每天泡在会议里的人来说，这简直是救命神器。\n\n但问题来了。Granola官方说“默认隐私保护”，实际上呢？你创建的笔记，默认情况下只要拿到链接就能被任何人查看。这是什么概念？你发给同事一个会议纪要链接，对方转手发到群里，所有人点进去都能看。更可怕的是，这些笔记还会被Granola用于训练他们的AI模型，除非你主动去设置里关掉那个选项。\n\n这就很有意思了。厂商嘴上说着“隐私优先”，实际上用了一个障眼法——把选择权偷偷放在了二级菜单里，大多数用户根本不知道自己的数据正在被“默认共享”和“默认训练”。\n\n这件事对行业的冲击可不小。首先，它撕下了很多AI应用的“隐私画皮”。多少工具打着“AI赋能”的旗号，实际上在用用户的真实数据给自己喂料？这次Granola被曝光只是个开始，我相信接下来会有更多类似的问题被挖出来。\n\n其次，它暴露了一个根本性的矛盾：AI工具好用和隐私安全之间，似乎天然存在冲突。你要用它的AI能力，就得接受它读取你的数据；但你永远不知道它拿这些数据做了什么。这种信息不对称，才是让用户最难受的地方。\n\n那未来会怎么发展？我觉得会有两个趋势：一是监管会收紧，欧盟的GDPR已经虎视眈眈了，美国各州也在跟进，用户数据的“默认收集”模式早晚会被定性为违规；二是产品层面会发生分化，一部分工具会主打“本地处理”卖点，另一部分可能会用更透明的机制来重建用户信任。\n\n至于我们普通用户该怎么办，我的建议很简单：别盲目相信任何“默认隐私”的承诺。用任何AI工具之前，先去设置里仔仔细细看一遍，把数据共享和AI训练相关的选项逐个检查一遍。便利性和隐私之间，永远没有免费的午餐。你以为自己在“白嫖”AI工具，实际上可能在用自己的数据买单。",
+      "tags": [
+        "隐私安全",
+        "AI工具",
+        "数据泄露",
+        "科技评测"
+      ],
+      "target_audience": "AI工具用户、科技爱好者",
+      "original_title": "PSA: Anyone with a link can view your Granola notes by default",
+      "original_snippet": "If you use the AI-powered note-taking app Granola, you might want to double-check your privacy settings. Though Granola says your notes are \"private by default,\" it makes them viewable to anyone with a link, and also uses them for internal AI training unless you opt out.\nGranola describes itself as an \"AI notepad for people in back-to-back meetings.\" It integrates with your calendar to capture audio from your meetings, and then uses AI to generate a bulleted list of what you've heard, which it c",
+      "link": "https://www.theverge.com/ai-artificial-intelligence/906253/granola-note-links-ai-training-psa",
+      "pubDate": "2026-04-02T21:56:16.000Z",
+      "source": "The Verge AI",
+      "lang": "zh",
+      "is_manual": false
+    },
+    {
       "title": "OpenAI收购硅谷 cult 级播客：一场事先张扬的“舆论战”",
       "summary": "OpenAI近日收购了硅谷最具影响力的科技播客TBPN，这家由创始人驱动的cult-favorite节目将继续独立运营，但被置于首席政治策略官Chris Lehane的管辖之下。这不仅仅是一次内容资产收购，更是OpenAI在AI时代构建舆论话语权的关键一步。",
       "deep_analysis": "先说清楚这次收购到底发生了什么。TBPN（The Business of Startups）是硅谷科技圈 cult 级的存在，它的独特之处在于——它不是那种高大上的商业杂志，而是一个真正接地气、敢说真话的播客。创始人在行业内的号召力加上内容的独特视角，让它成为硅谷创业者和投资人获取一手信息的重要渠道。OpenAI现在把它收入囊中，但同时承诺保持独立运营，这种“收购但不放养”的操作，显然是为了保留TBPN的公信力和影响力。\n\n那OpenAI为什么要花这个钱？答案藏在收购后的人事安排里。Chris Lehane 何许人？他是OpenAI的首席政治策略官，曾在拜登政府担任高级顾问，深谙政策制定和公共关系之道。让一个搞政治的人来监管一个内容平台，意图已经很明显了——OpenAI要在舆论场域建立自己的阵地。在AI行业竞争日趋白热化的当下，塑造有利的公众叙事、影响政策讨论方向，已经成为巨头们的必争之地。TBPN恰恰拥有OpenAI最缺的：一种能与硅谷精英群体直接对话的能力。\n\n这件事对行业的影响是深远的。科技巨头通过收购媒体或内容平台来影响舆论，这不是第一次，但OpenAI这次的玩法更精细——不是要改变TBPN的内容调性，而是要借它的壳，传递自己的声音。可以预见，未来会有更多AI公司尝试类似操作，内容生态将成为AI竞争的第二战场。\n\n至于趋势，我判断“独立运营”只是过渡阶段的权宜之计。随着OpenAI在TBPN体系内逐步建立更深的影响力，内容倾向性会慢慢显现。读者们要意识到，你们正在消费的科技内容，可能会越来越像是一场精心编排的信息战的一部分。保持独立判断、多元化信息源，会变得比以往任何时候都重要。\n\n作为普通读者和科技从业者，面对这种趋势，我们应该做什么？第一，对任何单一信息源保持警惕，特别是当你发现某个平台的内容总是恰好符合某个公司的利益时；第二，培养自己的信息甄别能力，关注那些真正保持独立性的创作者和媒体；第三，在AI时代，批判性思维不再是可选技能，而是生存技能。",
@@ -73,6 +92,27 @@
         "战略布局"
       ],
       "target_audience": "AI从业者和科技爱好者",
+      "original_title": "OpenAI acquires TBPN, the buzzy founder-led business talk show",
+      "original_snippet": "TBPN, Silicon Valley's cult-favorite tech podcast, will operate independently, even as it's overseen by chief political operative Chris Lehane.",
+      "link": "https://techcrunch.com/2026/04/02/openai-acquires-tbpn-the-buzzy-founder-led-business-talk-show/",
+      "pubDate": "Thu, 02 Apr 2026 19:21:00 +0000",
+      "source": "TechCrunch AI",
+      "lang": "zh",
+      "is_manual": false
+    },
+    {
+      "title": "OpenAI收购硅谷 cult 播客：AI巨头开始“买通”媒体话语权？",
+      "summary": "OpenAI近日宣布收购硅谷知名科技播客TBPN，这档被科技圈视为\" cult-favorite \"的访谈节目将继续独立运营，但由OpenAI首席政治策略官Chris Lehane直接监管。这一收购背后，AI巨头正在悄悄构建自己的媒体影响力矩阵。",
+      "deep_analysis": "先说清楚这事儿。TBPN，全称应该是The Business Podcast Network，在硅谷科技圈是那种\"圈外人不太懂，但圈内人几乎必听\"的存在。它的画风大概是那种创始人直接对话科技精英的深度访谈，没有那种商业报道的冰冷感，反而带着创始人自己的温度和态度。OpenAI这次把它收入囊中，表面功夫做得挺漂亮——说TBPN会继续独立运营，不会被\"招安\"成官方传声筒。但明眼人都知道，既然由Chris Lehane亲自督战，这事儿就没那么简单。\n\nChris Lehane是谁？如果你关注OpenAI这几年的政治布局，就不会陌生。这位老兄是民主党政治圈的红人，曾在奥巴马竞选团队负责数字策略，后来加入红杉资本做投资人，现在是OpenAI的首席政治策略师。说白了，他就是一个能把技术语言翻译成政治语言、同时能把政治资源转化为商业影响力的关键角色。让这么一个人来\"监管\"一个播客，葫芦里卖的什么药，其实不难猜——OpenAI想要的，是在对的时间点，把对的内容，送到对的人的耳朵里。\n\n这事儿对行业的影响，我认为是深远的。AI公司过去几年在做的事，是堆算力、堆模型、堆参数。但现在开始，各巨头越来越意识到，光有技术不够，你还得有\"话语权\"。话语权从哪里来？媒体是最好的入口。微软有LinkedIn和MSN，Google有YouTube，现在OpenAI开始搞播客，本质上都是在构建自己的内容生态护城河。但问题在于，当AI公司开始拥有媒体喉舌，独立性这件事，就变得微妙了。TBPN会说自己是独立的，但当老板换成了OpenAI，当监管人是Chris Lehane，它还能多\"独立\"？这是所有科技观察者都应该警惕的问题。\n\n往后看，我觉得这种收购会加速。AI公司不缺钱，缺的是人心和注意力。一个好的播客、一个有影响力的内容平台，是最好的注意力收割机。而且播客这种形态特别有意思——它足够深度，足够personal，能建立一种\"我跟你是一路人\"的信任感。这种信任感在AI时代尤其值钱，因为人们需要对冲算法推荐的焦虑，需要\"真人\"的声音。未来可能会有更多AI公司直接或间接地控制内容平台，形式可能不同，但逻辑是一样的。\n\n那读者该怎么应对？我的建议是，保持\"信息来源多元化\"的警觉。如果你之前依赖某些科技播客获取信息，现在得问自己：这个播客的背后是谁？它的资金来源是什么？它有没有被哪家巨头\"招安\"？不是说要阴谋论，而是说在AI这个领域，信息战已经打响了，你得知道自己吃进去的内容，是谁做的\"菜\"。多听几家，多看几家，别把鸡蛋放在一个篮子里，尤其是AI公司的篮子。\n\n最后说一句，OpenAI这步棋下得挺精的。收购一个已经很有影响力的内容资产，比自己从头搭建一个媒体帝国，成本更低，见效更快，而且还能落个\"支持独立媒体\"的好名声。但名声归名声，商业归商业，咱们看事情，还是得把这两件事分开。",
+      "tags": [
+        "OpenAI",
+        "TBPN",
+        "播客",
+        "AI行业",
+        "媒体收购",
+        "硅谷"
+      ],
+      "target_audience": "科技爱好者、AI从业者",
       "original_title": "OpenAI acquires TBPN, the buzzy founder-led business talk show",
       "original_snippet": "TBPN, Silicon Valley's cult-favorite tech podcast, will operate independently, even as it's overseen by chief political operative Chris Lehane.",
       "link": "https://techcrunch.com/2026/04/02/openai-acquires-tbpn-the-buzzy-founder-led-business-talk-show/",
@@ -130,6 +170,26 @@
         "商业航天"
       ],
       "target_audience": "科技爱好者与投资者",
+      "original_title": "Elon Musk is about to be a very busy boy!",
+      "original_snippet": "To be honest, I thought Elon Musk would confidentially file for SpaceX's IPO on the 20th of this month, rather than the 1st. But maybe that just means he's moved on to other numbers, and we should all mark our calendars for June 7th as an IPO date just in case.\nBased on the April 1st filing, and the general length of an SEC review before the S-1 document becomes public, the earliest I am expecting a SpaceX IPO is June. (At least, assuming there is still anyone left at the SEC who wants to do the",
+      "link": "https://www.theverge.com/tech/906027/elon-musk-lawsuit-ipo-spacex-tesla",
+      "pubDate": "2026-04-02T18:15:00.000Z",
+      "source": "The Verge AI",
+      "lang": "zh",
+      "is_manual": false
+    },
+    {
+      "title": "马斯克太空帝国上市倒计时：6月7日或是SpaceX IPO关键节点",
+      "summary": "据The Verge AI报道，SpaceX已于4月1日秘密提交IPO申请，分析师预测其IPO最早可能在6月落地。考虑到SEC审查周期和马斯克一贯的",
+      "deep_analysis": "SpaceX要上市了！这可能是2026年科技圈最重磅的消息之一。\n\n先帮大家理清时间线：原本市场普遍预期SpaceX会在3月20日左右递交IPO申请，结果马斯克选择了4月1日——愚人节当天提交。这很马斯克，总喜欢在关键时刻来点",
+      "tags": [
+        "SpaceX",
+        "IPO",
+        "马斯克",
+        "商业航天",
+        "科技投资"
+      ],
+      "target_audience": "科技爱好者、投资者、行业观察者",
       "original_title": "Elon Musk is about to be a very busy boy!",
       "original_snippet": "To be honest, I thought Elon Musk would confidentially file for SpaceX's IPO on the 20th of this month, rather than the 1st. But maybe that just means he's moved on to other numbers, and we should all mark our calendars for June 7th as an IPO date just in case.\nBased on the April 1st filing, and the general length of an SEC review before the S-1 document becomes public, the earliest I am expecting a SpaceX IPO is June. (At least, assuming there is still anyone left at the SEC who wants to do the",
       "link": "https://www.theverge.com/tech/906027/elon-musk-lawsuit-ipo-spacex-tesla",
@@ -202,6 +262,26 @@
       "is_manual": false
     },
     {
+      "title": "OpenAI盯上媒体生意：收购TBPN背后藏着什么算盘？",
+      "summary": "OpenAI近日宣布收购TBPN，这档专注于AI行业的在线访谈节目将在交易完成后正式纳入OpenAI版图。作为一档在工作日下午播出的三小时直播节目，TBPN过去几年间采访过Sam Altman、Meta、Microsoft等科技公司高管，被视为AI行业的重要发声渠道。此举意味着AI公司开始跳过传统媒体，直接掌控舆论阵地。",
+      "deep_analysis": "OpenAI收购TBPN这件事，表面上看是一次普通的媒体资产并购，但把它放进当前AI行业的大背景下看，味道就完全不一样了。\n\n先说说TBPN是个什么节目。这档直播节目每天下午两点太平洋时间准时上线，一播就是三个小时，专访对象清一色是AI圈子的executive——从OpenAI自家CEO Sam Altman，到Meta、Microsoft、Palantir、Andreessen Horowitz这些巨头的高管，都曾坐过TBPN的嘉宾席。它的竞争对手清单更有意思，赫然列着Bloomberg、CNBC、Fox Business这些传统媒体巨头。也就是说，TBPN虽然体量不大，但定位清晰：就是要在这个AI火热的时代，成为行业直接的传声筒。\n\nOpenAI为什么要买它？在我看来，这一步棋藏着三层算盘。\n\n第一层是话语权争夺。这两年AI圈子里，关于安全风险的讨论、监管政策的走向、模型能力的边界，行业内外吵得不可开交。传统媒体虽然覆盖面广，但毕竟隔了一层，记者难免会有自己的解读立场。Owning a media channel意味着 OpenAI可以在源头就掌控信息输出的角度和节奏，这在舆论战场上价值连城。\n\n第二层是生态闭环。现在AI公司之间的竞争，早就不只是模型性能的军备竞赛了，而是上升到生态系统的全面PK。OpenAI投资了人形机器人、投资了浏览器、投资了各种开发者工具，现在又把手伸向媒体，这是在为自己的生态系统搭建一个完整的内容分发渠道。想象一下，未来TBPN的直播里可以直接演示OpenAI的新产品，这比任何广告都更有说服力。\n\n第三层是人才和注意力。TBPN的受众主要是tech圈子和投资者，这恰恰是OpenAI最需要抓住的一群人。通过媒体渠道持续曝光，OpenAI可以在这些人群中保持top-of-mind，这比单纯投放广告高效得多。\n\n对行业的影响已经开始了。传统媒体如Bloomberg、CNBC在AI新闻领域的地位正在被撼动——它们不再是唯一的信息枢纽。未来我们很可能看到更多AI公司效仿这一路径，要么收购现有媒体，要么干脆自己孵化内容平台。\n\n至于这件事对普通人的启示，我觉得最关键的一点是：在获取AI资讯时，要对信息来源保持警觉。当你发现某个AI新闻源背后站着某家AI公司时，它的立场bias是不可避免的。多交叉验证不同渠道的信息，培养自己的独立判断能力，这才是应对AI信息战的正确姿势。\n\n至于OpenAI的下一步棋会怎么走，我觉得大概率会在TBPN的基础上做更多内容创新，比如推出英文版、做更多深度访谈、甚至可能邀请监管机构人士参与对话，把这个平台打造成AI行业的事实上的'官方媒体'。这个趋势，值得我们持续关注。",
+      "tags": [
+        "OpenAI",
+        "TBPN",
+        "AI媒体",
+        "行业趋势",
+        "并购"
+      ],
+      "target_audience": "AI行业从业者和科技爱好者",
+      "original_title": "OpenAI just bought TBPN",
+      "original_snippet": "OpenAI has purchased TBPN, an online talk show that often interviews AI executives and other tech leaders. The show goes live every weekday at 2PM PT, often for a three-hour duration, counting OpenAI CEO Sam Altman, as well as executives from Meta, Microsoft, Palantir, and Andreessen Horowitz, among its past guests, and Bloomberg, CNBC, and Fox Business as its competitors. \nTBPN's livestream is primarily available on X and YouTube, but many users watch it on X. OpenAI's purchase comes as a lawsu",
+      "link": "https://www.theverge.com/ai-artificial-intelligence/906022/openai-buys-tbpn",
+      "pubDate": "2026-04-02T17:40:07.000Z",
+      "source": "The Verge AI",
+      "lang": "zh",
+      "is_manual": false
+    },
+    {
       "title": "微软AI突发！六个月憋出三个王炸模型，直接叫板OpenAI谷歌",
       "summary": "微软AI（MAI）在成立仅六个月后，发布了三个基础模型，涵盖语音转文字、音频生成和图像生成三大能力。这次发布标志着微软正式向OpenAI和谷歌等AI竞争对手宣战，用惊人的速度展示了其在多模态AI领域的野心。",
       "deep_analysis": "六个月内能从零到有，推出三个覆盖语音、文字、音频、图像的基础模型，这个速度在AI行业是极其罕见的。微软AI（MAI）这次出手，不是简单的产品更新，而是一次战略性的全面出击。\n\n先看技术层面。这三个模型覆盖了当前AI最热门的几个方向：语音识别、音频生成、图像生成。特别是语音转文字的能力，直接挑战了OpenAI的Whisper和谷歌的语音识别技术。而音频生成和图像生成，则是在AIGC这个大热门赛道上与Midjourney、Stable Diffusion正面竞争。微软的意图很明显——我要做的不是某一个点的突破，而是全场景的覆盖。\n\n再看行业影响。微软这一招，打破了过去两年OpenAI和谷歌双寡头的格局。之前业界普遍认为，在基础模型层面，已经形成了OpenAI第一、谷歌第二、其他玩家陪跑的态势。但微软用事实证明了，这个格局远未定型。微软有Azure云、有办公生态、有数据优势，现在再加上自研的基础模型，形成了从算力到应用再到模型的完整闭环。这让其他AI公司压力巨大。\n\n更重要的是趋势判断。我认为，未来一到两年，AI基础模型将进入战国时代。不再是OpenAI一枝独秀，而是多家巨头混战。开源社区会继续活跃，但商业化模型的头部集中度会提高。对于普通开发者和企业来说，这其实是好事——选择多了，定价会更合理，垂直领域的机会也会更多。\n\n至于读者应该如何应对，如果你不是AI从业者，重点关注应用层的机会就可以了。基础模型的竞争跟你关系不大，但当基础模型能力越来越强、价格越来越低的时候，围绕它们做应用创新的窗口会更大。学会用好这些工具，比纠结于谁家模型更强更有实际价值。",
@@ -250,6 +330,25 @@
         "基础模型",
         "多模态AI",
         "OpenAI"
+      ],
+      "target_audience": "AI爱好者、科技从业者",
+      "original_title": "Microsoft takes on AI rivals with three new foundational models",
+      "original_snippet": "MAI released models that can transcribe voice into text as well as generate audio and images after the group's formation six months ago.",
+      "link": "https://techcrunch.com/2026/04/02/microsoft-takes-on-ai-rivals-with-three-new-foundational-models/",
+      "pubDate": "Thu, 02 Apr 2026 16:48:16 +0000",
+      "source": "TechCrunch AI",
+      "lang": "zh",
+      "is_manual": false
+    },
+    {
+      "title": "微软深夜突袭AI战场，三个基础模型硬刚OpenAI",
+      "summary": "微软AI（MAI）在成立仅6个月后便推出三大基础模型，涵盖语音转文本、音频生成和图像生成能力。这是微软在AI领域最激进的进攻信号——不再满足于当OpenAI的靠山，要亲自下场抢夺AI王座。",
+      "deep_analysis": "微软这次真的不客气了。就在所有人都以为微软的AI战略就是绑死OpenAI的时候，MAI突然甩出三个王炸：语音转文本、音频生成、图像生成，三个能力一次性补齐。这不是小打小闹，而是直接对标OpenAI的Whisper、DALL-E和语音合成能力。\n\n很多人可能没注意到一个关键信息：MAI成立才6个月。6个月能从零到有，推出三个基础模型，这个速度背后是微软多年来在AI领域的积累在集中爆发。可以预见，未来MAI将成为微软对抗OpenAI、Google甚至 Anthropic 的主力部队。\n\n对行业的影响首先体现在竞争格局上。之前微软和OpenAI绑定太深，外界甚至觉得微软已经放弃了自研模型的路子。但这次发布说明微软在多条腿走路——既投资OpenAI，也自己做模型。其次，多模态将成为AI竞争的下一阶段主战场，谁能同时搞定语音、图像、视频，谁就能拿走最大的市场份额。\n\n对普通用户来说，这意味着什么？半年后，你们可能会看到微软的AI产品突然变得更「能说会道」，不仅能聊天，还能帮你生成语音、图像，甚至可能整合进Windows和Office里。那时候，AI助手不再是「只会打字」的纸老虎，而是真正的全能助理。\n\n当然，挑战也显而易见。模型能不能打、部署成本如何、跟OpenAI的关系怎么平衡，这些都是微软需要回答的问题。但有一点可以确定：AI争霸战的好戏才刚刚开始。",
+      "tags": [
+        "微软",
+        "AI大模型",
+        "多模态",
+        "行业分析"
       ],
       "target_audience": "AI爱好者、科技从业者",
       "original_title": "Microsoft takes on AI rivals with three new foundational models",
@@ -2110,7 +2209,7 @@
       "is_manual": true
     }
   ],
-  "total": 108,
-  "fetchedAt": "2026-04-03T01:09:14.780Z",
+  "total": 113,
+  "fetchedAt": "2026-04-03T02:22:38.253Z",
   "version": "3.0"
 }
