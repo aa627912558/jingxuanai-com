@@ -1,31 +1,105 @@
 {
   "news": [
     {
-      "title": "Apple与Google联手：Siri要借Gemini\"弯道超车\"了？",
-      "link": "https://www.theverge.com/2026/3/25/26068937/apple-google-gemini-ai-deal-training-models",
-      "pubDate": "2026-03-26T16:00:00.000Z",
-      "source": "The Verge AI",
+      "title": "阿里千问3.6逆袭登顶！中国编程模型终于硬气了一回",
+      "summary": "全球权威大模型盲测榜单最新结果公布，阿里千问3.6一举拿下中国最强编程模型的头衔。这次登顶不仅是中国AI的里程碑，更意味着开发者们有了更多选择。盲测榜单的公正性让这次胜利更具含金量，接下来编程领域的竞争格局可能会被彻底改写。",
+      "deep_analysis": "先说说这个盲测榜单到底什么来头。所谓盲测，就是不告诉模型它要做什么测试，完全靠真实能力去pk，没有任何作弊空间。这次阿里千问3.6能在全球众多高手中脱颖而出，拿下中国最强编程模型的称号，含金量确实拉满了。\n\n这意味着什么？中国大模型在编程这个硬核赛道上，终于有了能和全球顶尖选手掰手腕的资本。之前大家总说中国AI追着美国跑，这次千问3.6用实力证明了中国队不仅能跟得上，有时候还能超车。\n\n对行业的影响我分两个层面来看。首先是开发者层面，以后写代码有了更多强力助手可选，而且国产模型在中文语境下的理解能力本来就更有优势，用起来会更顺手。其次是竞争格局层面，阿里这一波操作肯定会刺激其他厂商加大投入，特别是编程能力这个赛道，接下来几个月可能会有更多惊喜。\n\n不过我也要泼点冷水，盲测成绩好不代表所有场景都nb，具体好用不好用还得自己试试。而且AI编程工具再强，也替代不了开发者对业务的理解和创新能力，工具永远是工具，核心能力还是人。\n\n未来趋势我觉得有几个点值得关注：一是多模态编程能力会成标配，二是开源模型和闭源模型的竞争会更激烈，三是AI辅助编程会从少数人的玩具变成大多数人的日常。建议大家都别端着，该学的学起来，该用的用起来，时代的红利摆在那，接不接得住看个人了。",
+      "tags": [
+        "AI大模型",
+        "阿里千问",
+        "编程模型",
+        "盲测榜单",
+        "中国AI"
+      ],
+      "target_audience": "AI爱好者和开发者",
+      "original_title": "全球权威大模型盲测榜单公布，阿里千问3.6登顶中国最强编程模型",
+      "original_snippet": "近期发布更多系列大模型",
+      "link": "https://www.qbitai.com/2026/04/395206.html",
+      "pubDate": "Fri, 03 Apr 2026 02:23:43 +0000",
+      "source": "量子位",
       "lang": "zh",
-      "snippet": "Apple获得Google数据中心完全访问权限，可使用Gemini蒸馏技术训练本地小模型。Apple Intelligence战略再进一步，Siri进化可能比想象中更快。",
-      "slug": "apple-google-gemini-deal-siri-local-ai-models"
+      "is_manual": false
     },
     {
-      "title": "黄仁勋突然宣布：我们已经实现AGI了！",
-      "link": "https://www.theverge.com/ai-artificial-intelligence/899086/jensen-huang-nvidia-agi",
-      "pubDate": "2026-03-26T15:00:00.000Z",
+      "title": "AI笔记应用Granola被曝隐私漏洞：你以为的隐私，默认竟是公开的",
+      "summary": "AI笔记应用Granola近日被曝出严重隐私问题。尽管官方宣称“私人默认”，但用户的笔记实际上默认对任何持有链接的人可见，且会被用于内部AI模型训练。这不是个案，而是整个AI笔记行业普遍存在的隐私隐患。",
+      "deep_analysis": "如果你正在使用Granola这款被冠以“AI记事本”名号的笔记应用，建议立刻检查你的隐私设置。这不是危言耸听——The Verge的调查发现，Granola存在一个根本性的信任裂痕：它声称“私人默认”，但实际上默认情况下，任何人只要拿到你的笔记链接，就能查看内容。更令人不安的是，除非你主动 opting out（选择退出），否则你的笔记数据会被用于它的内部AI模型训练。\n\n这意味着什么？你以为自己在记录会议要点，实际上可能在无偿喂养一个商业AI系统。更讽刺的是，这种“默认公开+默认用于训练”的双默认模式，Granola并不是唯一一个。纵观整个AI笔记赛道，从Otter到Notion AI，从Sonnie到tl;dr，很多产品都采用了类似的策略——用便利性换取隐私，用“免费”当诱饵让你贡献数据资产。\n\n这件事对行业的冲击是深远的。首先，它撕下了AI应用“隐私优先”的虚假面具。过去几年，几乎所有AI产品都在宣传“你的数据就是你的”，但Granola的案例证明，很多产品在隐私保护上更多是营销话术而非工程实践。其次，它暴露了一个根本矛盾：AI产品的训练需求与用户隐私之间存在结构性冲突。企业需要用户数据来优化模型，但用户期望自己的数据受到严格保护——这两者很难兼得。\n\n未来趋势会怎样？我判断会出现明显的分化：一类是重视隐私的高端工具会获得溢价，比如那些提供端到端加密、本地处理、不用于训练的垂直工具；另一类则是继续走“数据换便利”路线的大众产品。而监管层面，欧盟的GDPR和加州的CPAA只会越来越严格，类似Granola这种“默认陷阱”很可能会收到罚单。\n\n作为普通用户，你应该怎么办？第一，立刻检查Granola的隐私设置，把“用于AI训练”的开关关掉；第二，养成习惯，任何AI工具上传数据前，先看看它的隐私政策；第三，不要把所有信任都押在“默认设置”上，在AI时代，隐私是需要你自己主动捍卫的东西。这件事给我们最大的启示是：便利从来不是免费的，只是账单往往迟到而已。",
+      "tags": [
+        "AI隐私",
+        "数据安全",
+        "Granola",
+        "科技观察"
+      ],
+      "target_audience": "关注AI工具的职场人士",
+      "original_title": "PSA: Anyone with a link can view your Granola notes by default",
+      "original_snippet": "If you use the AI-powered note-taking app Granola, you might want to double-check your privacy settings. Though Granola says your notes are \"private by default,\" it makes them viewable to anyone with a link, and also uses them for internal AI training unless you opt out.\nGranola describes itself as an \"AI notepad for people in back-to-back meetings.\" It integrates with your calendar to capture audio from your meetings, and then uses AI to generate a bulleted list of what you've heard, which it c",
+      "link": "https://www.theverge.com/ai-artificial-intelligence/906253/granola-note-links-ai-training-psa",
+      "pubDate": "2026-04-02T21:56:16.000Z",
       "source": "The Verge AI",
       "lang": "zh",
-      "snippet": "英伟达CEO黄仁勋在Lex Fridman播客上宣布AGI已实现，但细看内容，AGI定义本身存在巨大争议。什么是AGI？谁来定义它？黄仁勋的宣布引发业内热议。",
-      "slug": "jensen-huang-nvidia-agi-declared-lex-fridman"
+      "is_manual": false
     },
     {
-      "title": "Google发布TurboQuant：内存暴降6倍，精度不损失",
-      "link": "https://research.google/blog/turboquant-redefining-ai-efficiency-with-extreme-compression/",
-      "pubDate": "2026-03-26T14:00:00.000Z",
-      "source": "Google Research",
+      "title": "OpenAI收购硅谷爆火播客，葫芦里卖的什么药？",
+      "summary": "OpenAI悄然收购了硅谷 cult 级科技播客 TBPN，却让它保持独立运营，还派首席政治操盘手 Chris Lehane 监督这场看似奇怪的收购背后，藏着 OpenAI 更大的野心。",
+      "deep_analysis": "先说 TBPN 是什么——如果你在硅谷科技圈混，没听过这个播客可能有点 out。TBPN 是那种\" cult favorite \"，不算大众，但圈子里人人知道，基本每期都会请到科技圈重量级人物对谈，在硅谷的影响力不容小觑。OpenAI 把它收入囊中，却不打算把它变成\" OpenAI 官方播客 \"，而是让其继续独立运营，这操作就很耐人寻味了。\n\n更诡异的是监督人选：Chris Lehane。这哥们在硅谷有个外号叫\"搞定一切的人\"，之前在 Airbnb 负责政府关系，在 Meta 的时候处理政府事务也是一把手。简单说，他是那种专门帮科技公司摆平政治麻烦的狠角色。OpenAI 派他去监督一个播客，不是大炮打蚊子吗？\n\n我的判断是：OpenAI 醉翁之意不在酒。TBPN 本身只是个播客，但它背后连接的人脉网络、话题制造能力、舆论影响力，才是 OpenAI 真正想要的。Sam Altman 接下来要面对的监管压力、公众认知塑造、政治博弈，只会比现在更激烈。收购一个已经在科技圈有深厚积淀的媒体阵地，相当于给自己买了一支\"舆论特种部队\"。\n\n对行业来说，这件事释放了一个信号：AI 巨头之间的竞争，已经从技术层面蔓延到话语权层面了。未来我们可能会看到更多 AI 公司直接掌控或投资媒体渠道，因为在这个\"谁能定义 AI ，谁就赢了一半\"的时代，舆论战场和算法战场同样重要。\n\n至于普通从业者，别只盯着技术参数看了。关注这些 AI 公司在\"非技术\"领域的布局——媒体、投资、政策——那才是决定它们能走多远的关键。",
+      "tags": [
+        "OpenAI",
+        "TBPN",
+        "AI收购",
+        "播客",
+        "硅谷",
+        "媒体",
+        "舆论",
+        "ChrisLehane"
+      ],
+      "target_audience": "AI从业者与科技爱好者",
+      "original_title": "OpenAI acquires TBPN, the buzzy founder-led business talk show",
+      "original_snippet": "TBPN, Silicon Valley's cult-favorite tech podcast, will operate independently, even as it's overseen by chief political operative Chris Lehane.",
+      "link": "https://techcrunch.com/2026/04/02/openai-acquires-tbpn-the-buzzy-founder-led-business-talk-show/",
+      "pubDate": "Thu, 02 Apr 2026 19:21:00 +0000",
+      "source": "TechCrunch AI",
       "lang": "zh",
-      "snippet": "Google发布TurboQuant压缩算法，通过PolarQuant+QJL两步走的方式，把大模型内存占用降低至少6倍且零精度损失。对AI部署方来说，这意味着同等硬件能跑更大的模型。",
-      "slug": "google-turboquant-ai-memory-compression-6x-zero-loss"
+      "is_manual": false
+    },
+    {
+      "title": "SpaceX要上市了！马斯克的星际帝国梦要圆？",
+      "summary": "据多方预测，SpaceX可能最早于今年6月完成IPO。这家私营航天巨头一旦上市，将成为近年来最受关注的科技公司IPO之一。马斯克为何此时推动上市？他的航天帝国将如何改变行业格局？",
+      "deep_analysis": "SpaceX要上市了！这可能是2026年科技圈最重磅的消息之一。\n\n先来说说这条新闻到底讲了什么。根据多方分析，SpaceX在4月1日秘密提交了IPO申请，按照SEC的审查流程，预计S-1文件最快要到6月才会公开。这意味着，SpaceX的上市之路已经正式开启。\n\n马斯克为什么现在选择上市？很多人觉得意外，但仔细想想其实顺理成章。SpaceX目前估值已经超过1800亿美元，是全球最有价值的私营航天公司。但公司还有大量烧钱项目：星舰还在测试、Starlink在疯狂铺卫星、星际旅行的梦想也还没实现。上市既能融资支持这些宏大计划，也能让早期投资者套现。\n\n这事儿对行业有什么影响？太大了。SpaceX一旦上市，整个商业航天赛道的估值逻辑都会改变。目前，全球商业航天市场规模已经超过3000亿美元，但上市公司寥寥无几。SpaceX作为行业标杆上市，会让投资者重新审视这个赛道的价值。未来可能会出现一波航天公司上市潮，中国的星际荣耀、星河动力等公司也可能受到资本关注。\n\n再说发展趋势。我认为，SpaceX上市后会有几个明显变化：一是会加速技术迭代，特别是星舰的成熟；二是会加大在卫星互联网领域的投入，和OneWeb等对手正面竞争；三是可能会开启更多并购，整合上下游产业链。对普通投资者来说，这意味着一个全新的、充满想象空间的赛道正在打开。\n\n那读者应该怎么应对？如果你关注科技投资，SpaceX上市值得关注，但要注意几点：航天是高风险行业，周期长、不确定性大；SpaceX的估值已经不低，追高有风险；更重要的是，航天代表着人类未来的方向，这个赛道值得长期布局。\n\n马斯克曾经说要在火星上建立城市，现在看来，这个梦想或许正在从科幻走向现实的第一步。SpaceX的IPO，不仅是资本市场的里程碑，更是人类探索太空的一个新起点。",
+      "tags": [
+        "SpaceX",
+        "马斯克",
+        "IPO",
+        "商业航天",
+        "科技投资"
+      ],
+      "target_audience": "科技爱好者和投资者",
+      "original_title": "Elon Musk is about to be a very busy boy!",
+      "original_snippet": "To be honest, I thought Elon Musk would confidentially file for SpaceX's IPO on the 20th of this month, rather than the 1st. But maybe that just means he's moved on to other numbers, and we should all mark our calendars for June 7th as an IPO date just in case.\nBased on the April 1st filing, and the general length of an SEC review before the S-1 document becomes public, the earliest I am expecting a SpaceX IPO is June. (At least, assuming there is still anyone left at the SEC who wants to do the",
+      "link": "https://www.theverge.com/tech/906027/elon-musk-lawsuit-ipo-spacex-tesla",
+      "pubDate": "2026-04-02T18:15:00.000Z",
+      "source": "The Verge AI",
+      "lang": "zh",
+      "is_manual": false
+    },
+    {
+      "title": "OpenAI居然开始“买媒体”了！这一招背后藏着什么野心？",
+      "summary": "OpenAI刚刚收购了TBPN，一个专注于AI行业的高端访谈节目。这不是一次普通的收购，而是AI巨头抢占话语权的关键布局。当AI公司开始控制媒体会发生什么？",
+      "deep_analysis": "2026年4月，AI行业平地一声雷——OpenAI收购了TBPN。这个消息看似只是一起普通的并购，但实际上释放了一个极其强烈的信号：AI公司已经不满于只做技术，它们开始要掌控舆论了。\n\n先说说TBPN是什么。这个节目不简单，它是科技圈最具影响力的访谈阵地之一，每周工作天下午2点准时开播，一播就是三个小时。过去嘉宾名单堪称豪华：Sam Altman本人、Meta、Microsoft、Palantir、Andreessen Horowitz的高管都曾坐过它的直播间。换成大白话，这就是AI行业的“焦点访谈”，是科技精英表达观点、塑造行业叙事的主阵地。\n\nOpenAI为什么要买一个媒体？答案很简单：话语权。在AI这个天天上热搜的行业里，谁掌握了媒体，谁就掌握了定义权。OpenAI可以通过TBPN直接影响行业讨论走向，甚至能够在舆论战中占据主动。这次收购的本质，是OpenAI在打造自己的“舆论护城河”。\n\n更深一层看，这反映了AI行业竞争格局的深刻变化。过去几年，AI公司的竞争焦点是模型能力、算力规模、技术参数。但从现在开始，竞争正在从技术层面蔓延到影响力层面。Meta和Microsoft都有强大的PR机器，OpenAI必须有自己的发声渠道。TBPN不仅是一个节目，更是一个可以直接触达行业决策者、投资人、媒体和公众的全渠道平台。\n\n对行业的影响是深远的。以后AI行业的报道可能越来越多的来自“官方渠道”，媒体客观中立的立场可能会受到挑战。Bloomberg、CNBC、Fox Business这些传统商业媒体将面临来自AI公司自有渠道的竞争。行业信息的话语权正在重新分配。\n\n那么我们应该怎么看这件事？我的判断是：这是AI行业从技术竞争升级为生态竞争的标志性事件。未来的AI巨头，只会做技术已经不够了，还需要掌控媒体、教育、公众认知等整个信息链条。对于从业者来说，需要清醒认识到，你获取的AI行业信息，可能正在被少数公司所塑造。对于普通公众而言，需要保持独立判断，不要被单一信源带着走。\n\nAI公司控制媒体，这只是一个开始。接下来，我们很可能看到更多类似的并购发生。",
+      "tags": [
+        "OpenAI",
+        "AI行业",
+        "媒体并购",
+        "话语权"
+      ],
+      "target_audience": "科技爱好者、从业者",
+      "original_title": "OpenAI just bought TBPN",
+      "original_snippet": "OpenAI has purchased TBPN, an online talk show that often interviews AI executives and other tech leaders. The show goes live every weekday at 2PM PT, often for a three-hour duration, counting OpenAI CEO Sam Altman, as well as executives from Meta, Microsoft, Palantir, and Andreessen Horowitz, among its past guests, and Bloomberg, CNBC, and Fox Business as its competitors. \nTBPN's livestream is primarily available on X and YouTube, but many users watch it on X. OpenAI's purchase comes as a lawsu",
+      "link": "https://www.theverge.com/ai-artificial-intelligence/906022/openai-buys-tbpn",
+      "pubDate": "2026-04-02T17:40:07.000Z",
+      "source": "The Verge AI",
+      "lang": "zh",
+      "is_manual": false
     },
     {
       "title": "Memory chip giant SK hynix could help end ‘RAMmageddon’ with blockbuster US IPO",
@@ -289,6 +363,15 @@
       "slug": "meta-gets-ready-to-launch-two-new-ray-ban-ai-glasses"
     },
     {
+      "title": "Apple与Google联手：Siri要借Gemini\"弯道超车\"了？",
+      "link": "https://www.theverge.com/2026/3/25/26068937/apple-google-gemini-ai-deal-training-models",
+      "pubDate": "2026-03-26T16:00:00.000Z",
+      "source": "The Verge AI",
+      "lang": "zh",
+      "snippet": "Apple获得Google数据中心完全访问权限，可使用Gemini蒸馏技术训练本地小模型。Apple Intelligence战略再进一步，Siri进化可能比想象中更快。",
+      "slug": "apple-google-gemini-deal-siri-local-ai-models"
+    },
+    {
       "title": "ByteDance’s new AI video generation model, Dreamina Seedance 2.0, comes to CapCut",
       "link": "https://techcrunch.com/2026/03/26/bytedances-new-ai-video-generation-model-dreamina-seedance-2-0-comes-to-capcut/",
       "pubDate": "Thu, 26 Mar 2026 15:25:13 +0000",
@@ -307,6 +390,15 @@
       "slug": "wikipedia-bans-ai-generated-articles"
     },
     {
+      "title": "黄仁勋突然宣布：我们已经实现AGI了！",
+      "link": "https://www.theverge.com/ai-artificial-intelligence/899086/jensen-huang-nvidia-agi",
+      "pubDate": "2026-03-26T15:00:00.000Z",
+      "source": "The Verge AI",
+      "lang": "zh",
+      "snippet": "英伟达CEO黄仁勋在Lex Fridman播客上宣布AGI已实现，但细看内容，AGI定义本身存在巨大争议。什么是AGI？谁来定义它？黄仁勋的宣布引发业内热议。",
+      "slug": "jensen-huang-nvidia-agi-declared-lex-fridman"
+    },
+    {
       "title": "Senators are pushing to find out how much electricity data centers actually use",
       "link": "https://www.theverge.com/policy/901404/senators-warren-hawley-eia-letter-data-centers",
       "pubDate": "2026-03-26T14:25:32.000Z",
@@ -314,6 +406,15 @@
       "lang": "en",
       "snippet": "An Amazon data center in Oregon. | Image: Amazon\t\n\nOn Thursday, senators Elizabeth Warren (D-MA) and Josh Hawley (R-MO) sent a letter to the Energy Information Administration (EIA) asking it to collect \"comprehensive, annual energy-use disclosures\" on data centers and make that information publicly available, as first reported by Wired. They're urging the agency to \"establish a mandatory annual reporting requirement for data centers,\" saying the data is \"essential for accurate grid planning,\" and ensuring the seven tech companies that signed the Ratepayer Protection Pledge earlier this month adhere to their commitments.\nThe EIA announced Wednesday that it's launching a voluntary pilot progr …\nRead the full story at The Verge.",
       "slug": "senators-are-pushing-to-find-out-how-much-electricity-data-centers-actually-use"
+    },
+    {
+      "title": "Google发布TurboQuant：内存暴降6倍，精度不损失",
+      "link": "https://research.google/blog/turboquant-redefining-ai-efficiency-with-extreme-compression/",
+      "pubDate": "2026-03-26T14:00:00.000Z",
+      "source": "Google Research",
+      "lang": "zh",
+      "snippet": "Google发布TurboQuant压缩算法，通过PolarQuant+QJL两步走的方式，把大模型内存占用降低至少6倍且零精度损失。对AI部署方来说，这意味着同等硬件能跑更大的模型。",
+      "slug": "google-turboquant-ai-memory-compression-6x-zero-loss"
     },
     {
       "title": "The Download: a battery pivot to AI, and rewriting math",
@@ -631,6 +732,7 @@
       "slug": "the-creator-of-claude-code-just-revealed-his-workflow-and-developers-are-losing-"
     }
   ],
-  "total": 70,
-  "fetchedAt": "2026-03-27T19:17:08.296Z"
+  "total": 75,
+  "fetchedAt": "2026-04-03T04:10:23.050Z",
+  "version": "3.0"
 }
