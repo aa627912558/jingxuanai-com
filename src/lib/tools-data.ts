@@ -118,11 +118,25 @@ export const TOOLS_DATA: AiTool[] = [
       "Chatsonic对话写作模式，支持实时联网获取最新信息",
       "Brand Voice功能，学习并保持品牌调性一致的写作风格"
     ],
-    usage_guide: "注册writesonic.com。\\n\\n博客文章生成：Article Writer - 输入主题/关键词 - 生成大纲 - 生成全文。\\n\\n广告文案：选 Facebook/Google Ads 模板 - 输入产品信息 - 生成。\\n\\n社媒内容：Social Media 模块 - 选平台 - 生成内容。\\n\\nChatsonic：相当于有联网能力的ChatGPT，支持实时搜索最新信息。",
+    usage_guide: "第一步：注册与登录\\n访问 writesonic.com，点击 Sign Up 使用邮箱或 Google 账号注册。新用户有免费试用额度（需要验证邮箱）。\\n\\n第二步：了解主要功能模块\\nDashboard 首页可以看到 5 大功能入口：Article Writer（文章生成）、Chatsonic（对话写作）、Botsonic（AI客服机器人）、E-commerce（电商文案）、Social Media（社媒内容）。根据需求选择对应模块。\\n\\n第三步：生成博客文章（Article Writer）\\n进入 Article Writer，输入博主题或目标关键词（如「AI写作工具推荐」），选择文章长度（短/中/长），点击 Generate Outline。\\nAI 生成大纲后可手动调整结构（增删章节、重排顺序），确认后点击 Generate Article 生成完整文章。\\n生成后点击 Edit 在编辑器中修改，或直接导出为 Word/PDF。\\n\\n第四步：生成广告文案（Facebook/Google Ads）\\n进入 E-commerce 或 Facebook Ads 模板，输入产品名称、核心卖点、目标受众和广告类型。\\n点击 Generate，AI 一次性生成多个版本的广告文案，可选择最喜欢的一个进行 A/B 测试。\\nGoogle Ads 文案注意字符限制（Writesonic 会自动标注），确保在规定长度内。\\n\\n第五步：社媒内容（Social Media）\\n进入 Social Media 模块，选择发布平台（Instagram/Facebook/Twitter/LinkedIn/YouTube）。\\n输入产品信息或粘贴文章链接，AI 自动生成适配该平台风格的帖子内容，支持添加 hashtag。\\n\\n第六步：Chatsonic 对话写作\\nChatsonic 相当于「联网版 ChatGPT」，在对话框输入任何问题，它会结合实时搜索结果回答。\\n适合做市场调研、竞争分析、内容灵感激发使用。支持上传图片让 AI 分析。\\n\\n第七步：SEO 优化\\n文章生成后，点击右上角 SEO Analysis，输入目标关键词。\\n系统会给出 Content Score（满分100）和具体优化建议：关键词密度、H2 分布、Meta Description 等。\\n根据建议调整文章后再次评分，达到绿色分数（通常 60+）即可发布。",
     use_cases: [
-      "内容营销",
-      "社媒运营",
-      "产品介绍文案"
+      "内容营销：批量生成 SEO 博客文章，攻占长尾关键词",
+      "跨境电商：生成 Amazon 商品描述、速卖通产品详情页",
+      "社媒运营：快速生成适配多平台的日常发帖内容",
+      "广告投放：Facebook/Google/TikTok 广告文案多版本 A/B 测试"
+    ],
+    pros: [
+      "一站式多功能平台，覆盖从博客到广告到社媒的完整文案需求",
+      "内置 SEO 分析工具，生成内容时同步优化搜索排名",
+      "Chatsonic 支持实时联网，解决 AI 知识过期问题",
+      "中文支持优秀，中文内容生成质量在同类工具中属于上乘",
+      "Brand Voice 功能可学习品牌调性，多篇内容风格一致"
+    ],
+    cons: [
+      "免费额度有限，高频使用需要订阅付费版",
+      "长篇文章偶有逻辑断层，需要人工编辑校对",
+      "GPT-3.5 基础模型在复杂推理任务上能力有限",
+      "部分高级模板仅对付费用户开放"
     ],
     related_tools: ["jasper", "copy-ai", "quillbot"],
   },
@@ -143,11 +157,26 @@ export const TOOLS_DATA: AiTool[] = [
       "丰富的模板库，覆盖项目管理、个人成长、团队协作等场景",
       "支持API和自动化集成，可连接Slack、Google Drive、GitHub等100+工具"
     ],
-    usage_guide: "注册notion.so。\\n\\n新建页面：+ - Page/Database。\\n\\n块编辑：输入 / 打开块菜单，拖拽调整顺序。\\n\\n数据库：Table/Board/Calendar/Gallery视图切换。\\n\\nAI：选中文字 - Ask AI - 总结/润色/翻译。",
+    usage_guide: "第一步：注册与首次设置\\n访问 notion.so，点击 Sign Up 使用邮箱或 Google 账号注册。\\n首次进入会看到引导模板（Notion Basics），建议花 10 分钟快速过一遍，了解块编辑、页面嵌套和数据库基础概念。\\n\\n第二步：创建工作空间\\n点击左侧栏 + New Page 创建新页面，输入页面名称。\\n页面内可嵌套子页面（点击 + 图标或输入 /page），形成层级结构。\\n使用模板：点击页面内模板按钮，从模板库选择「会议记录」「项目管理」「读书笔记」等预设模板。\\n\\n第三步：块编辑基础\\n在任何页面输入 / 打开块菜单，常用块类型：\\n- /heading1/2/3：标题\\n- /bullet：无序列表\\n- /numbered：有序列表\\n- /todo：待办事项\\n- /toggle：折叠内容\\n- /code：代码块\\n- /image/file：插入图片或文件\\n拖拽块左侧 ⋮⋮ 图标可调整顺序和层级。\\n\\n第四步：数据库（Database）\\n输入 /database 创建数据库，支持 6 种视图：\\n- Table：电子表格式，适合结构化数据\\n- Board：看板卡片式，适合项目管理\\n- Calendar：日历视图，适合日程管理\\n- Gallery：卡片画廊，适合素材管理\\n- List：列表式，适合快速浏览\\n- Timeline：甘特图，适合长期项目排期\\n在 Table 视图中，点击右上角 + New 添加属性（Type）：Select、Multi-select、Person、Date、URL、Files 等。\\n\\n第五步：Notion AI 使用\\n在任何页面或选中文字后，按空格键或点击 Ask AI 按钮唤出 AI 助手：\\n- 选中文字后：Summarize（总结）、Improve writing（润色）、Translate（翻译）、Explain（解释）\\n- 空白处：直接提问或让 AI 帮你写内容\\n- /ai：输入指令让 AI 执行特定任务（如「帮我写一封感谢邮件」）\\n\\n第六步：团队协作\\n点击右上角 Share 邀请团队成员，设置权限（Full access/Can edit/Can comment/Can view）。\\n@提及同事添加评论，在评论中使用 /vote 创建投票。\\n开启 Page comments 对页面整体添加评论。\\n\\n第七步：连接与自动化\\nSettings & Members → Connections，连接 Slack、Google Drive、GitHub、Notion API 等。\\n使用 Notion API 可以读写页面内容，适合开发者搭建自动化工作流。",
     use_cases: [
-      "个人知识管理",
-      "团队协作",
-      "项目管理"
+      "个人知识管理：用数据库管理读书笔记、课程笔记、项目复盘",
+      "团队协作：共享会议记录、OKR 追踪、团队 Wiki 知识库",
+      "项目管理：用看板或 Timeline 管理产品开发里程碑和任务分配",
+      "内容资产库：用 Gallery 视图管理图片、设计稿、文案素材"
+    ],
+    pros: [
+      "All-in-One 平台，一站式替代笔记/文档/任务/表格等多个工具",
+      "数据库功能极其强大，支持多种视图灵活切换",
+      "Notion AI 内置免费额度，基础写作辅助不付费也能用",
+      "模板库丰富，从创业百科到健身计划都有现成模板",
+      "开放 API + 社区集成，支持连接 100+ 第三方工具"
+    ],
+    cons: [
+      "免费版有页面数量限制（个人用户 1000 页，超出需付费）",
+      "中文界面和搜索体验不如英文版完善",
+      "数据库复杂功能有一定学习曲线，新手容易迷失",
+      "离线体验较差，必须联网才能编辑（离线模式仅限桌面端）",
+      "多人实时协作时性能下降，复杂页面加载较慢"
     ],
     related_tools: ["canva", "grammarly", "surfer-seo"],
   },
@@ -168,11 +197,25 @@ export const TOOLS_DATA: AiTool[] = [
       "内链建议，自动推荐文章中应添加的内部链接",
       "AI Outline生成，输入关键词自动生成文章大纲结构"
     ],
-    usage_guide: "注册surferseo.com。\\n\\nContent Editor：输入关键词，实时查看 Content Score（满分100），绿色达标。\\n\\nSERP Analysis：分析首页竞争对手内容。\\n\\nKeyword Research：找低难度高搜索量关键词。\\n\\nAI Outline：输入主题生成文章大纲。",
+    usage_guide: "第一步：注册与连接\\n访问 surferseo.com，点击 Start 7-day Trial 注册账号。\\n注册后进入 Dashboard，需要先安装 Surfer 浏览器扩展（Chrome 推荐）或使用内置 Content Editor。\\n连接 Google 账号可导入 Search Console 数据，了解现有内容排名情况。\\n\\n第二步：Keyword Research（关键词研究）\\n点击左侧 Keyword Research，输入种子关键词（如「AI写作工具」）。\\n系统返回关键词列表，包含：\\n- Volume：月搜索量\\n- KD（Keyword Difficulty）：竞争难度\\n- CPC：广告点击成本\\n- Q（问题型关键词）：适合 FAQ 和 People Also Ask 区块\\n筛选低难度（KD < 30）+ 高相关性的关键词作为目标词。\\n点击关键词可查看 SERP 详情，了解竞争对手内容结构。\\n\\n第三步：Content Editor（写文章）\\n点击左侧 Content Editor，输入目标关键词，选择目标语言和文章类型（Article/Blog Post/Product Page）。\\n右侧面板显示 Content Score（0-100），实时反映当前内容的 SEO 完善程度。\\n按 NLP 建议添加关键词：用绿色标注已包含的关键词，黄色为建议添加，红色为缺失。\\nSurfer 会提示：目标关键词应出现在 H1/H2/H3 标题中、特定关键词密度建议、相关词和 LSI 关键词建议添加，以及内容长度建议。\\n\\n第四步：SERP Analysis（竞品分析）\\n在 Content Editor 页面点击 SERP Analysis，查看当前关键词下排名前 10 的页面。\\n分析每个竞争对手的：字数、H2 结构、内链数量、图片数量、外链数量。\\n学习竞争对手做得好的地方，识别内容缺口作为差异化方向。\\n\\n第五步：AI Outline（AI 大纲生成）\\n在 Content Editor 输入关键词后，点击 Generate Outline，AI 基于竞品分析结果生成文章大纲。\\n大纲包含 H2/H3 结构，每个章节有描述性引导语，可直接拖拽调整顺序。\\n确认大纲后，点击 Open in Editor 在 AI 辅助下撰写内容，边写边看 Content Score 变化。\\n\\n第六步：内链建议\\n撰写文章时，Surfer 自动扫描网站内容，给出内部链接建议。\\n点击建议可预览目标文章摘要，确认后自动插入锚文本链接。\\n\\n第七步：发布与追踪\\n文章发布后，在 Surfer Content Audit 中追踪排名变化。\\n定期查看哪些关键词排名上升，哪些文章需要进一步优化。",
     use_cases: [
-      "SEO优化",
-      "内容营销",
-      "独立博客"
+      "内容营销团队：批量生产 SEO 友好的营销文章，提升有机搜索流量",
+      "独立博主：优化文章结构，快速超越竞争对手排名",
+      "SEO 专员：关键词研究 + 内容优化一体化工作流"
+    ],
+    pros: [
+      "Content Editor 实时评分，边写边优化，无需事后检查",
+      "AI Outline 功能基于真实竞品数据，大纲质量高",
+      "NLP 语义分析先进，不仅看关键词密度还分析语义相关性",
+      "内链建议功能帮助建立站内链接结构，提升整体域名权重",
+      "与 Jasper、WordPress、Google Docs 等主流工具集成"
+    ],
+    cons: [
+      "月订阅价格较高（$59/月起），个人博主负担较重",
+      "仅支持英文关键词分析，对中文 SEO 支持有限",
+      "Content Score 并不等于排名保证，内容质量仍是核心",
+      "免费试用仅 7 天且功能受限，无法充分评估",
+      "过度依赖 Surfer 建议可能导致内容同质化"
     ],
     related_tools: ["writesonic", "jasper", "quillbot"],
   },
@@ -193,11 +236,25 @@ export const TOOLS_DATA: AiTool[] = [
       "提供API接口，支持与企业设计工作流和电商平台集成",
       "内置图片编辑功能：换背景、添加阴影、调色等一站式完成"
     ],
-    usage_guide: "上传：remove.bg 拖入图片，3-5秒自动完成PNG透明背景。\\n\\n换背景：Edit - Change Background。\\n\\n加阴影：Effects - 选阴影类型（自然阴影/投射阴影/边缘光）。\\n\\nAPI：curl -H API-Key -F image_file=@photo.jpg api.remove.bg",
+    usage_guide: "第一步：基础去背景（3步完成）\\n打开 remove.bg，拖拽图片到上传区域，或点击 Upload Image 选择本地文件。\\n等待 3-5 秒，AI 自动完成抠图，主体保留、背景消失。\\n点击 Download 下载 PNG 格式（透明背景）或 JPG（白色背景）。\\n\\n第二步：手动微调（边缘不完美时）\\n点击 Edit 进入编辑器，使用 Erase（擦除）和 Restore（恢复）工具精修边缘。\\n放大图片仔细处理头发丝、羽毛等复杂边缘区域。\\n使用 Refine Edge 工具平滑过渡边缘，减少锯齿感。\\n\\n第三步：更换背景\\n点击 Change Background，选择背景类型：\\n- Solid Color：纯色背景（可选颜色）\\n- Image：上传自定义背景图\\n- Smart Background：AI 自动生成与环境匹配的自然背景\\n确认背景合成效果自然后下载。\\n\\n第四步：添加阴影效果\\n点击 Effects 标签，选择阴影类型：\\n- Natural Shadow：自然投影，适合产品照\\n- Drop Shadow：硬边投影，适合图标类素材\\n- Long Shadow：长投影，现代设计风格\\n调整阴影的模糊度、偏移距离和透明度达到最佳效果。\\n\\n第五步：批量处理\\n点击 Batch 进入批量模式，最多一次上传 30 张图片。\\n设置统一处理参数（去背景/换背景/加阴影），点击 Process 批量处理。\\n处理完成后点击 Download All 打包下载，或逐一下载。\\n\\n第六步：API 接入（开发者）\\n注册后进入 Dashboard → API Key，复制个人 API Key。\\n调用示例（cURL）：\\n  curl -H 'API-Key: YOUR_KEY' -F 'image_file=@photo.jpg' https://api.remove.bg/v1.0/removebg\\n返回处理后的图片文件，支持设置输出尺寸。适合电商、影楼、设计工作室自动化批量处理。",
     use_cases: [
-      "电商产品图",
-      "证件照换背景",
-      "设计素材抠图"
+      "电商卖家：产品白底图快速生成，提升商品主图专业度",
+      "设计师：抠图换背景，快速获取透明素材用于海报/名片/包装设计",
+      "摄影师/影楼：证件照换背景，无需手动钢笔抠图"
+    ],
+    pros: [
+      "操作极其简单，3步完成抠图，完全不需要设计基础",
+      "AI 边缘处理精度高，复杂主体（头发、羽毛、毛绒玩具）效果出色",
+      "处理速度快（3-5秒/张），批量处理效率高",
+      "提供 API 接口，支持与企业系统集成，适合规模化使用",
+      "Batch 批量处理功能对电商卖家非常实用"
+    ],
+    cons: [
+      "免费版仅能下载小尺寸图片（626px），大尺寸需要付费",
+      "每月免费额度有限（1 credits/月），超出需购买套餐",
+      "处理极低分辨率或背景与主体对比度低的图片时效果较差",
+      "无法处理非常复杂的场景（如半透明物体、烟雾、火焰）",
+      "背景合成功能较为基础，不支持高级图像融合"
     ],
     related_tools: ["photoroom", "canva", "pixlr"],
   },
@@ -268,11 +325,25 @@ export const TOOLS_DATA: AiTool[] = [
       "Summarizer摘要生成，输入文章或粘贴URL快速生成摘要",
       "Translator翻译模式，支持45+语言互译"
     ],
-    usage_guide: "Paraphraser：粘贴文本 - 选风格（Standard/Formal/Simple等）- Synonym 滑块控制幅度。\\n\\nGrammar Checker：Apply 接受修改。\\n\\nSummarizer：粘贴URL/文本 - 调整长度。\\n\\nChrome扩展在任意网页使用。",
+    usage_guide: "第一步：基础改写（Paraphraser）\\n访问 quillbot.com，无需注册可直接使用（免费版有功能限制）。\\n将需要改写的英文文本粘贴到左侧输入框。\\n点击 Paraphraser 输入框下方的模式选项：\\n- Standard：标准改写，平衡原创度和可读性\\n- Formal：正式语气，适合商务邮件和学术写作\\n- Simple：简单易懂，降低词汇难度\\n- Creative：创意改写，允许更大变化\\n- Fluency：提升流畅度，适合语法较多错误的原文\\n- Shorten：缩短表达长度\\n- Expand：扩展表达长度\\n拖动 Synonym 滑块（Low/Medium/High）控制词汇替换幅度。\\n右侧预览改写结果，点击 Copy 复制或点击 Rewrite Again 重新改写。\\n\\n第二步：语法检查（Grammar Checker）\\n将文本粘贴到 Grammar Checker（或在 Paraphraser 切换到该标签），AI 标出所有错误。\\n每条错误显示解释和修正建议，点击 Apply 接受单条修改，或点击 Apply All 一键接受全部。\\n\\n第三步：摘要生成（Summarizer）\\n切换到 Summarizer 标签，粘贴长篇文章或输入 URL（QuillBot 自动抓取内容）。\\n拖动 Summary Length 滑块调整摘要长度（1-10 句或百分比形式）。\\n点击 Summarize 生成摘要，适合快速了解长文章核心内容。\\n\\n第四步：翻译\\n切换到 Translator 标签，输入文本，默认翻译语言为 English。\\n点击语言选择器，切换源语言和目标语言（共 45+ 语言，支持中文互译）。\\n注意：QuillBot 翻译质量不如专业翻译工具，适合辅助理解。\\n\\n第五步：Co-Writer 综合写作\\n点击 Co-Writer 进入综合写作模式，提供从大纲到完稿的全流程辅助：\\n- 左侧输入主题或关键词，AI 生成文章大纲\\n- 选中段落可调用 Paraphraser 改写或 Grammar Checker 纠错\\n- 右下角有 Citations 引用查找功能\\n\\n第六步：Chrome 扩展\\n安装 QuillBot Chrome 扩展，在以下场景直接使用：\\n- Google Docs：选中文字点击扩展图标直接改写/纠错\\n- Gmail：写邮件时扩展纠错，避免发送带语法错误的邮件\\n- Twitter/X：发帖前改写，提升表达质量\\n\\n第七步：Premium 订阅\\n免费版每次改写限 125 字，Premium（$6.75/月）无限字数 + 所有模式解锁 + 抄袭检测。\\nAcademic 订阅（$9.95/月）额外包含期刊风格检查和引用格式化。",
     use_cases: [
-      "英语写作润色",
-      "学生论文改写",
-      "内容编辑"
+      "英语写作辅助：留学生/职场人士提升英文邮件和报告质量",
+      "内容编辑：快速润色和改写已有内容，提升原创度和可读性",
+      "学术写作：论文降重、改写、语法检查和引用格式化"
+    ],
+    pros: [
+      "完全免费版功能已经足够日常写作润色使用",
+      "7 种改写模式覆盖面广，从正式商务到创意写作都能满足",
+      "Chrome 扩展集成优秀，在 Gmail/Docs 等网页端随时调用",
+      "Co-Writer 提供从大纲到完稿的一站式写作体验",
+      "操作简单，无需学习成本，粘贴即可使用"
+    ],
+    cons: [
+      "免费版有字数限制（125 字/次），长段落需分段处理",
+      "改写质量中等，复杂学术内容的深度改写仍需人工审核",
+      "仅支持英文（主打），中文场景完全无法使用",
+      "翻译功能不如 DeepL 和 Google Translate 专业",
+      "抄袭检测功能需付费，高级学术写作需额外订阅"
     ],
     related_tools: ["grammarly", "writesonic", "jasper"],
   },
@@ -293,11 +364,25 @@ export const TOOLS_DATA: AiTool[] = [
       "支持26种语言，适合全球化内容生产",
       "内置Chrome扩展，随时在任何网页调用AI写作能力"
     ],
-    usage_guide: "注册jasper.ai。\\n\\nBrand Voice：Brand - Add a Brand - 上传品牌样本。\\n\\n模板：Dashboard - Templates - Generate。\\n\\nBoss Mode：Editor - 自然语言指令 - /快捷指令调整。\\n\\nRecipes：自动化工作流套用。",
+    usage_guide: "第一步：注册与工作区设置\\n访问 jasper.ai，点击 Start Free Trial（7天免费），使用邮箱或 Google 账号注册。\\n注册后创建 Workspace（工作区），输入公司/团队名称。\\n在 Account Settings 中设置默认语言（建议设为英文以获得最佳效果）。\\n\\n第二步：设置 Brand Voice（品牌声音）\\n点击左侧 Brand → Add a Brand，填写品牌基本信息：公司名称、tagline、产品类别、目标受众描述。\\n上传品牌文档：品牌指南、风格指南、现有营销文案（PDF/Word/TXT 均可）。\\nJasper AI 学习后，生成的所有内容会自动保持与品牌调性一致的风格、用词和语气。\\n\\n第三步：模板生成内容\\n进入 Dashboard → Templates，选择内容类型：\\n- Blog Post Intro Paragraph：博客开头段\\n- Product Description：产品描述\\n- Facebook Ad Headline：Facebook 广告标题\\n- Email Subject Line：邮件主题\\n填入必要信息（产品名、关键词、目标受众等），点击 Generate。\\nJasper 会生成多个版本供选择，可继续让 AI 改写或手动调整。\\n\\n第四步：Boss Mode 自由写作\\n进入 Jasper Editor，在输入框用自然语言描述需求，例如：\\n「帮我写一篇关于 AI 在电商中应用的文章，2000字，面向电商卖家，语气专业但易懂」\\n按 Ctrl+Enter 或 Cmd+Enter 提交，Jasper 开始逐句生成内容。\\n生成过程中可随时输入 /commands 指令：\\n- /fix grammar：修正语法\\n- /make it shorter/longer：调整长度\\n- /change tone：改换语气\\n- /summarize：总结前文\\n\\n第五步：Surfer SEO 集成（需订阅 Surfer）\\n在 Editor 右侧打开 Surfer SEO 面板，输入目标关键词。\\nContent Score 实时显示，Jasper 会自动参考 SEO 建议调整内容。\\n\\n第六步：Recipes（自动化工作流）\\n点击 Recipes 查看社区分享的提示词模板，例如「90天内容日历」「产品发布文案套件」。\\n点击 Use 套用模板，修改关键信息即可批量生成系列内容。\\n\\n第七步：Chrome 扩展\\n安装 Jasper Chrome 扩展后，在任意网页（Google Docs、Gmail、LinkedIn）点击扩展图标直接调用 AI 写作。\\n无需切换到 Jasper 网站，在工作流中直接使用。",
     use_cases: [
-      "企业营销",
-      "内容代理",
-      "博客批量生产"
+      "品牌企业营销团队：批量生成多渠道（官网/社媒/邮件）品牌一致的内容",
+      "内容代理机构：为客户生产大规模 SEO 内容，保持品牌调性",
+      "跨境电商：生成多语言产品描述和营销文案"
+    ],
+    pros: [
+      "Brand Voice 功能强大，真正实现品牌调性一致的批量内容生产",
+      "模板库丰富（50+），覆盖绝大多数常见文案场景",
+      "Surfer SEO 集成让内容生成和 SEO 优化无缝衔接",
+      "Boss Mode 自然语言交互灵活，适合复杂创意写作",
+      "Chrome 扩展实用，在任何网页都能随时调用 AI"
+    ],
+    cons: [
+      "价格较高（Starter 计划 $49/月起，Boss Mode $99/月起）",
+      "对中文支持不如英文，中文内容需要更多人工润色",
+      "需要熟悉 Templates 和 Commands 才能发挥最大效率",
+      "免费试用仅 7 天且功能受限",
+      "内容原创度非 100%，重要内容仍需事实核查"
     ],
     related_tools: ["writesonic", "copy-ai", "surfer-seo"],
   },
@@ -318,11 +403,24 @@ export const TOOLS_DATA: AiTool[] = [
       "工作流（Workflow）功能，将多个文案任务串联成自动化流程",
       "提供API接口，支持与企业CRM、CMS系统集成"
     ],
-    usage_guide: "注册copy.ai。\\n\\n模板：Library - 选模板 - 填信息 - Create Content。\\n\\nInfobase：添加品牌故事/卖点/受众，生成时自动参考。\\n\\nWorkflows：串联任务（产品名称 - 产品描述 - 广告）一次生成全套内容。",
+    usage_guide: "第一步：注册与了解界面\\n访问 copy.ai，点击 Get Started 邮箱注册（无需信用卡）。\\n登录后 Dashboard 显示：Workflows（工作流）、Library（模板库）、Infobase（品牌知识库）。\\n左侧导航分为 Contents（内容生成）、Workflows（自动化）和 Infobase（品牌知识）。\\n\\n第二步：使用模板生成内容\\n点击 Library，选择内容类型分类或直接搜索（如「Facebook Ad」）。\\n选择模板后，填写必填信息：\\n- 产品/服务名称\\n- 核心卖点（3-5个）\\n- 目标受众\\n- Call to Action（期望用户做什么）\\n点击 Create Content，AI 生成 3 个版本供选择，点击选中版本可继续改写（Regenerate/Revise）。\\n\\n第三步：Infobase（品牌知识库）\\n点击 Infobase → Add Information，添加品牌信息：\\n- Brand Story：品牌故事和使命\\n- Products/Services：产品/服务详情\\n- Target Audience：目标受众画像\\n- Tone of Voice：品牌语气风格\\n添加后，生成任何内容时 AI 会自动参考 Infobase，生成的品牌一致性更强。\\n\\n第四步：Workflows（自动化工作流）\\n点击 Workflows → Create Workflow，预设工作流例如「Product Launch Sequence」：\\nStep 1: 生成产品名称 → Step 2: 生成产品描述 → Step 3: 生成落地页文案 → Step 4: 生成社交媒体帖子\\n一次填写核心信息，AI 沿工作流自动完成全套营销文案。\\n\\n第五步：多语言生成\\n在任何模板中切换语言选项，支持 95+ 语言。\\n生成英文内容后，点击 Translate 选择目标语言，AI 翻译保持原意同时适配当地文化表达。\\n\\n第六步：API 集成\\n进入 Settings → API 获取 Key，调用 REST API 批量生成内容。\\n示例：将 Copy.ai 集成到 CRM 系统，当销售创建新客户记录时自动生成个性化跟进邮件。",
     use_cases: [
-      "销售邮件",
-      "产品落地页",
-      "运营文案"
+      "B2B 销售团队：批量生成个性化销售邮件和外发信息",
+      "产品运营：一次性生成新品发布全套文案（落地页 + 邮件 + 社媒）",
+      "跨境电商：多语言产品描述和地区化营销内容"
+    ],
+    pros: [
+      "Infobase 功能让品牌知识积累起来越用越准，生成内容一致性高",
+      "Workflows 自动化工作流大大提升批量内容生产效率",
+      "95+ 语言支持优秀，多语言出海团队首选",
+      "模板分类清晰，90+ 场景覆盖全面",
+      "API 集成能力强，适合企业级自动化场景"
+    ],
+    cons: [
+      "免费版额度较少（100 credits/月），超出需付费",
+      "长篇文章生成质量不如专业博客写作工具",
+      "Infobase 需要手动维护，品牌信息更新后历史内容不会自动同步",
+      "中文支持较弱，中文场景更适合 Writesonic 等工具"
     ],
     related_tools: ["jasper", "writesonic", "anyword"],
   },
@@ -343,11 +441,25 @@ export const TOOLS_DATA: AiTool[] = [
       "内置查重工具，生成内容后可直接检查原创度",
       "多风格选项（正式/休闲/说服/简洁），满足不同场景需求"
     ],
-    usage_guide: "注册rytr.me。\\n\\n选场景：博客/邮件/广告/社媒。\\n\\n选语言/风格：正式/休闲/说服/简洁。\\n\\n输入主题 - Ryse Me 生成。\\n\\n查重：Check Plagiarism。",
+    usage_guide: "第一步：注册\\n访问 rytr.me，点击 Start Free 邮箱注册，或直接用 Google 账号登录。\\n新用户每月有 5000 字符免费额度（永久），足够个人日常写作使用。\\n\\n第二步：选择用例（Use Case）\\nDashboard 首页点击 Use Case 下拉菜单，Rytr 提供 20+ 场景：\\n- Blog Section Writing：博客正文段落\\n- Email：邮件写作\\n- Ad Copy：广告文案\\n- Social Media：社媒帖子\\n- SEO Meta Title & Description：SEO 标题和描述\\n- Article/Guest Post：完整文章\\n- Lyrics：歌词创作\\n- Interview Questions：面试问题\\n选好后进入编辑器。\\n\\n第三步：配置写作参数\\n设置 4 个核心参数：\\n- Language：写作语言（支持中文，选「Chinese Simplified」）\\n- Tone：语气风格（Casual/Formal/Persuasive/Humorous 等）\\n- Key Points：关键要点（用逗号分隔，AI 围绕这些点展开）\\n- Number of Variants：生成几个版本（1-3）\\n\\n第四步：生成与编辑\\n点击 Ryse Me，AI 基于关键要点生成内容。\\n不满意可点击 Regenerate 重新生成，或手动在编辑器中修改。\\n使用 More 选项：\\n- Expand：扩展当前段落\\n- Rewrite：改写当前内容\\n- Append：追加内容\\n\\n第五步：查重检测\\n点击 Check Plagiarism，Rytr 调用第三方查重工具检测原创度。\\n重复率高的段落高亮显示，可针对性改写。\\n\\n第六步：批量生成\\n在左侧栏 My Team → Campaigns，创建写作项目，将同类型内容放在同一 Campaign 下管理。\\n可一次性生成多条内容（如 10 条相似产品的广告文案），统一风格管理。",
     use_cases: [
-      "个人博主",
-      "电商卖家",
-      "Freelancer"
+      "个人博主/自媒体：快速生成博客文章和社交媒体内容",
+      "电商卖家：批量生成 Amazon/淘宝/Shopify 产品描述",
+      "Freelancer 自由撰稿人：多客户、多风格内容高效生产"
+    ],
+    pros: [
+      "价格极其实惠，个人免费版额度对轻度用户足够",
+      "用例模板清晰明确，新手也能快速上手",
+      "支持 30+ 语言，中文写作质量在低价工具中算优秀",
+      "内置查重功能，写完直接检查原创度方便",
+      "多风格选项灵活，同一内容可生成不同语气版本"
+    ],
+    cons: [
+      "免费版输出有 Rytr 品牌水印，需要付费去除",
+      "长篇文章逻辑连贯性较差，适合短文本而非深度内容",
+      "缺乏 Brand Voice 功能，无法保持多篇内容的品牌一致性",
+      "无 API 接口，无法与企业系统集成",
+      "相较 Jasper 等高端工具，AI 生成内容的创意和质量上限较低"
     ],
     related_tools: ["quillbot", "copy-ai", "anyword"],
   },
@@ -368,11 +480,25 @@ export const TOOLS_DATA: AiTool[] = [
       "内置品牌工具包，自动添加LOGO和水印",
       "基于AI选择最相关的素材片段，保持内容逻辑连贯"
     ],
-    usage_guide: "文章转视频：Article to Video - 粘贴URL/文本 - AI提取内容 - 选模板 - 导出。\\n\\n视频Highlights：上传长视频 - AI生成片段 - 选片段 - 导出。\\n\\n字幕翻译：Captions - Translate。",
+    usage_guide: "第一步：注册与首次设置\\n访问 pictory.ai，点击 Start Free Trial（需信用卡验证，免费试用 3 个视频）。\\n登录后进入 Dashboard，有 4 个核心功能：Script to Video / Article to Video / Edit Videos using Text / Visuals to Video。\\n首次使用建议先设置 Brand（品牌）：Settings → Brand → 上传 Logo、选择品牌色（Pictory 会自动应用到所有视频）。\\n\\n第二步：文章转视频（Article to Video）\\n点击 Article to Video，粘贴博客文章 URL 或直接粘贴纯文本（建议 500-3000 字）。\\n点击 Proceed，AI 自动分析文本提取关键语句和主题。\\n预览 AI 生成的故事板：每个字幕片段对应一段视频素材，可手动替换/删除某个场景或调整字幕文字。\\n选择视频比例（16:9 横向 / 9:16 竖版 / 1:1 方形），适配不同平台。\\n\\n第三步：从长视频提取精彩片段（Video Highlights）\\n点击 Edit Videos using Text，上传长视频（支持 MP4，最大 6GB）。\\nAI 自动将视频转录为文字稿显示在左侧。\\n在文字稿中用鼠标选中感兴趣的内容片段（可多选），右侧预览对应视频位置。\\n点击 Create Highlights，AI 将选中片段组成为完整短片，可设置片头片尾。\\n\\n第四步：字幕与翻译\\n所有视频自动生成字幕，可在 Captions 中：\\n- 选择字幕样式（字体/颜色/背景/位置）\\n- 开启 Auto Translation，翻译成 20+ 语言\\n- 导出 SRT/VTT 字幕文件\\n\\n第五步：添加品牌元素\\n点击 Branding，在视频开头添加 Logo 动画（可选择出现时长和位置）。\\n设置片头片尾：可添加固定的片头标题和 CTA（如「关注我们」）。\\n所有设置保存为 Brand Kit，下次使用时一键应用。\\n\\n第六步：导出与分享\\n点击 Continue → Preview，满意后点击 Generate Video。\\n等待 2-5 分钟（视视频长度），生成后直接 Download MP4。\\n支持直接发布到 YouTube / Hootsuite / Sprout Social。",
     use_cases: [
-      "内容复用",
-      "webinar传播",
-      "企业培训"
+      "内容营销：将博客文章/公众号长文转化为短视频，提升内容复用率",
+      "教育培训：将 webinar/课程长视频提取精华片段做二次传播",
+      "社交媒体运营：将品牌宣传视频拆分为多个短片适配不同平台"
+    ],
+    pros: [
+      "文章转视频功能强大，将文字内容自动化视频化，大幅降低视频制作门槛",
+      "AI 自动匹配合适素材，无需手动搜索和剪辑",
+      "品牌套件功能让批量视频保持视觉一致性",
+      "字幕翻译功能优秀，一份内容多语言版本一键生成",
+      "Video Highlights 从长视频提取精华非常适合做短视频矩阵"
+    ],
+    cons: [
+      "视频素材库质量参差不齐，部分素材较老旧",
+      "AI 自动匹配的素材偶有与内容不匹配的情况，需手动调整",
+      "免费试用限制较多（仅 3 个视频），完整功能需订阅 $19/月起",
+      "处理速度较慢，长视频（10分钟以上）生成需等待较久",
+      "不支持自定义字体，中文字幕字体选择受限"
     ],
     related_tools: ["invideo", "fliki", "kapwing"],
   },
@@ -418,11 +544,25 @@ export const TOOLS_DATA: AiTool[] = [
       "多语言配音：支持40+语言和口音，一键本地化",
       "丰富的视频模板，可快速套用生成各类营销视频"
     ],
-    usage_guide: "Create Video - 选模板/空白 - 选数字人 - 输入脚本 - 导出。\\n\\nPhoto Avatar：上传照片 - 输入脚本 - 数字人对口型。\\n\\nStudio Avatar：上传15-30分钟视频 - 训练后生成专属形象。\\n\\nDubbing：翻译40+语言。",
+    usage_guide: "第一步：注册与界面介绍\\n访问 heygen.com，点击 Start Creating Free（5 分钟免费视频）。\\n注册后进入 Studio 界面，左侧为模板和素材库，右侧为视频预览和编辑区。\\n主要功能入口：Create Video（新建视频）、Instant Avatar（快速数字人）、Photo Avatar（照片数字人）、VoiceCloner（声音克隆）。\\n\\n第二步：使用模板快速创建视频\\n点击 Templates，选择视频类型：\\n- Marketing：产品介绍、品牌宣传、活动推广\\n- Learning & Development：企业培训、在线课程\\n- News & Update：新闻播报、公告\\n- Custom：空白模板自由创作\\n选好模板后进入编辑：\\n1. 选择数字人：点击视频中的占位数字人，从 AI Avatars 库选择（按年龄/性别/风格筛选）。\\n2. 输入脚本：在左侧 Script 框输入讲解文字（注意字数限制，每段不超过 200 字）。\\n3. 调整配音：选择语言和声音（可选不同性别和风格），点击 Preview 预览效果。\\n4. 添加背景/音乐：在 Scenes 中添加背景图片或音乐。\\n\\n第三步：Photo Avatar（照片数字人）\\n点击 Photo Avatar → Upload Photo，上传一张正面清晰照片（建议五官完整、背景简洁）。\\n等待 1-2 分钟 AI 训练完成后，输入脚本，照片中的人物会以对口型方式朗读。\\n适用于：用真人照片生成虚拟代言人，一致性好且无需拍摄。\\n\\n第四步：Studio Avatar（专属数字人训练）\\n点击 Studio Avatar → Start Recording，按提示录制 2-5 分钟视频（需在安静环境，正面面对摄像头，说话清晰）。\\n上传 15-30 分钟视频可获得更好的训练效果。\\n训练完成后（通常 30-60 分钟），生成专属的数字人形象，可在所有视频中使用。\\n\\n第五步：声音克隆（Voice Cloner）\\n点击 VoiceCloner → Upload Audio，上传 1-5 分钟清晰音频（朗读或唱歌均可）。\\nAI 训练后生成克隆声音，之后在所有视频中可使用此声音，无需每次配音。\\n\\n第六步：多语言配音（Dubbing）\\n创建好视频后，点击 More Actions → Translate，选择目标语言（40+ 种）。\\nAI 自动翻译脚本并配音，一键生成多语言版本（如英文视频转中文/日语/西班牙语）。\\n非常适合：同一个视频内容本地化为多国家市场版本。\\n\\n第七步：导出\\n点击右上角 Publish，选择分辨率（720p/1080p），点击 Export 下载 MP4。",
     use_cases: [
-      "品牌代言",
-      "跨境电商",
-      "内容创作"
+      "跨境电商：用 AI 数字人多语言讲解产品，无需拍摄多个语言版本",
+      "企业培训：批量制作多语言员工培训视频，降低培训团队差旅成本",
+      "内容创作者：建立个人数字人 IP，自动化生成视频内容矩阵"
+    ],
+    pros: [
+      "Photo Avatar 功能创新，只需一张照片即可生成数字人视频",
+      "Studio Avatar 训练专属形象，适合品牌长期使用",
+      "多语言配音（40+）一键本地化，跨境内容制作效率极高",
+      "模板库丰富，可快速套用制作专业级营销视频",
+      "VoiceCloner 声音克隆技术强，克隆声音真实自然"
+    ],
+    cons: [
+      "免费版限制多（仅 5 分钟视频，有 HeyGen 水印），完整功能订阅 $29/月起",
+      "Photo Avatar 对照片质量要求较高，低质量照片效果差",
+      "Studio Avatar 训练需上传真人视频，涉及隐私合规问题需注意",
+      "复杂场景（如多人物对话）支持有限",
+      "生成视频最长 10 分钟，超长内容需分段处理"
     ],
     related_tools: ["synthesia", "fliki", "descript"],
   },

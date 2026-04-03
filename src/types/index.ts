@@ -27,4 +27,8 @@ export interface AiTool {
   use_cases: string[];
   /** 推荐同类工具ID列表 */
   related_tools: string[];
+  /** 优势分析 */
+  pros?: string[];
+  /** 劣势/局限性分析 */
+  cons?: string[];
 }
