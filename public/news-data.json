@@ -1,6 +1,25 @@
 {
   "news": [
     {
+      "title": "小米这波操作太狠了！一次订阅全模态AI随便用，价格战要来了？",
+      "summary": "小米MiMo大模型推出Token Plan订阅模式，用户单次订阅即可使用全部模态的AI Agent服务，首购还能享88折优惠。这意味着AI服务正从按量计费走向订阅制，行业的商业模式和竞争格局都将迎来巨变。",
+      "deep_analysis": "小米这次是真的想明白了。\n\n先说说这个Token Plan是个啥。简单讲，就是你一次性付费订阅，就能同时调用文本、图像、语音、视频各种模态的AI能力，不用再单独为每个功能买单。这在AI服务领域算是头一次。之前行业内普遍的做法是按token用量计费，或者不同模态分开收费，用户用着用着就发现自己被割了韭菜。\n\n全模态Agent这个概念很有意思。以前的AI助手可能是单线程的，你让它写文案是一个模型让它画图又是另一个模型，各管一摊。但全模态Agent意味着AI能够跨模态理解和生成，比如你发一张照片让它写一段配文，它能理解图像内容再用自然语言输出，这才是真正像人一样思考的AI。小米让用户通过一次订阅就能用到这种能力，相当于把AI从工具变成了真正的助手。\n\n88折优惠看着像促销，但我更愿意把它理解为小米在试探市场反应。用较低门槛吸引开发者和小白用户入场，先把用户基数做起来。这招很聪明，因为AI服务有个特点——用的人越多，数据越多，模型越好，形成正向飞轮。小米显然是想快速跑通这个循环。\n\n对行业的影响我觉得有三个层面。首先，订阅制可能会成为趋势，毕竟按量计费对普通用户太不友好，企业也不爱用。其次，全模态能力会成为标配，单一模态的AI公司会被淘汰。最后，价格战可能真的要来了，有小米带头，其他厂商要么跟进要么差异化。\n\n至于读者应该怎么办，如果你普通用户可以等等看，效果好再入手；如果你开发者或创业者，这种订阅模式降低了试错成本，可以考虑接入MiMo生态。当然别忘了，真正值钱的不是工具而是 Prompt 工程能力，这个在哪儿都一样。",
+      "tags": [
+        "小米AI",
+        "全模态",
+        "订阅模式",
+        "行业分析"
+      ],
+      "target_audience": "AI爱好者和从业者",
+      "original_title": "小米MiMo大模型首次推出Token Plan，单次订阅可满足全模态Agent任务需求",
+      "original_snippet": "首购支持88折优惠",
+      "link": "https://www.qbitai.com/2026/04/395210.html",
+      "pubDate": "Fri, 03 Apr 2026 05:44:33 +0000",
+      "source": "量子位",
+      "lang": "zh",
+      "is_manual": false
+    },
+    {
       "title": "阿里千问3.6逆袭登顶！中国编程模型终于硬气了一回",
       "summary": "全球权威大模型盲测榜单最新结果公布，阿里千问3.6一举拿下中国最强编程模型的头衔。这次登顶不仅是中国AI的里程碑，更意味着开发者们有了更多选择。盲测榜单的公正性让这次胜利更具含金量，接下来编程领域的竞争格局可能会被彻底改写。",
       "deep_analysis": "先说说这个盲测榜单到底什么来头。所谓盲测，就是不告诉模型它要做什么测试，完全靠真实能力去pk，没有任何作弊空间。这次阿里千问3.6能在全球众多高手中脱颖而出，拿下中国最强编程模型的称号，含金量确实拉满了。\n\n这意味着什么？中国大模型在编程这个硬核赛道上，终于有了能和全球顶尖选手掰手腕的资本。之前大家总说中国AI追着美国跑，这次千问3.6用实力证明了中国队不仅能跟得上，有时候还能超车。\n\n对行业的影响我分两个层面来看。首先是开发者层面，以后写代码有了更多强力助手可选，而且国产模型在中文语境下的理解能力本来就更有优势，用起来会更顺手。其次是竞争格局层面，阿里这一波操作肯定会刺激其他厂商加大投入，特别是编程能力这个赛道，接下来几个月可能会有更多惊喜。\n\n不过我也要泼点冷水，盲测成绩好不代表所有场景都nb，具体好用不好用还得自己试试。而且AI编程工具再强，也替代不了开发者对业务的理解和创新能力，工具永远是工具，核心能力还是人。\n\n未来趋势我觉得有几个点值得关注：一是多模态编程能力会成标配，二是开源模型和闭源模型的竞争会更激烈，三是AI辅助编程会从少数人的玩具变成大多数人的日常。建议大家都别端着，该学的学起来，该用的用起来，时代的红利摆在那，接不接得住看个人了。",
@@ -21,6 +40,26 @@
       "is_manual": false
     },
     {
+      "title": "阿里千问3.6登顶全球盲测榜单！中国编程模型这次真的支棱起来了",
+      "summary": "全球权威大模型盲测榜单迎来最新结果，阿里千问3.6以绝对优势登顶中国最强编程模型。这不仅是阿里系模型的突破，更是中国AI实力在全球舞台的一次强势亮相。在大模型竞争日趋激烈的当下，这一成绩意味着什么？",
+      "deep_analysis": "就在最近，全球最权威的大模型盲测榜单发布了最新一期结果，阿里千问3.6一举登顶，荣登中国最强编程模型的宝座。这个消息在AI圈子里炸开了锅，但如果你仔细想想，其实一切都有迹可循。\n\n先说说这个盲测榜单的含金量。盲测最大的特点就是不讲情面、不看面子——所有模型在完全相同的测试环境下同台竞技，没有哪家能靠“主场优势”作弊。参赛的不仅有OpenAI、Google这些国际巨头，还有国内各大厂的核心模型。在这种真刀真枪的较量中，千问3.6能脱颖而出，靠的是实打实的技术硬实力。\n\n为什么我说是“中国最强”？因为这次千问3.6重点突破的就是编程能力。编程是AI大模型最核心的能力指标之一，也是最能体现模型“智力水平”的试金石。一个能写代码、懂算法的模型，说明它不仅能理解人类语言，还能进行复杂的逻辑推理和问题解决。千问3.6在这个维度上超越了一众竞争对手，确实给国产模型长脸了。\n\n但这件事的意义远不止“拿了个第一”那么简单。它背后反映的是中国AI大模型正在从“跟随者”向“领跑者”角色转变。过去我们总说国产模型跟GPT-4有差距，但千问3.6的表现说明，这个差距正在快速缩小，甚至在某些垂直领域已经实现了超越。这对中国整个AI产业来说，是一针强心剂。\n\n当然，我们也要清醒地看到，全球AI竞争格局远未定型。OpenAI、Google这些巨头还在持续发力，新一代模型层出不穷。千问3.6的登顶是一个里程碑，但绝不是终点。接下来中国AI要思考的是：如何在多模态、长文本、推理能力等更多维度上实现突破？\n\n对于普通用户来说，这意味着未来我们能用到更智能、更靠谱的国产AI工具了。无论是写代码、做项目还是日常办公，国产大模型会越来越成为可信赖的选择。而对于从业者而言，这是最好的时代——AI技术日新月异，机会遍地都是，就看你能不能抓住了。",
+      "tags": [
+        "阿里千问",
+        "大模型",
+        "AI编程",
+        "盲测榜单",
+        "中国AI"
+      ],
+      "target_audience": "科技爱好者与AI从业者",
+      "original_title": "全球权威大模型盲测榜单公布，阿里千问3.6登顶中国最强编程模型",
+      "original_snippet": "近期发布更多系列大模型",
+      "link": "https://www.qbitai.com/2026/04/395206.html",
+      "pubDate": "Fri, 03 Apr 2026 02:23:43 +0000",
+      "source": "量子位",
+      "lang": "zh",
+      "is_manual": false
+    },
+    {
       "title": "AI笔记应用Granola被曝隐私漏洞：你以为的隐私，默认竟是公开的",
       "summary": "AI笔记应用Granola近日被曝出严重隐私问题。尽管官方宣称“私人默认”，但用户的笔记实际上默认对任何持有链接的人可见，且会被用于内部AI模型训练。这不是个案，而是整个AI笔记行业普遍存在的隐私隐患。",
       "deep_analysis": "如果你正在使用Granola这款被冠以“AI记事本”名号的笔记应用，建议立刻检查你的隐私设置。这不是危言耸听——The Verge的调查发现，Granola存在一个根本性的信任裂痕：它声称“私人默认”，但实际上默认情况下，任何人只要拿到你的笔记链接，就能查看内容。更令人不安的是，除非你主动 opting out（选择退出），否则你的笔记数据会被用于它的内部AI模型训练。\n\n这意味着什么？你以为自己在记录会议要点，实际上可能在无偿喂养一个商业AI系统。更讽刺的是，这种“默认公开+默认用于训练”的双默认模式，Granola并不是唯一一个。纵观整个AI笔记赛道，从Otter到Notion AI，从Sonnie到tl;dr，很多产品都采用了类似的策略——用便利性换取隐私，用“免费”当诱饵让你贡献数据资产。\n\n这件事对行业的冲击是深远的。首先，它撕下了AI应用“隐私优先”的虚假面具。过去几年，几乎所有AI产品都在宣传“你的数据就是你的”，但Granola的案例证明，很多产品在隐私保护上更多是营销话术而非工程实践。其次，它暴露了一个根本矛盾：AI产品的训练需求与用户隐私之间存在结构性冲突。企业需要用户数据来优化模型，但用户期望自己的数据受到严格保护——这两者很难兼得。\n\n未来趋势会怎样？我判断会出现明显的分化：一类是重视隐私的高端工具会获得溢价，比如那些提供端到端加密、本地处理、不用于训练的垂直工具；另一类则是继续走“数据换便利”路线的大众产品。而监管层面，欧盟的GDPR和加州的CPAA只会越来越严格，类似Granola这种“默认陷阱”很可能会收到罚单。\n\n作为普通用户，你应该怎么办？第一，立刻检查Granola的隐私设置，把“用于AI训练”的开关关掉；第二，养成习惯，任何AI工具上传数据前，先看看它的隐私政策；第三，不要把所有信任都押在“默认设置”上，在AI时代，隐私是需要你自己主动捍卫的东西。这件事给我们最大的启示是：便利从来不是免费的，只是账单往往迟到而已。",
@@ -31,6 +70,25 @@
         "科技观察"
       ],
       "target_audience": "关注AI工具的职场人士",
+      "original_title": "PSA: Anyone with a link can view your Granola notes by default",
+      "original_snippet": "If you use the AI-powered note-taking app Granola, you might want to double-check your privacy settings. Though Granola says your notes are \"private by default,\" it makes them viewable to anyone with a link, and also uses them for internal AI training unless you opt out.\nGranola describes itself as an \"AI notepad for people in back-to-back meetings.\" It integrates with your calendar to capture audio from your meetings, and then uses AI to generate a bulleted list of what you've heard, which it c",
+      "link": "https://www.theverge.com/ai-artificial-intelligence/906253/granola-note-links-ai-training-psa",
+      "pubDate": "2026-04-02T21:56:16.000Z",
+      "source": "The Verge AI",
+      "lang": "zh",
+      "is_manual": false
+    },
+    {
+      "title": "你的笔记正在被AI公司白嫖？Granola隐私大翻车",
+      "summary": "AI笔记应用Granola近日被曝隐私丑闻——声称「隐私默认」却将用户笔记默认设为链接可见，更利用笔记内容训练AI模型除非用户主动退出。这一发现让不少用户直呼被背刺，也让AI应用的隐私信任危机再次浮出水面。",
+      "deep_analysis": "大家好，我是你们的老朋友，今天想聊聊一个让不少AI工具用户心里发凉的话题。\n\n上周，科技媒体曝出一个让Granola用户炸锅的消息：这款标榜「AI记事本」的应用，默认情况下竟然会让你的笔记对任何拥有链接的人可见。更离谱的是，除非你手动关闭开关，否则你的笔记内容会被它用来训练内部AI模型。\n\n你可能会说，Granola不是第一个这么干的AI应用。但问题在于，它在宣传中一直强调「隐私优先」，让用户误以为自己的数据是安全的。这种「说一套做一套」的玩法，才是真正让人寒心的。\n\n想想看，你每天用它记录会议、整理思路，结果这些内容可能被成千上万的陌生人看到，甚至被AI公司喂给模型当燃料。这不仅仅是隐私泄露，更是一种深层次的信任背叛。\n\n这件事给整个AI行业敲响了警钟。当各大厂商都在疯狂堆AI功能、卷用户体验的时候，用户的隐私底线正在被悄悄试探甚至跨越。Granola不是第一个，也不会是最后一个。\n\n那我们普通人该怎么办？我的建议是：别再傻傻地点「同意」了。用任何AI工具前，先把隐私设置翻个底朝天；能不开通的功能就别开通；定期检查你的数据被怎么用了。咱们不能一边享受AI的便利，一边把自己的老本赔进去。\n\n当然，我也相信监管会慢慢跟上来。毕竟，当隐私变成了可选的奢侈品，这个行业长久不了。好了，今天就聊到这儿有问题评论区见。",
+      "tags": [
+        "隐私泄露",
+        "AI应用",
+        "数据安全",
+        "Granola"
+      ],
+      "target_audience": "AI工具用户和科技爱好者",
       "original_title": "PSA: Anyone with a link can view your Granola notes by default",
       "original_snippet": "If you use the AI-powered note-taking app Granola, you might want to double-check your privacy settings. Though Granola says your notes are \"private by default,\" it makes them viewable to anyone with a link, and also uses them for internal AI training unless you opt out.\nGranola describes itself as an \"AI notepad for people in back-to-back meetings.\" It integrates with your calendar to capture audio from your meetings, and then uses AI to generate a bulleted list of what you've heard, which it c",
       "link": "https://www.theverge.com/ai-artificial-intelligence/906253/granola-note-links-ai-training-psa",
@@ -63,6 +121,25 @@
       "is_manual": false
     },
     {
+      "title": "OpenAI悄悄收购硅谷最火的科技播客，到底在下一盘什么棋？",
+      "summary": "OpenAI近日收购了TBPN，这个在硅谷极受欢迎的科技播客将保持独立运营，但由OpenAI首席政治策略官Chris Lehane监管。此举意味着AI巨头开始深度布局媒体领域，或许是在为未来的舆论话语权做准备。",
+      "deep_analysis": "先说清楚这事儿。TBPN不是什么小角色，它是硅谷圈子里口碑极好的科技播客，专注商业话题，创始人亲自操刀，在tech圈有不小的影响力。现在OpenAI把它买了，但有意思的是，TBPN继续保持独立运营，不是什么“内容改造”的套路。这波操作有点意思——名义上是收购，实际上更像是“养兵千日”。\n\nChris Lehane何许人也？这位老兄是OpenAI的首席政治策略官，专门负责政策、舆论、政府关系这块儿。把一个播客交给他管，信号很明显：OpenAI要的不是简单的内容资产，而是舆论场的话语权。播客这个载体很特别，它不像传统媒体那样容易被质疑“官方立场”，但影响力又足够大，尤其是对科技圈、投资圈、创业圈这批意见领袖。\n\n对行业的影响我觉得可以从两个层面看。第一，AI公司正在从纯技术竞争转向“生态竞争”，内容、媒体、开发者社区这些都是棋子。OpenAI去年各种投资并购，包括AI编程工具、AI搜索引擎，现在又伸向媒体，说明它在构建一个围绕自己的生态系统。第二，这可能开启AI公司“养媒体”的趋势。想想看，以后会不会出现更多AI公司收购或投资科技媒体的现象？内容平台会不会成为AI巨头的新战场？\n\n再说远一点的趋势。我觉得AI公司最终一定会走向“平台化”，而平台的基础设施不只是API和模型，还包括开发者社区、开源生态，以及——内容舆论生态。OpenAI这一招有点像当年字节跳动做内容矩阵的思路，只是换到了AI时代。未来的AI竞争，可能不只是模型能力的比拼，更是生态影响力的比拼。\n\n那普通从业者该怎么应对？我的建议是别太把这当热闹看。关注这类收购背后的逻辑，比关注新闻本身更有价值。如果你是在AI行业或者科技圈工作，要意识到内容渠道正在被AI巨头渗透，以后获取信息可能得更注意来源和立场。独立思考的能力，反而比以往任何时候都更重要。",
+      "tags": [
+        "OpenAI",
+        "AI行业趋势",
+        "媒体布局",
+        "硅谷科技"
+      ],
+      "target_audience": "科技从业者和AI爱好者",
+      "original_title": "OpenAI acquires TBPN, the buzzy founder-led business talk show",
+      "original_snippet": "TBPN, Silicon Valley's cult-favorite tech podcast, will operate independently, even as it's overseen by chief political operative Chris Lehane.",
+      "link": "https://techcrunch.com/2026/04/02/openai-acquires-tbpn-the-buzzy-founder-led-business-talk-show/",
+      "pubDate": "Thu, 02 Apr 2026 19:21:00 +0000",
+      "source": "TechCrunch AI",
+      "lang": "zh",
+      "is_manual": false
+    },
+    {
       "title": "SpaceX要上市了！马斯克的星际帝国梦要圆？",
       "summary": "据多方预测，SpaceX可能最早于今年6月完成IPO。这家私营航天巨头一旦上市，将成为近年来最受关注的科技公司IPO之一。马斯克为何此时推动上市？他的航天帝国将如何改变行业格局？",
       "deep_analysis": "SpaceX要上市了！这可能是2026年科技圈最重磅的消息之一。\n\n先来说说这条新闻到底讲了什么。根据多方分析，SpaceX在4月1日秘密提交了IPO申请，按照SEC的审查流程，预计S-1文件最快要到6月才会公开。这意味着，SpaceX的上市之路已经正式开启。\n\n马斯克为什么现在选择上市？很多人觉得意外，但仔细想想其实顺理成章。SpaceX目前估值已经超过1800亿美元，是全球最有价值的私营航天公司。但公司还有大量烧钱项目：星舰还在测试、Starlink在疯狂铺卫星、星际旅行的梦想也还没实现。上市既能融资支持这些宏大计划，也能让早期投资者套现。\n\n这事儿对行业有什么影响？太大了。SpaceX一旦上市，整个商业航天赛道的估值逻辑都会改变。目前，全球商业航天市场规模已经超过3000亿美元，但上市公司寥寥无几。SpaceX作为行业标杆上市，会让投资者重新审视这个赛道的价值。未来可能会出现一波航天公司上市潮，中国的星际荣耀、星河动力等公司也可能受到资本关注。\n\n再说发展趋势。我认为，SpaceX上市后会有几个明显变化：一是会加速技术迭代，特别是星舰的成熟；二是会加大在卫星互联网领域的投入，和OneWeb等对手正面竞争；三是可能会开启更多并购，整合上下游产业链。对普通投资者来说，这意味着一个全新的、充满想象空间的赛道正在打开。\n\n那读者应该怎么应对？如果你关注科技投资，SpaceX上市值得关注，但要注意几点：航天是高风险行业，周期长、不确定性大；SpaceX的估值已经不低，追高有风险；更重要的是，航天代表着人类未来的方向，这个赛道值得长期布局。\n\n马斯克曾经说要在火星上建立城市，现在看来，这个梦想或许正在从科幻走向现实的第一步。SpaceX的IPO，不仅是资本市场的里程碑，更是人类探索太空的一个新起点。",
@@ -71,6 +148,26 @@
         "马斯克",
         "IPO",
         "商业航天",
+        "科技投资"
+      ],
+      "target_audience": "科技爱好者和投资者",
+      "original_title": "Elon Musk is about to be a very busy boy!",
+      "original_snippet": "To be honest, I thought Elon Musk would confidentially file for SpaceX's IPO on the 20th of this month, rather than the 1st. But maybe that just means he's moved on to other numbers, and we should all mark our calendars for June 7th as an IPO date just in case.\nBased on the April 1st filing, and the general length of an SEC review before the S-1 document becomes public, the earliest I am expecting a SpaceX IPO is June. (At least, assuming there is still anyone left at the SEC who wants to do the",
+      "link": "https://www.theverge.com/tech/906027/elon-musk-lawsuit-ipo-spacex-tesla",
+      "pubDate": "2026-04-02T18:15:00.000Z",
+      "source": "The Verge AI",
+      "lang": "zh",
+      "is_manual": false
+    },
+    {
+      "title": "SpaceX IPO倒计时：马斯克的太空帝国终于要上市了？",
+      "summary": "根据最新消息，SpaceX已于4月1日秘密提交IPO申请，业内分析认为其最早公开募股时间可能定在6月7日。这将是近年来最受关注的科技公司IPO之一，马斯克旗下这家估值超千亿美元的火箭公司即将登陆资本市场。",
+      "deep_analysis": "SpaceX要上市了！这个从不被看好的私营火箭公司，如今终于要走向公开市场。\n\n先来说说这条新闻到底怎么回事。按照The Verge AI的报道，SpaceX已经在4月1日向SEC秘密提交了IPO申请文件。按照SEC的标准审查流程，等到S-1文件公开至少还需要几个月时间，所以业内普遍预期SpaceX的IPO最快也要到6月7日左右才能落地。\n\n有意思的是，作者坦言自己原本猜测SpaceX会在3月20日提交申请，结果马斯克团队推迟到了4月1日。这个小细节其实透露出一个重要信息：IPO这种大事需要处理极其复杂的财务审计、法律合规和内部准备，哪怕马斯克这种执行力超强的掌门人，也无法完全按计划行事。\n\n那么SpaceX IPO对行业意味着什么？四个字：格局重塑。目前全球商业航天市场被少数玩家垄断，SpaceX凭借可回收火箭技术已经建立起肉眼可见的领先优势。一旦上市，它将获得更充裕的资金去推进星舰计划、星际导航网络这些宏大项目。对波音、蓝色起源这些竞争对手来说，SpaceX上市意味着它们将面对一个资金实力更强、资本市场加持的超级对手。\n\n对普通投资者而言，SpaceX IPO也是千载难逢的机会。这家公司目前估值超过2000亿美元，是全球最有价值的私营航天企业。上市后，普通投资者终于能分享商业航天发展的红利了。当然，要不要入手、什么时候入手，需要密切关注它的财务数据、业务进展和估值水平。\n\n未来发展趋势也很清晰：商业航天的黄金时代正在到来。马斯克的星舰如果最终实现大规模商用，成本将比传统火箭降低一个数量级，届时太空旅游、卫星互联网、星际移民这些曾经科幻的概念都可能变成现实。SpaceX上市获取的资金，正是推动这些愿景落地的关键燃料。\n\n所以对读者来说，不管你是投资者、行业观察者还是单纯对科技感兴趣的普通人，SpaceX IPO都值得持续关注。这不仅是一次普通的上市，更是人类太空经济迈向成熟阶段的标志性事件。",
+      "tags": [
+        "SpaceX",
+        "IPO",
+        "商业航天",
+        "马斯克",
         "科技投资"
       ],
       "target_audience": "科技爱好者和投资者",
@@ -732,7 +829,7 @@
       "slug": "the-creator-of-claude-code-just-revealed-his-workflow-and-developers-are-losing-"
     }
   ],
-  "total": 75,
-  "fetchedAt": "2026-04-03T04:10:23.050Z",
+  "total": 80,
+  "fetchedAt": "2026-04-03T07:07:23.919Z",
   "version": "3.0"
 }
