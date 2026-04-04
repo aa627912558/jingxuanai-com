@@ -1,6 +1,25 @@
 {
   "news": [
     {
+      "title": "Anthropic狂飙、OpenAI失势！私募市场泄露AI格局重塑信号",
+      "summary": "据Rainmaker Securities总裁Glen Anderson透露，私募二级市场从未如此活跃，Anthropic成为当下最炙手可热的交易标的，而OpenAI正在失去市场份额。与此同时，SpaceX即将到来的IPO有望重塑整个私募市场格局。AI赛道的竞争天平正在悄然倾斜。",
+      "deep_analysis": "聊聊私募市场的冰与火\n\n最近AI圈有一条容易被忽视但细思极恐的消息：私募二级市场正在经历一场前所未有的结构性变天。\n\nGlen Anderson何许人也？他是Rainmaker Securities的总裁，这家机构专门做私募股权的二级交易。用他的话说，现在这个市场“从未如此活跃”——注意措辞，不是“活跃”，是“从未如此”。这意味着什么？意味着大量原本锁定的私募股权正在被急于套现或调仓的投资者抛售，市场流动性达到了一个临界点。\n\n而在这场流动性盛宴中，最抢眼的不是曾经的AI霸主OpenAI，而是Anthropic。这家由OpenAI前研究人员创立的公司，在私募市场的受欢迎程度已经完全超越了OpenAI。想想看，几年前所有人都在谈论OpenAI的估值有多高、融资有多难，现在风水轮流转，资本用脚投票的结果已经再明显不过：大家更看好Anthropic的未来。\n\n这背后其实反映了一个深层逻辑：投资者对“大模型军备竞赛”开始审美疲劳了。OpenAI确实领先，但它的领先优势正在被逐步蚕食，而且商业化路径始终不够清晰。反观Anthropic，在安全对齐领域的技术积累让它有了差异化定位，这种“更可控的AI”叙事在当前的地缘政治和监管环境下显然更有说服力。\n\n但真正让我觉得有意思的是SpaceX这条鲇鱼。SpaceX不是AI公司，但它即将到来的IPO将虹吸整个私募市场的资金。当市场上最聪明的那批钱都要去抢SpaceX的份额时，AI公司的估值必然承压。这就好比一场派对突然来了个超级明星，所有人的目光都会被吸走。\n\n那普通人该怎么看这个局面？\n\n首先，别把私募市场的情绪完全当真理。二级市场的交易往往反映的是短期流动性偏好和套现需求，和公司真正的长期价值不能简单划等号。OpenAI虽然份额在跌，但它在消费级市场的品牌认知和生态优势依然是No.1。\n\n其次，Anthropic的崛起值得认真对待。如果它能在产品和商业化上证明自己，那AI行业可能真的要进入“春秋战国”时代，而不是OpenAI一统天下。这对整个行业其实是好事——竞争才会带来创新和更合理的价格。\n\n最后，别忘了关注宏观。SpaceX IPO不仅是资本市场的事件，它背后是航天经济的崛起。当跨界巨头开始吸走科技领域的资金和注意力，AI公司们必须在商业化上更激进，否则估值回调只是时间问题。\n\n总之，这场私募市场的变天不是偶然，而是AI行业从“技术崇拜”走向“商业现实”的标志性节点。且行且观察吧。",
+      "tags": [
+        "AI投资",
+        "Anthropic",
+        "OpenAI",
+        "私募市场"
+      ],
+      "target_audience": "科技爱好者与AI从业者",
+      "original_title": "Anthropic is having a moment in the private markets; SpaceX could spoil the party",
+      "original_snippet": "Glen Anderson, president of Rainmaker Securities, says the secondary market for private shares has never been more active — with Anthropic the hottest trade around, OpenAI losing ground, and SpaceX's looming IPO poised to reshape the landscape for everyone.",
+      "link": "https://techcrunch.com/2026/04/03/anthropic-is-having-a-moment-in-the-private-markets-spacex-could-spoil-the-party/",
+      "pubDate": "Sat, 04 Apr 2026 01:31:00 +0000",
+      "source": "TechCrunch AI",
+      "lang": "zh",
+      "is_manual": false
+    },
+    {
       "title": "Anthropic这一刀，砍疼了多少AI开发者？",
       "summary": "Anthropic宣布从4月4日起，用户不能再用Claude订阅额度使用OpenClaw等第三方工具，必须额外付费。这一政策转向意味着什么？它将如何影响AI开发生态？本文为你深度解读。",
       "deep_analysis": "就在昨天深夜，一封来自Anthropic的邮件在AI开发者社区炸开了锅。简单来说就是：从明天（4月4日）下午3点开始，你们不能再用Claude的订阅额度来玩OpenClaw了，要想用就得另外掏钱。\n\n乍一看，这不就是商业公司要赚钱吗？有什么大不了的。但仔细想想，这事儿没那么简单。\n\nOpenClaw是个啥？它是第三方开发者Peter S做的Claude客户端工具，说白了就是让用户能更方便地调用Claude API的“马甲”。之前用户订阅Claude后，用这个工具API调用是算在订阅额度里的。现在Anthropic说不行了你得单独买，这不是涨价是什么？\n\n但我认为Anthropic这一刀砍下去，醉翁之意不在酒。它真正想做的，是加强对整个生态的掌控力。你想啊，第三方工具用的人越多，就意味着越多用户绕过了Anthropic官方的接口管控。虽说OpenClaw本身不影响Claude的性能，但它让用户在官方渠道之外有了更多选择，这对于一门心思想要“圈住用户”的Anthropic来说，简直是不能忍的。\n\n这让我想起了一个词：护城河。AI公司现在都在抢用户、抢开发者，而订阅制就是他们最重要的护城河之一。现在Anthropic主动把这条路收窄，以后类似的事情只会更多。今天是OpenClaw，明天会不会是其他第三方工具？第三方插件还能不能用？这些问题值得每个AI从业者警惕。\n\n对于普通用户来说短期内影响可能不大，多掏点钱的事儿。但对于整个行业而言，这标志着AI公司正在从“开放生态”向“封闭王国”转型。OpenAI、Google、Anthropic，谁不是在想办法把用户牢牢绑在自己的平台上？\n\n作为普通开发者，我的建议是：别把所有鸡蛋放在一个篮子里。多关注开源方案，多尝试不同的AI服务商。毕竟在这个快速变化的领域今天你对我爱答不理，明天我让你高攀不起的事儿还少吗？",
@@ -12,6 +31,22 @@
         "生态封闭"
       ],
       "target_audience": "AI从业者和爱好者",
+      "original_title": "Anthropic essentially bans OpenClaw from Claude by making subscribers pay extra",
+      "original_snippet": "Using OpenClaw with Claude AI is about to get a lot more expensive, thanks to Anthropic's new policy changes. Beginning April 4th at 3PM ET, users will \"no longer be able to use your Claude subscription limits for third-party harnesses including OpenClaw,\" according to an email sent to users on Friday evening. Instead, if users want to use OpenClaw with Claude, they'll have to use a \"pay-as-you-go option\" that will be billed separate from their Claude subscription. \nWith OpenClaw creator Peter S",
+      "link": "https://www.theverge.com/ai-artificial-intelligence/907074/anthropic-openclaw-claude-subscription-ban",
+      "pubDate": "2026-04-03T23:52:49.000Z",
+      "source": "The Verge AI",
+      "lang": "zh",
+      "is_manual": false
+    },
+    {
+      "title": "AI圈炸锅！Anthropic突然限制第三方工具，Claude用户被逼多花钱？",
+      "summary": "Anthropic宣布从4月4日起，用户不能再用Claude订阅额度使用OpenClaw等第三方工具，改为需单独付费的按量计费模式。这一政策转变引发了开发者社区的强烈反应，被批评为\\\"割韭菜\\\"。我认为这反映了AI公司在商业化压力下与开源社区之间的利益博弈。",
+      "deep_analysis": "先说说这事儿到底怎么回事。OpenClaw是一个挺受欢迎的第三方工具，可以理解为让开发者更方便地调用Claude API的\\\"套娃\\\"。原本用户订阅了Claude，直接就能用OpenClaw调用，没问题。但Anthropic这波操作下来，从4月4日下午3点开始，你订阅Claude的额度不能用于OpenClaw了，想继续用？行，单独付费，按量算。\n\n这让我想起了一个老生常谈的问题：大模型厂商和开发者社区之间，到底应该是什么关系？\n\nAnthropic给出的理由咱们不知道，但从商业角度分析，这波操作无非就几个考量：第一，订阅用户的额度被第三方工具分流，相当于自己的收入被\\\"截胡\\\"；第二，按量付费更赚钱啊，你用得越多我赚得越多；第三，可能也是想引导用户直接用官方API，别绕道第三方。\n\n但问题是，OpenClaw这种第三方工具之所以存在，说明市场有需求啊！开发者用OpenClaw肯定是因为它提供了某些官方没有的便利性。现在好了，直接釜底抽薪，用户要么忍痛额外付费，要么放弃已经熟悉的工作流。这不是逼着用户用脚投票吗？\n\n往大了看，这事儿折射出AI行业的一个趋势：各大模型厂商都在从\\\"开放生态\\\"向\\\"封闭商业\\\"转型。之前大家都在吹开放API、繁荣生态，现在发现钱赚不够了，就开始收紧篱笆。OpenAI之前也对第三方工具限流，现在Anthropic跟进，一点都不意外。\n\n那未来会咋样？我预测几个方向：第一，第三方工具开发者可能被迫转型，要么自己造血，要么接受被招安；第二，开源模型可能会因此获得更多关注，毕竟谁也不想被一家公司\\\"绑架\\\"；第三，不排除会出现一些\\\"曲线救国\\\"的解决方案，比如用开源模型替代，或者开发绕过限制的技术手段。\n\n最后说说咱们普通用户该咋应对。如果你现在正在用OpenClaw加Claude的工作流，我的建议是：要么早点研究替代方案，要么就做好额外付费的心理准备。别把所有鸡蛋放在一个篮子里，这个道理在任何AI时代都适用。",
+      "tags": [
+        "AI"
+      ],
+      "target_audience": "AI从业者",
       "original_title": "Anthropic essentially bans OpenClaw from Claude by making subscribers pay extra",
       "original_snippet": "Using OpenClaw with Claude AI is about to get a lot more expensive, thanks to Anthropic's new policy changes. Beginning April 4th at 3PM ET, users will \"no longer be able to use your Claude subscription limits for third-party harnesses including OpenClaw,\" according to an email sent to users on Friday evening. Instead, if users want to use OpenClaw with Claude, they'll have to use a \"pay-as-you-go option\" that will be billed separate from their Claude subscription. \nWith OpenClaw creator Peter S",
       "link": "https://www.theverge.com/ai-artificial-intelligence/907074/anthropic-openclaw-claude-subscription-ban",
@@ -48,6 +83,25 @@
         "AI行业",
         "高管变动",
         "行业趋势"
+      ],
+      "target_audience": "AI从业者和科技爱好者",
+      "original_title": "OpenAI executive shuffle includes new role for COO Brad Lightcap to lead ‘special projects’",
+      "original_snippet": "In addition to Lightcap's new role, OpenAI CMO Kate Rouch will be stepping away from the company to focus on cancer recovery, with a plan to return when her health allows.",
+      "link": "https://techcrunch.com/2026/04/03/openai-executive-shuffle-new-roles-coo-brad-lightcap-fidji-simo-kate-rouch/",
+      "pubDate": "Fri, 03 Apr 2026 20:35:34 +0000",
+      "source": "TechCrunch AI",
+      "lang": "zh",
+      "is_manual": false
+    },
+    {
+      "title": "OpenAI COO临危受命！这个神秘的\\\"特殊项目\\\"究竟要干嘛？",
+      "summary": "OpenAI近日宣布重大高管调整，COO Brad Lightcap将接管一项神秘的\\\"特殊项目\\\"，而CMO Kate Rouch因专注于癌症康复暂时离职。这一人事变动发生在AI行业竞争加剧的关键节点，引发外界对OpenAI未来战略走向的猜测与关注。",
+      "deep_analysis": "就在AI江湖暗流涌动的当下，OpenAI冷不丁放出了一个大新闻：他们的COO Brad Lightcap要转岗去负责一个所谓的\\\"特殊项目\\\"了，而CMO Kate Rouch因为要专心养病，暂时告别了这家全球最火的AI公司。\n\n先说说Brad Lightcap这个新活儿。官方说得挺含糊，就一句\\\"负责特殊项目\\\"，具体是啥压根没透露。但你仔细想想，这里头门道可大了去了。Lightcap是谁？那是OpenAI的财务大管家，之前一直管着钱袋子，现在突然要去搞什么\\\"特殊项目\\\"，，摆明了是公司要把资源往某个方向砸。外界普遍猜测，这个项目要么是下一代GPT-5，要么是Agent产品，要么干脆就是 Robotics。到底是啥咱不知道，但有一点很清楚：OpenAI肯定在憋大招。\n\n再说Kate Rouch离职这件事。说实话挺让人心疼的，OpenAI官方说得也很直接——她要去专注癌症康复了。这种高强度工作环境下，健康真的是硬伤。近年来科技行业高管因健康问题退出的例子越来越多，某种意义上这也是行业高速内卷的一个缩影。我真心祝愿她早日康复，等她回来的时候，OpenAI肯定还是需要她的。\n\n现在看看行业大环境。OpenAI这一变动，绝不是孤立的。Google、Anthropic、Meta这些对手一个个都虎视眈眈的，AI军备竞赛是越演越烈。OpenAI在这个节骨眼上让人事变动，很难不让人联想到他们在为下一阶段的大战做准备。Lightcap管钱管得好好的，现在被派去搞新项目，说明公司认定这个方向值得重金投入。\n\n那咱们这些普通人该怎么看这事？我的建议是：别光看热闹，得看出门道。AI行业的变化日新月异，今天一个高管调动，明天可能就出新技术。对于从业者来说，持续学习、保持敏感是关键。对于普通用户来说，AI工具越来越好用是趋势，但也要学会甄别，别被一些夸大其词的宣传带沟里去了。\n\n总的来说，OpenAI的这次人事调整，表面上是高管变动，实质上折射出AI行业正在进入一个新阶段——从技术突破期过渡到商业落地和产业化深水区。谁能在这场马拉松中笑到最后，现在还不好说，但有一点是确定的：行业会越来越热闹，机会也会越来越多。",
+      "tags": [
+        "OpenAI",
+        "人工智能",
+        "行业动态",
+        "科技高管"
       ],
       "target_audience": "AI从业者和科技爱好者",
       "original_title": "OpenAI executive shuffle includes new role for COO Brad Lightcap to lead ‘special projects’",
@@ -98,6 +152,25 @@
       "is_manual": false
     },
     {
+      "title": "Anthropic一掷千金买下神秘生物科技公司，AI行业要变天了？",
+      "summary": "AI巨头Anthropic最近宣布以4000万美元收购一家名为Coefficient Bio的隐形生物科技创业公司，这是AI公司首次大规模进军生物科技领域。这笔交易不仅显示了Anthropic在AI军备竞赛中的野心，更释放了一个重要信号：AI的能力边界正在从数字世界向物理世界延伸，蛋白质设计和药物发现可能成为下一个爆发点。",
+      "deep_analysis": "Anthropic这次收购，让很多人有点意外。你想啊，一家做聊天机器人的AI公司，怎么突然去收购一个 biotech 初创公司？但仔细一品，这一步棋走得相当有深意。\n\n先说说Coefficient Bio这家神秘公司。它是个\"stealth\"模式的创业公司，也就是说，在被收购之前几乎没什么公开信息，团队在暗地里搞事情。这种做法在AI圈很常见——先猥琐发育，等技术成熟了再高价卖出。Coefficient Bio显然是打着AI+生物科技的主意，可能在搞蛋白质设计或者药物发现相关的技术。\n\nAnthropic为什么要花4000万美元买它？道理很简单：与其自己慢慢研发，不如直接买现成的。现在的AI行业竞争有多激烈，大家都知道。OpenAI、Google、Meta、xAI，一个比一个能烧钱。Anthropic虽然是Claude的亲妈，但如果只守着聊天机器人这一亩三分地，迟早会被卷死。所以必须往外扩，找新的增长点。\n\n生物科技就是个不错的方向。你们发现没有，AI在生物科技领域的应用最近特别火。AlphaFold破解了蛋白质折叠难题，Diffusion模型可以生成全新蛋白质，GPT-4连分子结构都能分析。这意味着什么？意味着AI现在有能力介入药物研发的上游环节了。传统的药物发现要十年磨一剑，AI有可能把这个时间压缩到几年甚至几个月。\n\n所以这笔交易的真正意义，不是Anthropic买了一家 Biotech 公司，而是AI公司开始向\"硬科技\"领域渗透了。以前AI主要在数字世界里折腾——写文案、画图、聊天敲代码。现在不一样了，AI要开始改造物理世界了。蛋白质工程、合成生物学、医疗诊断，这些才是下一个金矿。\n\n对行业来说，这笔收购预示着几个趋势。第一，并购潮要来了。大公司会加速收购垂直领域的小团队，特别是那些有技术但缺钱的创业公司。第二，AI+生物科技会成为新的热点。预计未来会有更多AI公司在这个领域下注。第三，人才争夺会更激烈。Anthropic买了Coefficient，不光买了技术，更重要的是买了整个团队。\n\n那我们普通人该怎么看待这个趋势？首先要意识到，AI的影响范围正在扩大。以前觉得AI就是个工具，现在它可能要改变整个科研范式。其次，如果你在这个行业，要关注垂直应用的机会。生物科技、材料科学、机器人，这些可能是AI的下一个战场。最后，也别盲目乐观。AI在生物科技领域的应用还有很多挑战，实验验证、临床试验，这些都不是靠算法能解决的。\n\n总之啊，Anthropic这笔4000万美元的买卖，看起来是买了一家小公司，实际上是在买未来。AI行业的格局，可能要变了。",
+      "tags": [
+        "Anthropic",
+        "AI并购",
+        "生物科技",
+        "行业趋势"
+      ],
+      "target_audience": "AI从业者与科技爱好者",
+      "original_title": "Anthropic buys biotech startup Coefficient Bio in $400M deal: Reports",
+      "original_snippet": "Anthropic has purchased the stealth biotech AI startup Coefficient Bio in a $400 million stock deal, according to The Information and Eric Newcomer.",
+      "link": "https://techcrunch.com/2026/04/03/anthropic-buys-biotech-startup-coefficient-bio-in-400m-deal-reports/",
+      "pubDate": "Fri, 03 Apr 2026 20:28:40 +0000",
+      "source": "TechCrunch AI",
+      "lang": "zh",
+      "is_manual": false
+    },
+    {
       "title": "OpenAI核心高管突请病假，Greg Brockman接管超级应用背后有何深意？",
       "summary": "OpenAI的AGI部署负责人Fidji Simo因神经免疫疾病请假数周，总裁Greg Brockman将接管产品与超级应用项目。这是OpenAI近期第二次重大人事调整，暴露出这家AI巨头在组织能力上面临的挑战。",
       "deep_analysis": "就在GPT-5即将发布的关键时刻，OpenAI又出状况了。Fidji Simo，这位去年才被委以重任的AGI部署负责人，突然因为神经免疫疾病需要请假数周。在她缺席的这段时间里，Greg Brockman——这位OpenAI的元老级人物——将亲自掌舵产品线，特别是被外界寄予厚望的超级应用项目。\n\n这个消息看似只是普通的人事变动，但如果你了解OpenAI内部的权力格局，就会发现事情没那么简单。Fidji Simo在去年从应用部门负责人升任AGI部署负责人，实际上是OpenAI战略转型的一个信号——他们不再满足于单纯的技术领先，而是要全面掌控AI产品从研发到落地的整个链条。可是现在，这条线的负责人突然缺席，而接手的恰恰是去年刚被董事会边缘化、后来又重返核心的Greg Brockman。这里面的权力重新洗牌意味，不言自明。\n\n从行业角度看，OpenAI最近的高管变动频率确实有点异常。就在上个月，首席科学家Ilya Sutskever的核心团队刚刚经历了清洗，现在又是产品线负责人请假。一家正在冲刺AGI的公司，内部却频繁出现人事震荡，这对其竞争对手来说无疑是个好信号——Google、Anthropic甚至Meta都可以趁此机会加快追赶步伐。\n\n但更值得关注的是Greg Brockman接管超级应用这个细节。OpenAI一直声称要做“AI时代的超级应用”，但这项工作此前主要由职业经理人负责，现在却由联合创始人亲自下场。这释放了一个信号：OpenAI可能认为当前的执行节奏不够快，需要创始人亲自介入来加速产品落地。\n\n对于普通读者来说，这次变动提醒我们几点：首先，AI行业的竞争远未结束，巨头们的内功修炼还有很多不确定性；其次，技术领先不等于组织能力领先，OpenAI正在为它的快速扩张付出组织代价；最后，如果你关注AI行业，别只盯着技术突破，团队稳定性和执行力同样是决定胜负的关键因素。接下来几周，看看Greg Brockman能否稳住局面，将是观察OpenAI真实状态的一个窗口。",
@@ -128,6 +201,27 @@
         "管理层变动",
         "AI行业",
         "Greg Brockman"
+      ],
+      "target_audience": "AI从业者和科技爱好者",
+      "original_title": "OpenAI’s AGI boss is taking a leave of absence",
+      "original_snippet": "OpenAI is undergoing another round of C-suite changes, according to an internal memo viewed by The Verge. \nFidji Simo, OpenAI's CEO of AGI deployment - who was until recently the company's CEO of applications - says in the memo that she will be stepping away on medical leave \"for the next several weeks\" due to a neuroimmune condition. While she's out, OpenAI president Greg Brockman will be in charge of product, including leading OpenAI's super app efforts. On the business side, CSO Jason Kwon, C",
+      "link": "https://www.theverge.com/ai-artificial-intelligence/906965/openais-agi-boss-is-taking-a-leave-of-absence",
+      "pubDate": "2026-04-03T20:22:59.000Z",
+      "source": "The Verge AI",
+      "lang": "zh",
+      "is_manual": false
+    },
+    {
+      "title": "OpenAI高层再地震！AGI部署CEO突休假，超级应用战略要变天？",
+      "summary": "OpenAI再次发生重大人事变动。AGI部署CEO Fidji Simo因神经免疫疾病宣布休假数周，这是她一年内第二次从一线退出。在此期间，联合创始人Greg Brockman将临时接管产品业务，包括公司重点推进的超级应用项目。这已经是OpenAI近几个月来的第三次高管变动，背后或许暗示着更深刻的管理危机和产品方向调整。",
+      "deep_analysis": "先说说Fidji Simo这个人。她在OpenAI的地位很关键——从应用程序CEO一路升到AGI部署CEO，管的是怎么把实验室里的技术真正落地到产品去。但这次她在内部备忘录里明确说是因为神经免疫疾病需要休息，这种病通俗讲就是免疫系统攻击神经系统，说白了就是身体扛不住高强度工作了。\n\n关键问题是，她这一走，Greg Brockman回来了。这位联合创始人之前因为家庭原因已经淡出管理层，现在突然被推上产品一线，管辖范围包括当下OpenAI最重视的超级应用战略。这里有个很有意思的信号：OpenAI现在产品落地遇到瓶颈了，需要一个更懂技术、更能镇场子的老将来掌舵。\n\n往深了一层看，这背后其实是OpenAI组织架构的深层矛盾。AGI是终极目标，但怎么部署、怎么商业化、怎么和微软这些合作伙伴配合，里面的利益博弈极其复杂。Fidji Simo从应用CEO调到AGI部署CEO本来就是要解决这个问题，但现在她一走，说明这条路走得并不顺畅。\n\n对行业的影响很直接。OpenAI的超级应用战略能不能按计划推进，关键人物的缺位肯定会造成影响。而且这种高层的频繁变动，对投资人和合作伙伴来说都是一个信号——内部可能比表面上不稳定。\n\n至于我们普通人应该怎么看这件事，我觉得没必要过度解读成\"OpenAI要完\"。但确实要关注几个趋势：一是技术研发和产品落地之间的gap可能比预期大，二是管理层的稳定性会成为制约AGI进程的一个因素，三是Greg Brockman重新掌权可能意味着产品路线会有调整。\n\n对于关注AI行业的人来说，这件事给我们的启示是：技术突破固然重要，但组织能力、商业化能力同样是AGI能否真正到来的关键变量。OpenAI遇到的这些问题，整个AI行业早晚也会遇到。",
+      "tags": [
+        "OpenAI",
+        "AGI",
+        "高管变动",
+        "人工智能行业",
+        "科技公司管理",
+        "产品战略"
       ],
       "target_audience": "AI从业者和科技爱好者",
       "original_title": "OpenAI’s AGI boss is taking a leave of absence",
@@ -1412,7 +1506,7 @@
       "slug": "the-creator-of-claude-code-just-revealed-his-workflow-and-developers-are-losing-"
     }
   ],
-  "total": 110,
-  "fetchedAt": "2026-04-04T01:07:11.203Z",
+  "total": 115,
+  "fetchedAt": "2026-04-04T04:06:03.826Z",
   "version": "3.0"
 }
