@@ -1689,7 +1689,393 @@ export const TOOLS_DATA: AiTool[] = [
       "数据同步",
       "客户管理流程自动化"
     ],
+
     related_tools: ["notion", "salesforce-einstein", "chatpdf"],
+  },
+  {
+    id: "iask-ai",
+    icon: "/tool-icons/iask-ai.png",
+    slug: "iask-ai",
+    name: "iAsk AI",
+    website: "https://iask.ai",
+    description: "免费AI搜索引擎，基于实时网络信息提供权威准确的AI问答",
+    type: "AI大模型",
+    affiliateUrl: "",
+    commissionRate: "暂无佣金计划",
+    features: [
+      "完全免费的AI搜索问答引擎，无需注册即可使用",
+      "基于实时网络信息搜索，回答包含权威来源引用",
+      "幻觉率极低，专门针对准确性和事实性优化",
+      "支持多语言搜索，涵盖中英文及全球主流语言",
+      "MMLU-Pro评测得分85.85%，多项AI能力测试全球领先"
+    ],
+    usage_guide: "第一步：访问 iask.ai，在搜索框中输入任何问题。\n\n第二步：iAsk AI基于全球信息源进行搜索分析，返回带有引用来源的精准答案。\n\n第三步：每个回答下方显示引用来源链接，点击可跳转到原始网页核实信息。\n\n第四步：如需深入了解，可继续追问，iAsk会结合上下文提供更详细的解答。\n\n第五步：进阶用户可订阅iAsk Pro，获得更强大的AI搜索能力和更快的响应速度。",
+    use_cases: [
+      "学术研究：快速查找权威资料并获取带有来源的答案",
+      "新闻追踪：实时了解最新事件和发展动态",
+      "技术问题排查：获取准确的技术文档和解决方案"
+    ],
+    pros: [
+      "完全免费使用，无需注册和付费",
+      "引用来源权威可靠，减少虚假信息风险",
+      "准确率极高，幻觉率在同类工具中最低",
+      "响应速度快，无需等待长时间加载"
+    ],
+    cons: [
+      "无官方affiliate计划（无变现价值）",
+      "功能相对单一，无对话管理和内容保存功能",
+      "Pro版本性价比不如直接订阅ChatGPT等主流AI"
+    ],
+    related_tools: ["perplexity", "kimi", "yiyan"],
+  },
+  {
+    id: "deepl",
+    icon: "/tool-icons/deepl.png",
+    slug: "deepl",
+    name: "DeepL",
+    website: "https://www.deepl.com",
+    description: "AI神经机器翻译工具，翻译质量领先行业，支持文档和API集成",
+    type: "效率办公",
+    affiliateUrl: "https://www.deepl.com/pro-api",
+    commissionRate: "依协议（推荐API用户）",
+    features: [
+      "业界领先的翻译准确度，在多项盲测中超越Google翻译",
+      "支持31种语言互译，覆盖全球主要语言",
+      "文档翻译：直接上传PDF、Word、PPT整文档整页翻译",
+      "AI写作助手（DeepL Write）：修正语法、优化表达风格",
+      "提供API接口，支持企业级自动化翻译工作流集成"
+    ],
+    usage_guide: "第一步：访问 deepl.com/translator，进入在线翻译界面。\n\n第二步：在左侧输入框粘贴需要翻译的文本或上传文档（支持.pdf/.docx/.pptx）。\n\n第三步：选择源语言（自动检测）和目标语言，DeepL自动完成翻译。\n\n第四步：点击译文中的单个词汇或句子，可查看备选翻译并手动调整。\n\n第五步：注册DeepL账号（免费额度：50万字符/月），订阅Pro版获取无限翻译和高级功能。\n\n第六步：开发者可在 Settings → API Key 获取密钥，通过REST API批量翻译或集成到工作流。\n\n第七步：使用 DeepL Write（需账号）：在输入框输入英文文本，AI修正语法并优化表达风格。",
+    use_cases: [
+      "跨境电商：产品描述和客服对话多语言本地化",
+      "企业文档：合同、报告、PPT等整文档专业翻译",
+      "学术翻译：论文摘要和研究资料快速翻译参考"
+    ],
+    pros: [
+      "翻译质量业界领先，尤其在专业术语和长句处理上优势明显",
+      "文档翻译功能强大，整页整文档翻译保持格式",
+      "中文翻译质量优秀，地道自然无明显机翻译感",
+      "API接入简单，适合企业批量翻译自动化",
+      "Write功能对英文写作提升帮助大"
+    ],
+    cons: [
+      "免费版有字符额度限制（50万字符/月），超出需订阅",
+      "部分小语种翻译质量不如主流语言",
+      "文档翻译功能免费版不可用",
+      "与Google Translate相比，覆盖语言数量较少"
+    ],
+    related_tools: ["chatpdf", "notion", "writesonic"],
+  },
+  {
+    id: "adcreative-ai",
+    icon: "/tool-icons/adcreative-ai.png",
+    slug: "adcreative-ai",
+    name: "AdCreative.ai",
+    website: "https://www.adcreative.ai",
+    description: "AI广告创意生成平台，批量生成高转化率广告素材和分析报告",
+    type: "写作AI",
+    affiliateUrl: "https://www.adcreative.ai",
+    commissionRate: "30天Cookie首单佣金",
+    features: [
+      "AI广告创意批量生成：一次性生成上百个广告文案和视觉素材",
+      "Creative Performance Score：AI预测每个广告的转化率评分",
+      "竞品广告分析：输入竞争对手域名，AI分析其最佳广告策略",
+      "视频广告生成：AI生成短视频广告，覆盖TikTok/Reels/YouTube",
+      "一键生成各平台尺寸：自动适配Facebook/Instagram/Google/TikTok等"
+    ],
+    usage_guide: "第一步：访问 adcreative.ai，点击 Start for Free 使用邮箱或Google账号注册。\n\n第二步：创建品牌：在 Brand 页面输入公司名称、上传LOGO、选择品牌配色，AI学习品牌风格。\n\n第三步：生成广告创意\n- 进入 Generate Creatives，输入产品名称、目标受众、主要卖点（USP）。\n- 选择广告类型：Social Posts（社媒图文）、Display Ads（展示广告）、Video Ads（视频广告）。\n- 点击 Generate，AI一次性生成多个版本，每个版本附带 Performance Score（转化率预测）。\n\n第四步：竞品分析（需要订阅）\n- 进入 Competitor Insights，输入竞争对手网站域名。\n- AI自动抓取其在线广告素材，分析哪些广告策略最有效。\n- 基于竞品数据生成差异化广告创意。\n\n第五步：广告疲劳度分析\n- 上传现有广告数据，AI检测哪些广告已出现受众疲劳（CTR下降）。\n- 提示及时更换新广告素材。\n\n第六步：下载和使用\n- 选中满意的广告素材，点击 Download 下载 PNG/MP4。\n- 或直接点击 Publish 发布到连接的广告平台。\n\n第七步：追踪效果\n- 在 Conversion 页面查看不同广告的实际转化数据。\n- AI根据真实数据持续优化后续广告创意质量。",
+    use_cases: [
+      "广告投放团队：批量生成Facebook/Google/TikTok广告，缩短制作周期",
+      "独立创业者：没有设计师也能产出专业广告素材",
+      "电商卖家：生成高转化率商品主图和广告文案"
+    ],
+    pros: [
+      "Creative Performance Score（AI预测评分）非常有价值，投放前就知道哪些广告更容易转化",
+      "批量生成效率极高，一次生成数十个版本供选择",
+      "竞品分析功能帮助制定差异化广告策略",
+      "一键适配多平台尺寸，节省设计时间",
+      "已有超过10亿个广告创意被全球顶级品牌使用"
+    ],
+    cons: [
+      "免费试用仅7天且功能受限（仅10个创意额度）",
+      "订阅价格较高（Starter $29/月起），中小企业负担较重",
+      "生成的广告文案偏模板化，高端创意仍需人工优化",
+      "视频广告生成质量不如专业视频制作工具",
+      "主要面向B2C电商，B2B企业适用性相对有限"
+    ],
+    related_tools: ["writesonic", "canva", "anyword"],
+  },
+  {
+    id: "claude",
+    icon: "/tool-icons/claude.png",
+    slug: "claude",
+    name: "Claude",
+    website: "https://claude.ai",
+    description: "Anthropic推出的AI助手，支持超长上下文和文档分析",
+    type: "AI大模型",
+    affiliateUrl: "",
+    commissionRate: "暂无佣金计划",
+    features: [
+      "支持20万Token超长上下文，可一次处理数百页文档",
+      "Claude 3系列：Haiku（快速）/Sonnet（均衡）/Opus（旗舰）三档模型",
+      "强大的文档分析：PDF、Word、PPT、CSV直接上传解读",
+      "编程能力出色，支持代码生成、调试和架构设计",
+      "内置安全策略，拒绝生成有害内容，适合企业使用"
+    ],
+    usage_guide: "第一步：访问 claude.ai，点击 Sign Up 使用邮箱、Google或Apple账号注册。\n\n第二步：进入对话界面，在输入框输入问题或任务描述。\n\n第三步：上传文档：点击左侧回形针图标，上传PDF/Word/PPT/CSV/TXT等文件，Claude会自动分析内容。\n\n第四步：选择模型：点击左上角模型切换器，在Haiku（快速）/Sonnet（均衡）/Opus（旗舰）之间选择。\n\n第五步：高级功能\n- Artifacts：生成代码、文档、网站的实时预览窗口\n- 团队协作（Team Plan）：创建团队工作区，共享对话和文档\n- Projects：针对特定项目创建专属上下文空间\n\n第六步：API接入\n- 访问 console.anthropic.com 创建API Key\n- 通过API调用Claude模型，适合开发者集成到自有应用",
+    use_cases: [
+      "长文档处理：一次分析整本书、完整代码库或数百页报告",
+      "内容创作：文章写作、故事创作、营销文案一站式完成",
+      "编程辅助：代码审查、重构设计、算法解释"
+    ],
+    pros: [
+      "超长上下文（20万Token）使其在处理长文档时无可匹敌",
+      "Claude 3 Opus在多项AI评测中达到领先水平",
+      "编程能力强，尤其擅长复杂系统设计和架构讨论",
+      "回答准确度高，幻觉率在主流AI助手中属于最低",
+      "隐私保护意识强，企业用户放心使用"
+    ],
+    cons: [
+      "无官方affiliate佣金计划",
+      "免费版Claude.ai有消息数量限制，高频使用需订阅Pro（$20/月）",
+      "中文表达偶尔不如英文地道",
+      "图片理解能力弱于GPT-4V",
+      "语音交互功能尚未完善"
+    ],
+    related_tools: ["kimi", "zhipuai", "perplexity"],
+  },
+  {
+    id: "copilot",
+    icon: "/tool-icons/copilot.png",
+    slug: "copilot",
+    name: "Microsoft Copilot",
+    website: "https://copilot.microsoft.com",
+    description: "微软AI助手，深度集成Windows和Microsoft 365全家桶",
+    type: "AI大模型",
+    affiliateUrl: "https://www.microsoft.com/en-us/bing/bing-chat",
+    commissionRate: "暂无佣金计划",
+    features: [
+      "深度集成Windows 11系统，直接在桌面端使用AI助手",
+      "Microsoft 365 Copilot：Word/Excel/PPT/Outlook全面AI辅助",
+      "Bing搜索增强：实时联网，回答基于最新网络信息",
+      "DALL-E 3图像生成：直接在聊天中生成高质量图片",
+      "免费使用，无需订阅即可体验核心AI功能"
+    ],
+    usage_guide: "第一步：访问 copilot.microsoft.com 或在Windows 11任务栏点击Copilot图标。\n\n第二步：使用Microsoft账号登录（可用Outlook/Hotmail账号），开始免费AI对话。\n\n第三步：主要功能入口\n- 对话问答：在输入框输入问题，获取联网搜索结果和AI解答\n- 图像生成：输入 /create 或点击图像生成，输入描述让DALL-E 3生成图片\n- 网页总结：把网页URL发给Copilot，自动总结页面内容\n- 文档处理：告诉Copilot「帮我写一封邮件」「总结这份文档」等\n\n第四步：Microsoft 365 Copilot（需订阅，约$30/月）\n- Word：在文档中调用Copilot，写文章、总结、改写内容\n- Excel：分析数据、生成图表、输入公式建议\n- PowerPoint：输入主题自动生成PPT，或将Word文档一键转PPT\n- Outlook：AI辅助撰写邮件、自动分类收件箱\n\n第五步：开发者使用\n- 访问 bing.com/compose 使用免费AI写作助手\n- 开发者可申请Azure OpenAI API，使用GPT-4和DALL-E能力",
+    use_cases: [
+      "Windows日常办公：系统级AI助手，提升桌面操作效率",
+      "Microsoft 365用户：Word/Excel/PPT文档处理效率倍增",
+      "内容创作：结合Bing搜索实时信息和DALL-E 3图像生成"
+    ],
+    pros: [
+      "完全免费即可使用核心AI功能，无需付费订阅",
+      "DALL-E 3图像生成质量高，且完全免费使用",
+      "深度集成Windows系统，在桌面端使用最方便",
+      "Bing联网搜索，回答包含最新信息而非过期数据",
+      "Microsoft 365 Copilot（付费）能极大提升办公效率"
+    ],
+    cons: [
+      "无affiliate佣金计划",
+      "Microsoft 365 Copilot订阅价格较高（$30/月/用户）",
+      "纯对话功能不如ChatGPT丰富",
+      "中国大陆访问不稳定，需要VPN",
+      "Bing搜索在中文领域的信息覆盖不如百度"
+    ],
+    related_tools: ["notion", "gamma", "canva"],
+  },
+  {
+    id: "wps-ai",
+    icon: "/tool-icons/wps-ai.png",
+    slug: "wps-ai",
+    name: "WPS AI",
+    website: "https://ai.wps.cn",
+    description: "金山办公AI助手，集成在WPS Office中提供智能写作和文档处理",
+    type: "效率办公",
+    affiliateUrl: "",
+    commissionRate: "暂无佣金计划",
+    features: [
+      "WPS文字AI：自动续写文章、润色改写、总结摘要",
+      "WPS表格AI：数据智能分析、公式建议、图表生成",
+      "WPS演示AI：一键生成PPT、模板推荐、内容优化",
+      "PDF文档AI：全文翻译、要点提炼、问答解读",
+      "深度集成WPS Office，无需额外下载，在软件内直接调用AI"
+    ],
+    usage_guide: "第一步：下载并安装 WPS Office（Windows/Mac/移动端均支持）。\n\n第二步：登录WPS账号，在WPS首页或各模块中找到「WPS AI」入口。\n\n第三步：WPS文字AI\n- 打开Word文档，选中文字后点击AI图标，调用续写/润色/翻译功能\n- 空白处点击AI，写入写作需求（如「帮我写一份项目计划书」）\n- 支持长文续写，最多可处理数万字文档\n\n第四步：WPS演示AI\n- 新建演示文稿时点击「智能生成」，输入主题（如「2024年Q3运营方案」）\n- AI自动生成完整PPT大纲和内容，可一键套用模板\n- 也可将Word文档直接导入，AI识别内容后自动生成PPT\n\n第五步：WPS表格AI\n- 打开Excel文件，选中数据区域，点击AI图标\n- 输入分析需求（如「分析这份销售数据的趋势」）\n- AI自动生成数据洞察、图表建议和公式\n\n第六步：PDF处理\n- 用WPS打开PDF，点击AI图标，选择「全文翻译」或「要点提炼」\n- 支持中英互译及多语言翻译",
+    use_cases: [
+      "职场人士日常办公：报告、方案、邮件快速撰写",
+      "学生论文写作：续写、润色、查重和格式调整",
+      "企业数据处理：Excel数据分析报表和PPT演示文稿生成"
+    ],
+    pros: [
+      "深度集成WPS Office，使用体验流畅，无需切换工具",
+      "PPT智能生成功能强大，大幅缩短制作时间",
+      "对中文办公场景优化良好，本地化做得非常出色",
+      "个人用户有免费使用额度",
+      "支持Windows/Mac/iOS/Android全平台，数据同步方便"
+    ],
+    cons: [
+      "AI功能需要WPS会员（稻壳会员），非完全免费",
+      "相较于独立AI工具，功能深度有限",
+      "高级AI功能（如长文续写）需订阅超级会员",
+      "导出格式有限制，部分格式导出需付费"
+    ],
+    related_tools: ["notion", "gamma", "chatpdf"],
+  },
+  {
+    id: "jimeng",
+    icon: "/tool-icons/jimeng.png",
+    slug: "jimeng",
+    name: "即梦AI",
+    website: "https://jimeng.jianying.com",
+    description: "字节跳动推出的AI图像和视频生成工具，深度集成剪映",
+    type: "图片AI",
+    affiliateUrl: "",
+    commissionRate: "暂无佣金计划",
+    features: [
+      "文生图：输入中文描述词生成高质量图片，支持多种艺术风格",
+      "图生图：上传参考图，AI生成保持原图特征的变体作品",
+      "AI视频生成：输入描述词或上传图片，生成短视频片段",
+      "深度集成剪映：一键将AI生成的图片/视频导入剪映进一步编辑",
+      "中文理解优秀：对中文提示词的理解和执行能力强"
+    ],
+    usage_guide: "第一步：访问 jimeng.jianying.com，使用抖音/头条账号登录。\n\n第二步：文生图\n- 在主界面输入中文描述词（如「古风少女在樱花树下，月光，动漫风格」）\n- 选择画面比例（1:1/16:9/9:16）和风格预设\n- 点击生成，等待10-20秒获得4张候选图片\n- 选中满意的图片，可继续「生成同款」或「变体」\n\n第三步：图生图\n- 点击上传按钮导入本地参考图\n- 调整风格强度（低=保留原图多，高=创意空间大）\n- 输入补充描述词，点击生成AI变体作品\n\n第四步：AI视频生成\n- 选择「图生视频」或「文生视频」\n- 上传图片或输入文字描述\n- 设置运动强度和时长，点击生成\n- 生成后可在剪映中进一步编辑（添加音乐/字幕/转场）\n\n第五步：高级设置\n- 负描述词：输入不希望出现的元素（如「低质量、模糊」）\n- 风格融合：同时选择多种风格叠加效果\n- 参考词广场：浏览他人优秀作品，学习高效提示词",
+    use_cases: [
+      "内容创作者：快速生成配图和短视频素材",
+      "电商卖家：生成商品场景图和营销海报",
+      "设计师灵感：快速生成概念图探索创意方向"
+    ],
+    pros: [
+      "中文理解能力出色，对中文提示词响应准确",
+      "集成剪映生态，对国内用户友好，上手容易",
+      "视频生成功能免费可用（每日有额度限制）",
+      "图片生成质量稳定，出图速度快",
+      "作为字节系产品，账号体系完善，权益有保障"
+    ],
+    cons: [
+      "无affiliate佣金计划",
+      "每日免费额度有限，超出需付费（积分充值）",
+      "风格偏向国内审美，国际化场景素材较少",
+      "视频生成时长有限（最长15秒），不适合长视频",
+      "商用版权需注意，建议仔细阅读使用条款"
+    ],
+    related_tools: ["midjourney", "leonardo-ai", "fliki"],
+  },
+  {
+    id: "haituo-ai",
+    icon: "/tool-icons/haituo-ai.png",
+    slug: "haituo-ai",
+    name: "海螺AI",
+    website: "https://hailuoai.video",
+    description: "MiniMax推出的AI对话和内容创作平台，支持语音交互和图像生成",
+    type: "AI大模型",
+    affiliateUrl: "",
+    commissionRate: "暂无佣金计划",
+    features: [
+      "AI对话助手：支持多轮对话、知识问答和内容创作",
+      "语音交互：支持语音输入和AI语音播报，对话更自然",
+      "图像创作：文生图、图生图功能，生成质量优秀",
+      "小说续写：针对网文创作者优化的长文续写能力",
+      "免费额度充足：新用户注册赠送大量免费使用额度"
+    ],
+    usage_guide: "第一步：访问 hailuoai.video，使用手机号或微信注册登录。\n\n第二步：对话模式\n- 在对话框输入文字问题，体验AI对话和知识问答\n- 点击麦克风图标切换语音输入模式，AI用语音回答\n- 支持长文写作场景切换到「创作模式」\n\n第三步：图像创作\n- 点击左侧「图像」标签，进入图像生成界面\n- 选择文生图或图生图，输入描述词\n- 生成后可继续编辑或下载高清原图\n\n第四步：小说创作\n- 在创作模式中选择「小说续写」\n- 输入已有的小说片段，AI自动续写后续剧情\n- 支持调整续写风格（爽文/虐文/甜文等）\n\n第五步：积分与订阅\n- 每日登录赠送免费积分，足够日常轻度使用\n- 查看积分余额和消耗记录，合理规划使用",
+    use_cases: [
+      "日常对话问答和信息查询",
+      "内容创作者：配图生成和文章续写",
+      "语音交互：适合开车等不便打字场景"
+    ],
+    pros: [
+      "语音交互体验流畅，自然对话感强",
+      "新用户免费额度充足，体验成本低",
+      "MiniMax自研模型，生成质量有保障",
+      "图像生成效果在国产AI中表现优秀",
+      "小说续写功能对网文作者有针对性帮助"
+    ],
+    cons: [
+      "无affiliate佣金计划",
+      "相比ChatGPT/Claude，长上下文能力有限",
+      "图像生成版权条款需注意商用场景",
+      "部分高级功能需要付费订阅",
+      "海外生态和API支持有限"
+    ],
+    related_tools: ["kimi", "doubao", "tongyi"],
+  },
+  {
+    id: "iflyrec",
+    icon: "/tool-icons/iflyrec.png",
+    slug: "iflyrec",
+    name: "讯飞听见",
+    website: "https://www.iflyrec.com",
+    description: "科大讯飞语音转文字工具，支持会议录音转写、字幕生成和翻译",
+    type: "音频AI",
+    affiliateUrl: "https://www.iflyrec.com",
+    commissionRate: "依协议",
+    features: [
+      "语音转文字：录音或上传音频，AI自动转写为文字稿",
+      "多语言翻译：支持中文、英文、日文等10+语言实时翻译",
+      "会议纪要生成：自动提炼会议要点、关键决策和待办事项",
+      "字幕生成：视频音频自动生成字幕文件（SRT/ASS格式）",
+      "说话人识别：自动区分不同发言人并标注说话段落"
+    ],
+    usage_guide: "第一步：访问 iflyrec.com，注册并登录账号。\n\n第二步：录音转写\n- 点击「录音」开始实时录音，AI同步转写成文字\n- 或点击「上传音频」导入 MP3/WAV/M4A 等格式文件\n- 支持最长5小时音频文件，单次处理无时间压力\n\n第三步：转写设置\n- 选择行业领域（医疗/法律/金融/通用），AI自动优化专业术语识别准确率\n- 开启「繁简转换」可输出繁体中文版本\n- 勾选「关键词优化」提升关键信息识别\n\n第四步：结果编辑与导出\n- 转写完成后进入编辑器，可手动修正错别字\n- 点击「生成会议纪要」，AI自动提炼关键信息和待办\n- 点击「导出」，支持Word/PDF/TXT格式，也支持导出字幕文件（SRT/ASS）\n\n第五步：字幕制作（针对视频）\n- 在「字幕导出」中选择目标格式\n- 可直接上传视频文件，讯飞听见自动提取音频并生成字幕\n- 支持时间轴校准，确保字幕与视频精准同步\n\n第六步：移动端使用\n- 下载讯飞听见APP（iOS/Android），录音转写随时进行\n- 重要会议可开启实时转写，他人说话实时显示为文字",
+    use_cases: [
+      "商务会议：录音转写+会议纪要，节省记录时间",
+      "视频字幕：UP主/企业视频快速生成字幕和翻译",
+      "采访整理：记者/律师快速将采访录音整理成文字稿"
+    ],
+    pros: [
+      "语音识别准确率行业领先，尤其中文普通话",
+      "多语言翻译质量可靠，适合跨境商务场景",
+      "会议纪要自动生成功能实用性强",
+      "支持超长音频（5小时）单次转写",
+      "行业词库优化（医疗/法律/金融）提升专业场景准确率"
+    ],
+    cons: [
+      "免费版有时长限制（录音转写每日60分钟），超出需付费",
+      "部分方言识别能力有限",
+      "转写后的编辑功能相对基础",
+      "导出格式和功能在免费版有较多限制",
+      "海外市场支持不如国内完善"
+    ],
+    related_tools: ["otter-ai", "tongyi", "xinghuo"],
+  },
+  {
+    id: "glarity",
+    icon: "/tool-icons/glarity.png",
+    slug: "glarity",
+    name: "Glarity",
+    website: "https://glarity.app",
+    description: "AI总结助手，浏览任意网页时一键总结页面内容和生成答案",
+    type: "效率办公",
+    affiliateUrl: "https://glarity.app",
+    commissionRate: "依协议",
+    features: [
+      "跨平台总结：支持YouTube/Google/推特/B站等50+平台的视频和文章总结",
+      "侧边栏AI问答：在浏览网页时，AI读取页面内容后回答你的问题",
+      "多语言翻译：任意语言页面一键翻译成目标语言",
+      "ChatGPT/Gemini双引擎：可自由切换AI模型获取最佳体验",
+      "完全免费：核心功能完全免费使用，无需订阅"
+    ],
+    usage_guide: "第一步：访问 glarity.app，点击 Install 安装浏览器扩展（Chrome/Edge/Firefox均支持）。\n\n第二步：安装完成后，在浏览器扩展栏找到Glarity图标，点击登录或直接开始使用。\n\n第三步：YouTube视频总结\n- 打开任意YouTube视频，页面右侧自动出现Glarity总结面板\n- AI自动转录视频内容并生成中文摘要（可切换目标语言）\n- 摘要包含：视频核心观点、时间戳章节划分、关键信息点\n\n第四步：网页内容总结\n- 打开任意文章页面，点击扩展图标或使用快捷键（Ctrl+Shift+G）唤出Glarity\n- AI读取页面全文，生成150字以内的核心摘要\n- 也可直接在侧边栏输入问题，AI基于当前页面内容回答\n\n第五步：多语言翻译\n- 打开外文页面，点击翻译按钮\n- AI整页翻译为中文（或你设置的目标语言）\n- 翻译质量高于传统机译，保持原文语义和风格\n\n第六步：切换AI引擎\n- 点击扩展设置，可选择使用 ChatGPT 或 Gemini 作为总结引擎\n- 不同引擎在准确性和速度上各有优势，可按需切换\n\n第七步：自定义快捷键和偏好\n- 在设置中自定义唤起快捷键、默认翻译语言、总结详细程度",
+    use_cases: [
+      "视频学习：YouTube/B站教程视频快速了解核心内容",
+      "新闻阅读：快速浏览外媒报道，无需逐字阅读",
+      "市场调研：批量总结竞品页面和行业文章"
+    ],
+    pros: [
+      "完全免费使用，良心产品无收费陷阱",
+      "YouTube视频总结功能对学生和知识创作者极其有用",
+      "支持50+平台，覆盖主流内容消费场景",
+      "侧边栏问答功能比ChatGPT插件更精准（基于当前页面）",
+      "轻量级扩展，占用资源少，使用流畅"
+    ],
+    cons: [
+      "高频使用可能有API成本压力，未来有收费风险",
+      "视频总结依赖视频字幕质量，无字幕视频效果有限",
+      "隐私顾虑：需要读取所有访问页面的内容",
+      "页面内容较多时，总结可能遗漏细节",
+      "国内浏览器兼容性问题需注意（建议Chrome）"
+    ],
+    related_tools: ["chatpdf", "perplexity", "kimi"],
   },
 ]
 
