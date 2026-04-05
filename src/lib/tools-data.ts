@@ -9,7 +9,7 @@ export const TOOLS_DATA: AiTool[] = [
     website: "https://try.elevenlabs.io/uu3aajn549zp",
     description: "AI语音合成与配音，支持逼真多语言TTS声音生成",
     type: "音频AI",
-    affiliateUrl: "https://impact.com/brand-profile/elevenlabs/",
+    affiliateUrl: "https://try.elevenlabs.io/uu3aajn549zp",
     commissionRate: "首单$5-$25 + 续订20-30%",
     features: [
       "行业领先的语音克隆技术，仅需少量音频样本即可复制真实人声",
