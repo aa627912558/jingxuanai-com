@@ -6,7 +6,7 @@ export const TOOLS_DATA: AiTool[] = [
     icon: "/tool-icons/elevenlabs.png",
     slug: "elevenlabs",
     name: "ElevenLabs",
-    website: "https://elevenlabs.io",
+    website: "https://try.elevenlabs.io/uu3aajn549zp",
     description: "AI语音合成与配音，支持逼真多语言TTS声音生成",
     type: "音频AI",
     affiliateUrl: "https://impact.com/brand-profile/elevenlabs/",
