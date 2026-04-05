@@ -1,6 +1,45 @@
 {
   "news": [
     {
+      "title": "AI漏洞报告泛滥成灾！开源维护者被逼到崩溃边缘",
+      "summary": "Linux内核维护者最近集体吐槽：AI安全工具每天推送十几份漏洞报告，其中大部分是误报或无关痛痒的小问题，真正有价值的漏洞报告反而被淹没在噪音里。这场AI与开源社区的荒诞剧，正在暴露自动代码审计工具的深层危机。",
+      "deep_analysis": "这两天，开源圈被一条消息刷屏了：Linux内核的核心维护者Greg Kroah-Hartman公开表示，现在每天要处理十几份来自AI安全工具的漏洞报告，其中绝大多数都是低质量的误报。这些报告不仅没有帮上忙，反而成了巨大的工作负担。想象一下，你本来想安安静静写代码，结果每天被AI按头审查，硬塞给你一堆“你这里可能有安全问题”的警告——而且很多还是假阳性。这感觉，就像你请了个保安，结果他每隔五分钟就敲门告诉你“隔壁好像有动静”，你还得花时间解释“没事，那是风声”。这场AI与开源开发者的荒诞对抗，实际上暴露了一个很现实的问题：AI安全工具现在处于“宁可错杀，不可放过”的阶段。工具开发者似乎觉得报告越多越显得自己nb，但实际上大量低质量报告不仅浪费人工审核的时间，还可能让真正重要的漏洞被淹没。这种过度敏感的AI审计，正在消耗开源社区本已紧张的维护资源。深层来看，这反映出整个行业的一个矛盾：大家都想让AI帮忙解决安全问题，但如果AI的判断逻辑不够精准，结果反而帮倒忙。更讽刺的是，很多AI工具的训练数据本身就来自开源项目，现在反而回过头来“攻击”开源社区，这算不算一种数据治理的失败？从行业影响来说，这条新闻给所有AI安全工具开发者敲响了警钟：别只追求报告数量，要看重质量。未来肯定会有一轮洗牌，那些能精准识别真正漏洞、减少误报的工具会脱颖而出，而只会“狂轰滥炸”的工具会被市场淘汰。对普通开发者来说，我们需要学会与AI协作，而不是被AI牵着走。面对AI生成的报告，要保持独立判断能力——它可以是很好的辅助工具，但别让它成为你的主人。可以预见，开源社区很可能会联合起来，要求AI工具平台提供更好的过滤机制，甚至可能催生专门针对AI安全工具的评估标准。毕竟，开源生态的可持续性，取决于维护者能否从繁琐的重复劳动中解放出来，去做真正有价值的创新。现在的问题不是AI太强了，而是AI还不够聪明——它需要学会什么时候该说话，什么时候该安静。",
+      "tags": [
+        "AI安全工具",
+        "开源社区",
+        "Linux内核",
+        "误报问题",
+        "自动化审计"
+      ],
+      "target_audience": "关注AI与开源的开发者",
+      "original_title": "Linux内核维护者崩溃了！AI每天狂塞10份漏洞报告，想摸会鱼都难",
+      "original_snippet": "开源开发者的赛博马鞭",
+      "link": "https://www.qbitai.com/2026/04/396358.html",
+      "pubDate": "Sun, 05 Apr 2026 02:24:23 +0000",
+      "source": "量子位",
+      "lang": "zh",
+      "is_manual": false
+    },
+    {
+      "title": "龙虾逼疯开发者？有人给AI造起了\\\"裸机\\\"，价格直接砍到脚踝",
+      "summary": "科技圈最近流行一种新玩法：专门为AI Agent打造的\\\"三无\\\"硬件悄然兴起。这种设备去掉了显示器、键盘、鼠标，纯粹只为跑AI任务而生，价格竟然比传统Mac Mini+存储方案还要便宜。",
+      "deep_analysis": "你可能想象不到，现在连AI都要开始\\\"抢电脑\\\"了。随着Agent技术爆火，开发者们发现一个尴尬现实：自己的电脑被AI占用了龙虾——这暗指某位硅谷大佬疯狂占用算力。干脆，有人直接造起了Agent专属的\\\"裸机\\\"。\n\n这种硬件说白了就是一台没有显示屏、没有外设的纯计算主机。它不需要花哨的交互界面，任务就是24小时不间断地帮AI跑腿办事。从视频秒搜到自动化工作流，这种机器简直是007工作制的最佳拍档。\n\n价格才是真正让人惊掉下巴的地方。传统方案下，一台能跑的Mac Mini加上存储扩展，成本轻松突破四位数。而这波\\\"三无\\\"硬件直接杀到更低价位，性价比直接拉满。这让我想到一个趋势：专用硬件正在瓦解通用计算设备的统治地位。\n\n对行业来说，这波操作释放了一个强烈信号——AI硬件正在从\\\"服务人\\\"转向\\\"服务AI\\\"。以前我们买电脑是为了自己用，以后可能就是给AI买\\\"打工设备\\\"。这场变革不亚于当年从功能机到智能手机的跃迁。\n\n但我也得泼盆冷水。现在的\\\"三无\\\"硬件市场还处在野蛮生长期，散热、稳定性、扩展性都是未知数。普通用户没必要急着冲上去当小白鼠，除非你真的在干规模化AI应用的活。\n\n如果你正被AI任务折磨得死去活来，或者准备All in Agent赛道，这种专用硬件值得密切观察。记住，任何新兴领域早期都是机遇与坑并存，多观望总没错。",
+      "tags": [
+        "AI硬件",
+        "Agent",
+        "专用设备",
+        "科技趋势"
+      ],
+      "target_audience": "科技爱好者和AI从业者",
+      "original_title": "为了不跟龙虾抢电脑用，有人开始造Agent专属的“三无”硬件，比Mac Mini+存储便宜",
+      "original_snippet": "1000万视频秒搜",
+      "link": "https://www.qbitai.com/2026/04/396351.html",
+      "pubDate": "Sun, 05 Apr 2026 02:14:36 +0000",
+      "source": "量子位",
+      "lang": "zh",
+      "is_manual": false
+    },
+    {
       "title": "你的声音被AI偷走了还要帮它数钱？音乐人Murphy Campbell的遭遇炸出了整个行业的痛",
       "summary": "民间音乐家Murphy Campbell意外发现自己的演唱作品被人用AI技术复制并上传到Spotify，而这些伪造作品她本人毫不知情。这起事件撕开了AI音乐版权保护的最后一块遮羞布，暴露了流媒体平台审核机制的严重漏洞，也给所有内容创作者敲响了警钟。",
       "deep_analysis": "先说说Murphy Campbell到底经历了什么。今年1月，这位民间艺术家在刷Spotify的时候发现了一个离谱的情况：自己的账号里出现了好几首从未上传过的歌曲。这些歌确实是她唱的——因为用的是她之前发在YouTube上的原声演唱——但她本人从来没有把这些作品上传到Spotify。稍微仔细一听就能发现不对劲，这些所谓的新歌实际上是用AI技术对她的声音进行克隆后的“作品”。有人把她在YouTube上的演唱视频扒了下来，用AI工具生成了所谓的“翻唱版本”，然后神不知鬼不觉地挂到了她的Spotify账号上。\n\n这事儿细思极恐的地方在于，它暴露了一个极其讽刺的双重困境。一方面，AI技术让复制和学习一个人的声音变得前所未有的简单，几乎到了零成本的地步；另一方面，现有的版权保护体系完全跟不上这个节奏。艺术家面对自己的声音被偷走、自己的作品被人冒充上传，竟然不知道该找谁说理去。Spotify作为平台方，显然没有足够的技术手段来鉴别上传的是不是本尊；而传统的版权法条文中，也根本没有针对“AI声音克隆”这种新型侵权行为的明确条款。\n\n往更深处想，这个事件的影响远远超出了一个音乐人的个人遭遇。它揭开了AI时代内容产业的一个核心矛盾：技术跑得太快，规则还停留在上个世纪。现在AI生成音乐的工具满天都是，任何人随便就能克隆一个歌手的声音，然后批量生产“原创”作品。这些东西打着“AI创作”的幌子，既绕过了版权保护，又能在流媒体平台上轻松变现。真正受伤害的，是那些默默创作、靠作品吃饭的原创音乐人。他们辛辛苦苦录制的作品，可能转头就成了别人AI模型的训练素材，最后还要被人家的“AI翻唱”抢走流量和收益。\n\n那么这条路以后会怎么走？我估计接下来几年会是各方博弈的关键期。法律层面肯定会有动作，各国版权法估计都会陆续补上“AI声音权”这一块，欧盟已经在讨论的相关法案就是一个信号。技术层面也会有所突破，比如区块链存证、数字水印这些原本用在图片版权保护上的手段，很可能会被移植到音频领域。但说句实话，在技术完全到位之前，最现实的做法可能是创作者自己先多条心眼，定期检索自己的作品在各平台的存在情况，遇到异常及时截图留证。\n\n对于我们普通读者来说，别以为这事儿跟自己的生活没关系且不说你以后听歌可能十有八九都是AI生成的，更重要的是，当创作者的权益得不到保障的时候，最终被稀释的是整个内容生态的质量。没有人愿意看到以后的音乐市场只剩下AI批量生产的流水线产品，而那些真正有温度、有人文价值的原创声音，反而没了生存空间。所以这件事值得我们持续关注，也值得整个行业认真反思。",
@@ -49,6 +88,25 @@
         "技术伦理"
       ],
       "target_audience": "关注AI与科技趋势的读者",
+      "original_title": "A folk musician became a target for AI fakes and a copyright troll",
+      "original_snippet": "Murphy Campbell is at the center of a brewing storm around AI and a broken copyright system. | Image: Murphy Campbell\t\n\nIn January, folk artist Murphy Campbell discovered several songs on her Spotify profile that did not belong there. They were songs that she had recorded, but she'd never uploaded them to Spotify, and something was off about the vocals.\nShe quickly surmised that someone had pulled performances of the songs she posted to YouTube, created AI covers, and uploaded them to streaming ",
+      "link": "https://www.theverge.com/entertainment/907111/murphy-campbell-folk-music-ai-copyright",
+      "pubDate": "2026-04-04T17:52:10.000Z",
+      "source": "The Verge AI",
+      "lang": "zh",
+      "is_manual": false
+    },
+    {
+      "title": "民谣歌手被AI“克隆”上架Spotify，版权系统为何彻底失灵？",
+      "summary": "民谣歌手Murphy Campbell发现自己的歌曲被AI克隆后擅自上传到Spotify，而这些AI翻唱不仅损害了她的权益，更暴露了流媒体平台审核机制的严重漏洞。当AI能完美复制人类声音，版权保护系统却还在裸泳。",
+      "deep_analysis": "这起事件只是AI侵权的冰山一角。Murphy Campbell的遭遇极具代表性：她从未将歌曲上传至Spotify，却在自己的账号上看到了“自己”的作品——但听感明显异常。原来，有人把她YouTube上的演唱音频扒下来，用AI工具生成“翻唱版本”，然后上传到流媒体平台躺赚版税。这不仅是对创作者劳动的窃取，更是对其声音身份的盗用。\n\n更深层的问题在于，现行版权系统根本应对不了AI的降维打击。传统版权保护依赖“原创声明”和“手动举报”，但AI生成的内容可以完美绕过这些门槛——它不署名、不标记、难以溯源。Spotify等平台更是处于一种“被动维权”的状态：它们没有义务也没有能力去甄别每一首上传歌曲是否为AI生成。创作者发现自己被侵权后，往往需要耗费大量时间和精力去申诉，而即便下架，侵权者早已赚得盆满钵满。\n\n这场风暴的影响绝不止于个案的受害者。随着AI声音克隆技术门槛持续降低，未来任何创作者都可能成为下一个Murphy Campbell——你精心录制的作品，可能在未经允许的情况下被AI“翻唱”并变现。这将严重打击原创作者的创作热情，甚至可能改变整个音乐产业的生态逻辑。\n\n面对这样的趋势，创作者需要主动建立防御机制：定期检索自己的作品在各大平台的分布情况，为关键作品添加数字水印，在版权局进行更完善的登记。更重要的是，行业层面必须推动AI生成内容的强制标识义务，让平台承担起更主动的审核责任。技术的问题最终还是要靠技术+制度来解决，否则这场AI与创作者的battle，创作者只会一直被按在地上摩擦。",
+      "tags": [
+        "AI侵权",
+        "音乐版权",
+        "流媒体平台",
+        "数字水印"
+      ],
+      "target_audience": "音乐创作者和科技爱好者",
       "original_title": "A folk musician became a target for AI fakes and a copyright troll",
       "original_snippet": "Murphy Campbell is at the center of a brewing storm around AI and a broken copyright system. | Image: Murphy Campbell\t\n\nIn January, folk artist Murphy Campbell discovered several songs on her Spotify profile that did not belong there. They were songs that she had recorded, but she'd never uploaded them to Spotify, and something was off about the vocals.\nShe quickly surmised that someone had pulled performances of the songs she posted to YouTube, created AI covers, and uploaded them to streaming ",
       "link": "https://www.theverge.com/entertainment/907111/murphy-campbell-folk-music-ai-copyright",
@@ -108,6 +166,26 @@
         "行业观察"
       ],
       "target_audience": "AI开发者与技术爱好者",
+      "original_title": "Anthropic says Claude Code subscribers will need to pay extra for OpenClaw usage",
+      "original_snippet": "It’s about to become more expensive for Claude Code subscribers to use Anthropic’s coding assistant with OpenClaw and other third-party tools.",
+      "link": "https://techcrunch.com/2026/04/04/anthropic-says-claude-code-subscribers-will-need-to-pay-extra-for-openclaw-support/",
+      "pubDate": "Sat, 04 Apr 2026 16:32:22 +0000",
+      "source": "TechCrunch AI",
+      "lang": "zh",
+      "is_manual": false
+    },
+    {
+      "title": "Anthropic开始收“过路费”了？Claude Code用户炸锅",
+      "summary": "Anthropic宣布Claude Code订阅用户使用OpenClaw等第三方工具将需要额外付费。这一举措打破了AI编程助手此前相对开放的生态策略，可能预示着AI工具付费模式的新一轮洗牌。对于依赖第三方工具的开发者而言，这无疑是一个值得警惕的信号。",
+      "deep_analysis": "就在上周，Anthropic悄然放出了一个让开发者社区炸锅的消息：Claude Code的订阅用户，未来使用OpenClaw等第三方工具时，需要额外支付费用。这则看似简单的定价调整，实际上折射出AI行业商业模式演变的深层逻辑。\n\n先说说这件事到底怎么回事。Claude Code是Anthropic面向开发者推出的编程辅助工具，而OpenClaw则是基于Claude模型构建的第三方应用。简单理解，就是以前开发者可以直接用Claude的能力去调用各种第三方工具，现在这条“通路”可能要收“过路费”了。这对于已经习惯了相对低成本使用AI编程工具的开发者来说，多少有点措手不及。\n\n我认为这波操作背后，有两层逻辑。第一层是商业考量。AI公司在经历了最初的“烧钱换市场”阶段后，必然要考虑盈利问题。之前各大厂商争相降价、开放API，本质上是在争夺开发者生态的制高点。如今市场格局初步形成，找不到更好商业化路径的厂商，开始在“增值服务”上动脑筋，也就不足为奇了。第二层是生态控制的考虑。通过对第三方工具收费，Anthropic实际上是在加强对开发者生态的掌控力——要么乖乖用我的原生功能，要么就得多掏钱。这种“平台税”的思路，在软件行业并不新鲜。\n\n对行业的影响可能会从两个方向传导。首先是中小开发者群体的成本上升。如果第三方工具因为要分摊额外成本而提价，或者直接放弃集成Claude，那开发者们的可选空间就会变小。其次，可能会加速开发者向其他AI编程工具迁移。毕竟市场上不只有Claude Code，Copilot、通义灵码等竞品都在虎视眈盯着这块蛋糕。\n\n那么未来会往哪里走？我判断，AI编程工具的付费墙只会越来越高。厂商们已经达成了某种默契——基础功能可以白嫖，但真正生产力级别的能力，必然走向付费。这不是 Anthropic一家的事，而是整个行业的趋势。开发者们与其抱怨，不如早点做好成本规划。\n\n对于普通开发者，我的建议是：不要把所有鸡蛋放在一个篮子里。多尝试几个AI编程工具，了解各自的付费策略和生态边界。同时，提升自己的核心编程能力——AI可以是很好的帮手，但它不应该成为你唯一的依赖。毕竟，技术永远在变，但解决问题的能力才是硬通货。",
+      "tags": [
+        "Anthropic",
+        "Claude Code",
+        "AI编程工具",
+        "付费模式",
+        "开发者生态"
+      ],
+      "target_audience": "程序员、AI爱好者、科技从业者",
       "original_title": "Anthropic says Claude Code subscribers will need to pay extra for OpenClaw usage",
       "original_snippet": "It’s about to become more expensive for Claude Code subscribers to use Anthropic’s coding assistant with OpenClaw and other third-party tools.",
       "link": "https://techcrunch.com/2026/04/04/anthropic-says-claude-code-subscribers-will-need-to-pay-extra-for-openclaw-support/",
@@ -185,6 +263,26 @@
         "大模型调用量"
       ],
       "target_audience": "AI从业者和爱好者",
+      "original_title": "日调用量超万亿破纪录！阿里千问3.6Plus登顶全球模型调用量榜首",
+      "original_snippet": "日调用量突破1.4万亿Token",
+      "link": "https://www.qbitai.com/2026/04/396346.html",
+      "pubDate": "Sat, 04 Apr 2026 13:38:01 +0000",
+      "source": "量子位",
+      "lang": "zh",
+      "is_manual": false
+    },
+    {
+      "title": "日调用量1.4万亿！阿里这次真的把全球AI圈震住了",
+      "summary": "阿里千问3.6Plus以日调用量突破1.4万亿Token的成绩登顶全球榜首，这一数据不仅刷新了行业纪录，更标志着中国AI大模型正式从技术竞争进入大规模落地应用的新阶段。1.4万亿Token是什么概念？这意味着全球每分每秒都有海量用户在使用阿里的大模型服务，这场面够震撼吧。",
+      "deep_analysis": "说实话，当我看到这组数据的时候，内心还是有些震惊的。1.4万亿Token的日调用量，这不是一个简单的数字，它背后代表的是真正被大规模使用的AI能力。想想看，全球有多少产品真正能让用户每天高频使用？少之又少。阿里这次能冲上榜首，绝对不是靠运气。首先得承认，千问3.6Plus在技术层面确实有两把刷子。听说它的推理效率提升了不少，成本也控制得更合理，这就解释了为什么这么多企业和开发者愿意用它的API。价格战这个事你得辩证地看，便宜不代表low，反而可能是技术成熟的标志。当然，阿里背后有整个阿里生态撑腰，钉钉、淘宝、支付宝这些超级App随时能接入大模型，这个优势是其他厂商比不了的。但我认为更关键的是，这一波操作直接把全球AI竞争推向了新维度。过去大家都在比参数、比 benchmark 分数，现在终于到了拼实际落地的阶段。调用量这个指标很实在——用户用脚投票，数据不会说谎。可以预见，接下来行业会发生几件事：中小模型厂商的日子会更难过，因为头部效应越来越明显；价格战会继续，但能活下去的一定是那些真正有技术又有生态的玩家；对开发者来说反而是好事，调用成本越来越低，做AI应用的机会窗口正在打开。普通人该怎么看？我觉得别把它单纯当作技术新闻。AI大规模落地意味着什么？意味着很多基础工作真的会被替代，也意味着新的机会正在诞生。关注一下自己行业有没有可能被AI改造，这才是普通人该思考的问题。",
+      "tags": [
+        "阿里千问",
+        "大模型",
+        "AI行业",
+        "深度分析",
+        "技术趋势"
+      ],
+      "target_audience": "AI爱好者、从业者和关注科技趋势的读者",
       "original_title": "日调用量超万亿破纪录！阿里千问3.6Plus登顶全球模型调用量榜首",
       "original_snippet": "日调用量突破1.4万亿Token",
       "link": "https://www.qbitai.com/2026/04/396346.html",
@@ -2192,7 +2290,7 @@
       "slug": "the-creator-of-claude-code-just-revealed-his-workflow-and-developers-are-losing-"
     }
   ],
-  "total": 150,
-  "fetchedAt": "2026-04-05T01:07:23.107Z",
+  "total": 155,
+  "fetchedAt": "2026-04-05T04:06:18.844Z",
   "version": "3.0"
 }
