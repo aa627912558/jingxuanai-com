@@ -1,5 +1,10 @@
 {
   "buildCommand": "npm run build",
   "installCommand": "npm install",
-  "regions": ["iad1"]
+  "regions": [
+    "iad1"
+  ],
+  "env": {
+    "NEXT_PUBLIC_SITE_URL": "https://www.jingxuanai.com"
+  }
 }
