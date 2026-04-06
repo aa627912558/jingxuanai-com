@@ -2077,6 +2077,396 @@ export const TOOLS_DATA: AiTool[] = [
     ],
     related_tools: ["chatpdf", "perplexity", "kimi"],
   },
+  {
+    id: "adobe-firefly",
+    icon: "/tool-icons/adobe-firefly.png",
+    slug: "adobe-firefly",
+    name: "Adobe Firefly",
+    website: "https://firefly.adobe.com",
+    description: "Adobe创意生成式AI，支持文字生成图像、图像编辑和创意填充",
+    type: "图片AI",
+    affiliateUrl: "",
+    commissionRate: "",
+    features: [
+      "文字生成图像：输入文字描述即可生成高质量图片，支持多种艺术风格",
+      "创意填充：智能移除或添加图像元素，无缝拼接自然逼真",
+      "文字效果：将普通文字转化为艺术字体和特效图案",
+      "与Adobe生态深度集成：可直接在Photoshop、Illustrator中使用",
+      "商业安全：训练数据经过筛选，生成内容可安全用于商业用途"
+    ],
+    usage_guide: "第一步：访问与登录\\n打开 firefly.adobe.com，使用Adobe账号登录（支持Google或Apple账号快速登录）。\\n\\n第二步：文字生成图像\\n在主界面输入英文描述词（Prompt），可添加风格标签如'photorealistic'、'oil painting'等。点击Generate生成4张候选图片，点击任意一张可继续 Variations 或下载。\\n\\n第三步：创意填充（Generative Fill）\\n上传图片，用画笔涂抹要修改的区域，输入文字描述想要添加或移除的内容。AI自动处理并自然融合。\\n\\n第四步：文字效果\\n进入Text to Image，输入单词或短语，选择字体风格模板，生成艺术字效果。\\n\\n第五步：导出与使用\\n点击右上角Export，输出PNG/JPG格式，可直接发送到Photoshop进一步编辑或导出到本地。",
+    use_cases: [
+      "平面设计师：快速生成概念图和素材",
+      "营销人员：制作社交媒体配图和广告素材",
+      "内容创作者：为文章和视频生成封面图片"
+    ],
+    pros: [
+      "Adobe品牌保障，生成内容可商用",
+      "与Photoshop无缝集成，工作流顺畅",
+      "界面简洁易上手，适合初学者",
+      "支持中文Prompt输入",
+      "定期更新模型，生成质量持续提升"
+    ],
+    cons: [
+      "免费额度有限，高频使用需订阅",
+      "部分功能需要Creative Cloud订阅",
+      "对复杂场景和手部生成仍有局限",
+      "需要网络连接使用",
+      "生成结果不可预测，有时需要多次尝试"
+    ],
+    related_tools: ["midjourney", "leonardo-ai", "remove-bg"],
+  },
+  {
+    id: "pika-labs",
+    icon: "/tool-icons/pika-labs.png",
+    slug: "pika-labs",
+    name: "Pika Labs",
+    website: "https://pika.art",
+    description: "AI视频生成工具，通过文字描述快速生成高质量视频片段",
+    type: "视频AI",
+    affiliateUrl: "",
+    commissionRate: "",
+    features: [
+      "文字转视频：输入描述文字即可生成5秒视频片段，支持多种风格",
+      "图像转视频：上传静态图片，AI自动生成动态视频效果",
+      "视频编辑：支持对已有视频进行局部修改和风格调整",
+      "支持多种画面比例：横版16:9、竖版9:16、方形1:1",
+      "社区创意库：浏览和复用其他用户的创意Prompt"
+    ],
+    usage_guide: "第一步：注册与登录\\n访问 pika.art，点击Sign In使用Google账号或Discord账号快速登录。\\n\\n第二步：创建视频项目\\n登录后进入主界面，点击Create或输入框开始创作。\\n\\n第三步：输入描述\\n在输入框中用英文描述你想要生成的视频场景。越详细越好，包括：主体、动作、环境、光线、风格等。例如：'A cute cat playing with a ball of yarn in a sunny living room, soft lighting'。\\n\\n第四步：调整参数\\n可选择视频风格（Realistic动漫/Cinematic电影感等）、画面比例、时长。\\n\\n第五步：生成与下载\\n点击Generate开始生成，通常需要1-3分钟。生成完成后可预览、下载或继续生成Variations。",
+    use_cases: [
+      "短视频创作者：快速生成创意素材",
+      "社交媒体运营：制作吸引眼球的帖子配图",
+      "概念验证：视频项目前期快速可视化"
+    ],
+    pros: [
+      "操作简单，无需视频制作经验",
+      "生成速度相对较快",
+      "支持多种视频风格选择",
+      "社区可参考创意和Prompt",
+      "免费额度足够日常体验"
+    ],
+    cons: [
+      "免费版视频有水印",
+      "单次生成仅5秒，长视频需多次生成拼接",
+      "对手部和复杂运动场景生成效果不稳定",
+      "文字描述对最终效果影响大",
+      "服务器繁忙时需排队等待"
+    ],
+    related_tools: ["runway", "synthesia", "fliki"],
+  },
+  {
+    id: "tavily-ai",
+    icon: "/tool-icons/tavily-ai.png",
+    slug: "tavily-ai",
+    name: "Tavily AI",
+    website: "https://tavily.com",
+    description: "专为AI代理设计的实时搜索API，帮助大模型获取最新网络信息",
+    type: "AI大模型",
+    affiliateUrl: "",
+    commissionRate: "",
+    features: [
+      "实时网络搜索：为AI代理和RAG系统提供最新网页数据",
+      "结构化输出：搜索结果自动整理成标题、摘要、关键点JSON格式",
+      "多语言支持：支持全球主流语言的搜索和内容提取",
+      "高速响应：平均响应时间180ms，适合生产环境",
+      "开发者友好：与OpenAI、Anthropic、Groq等主流LLM无缝集成"
+    ],
+    usage_guide: "第一步：注册获取API Key\\n访问 tavily.com，点击Get Started注册账号。注册后在Dashboard获取API Key。\\n\\n第二步：安装SDK\\n\\npm install tavily-python\\n或\\npip install tavily-python\\n\\n第三步：基础搜索调用\\nimport tavily\\\\nclient = tavily.Client(api_key=\\\"你的API_KEY\\\")\\\\nresponse = client.search(\\\"最新AI技术发展趋势\\\")\\\\nprint(response[\\\"results\\\"])\\n\\n第四步：深度研究模式\\nresponse = client.research(query=\\\"2024年AI在医疗领域的应用\\\")\\n返回包含完整摘要、关键发现和来源列表的深度报告。\\n\\n第五步：在AI应用中使用\\n将Tavily作为RAG系统的检索层，为大模型提供实时外部知识，避免幻觉。",
+    use_cases: [
+      "AI应用开发者：构建实时问答系统",
+      "内容创作者：获取最新行业资讯和研究素材",
+      "企业用户：市场调研和竞品分析自动化"
+    ],
+    pros: [
+      "专为AI设计，输出格式适合RAG系统",
+      "响应速度快，99.99%可用性保障",
+      "1M+开发者使用，社区成熟",
+      "支持深度研究模式，一键生成报告",
+      "有免费额度，开发者友好"
+    ],
+    cons: [
+      "免费版有调用频率限制",
+      "深度研究模式消耗更多API配额",
+      "搜索结果质量依赖网络资源时效性",
+      "中文搜索效果略逊于英文",
+      "企业级功能需要付费套餐"
+    ],
+    related_tools: ["perplexity", "chatpdf", "iask-ai"],
+  },
+  {
+    id: "d-id",
+    icon: "/tool-icons/d-id.png",
+    slug: "d-id",
+    name: "D-ID",
+    website: "https://www.d-id.com",
+    description: "AI数字人视频生成平台，照片即可生成逼真的数字人讲解视频",
+    type: "视频AI",
+    affiliateUrl: "",
+    commissionRate: "",
+    features: [
+      "照片转视频：上传人物照片，AI生成说话或静态展示的数字人视频",
+      "140+数字人模板：覆盖不同年龄、肤色、职业形象，可直接使用",
+      "120+语言支持：配音可选择任意语言和声音风格",
+      "API集成：支持与PPT、Canva、Google Slides等平台集成",
+      "实时互动Agent：可创建AI数字人客服，实现实时语音对话"
+    ],
+    usage_guide: "第一步：注册与登录\\n访问 d-id.com，点击Start Free Trial注册账号。\\n\\n第二步：创建视频\\n点击Create Video，选择创建方式：\\n- Photo Animate：上传人物照片\\n- Avatar Template：从模板库选择数字人\\n\\n第三步：配置视频内容\\n输入要说的文字或上传字幕文件，选择配音语言和声音，调整背景和布局。\\n\\n第四步：生成视频\\n点击Generate Video，等待1-3分钟生成完成。预览满意后下载MP4格式。\\n\\n第五步：集成应用\\n如需批量生产，可使用API：访问 docs.d-id.com 查看REST API文档，通过API Key调用Create Video接口。",
+    use_cases: [
+      "企业培训：批量生成多语言员工培训视频",
+      "营销视频：产品介绍、品牌故事个性化",
+      "在线客服：AI数字人实时解答客户问题"
+    ],
+    pros: [
+      "数字人效果逼真，口型同步准确",
+      "支持120+语言，本地化成本低",
+      "与Canva、PPT等工具集成方便",
+      "API完善，适合企业级自动化",
+      "可创建实时互动的AI Agent"
+    ],
+    cons: [
+      "免费额度较少，高质量视频需付费",
+      "上传照片需确保质量，太模糊效果差",
+      "复杂动作场景生成效果有限",
+      "需要版权授权的照片才能商用",
+      "数字人表情变化相对单一"
+    ],
+    related_tools: ["synthesia", "heygen", "fliki"],
+  },
+  {
+    id: "opus-clip",
+    icon: "/tool-icons/opus-clip.png",
+    slug: "opus-clip",
+    name: "Opus Clip",
+    website: "https://www.opus.pro",
+    description: "AI视频剪辑工具，将长视频自动剪辑为多个病毒式传播短视频",
+    type: "视频AI",
+    affiliateUrl: "",
+    commissionRate: "",
+    features: [
+      "ClipAnything：支持任何类型视频（播客、Vlog、游戏、访谈）智能剪辑",
+      "AI重新构图：自动将横版视频转为竖版，AI追踪主体保持画面精彩",
+      "精彩片段识别：AI自动识别视频中高光时刻和热门话题片段",
+      "AI添加字幕：自动生成字幕并突出关键词，提高观看完播率",
+      "团队协作：支持品牌模板、团队工作空间和工作流集成"
+    ],
+    usage_guide: "第一步：上传视频\\n访问 opus.pro，注册账号后点击Upload Video上传MP4文件（支持拖拽上传）。\\n\\n第二步：AI自动剪辑\\n上传后AI自动分析视频内容，识别精彩片段并生成多个短片候选。\\n\\n第三步：选择和编辑\\n浏览AI生成的短片候选，点击任意一个进入编辑页面。可以调整字幕样式、添加品牌Logo、修改文案。\\n\\n第四步：添加字幕和文案\\nOpus Clip自动生成字幕，可手动编辑错别字。文案区显示AI提取的高光语录，可一键复制。\\n\\n第五步：下载和发布\\n点击Export下载MP4（支持1080p），可一键分享到TikTok、YouTube Shorts、Instagram Reels。",
+    use_cases: [
+      "YouTube创作者：将长视频内容转化为短视频矩阵",
+      "播客主理人：从访谈节目中提取精华片段",
+      "内容营销：批量生产社交媒体短视频内容"
+    ],
+    pros: [
+      "AI自动识别高光时刻，省时高效",
+      "支持全类型视频，不限于播客",
+      "AI字幕自动生成且样式可定制",
+      "一键发布到多平台",
+      "被16M+创作者使用，口碑好"
+    ],
+    cons: [
+      "免费版功能有限，高级功能需付费",
+      "AI识别准确率非100%，需人工筛选",
+      "长视频处理需要等待时间",
+      "主要面向英文内容，中文支持一般",
+      "处理4K视频可能需要更长时间"
+    ],
+    related_tools: ["kapwing", "veed", "invideo"],
+  },
+  {
+    id: "magic-eraser",
+    icon: "/tool-icons/magic-eraser.png",
+    slug: "magic-eraser",
+    name: "Magic Eraser",
+    website: "https://magicstudio.com/magiceraser/",
+    description: "AI智能图片去物体工具，一键移除照片中不需要的人物或物体",
+    type: "图片AI",
+    affiliateUrl: "",
+    commissionRate: "",
+    features: [
+      "AI去物体：涂抹选中区域后一键移除，支持复杂边缘处理",
+      "批量处理：Pro版支持一次处理50张图片",
+      "无需注册：免费版无需账号即可使用",
+      "保持画质：AI自动填充背景，保持原图分辨率和质量",
+      "阴影和倒影处理：智能识别并移除物体及其投射的阴影"
+    ],
+    usage_guide: "第一步：上传图片\\n访问 magicstudio.com/magiceraser/，直接拖拽或点击上传图片。支持JPG、PNG、AVIF、WEBP格式。\\n\\n第二步：涂抹选择\\n使用画笔工具涂抹要去除的区域。拖动滑块调整画笔大小。推荐放大图片后精细涂抹。\\n\\n第三步：去除\\n点击Erase按钮，AI处理并自动填充背景。效果不理想可重复涂抹再次去除。\\n\\n第四步：下载\\n点击Download保存到本地。免费版下载低分辨率，Pro版可下载原分辨率。\\n\\nPro技巧：\\n1. 涂抹时同时覆盖物体和其阴影\\n2. 去除多个物体时逐个处理效果更好\\n3. 对细长物体分段处理\\n4. 效果不理想时可撤销重试，AI会生成不同结果",
+    use_cases: [
+      "电商卖家：清理商品图片中的杂物和背景",
+      "房产中介：移除房屋照片中的行人和车辆",
+      "摄影师：修复照片中的瑕疵和不速之客"
+    ],
+    pros: [
+      "完全免费使用，无需注册",
+      "操作极其简单，无需任何技术背景",
+      "处理速度快，几秒钟完成",
+      "支持多种图片格式",
+      "AI填充效果自然"
+    ],
+    cons: [
+      "免费版有水印和分辨率限制",
+      "对复杂背景效果可能不理想",
+      "无法处理极其精细的毛发或烟雾",
+      "没有API接口，不适合批量自动化",
+      "隐私政策需注意，建议不要处理敏感图片"
+    ],
+    related_tools: ["remove-bg", "photoroom", "pixlr"],
+  },
+  {
+    id: "vidiq",
+    icon: "/tool-icons/vidiq.png",
+    slug: "vidiq",
+    name: "vidIQ",
+    website: "https://vidiq.com",
+    description: "YouTube增长必备工具，提供关键词研究、视频创意和频道分析",
+    type: "效率办公",
+    affiliateUrl: "",
+    commissionRate: "",
+    features: [
+      "关键词发现：挖掘YouTube搜索量高、竞争度低的黄金关键词",
+      "视频创意：基于数据分析提供个性化视频主题建议",
+      "竞争对手分析：查看任意YouTube频道的详细数据和策略",
+      "AI Coach：GPT驱动的视频策略指导和问题解答",
+      "缩略图评分：AI分析缩略图并给出优化建议"
+    ],
+    usage_guide: "第一步：安装浏览器扩展\\n访问 vidiq.com，点击Install Extension安装Chrome扩展。\\n\\n第二步：连接YouTube\\n打开YouTube Studio，vidIQ扩展会自动激活。在扩展面板登录账号。\\n\\n第三步：关键词研究\\n在YouTube搜索框输入主关键词，vidIQ显示搜索量、竞争度评分。点击Open Panel查看完整关键词列表。\\n\\n第四步：获取视频创意\\n点击 vidIQ Dashboard → Video IQ，输入频道Niche，获取AI推荐的视频主题和标题。\\n\\n第五步：优化现有视频\\n打开任意YouTube视频，vidIQ显示该视频的SEO评分和优化建议。按照建议修改标题、标签、描述。",
+    use_cases: [
+      "YouTube新手：快速找到适合自己的细分领域",
+      "内容创作者：获取源源不断的视频创意灵感",
+      "MCN机构：批量管理多个频道的SEO策略"
+    ],
+    pros: [
+      "浏览器扩展使用方便，不影响工作流",
+      "关键词数据来自YouTube官方，准确可靠",
+      "AI Coach提供个性化策略建议",
+      "免费版功能足够日常使用",
+      "被全球顶级YouTuber信赖使用"
+    ],
+    cons: [
+      "高级功能需要付费订阅",
+      "数据更新有延迟，非实时",
+      "主要面向英文YouTube，中文内容支持有限",
+      "付费版价格相对较高",
+      "功能较多，上手需要一定学习成本"
+    ],
+    related_tools: ["perplexity", "surfer-seo", "chatpdf"],
+  },
+  {
+    id: "stockimg-ai",
+    icon: "/tool-icons/stockimg-ai.png",
+    slug: "stockimg-ai",
+    name: "Stockimg AI",
+    website: "https://stockimg.ai",
+    description: "AI图片生成平台，快速生成Logo、海报、书籍封面、Stock图片等",
+    type: "图片AI",
+    affiliateUrl: "",
+    commissionRate: "",
+    features: [
+      "多功能图片生成：Logo、海报、书籍封面、壁纸、Stock图片一键生成",
+      "预设模板：丰富的行业模板，可快速套用修改",
+      "高质量输出：支持生成高分辨率图片，适合印刷和数字媒体",
+      "团队协作：支持团队共享项目和企业定制",
+      "API支持：开发者可集成到自己的应用中"
+    ],
+    usage_guide: "第一步：注册与登录\\n访问 stockimg.ai，点击Get Started注册账号。\\n\\n第二步：选择图片类型\\n首页显示多种生成类型：Logo、Poster、Book Cover、Wallpaper、Illustration等，点击进入对应生成界面。\\n\\n第三步：输入描述\\n输入英文描述词，越详细越好。例如生成Logo时输入公司名称、行业、想要的风格、颜色偏好。\\n\\n第四步：选择样式和参数\\n可选择生成风格（简约、复古、现代等）、颜色偏好、输出尺寸。\\n\\n第五步：生成与编辑\\n点击Generate，AI生成4张候选图。点击任意一张可放大、重新生成Variations或进入编辑界面微调。满意后Download下载。",
+    use_cases: [
+      "设计师：快速生成设计灵感和素材",
+      "创业者：零设计基础也能做出专业Logo和品牌物料",
+      "内容创作者：生成文章配图和社交媒体封面"
+    ],
+    pros: [
+      "一站式多功能图片生成平台",
+      "预设模板丰富，快速上手",
+      "生成速度快，质量稳定",
+      "有API接口，适合开发者集成",
+      "企业版支持品牌定制"
+    ],
+    cons: [
+      "免费版生成数量有限",
+      "生成内容不能完全定制化控制",
+      "版权归属需阅读使用条款",
+      "中文支持有限，英文Prompt效果更好",
+      "高分辨率输出需要付费"
+    ],
+    related_tools: ["adobe-firefly", "leonardo-ai", "midjourney"],
+  },
+  {
+    id: "windsurf",
+    icon: "/tool-icons/windsurf.png",
+    slug: "windsurf",
+    name: "Windsurf AI",
+    website: "https://windsurf.com",
+    description: "AI编程助手，由Codeium团队打造，为开发者提供智能编码体验",
+    type: "编程代码",
+    affiliateUrl: "",
+    commissionRate: "",
+    features: [
+      "Cascade AI：超强AI对话和代码生成能力，支持多步骤复杂任务",
+      "Memories功能：AI记住项目结构和偏好设置，越用越懂你",
+      "MCP支持：可连接Figma、Slack、Stripe等第三方服务",
+      "多文件编辑：支持同时编辑多个文件，AI自动处理依赖关系",
+      "实时预览：内置Web Preview，无需切换工具即可看效果"
+    ],
+    usage_guide: "第一步：下载安装\\n访问 windsurf.com，点击Download下载安装包。支持VS Code插件模式或独立IDE。\\n\\n第二步：项目初始化\\n打开Windsurf，创建新项目或打开已有代码目录。AI自动分析项目结构。\\n\\n第三步：AI编程\\n在编辑器底部Cascade对话框输入需求，如：\\n- '创建个React登录页面'\\n- '修复这个bug'\\n- '给这个函数写单元测试'\\nAI自动生成代码并可一键应用到项目中。\\n\\n第四步：Memories设置\\n点击Memories面板，告诉AI你的项目偏好、技术栈、代码规范。AI会记住并在后续编程中遵循。\\n\\n第五步：MCP集成\\n进入Settings → MCP，添加Figma、Slack等MCP服务器，扩展AI能力边界。",
+    use_cases: [
+      "全栈开发：前后端代码快速生成",
+      "代码审查：AI辅助发现Bug和优化点",
+      "学习编程：AI讲解代码原理和最佳实践"
+    ],
+    pros: [
+      "完全免费，基础功能无需付费",
+      "比Cursor体验更流畅，界面更简洁",
+      "Memories功能让AI越来越懂你的项目",
+      "MCP支持连接丰富第三方工具",
+      "由Codeium团队打造，1M+用户验证"
+    ],
+    cons: [
+      "高级功能需要付费订阅",
+      "独立IDE vs VS Code插件需二选一",
+      "对超大型项目处理可能较慢",
+      "中文支持一般，英文Prompt效果更好",
+      "部分高级AI功能需要科学上网"
+    ],
+    related_tools: ["cursor", "copilot", "figma"],
+  },
+  {
+    id: "adsbolic",
+    icon: "/tool-icons/adsbolic.png",
+    slug: "adsbolic",
+    name: "Adsolic",
+    website: "https://adsolic.com",
+    description: "AI广告素材生成工具，快速创建Google、Meta等平台的广告创意",
+    type: "效率办公",
+    affiliateUrl: "",
+    commissionRate: "",
+    features: [
+      "多平台广告生成：支持Google Ads、Meta、LinkedIn、TikTok等多平台",
+      "AI创意建议：基于产品信息自动生成广告文案和视觉方案",
+      "A/B测试素材：批量生成多版本广告素材供测试",
+      "品牌资产管理：上传品牌素材库，确保广告一致性",
+      "效果预测：AI评估广告素材点击率潜力"
+    ],
+    usage_guide: "第一步：注册与登录\\n访问 adsolic.com，点击Start Free Trial注册账号。\\n\\n第二步：创建广告项目\\n点击New Campaign，输入产品名称、描述、目标受众、CTA按钮。\\n\\n第三步：选择广告平台和格式\\n选择投放平台（Google/Meta/LinkedIn等）和广告格式（图组、视频、轮播等）。\\n\\n第四步：AI生成广告\\n点击Generate Ads，AI基于产品信息和平台特性自动生成广告文案和素材。\\n\\n第五步：预览和导出\\n预览不同尺寸的适配效果，满意后导出。导出格式支持JPG、PNG、MP4。",
+    use_cases: [
+      "跨境电商卖家：批量制作多平台广告素材",
+      "营销 agency：为客户快速生成广告提案",
+      "中小企业：没有设计师也能做出专业广告"
+    ],
+    pros: [
+      "一站式多平台广告素材生成",
+      "AI自动化程度高，省时省力",
+      "支持批量生成A/B测试版本",
+      "品牌资产管理功能实用",
+      "免费试用，可评估后再付费"
+    ],
+    cons: [
+      "免费版功能限制多",
+      "生成创意质量依赖输入信息质量",
+      "AI生成的文案可能需要人工润色",
+      "版权问题需注意审查",
+      "相对新兴工具，社区和教程较少"
+    ],
+    related_tools: ["adcreative-ai", "anyword", "copymatic"],
+  },
 ]
 
 
