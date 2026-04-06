@@ -29,15 +29,29 @@ export default function RootLayout({
 
         <footer className="bg-white border-t border-slate-200 mt-16">
           <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8">
-            <div className="flex flex-col sm:flex-row items-center justify-between gap-4">
+            {/* 第一行：三列布局 */}
+            <div className="flex items-start justify-between gap-4 mb-4">
+              {/* 左：Logo + 名称 */}
               <div className="flex items-center gap-2">
                 <div className="w-7 h-7 bg-gradient-to-br from-indigo-500 to-purple-600 rounded-lg flex items-center justify-center">
                   <span className="text-white text-xs font-bold">精</span>
                 </div>
                 <span className="text-sm text-slate-600 font-medium">精选AI工具站</span>
               </div>
+
+              {/* 中间：联系我们邮箱 */}
+              <div className="text-center">
+                <a
+                  href="mailto:442996592ai@gmail.com"
+                  className="text-sm text-slate-400 hover:text-indigo-600 transition-colors"
+                >
+                  联系我们: 442996592ai@gmail.com
+                </a>
+              </div>
+
+              {/* 右：版权信息 */}
               <p className="text-sm text-slate-400">
-                © 2026 精选AI工具站 · 工具排名不分先后 · <a href="mailto:442996592ai@gmail.com" className="hover:text-indigo-600 transition-colors">联系我们: 442996592ai@gmail.com</a>
+                © 2026 精选AI工具站 · 工具排名不分先后
               </p>
             </div>
           </div>
