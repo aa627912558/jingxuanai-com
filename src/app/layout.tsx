@@ -37,7 +37,7 @@ export default function RootLayout({
                 <span className="text-sm text-slate-600 font-medium">精选AI工具站</span>
               </div>
               <p className="text-sm text-slate-400">
-                © 2025 精选AI工具站 · 工具排名不分先后
+                © 2025 精选AI工具站 · 工具排名不分先后 · <a href="mailto:442996592ai@gmail.com" className="hover:text-indigo-600 transition-colors">联系我们: 442996592ai@gmail.com</a>
               </p>
             </div>
           </div>
