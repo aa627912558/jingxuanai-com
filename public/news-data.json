@@ -1,6 +1,25 @@
 {
   "news": [
     {
+      "title": "OpenAI校友VC帝国崛起：100亿背后的AI投资新棋局",
+      "summary": "Zero Shot——一家与OpenAI渊源极深的新兴风险投资基金，正在秘密募集其首支规模达1亿美元的基金。值得注意的是，这支基金已经悄然完成多笔投资。Zero Shot的崛起折射出AI领域一个隐秘趋势：核心技术圈层正在通过资本力量构建自己的生态闭环。",
+      "deep_analysis": "先说清楚Zero Shot是什么。这支基金的核心团队由OpenAI前员工组成，用的行话叫“校友网络”，说白了就是一群在OpenAI身经百战、深刻理解AI技术边界和市场机会的人。他们出来募资，天然带着一层光环——投资人买账的不仅是他们的投资能力，更是对AI技术趋势的判断力。\n\n1亿美元在VC圈不算大钱，但这件事的深层含义远大于数字本身。OpenAI过去几年培养了整整一代AI人才，这些人流向何处、聚集何处，本身就是行业信号弹。Zero Shot的出现意味着，这批最懂AI的人不再满足于只做技术，而是要通过资本介入整个产业链。这对中国AI从业者是一个值得警惕的信号：当底层技术人才同时掌握资本资源，他们构建护城河的速度会比单纯技术公司快得多。\n\n从行业影响来看，Zero Shot代表了一种新型“技术资本家”模式。传统VC看项目，看的是市场、团队、商业模式，而这类出身OpenAI的投资者，看的是技术路线图和人才密度。他们投资的逻辑不是“这个公司能赚多少钱”，而是“这个团队能不能做成下一代基础模型”。这种投资哲学正在重塑AI领域的资源配置。\n\n未来会发生什么？可以预见，会有更多OpenAI及其他顶级AI实验室的校友出来创立类似基金，形成一个围绕核心AI人才的风险投资圈层。这个圈层会像滚雪球一样，吸引最优质的早期项目，形成人才和资本的良性循环。对普通创业者和从业者来说，这意味着如果你做的事正好踩中这个圈层的关注点，获得资源会变得更容易；但如果你不在这个圈层的视野范围内，融资难度可能会加大。\n\n那么读者应该怎么应对？我的建议是：不要单纯追逐热点概念，而是要真正理解AI技术的能力边界，找到具体场景的落地机会。同时，有条件的话，尽量建立与这些核心技术圈层的连接——无论是通过学术合作、开源社区还是行业会议。资本永远跟着技术走，但技术最终服务于能够用它解决实际问题的人。",
+      "tags": [
+        "AI投资",
+        "OpenAI",
+        "风险投资",
+        "科技创业"
+      ],
+      "target_audience": "AI从业者",
+      "original_title": "OpenAI alums have been quietly investing from a new, potentially $100M fund ",
+      "original_snippet": "Zero Shot, a new venture capital fund with deep ties to OpenAI, is aiming to raise $100 million for its first fund. It has already written some checks.",
+      "link": "https://techcrunch.com/2026/04/06/openai-alums-have-been-quietly-investing-from-a-new-potentially-100m-fund/",
+      "pubDate": "Mon, 06 Apr 2026 21:54:26 +0000",
+      "source": "TechCrunch AI",
+      "lang": "zh",
+      "is_manual": false
+    },
+    {
       "title": "Google悄袭iOS！离线AI语音转写要变天？",
       "summary": "Google近日在iOS平台悄然上线了一款离线优先的AI语音转写应用，采用开源的Gemma模型，直接对标Wispr Flow等热门产品。这意味着语音转写从云端时代正式迈入端侧时代，隐私和速度或将成为下一代语音AI的核心战场。",
       "deep_analysis": "Google这次在iOS上线的这款语音转写应用，表面上看只是又一个语音转文字工具，但它的内核可能远没那么简单。首先，它是一款“离线优先”的应用，这意味着所有的语音识别和转写都在本地设备上完成，不需要上传到云端。这在AI应用普遍依赖云端的当下，显得相当“另类”。\n\n其次，也是更值得关注的是，它使用的是Gemma模型——Google的开源大语言模型。这不是Google第一次把Gemma推向端侧，但用在一款面向消费者的语音转写产品上，还是头一回。开源模型+端侧部署+消费级应用，这个组合本身就带有某种标志性意义：Google正在用实际行动告诉业界，端侧AI不仅可以跑，而且可以跑得很好。\n\n对行业的影响是显而易见的。语音转写这个赛道由来已久，从传统语音识别到AI时代，各种产品层出不穷。但绝大多数产品都有一个共同特点：依赖云端服务器进行处理。这带来的问题很明显——网络延迟、数据隐私、离线无法使用。Google这次选择了一条完全不同的路径，相当于告诉市场：离线也能做到云端级别的体验。\n\n如果Google的这款产品真的能打，那冲击最大的可能是Wispr Flow这类主打AI语音转写的应用。毕竟在同等体验下，“数据不上云”这个卖点对很多用户来说是有吸引力的。更重要的是，这种模式一旦被验证，可能会引领一波“离线AI应用”的潮流。\n\n从更宏观的视角看，这其实反映了AI应用正在经历的一场范式转换：从云端智能到端侧智能。苹果的端侧模型、Google的Gemma端侧部署，都在传递同一个信号：未来的AI不一定非要在云端“跑”，在你口袋里、手机里就能跑。这对用户意味着更好的隐私保护、更快的响应速度；对厂商意味着更高的技术壁垒和更深的护城河。\n\n不过，现在说“变天”可能还为时过早。离线AI转写的实际体验能否真的媲美云端，Gemma模型在端侧的效率如何，这些都需要时间来验证。但有一点可以肯定：Google这次出手，说明他们已经认定端侧AI是未来，而这场战役，才刚刚开始。",
@@ -13,6 +32,26 @@
       ],
       "target_audience": "AI爱好者、科技从业者",
       "original_title": "Google quietly releases an offline-first AI dictation app on iOS",
+      "original_snippet": "Google's new offline-first dictation app uses Gemma AI models to take on the apps like Wispr Flow.",
+      "link": "https://techcrunch.com/2026/04/06/google-quietly-releases-an-offline-first-ai-dictation-app-on-ios/",
+      "pubDate": "Mon, 06 Apr 2026 18:54:33 +0000",
+      "source": "TechCrunch AI",
+      "lang": "zh",
+      "is_manual": false
+    },
+    {
+      "title": "Google偷偷放了个大招：以后打字可能真的out了",
+      "summary": "Google悄然上线了一款离线优先的AI听写应用，直接把最新的大模型能力塞进了手机本地。不用联网也能实现高质量语音转文字，这意味着以后语音输入可能比打字更快、更隐私。对 Wispr Flow 等竞品来说，这或许是个危险的信号。",
+      "deep_analysis": "先说说这件事到底发生了什么。Google这次推出的听写应用，最大的亮点不是它能语音转文字——这功能早就烂大街了——而是它能完全离线工作，而且用的是Gemma这种相对轻量的AI模型。简单讲就是把大模型的智能塞进了你手机的本地空间，不需要把数据传到云端。\n\n这对行业意味着什么？很多人可能没意识到隐私其实是语音输入最大的痛点。你说话转文字的时候，你的语音数据要去云端走一遭，谁知道会被怎么处理。Google这一招相当于告诉你：不用了，数据就在本地处理，爱谁谁。而且因为不用等网络延迟，输入延迟也能降下来，体验会更丝滑。\n\n更深一层看，这是Google在端侧AI布局的重要一步。之前各家都在卷云端大模型，Google现在告诉市场，其实小模型+本地部署也能搞大事。这条路一旦跑通，以后手机上的AI应用可能都不需要联网了——这对于网络基础设施不那么好的地区，意义特别大。\n\n对 Wispr Flow 这些专注语音输入的创业公司来说，Google入场确实是个挑战。但话又说回来，Google做产品一贯是“起大早赶晚集”，能不能把这个应用打磨好还是未知数。语音输入这个赛道本来就慢，细节体验才是关键。\n\n作为普通读者，我们应该怎么应对这个变化？如果你现在还在用键盘大量打字，是时候关注一下语音输入了。技术在变，效率工具也在变，别让自己落在后面。当然，如果你是隐私敏感用户，这款完全离线的应用简直是为你量身定做的。\n\n至于未来，我敢断言离线AI绝对是大趋势。这次Google带了个头，接下来苹果、微软不可能坐视不理。手机厂商们也会很快跟进。三年后再回头看今天，或许我们会觉得背着键盘出门是一件很奇怪的事。",
+      "tags": [
+        "Google",
+        "AI语音输入",
+        "Gemma",
+        "离线AI",
+        "端侧智能"
+      ],
+      "target_audience": "科技爱好者和效率控",
+      "original_title": "Google quietly launched an AI dictation app that works offline",
       "original_snippet": "Google's new offline-first dictation app uses Gemma AI models to take on the apps like Wispr Flow.",
       "link": "https://techcrunch.com/2026/04/06/google-quietly-releases-an-offline-first-ai-dictation-app-on-ios/",
       "pubDate": "Mon, 06 Apr 2026 18:54:33 +0000",
@@ -41,6 +80,26 @@
       "is_manual": false
     },
     {
+      "title": "伊朗导弹瞄准AI心脏：Stargate数据中心背后的大国博弈",
+      "summary": "伊朗公开威胁将对美国关联的AI数据中心发动导弹打击，Stargate项目瞬间成为舆论焦点。这不仅是美伊冲突的升级，更是AI基础设施首次被明确纳入战争目标的标志性事件。全球AI产业正在被拖入地缘政治漩涡。",
+      "deep_analysis": "当伊朗官方放出话来，说要把导弹砸向美国linked的AI数据 centers时，整个科技圈都炸锅了。Stargate这个名字瞬间从科技新闻的角落钻到了所有人眼前。\n\n先说说这个Stargate到底是啥。简单讲，这就是微软和OpenAI联手搞的超大AI计算基础设施项目，专门用来训练那些参数量大到吓人的大语言模型。之前有消息说微软已经砸了几百亿美元进去，准备在全球建一堆这种数据中心。现在伊朗突然点名要打这些地方，背后的信号就很有意思了。\n\n这说明啥？说明AI已经不再是实验室里的玩具，而是实打实的国家战略资产。美伊这场冲突打到现在，双方都在找对方的痛点打过去。以前是油轮、军事基地，现在轮到AI数据中心了——因为这些玩意的战略价值可能比传统目标还高。谁控制了算力，谁就掌握了未来AI的话语权，这个道理伊朗显然懂。\n\n对行业的影响是立竿见影的。首先，所有正在或者计划在美国建AI数据中心的公司，这会儿肯定都在加班加点评估风险。数据中心的安全不再只是防火防盗，现在还得防导弹。其次，那些依赖美国AI基础设施的盟友国家，这会儿也在掂量自己有多少家底经得起这么折腾。更深一层来看，这种威胁直接把AI竞争变成了零和游戏——不是你死就是我活，大家都在拼了命地堆算力、抢资源。\n\n至于未来会怎么走，我觉得有几个趋势是躲不掉的。第一，AI基础设施的选址会越来越讲究，地下、分散、冗余会成为硬性要求，可能会有更多国家逼着科技公司把数据中心建到自己地盘上。第二，能源和算力的绑定会更紧密，那些能源丰富又政治稳定的地方会变得格外抢手。第三，可能会有新的国际规则出来，至少在表面上限制把关键基础设施当作打击目标——虽然实际执行起来肯定是另一回事。\n\n那我们普通人该咋整？如果你在AI行业里混，我的建议是：多关注地缘政治动态，别一门心思只盯着技术本身。这年头，光懂代码不够，还得懂点国际关系。如果你只是个普通用户，那也不用慌，该用ChatGPT用ChatGPT，但至少得知道现在AI这东西，已经不是单纯的技术问题了。\n\n归根结底一句话：AI这个战场，早就不只是算法和数据的较劲了。",
+      "tags": [
+        "AI基础设施",
+        "地缘政治",
+        "Stargate",
+        "美伊冲突",
+        "数据中心安全"
+      ],
+      "target_audience": "科技爱好者、AI从业者",
+      "original_title": "Iran threatens ‘Stargate’ AI data centers",
+      "original_snippet": "Iran said it will target U.S.-linked data centers with new missile strikes, as the war between the U.S. and Iran escalates.",
+      "link": "https://techcrunch.com/2026/04/06/iran-threatens-stargate-ai-data-centers/",
+      "pubDate": "Mon, 06 Apr 2026 18:06:28 +0000",
+      "source": "TechCrunch AI",
+      "lang": "zh",
+      "is_manual": false
+    },
+    {
       "title": "AI到底会不会抢走你的工作？一份被忽视的关键数据浮出水面",
       "summary": "硅谷持续渲染AI将导致大规模失业的恐慌情绪，但Anthropic公司的一位社会影响研究员最近提出了一种不同视角。这份可能被忽视的数据或许能揭示AI对就业市场真实影响的谜底。",
       "deep_analysis": "如果你最近关注科技新闻，会发现一个有趣的现象：硅谷大佬们一边在发布会上大谈AI将如何“赋能”人类，一边在私下聚会上忧心忡忡地讨论即将到来的“就业末日”。这种分裂的态度本身就很有意思。\n\nAnthropic的那位研究者到底发现了什么？虽然具体细节原始资讯没有展开，但从这篇报道的标题“一个数据”我们可以推断，研究者认为真正能衡量AI对就业影响的不是什么宏大的预言或抽象的模型，而是一个具体、可量化、到目前为止被大多数人忽视的指标。这个指标可能跟某些特定岗位的替代速度有关，也可能跟AI工具的实际采用率有关，而不是停留在概念层面的讨论。\n\n这件事给我的最大启发是：关于AI和就业的关系，我们已经被太多的预言和恐慌包围了。有人说AI将在三年内取代一半的工作，有人说这是又在重蹈当年对自动化过度恐慌的覆辙。两种极端的观点都有市场，但都缺乏扎实的证据支撑。\n\n如果Anthropic的研究者真的找到了那个关键数据，它的重要性在于：我们可以从猜测和恐惧中走出来，基于真实的证据来做判断和决策。这比任何硅谷CEO的公开信或者某个经济学家的预言都更有价值。\n\n对于普通人来说，与其被各种噪音干扰，不如关注几个现实的问题：你的行业里AI工具的实际采用率到底有多少？哪些岗位已经在实际使用AI辅助工作？而不是停留在“AI会不会取代我”的抽象焦虑中。\n\n未来一到两年，我判断AI对就业市场的影响会更清晰地显现出来。那些声称AI将带来末日或者AI将完全无害的声音都会逐渐消退，取而代之的是更精细的分化：某些行业某些岗位确实会受到显著影响，但同时也会诞生全新的工作类别。这才是真实的技术变革轨迹。",
@@ -51,6 +110,26 @@
         "职业发展"
       ],
       "target_audience": "关注AI影响的职场人",
+      "original_title": "The one piece of data that could actually shed light on your job and AI",
+      "original_snippet": "This story originally appeared in The Algorithm, our weekly newsletter on AI. To get stories like this in your inbox first, sign up here. Within Silicon Valley’s orbit, an AI-fueled jobs apocalypse is spoken about as a given. The mood is so grim that a societal impacts researcher at Anthropic, responding Wednesday to a call for…",
+      "link": "https://www.technologyreview.com/2026/04/06/1135187/the-one-piece-of-data-that-could-actually-shed-light-on-your-job-and-ai/",
+      "pubDate": "Mon, 06 Apr 2026 16:33:35 +0000",
+      "source": "MIT Technology Review",
+      "lang": "zh",
+      "is_manual": false
+    },
+    {
+      "title": "硅谷都在传「就业末日」，但一项数据可能让真相大白",
+      "summary": "当整个硅谷都在渲染AI抢饭碗的恐慌时，Anthropic的社会影响研究员站出来了。他们正在回应一项政策征询，很可能指向一个关键数据——这项数据或许能真正衡量AI对职场的影响到底是灾难还是机遇。",
+      "deep_analysis": "这场关于AI和就业的舆论战，终于有人出来泼冷水了。\n\n硅谷的恐慌不是一天两天了。从去年开始，各路科技大佬、AI公司创始人轮番出来喊「AI会导致大规模失业」，仿佛不聊点失业焦虑就显得你不够懂行。这种集体情绪形成了一种奇怪的「政治正确」——仿佛不承认AI是就业杀手，就是不懂科技进步。\n\n但仔细想想，这种恐慌有多少是基于事实，又有多少是基于想象？\n\nAnthropic的社会影响研究员在这个时间点出来回应政策征询，释放了一个重要信号：業界正在从盲目的恐慌中冷静下来，开始用数据说话。这很可能意味着，有人准备拿出真正的硬货——不是猜测，不是焦虑，而是一个能够客观衡量AI对就业市场影响的具体数据指标。\n\n这个数据可能是什么？可能是AI替代某些岗位的实际速度，可能是某些行业就业率的变化曲线，也可能是人机协作后生产力提升的真实案例。甭管是什么，关键在于：终于有人愿意用事实而非情绪来讨论这个问题了。\n\n对行业来说，这绝对是个转折点。过去一年，AI公司们在「制造焦虑」这件事上没少下功夫——焦虑能卖课、焦虑能卖产品、焦虑能拉投资。但从长远看，一个靠恐慌支撑的市场是走不远的。如果这次能拿出可靠数据，把讨论从「AI会不会抢饭碗」变成「AI怎么改变饭碗」，整个行业的健康发展反而会有一个更理性的基础。\n\n对普通人而言，甭管最终数据说明什么，有一点是明确的：与其被恐慌情绪带着跑，不如关注自己的技能升级。历史上每一次技术革命，最后留下的都是会用新工具的人，而不是拒绝新工具的人。\n\n当然，我们也不能太天真。数据可能会支持某种程度的就业调整，尤其是对某些重复性工作。但調整不等于末日——历史上打印机没有让抄写员消失，蒸汽机没有让工匠失业，计算机也没有让人变成机器的附庸。真正改变的，是工作的形式，而不是工作本身。\n\n接下来几周，这个数据一旦公开，很可能会引发新一轮的大讨论。如果数据支持「AI危害论」，政策监管可能会收紧；如果数据显示影响没那么大，AI公司们或许能喘口气。但甭管结果如何，硅谷这次集体恐慌该降温了。",
+      "tags": [
+        "AI就业",
+        "Anthropic",
+        "数据真相",
+        "科技行业",
+        "职业发展"
+      ],
+      "target_audience": "关注AI的职场人",
       "original_title": "The one piece of data that could actually shed light on your job and AI",
       "original_snippet": "This story originally appeared in The Algorithm, our weekly newsletter on AI. To get stories like this in your inbox first, sign up here. Within Silicon Valley’s orbit, an AI-fueled jobs apocalypse is spoken about as a given. The mood is so grim that a societal impacts researcher at Anthropic, responding Wednesday to a call for…",
       "link": "https://www.technologyreview.com/2026/04/06/1135187/the-one-piece-of-data-that-could-actually-shed-light-on-your-job-and-ai/",
@@ -91,6 +170,25 @@
       ],
       "target_audience": "科技关注者、职场人",
       "original_title": "OpenAI’s vision for the AI economy: public wealth funds, robot taxes, and a four-day work week",
+      "original_snippet": "OpenAI proposes taxes on AI profits, public wealth funds, and expanded safety nets to address job loss and inequality, blending redistribution with capitalism as policymakers debate AI’s economic impact.",
+      "link": "https://techcrunch.com/2026/04/06/openais-vision-for-the-ai-economy-public-wealth-funds-robot-taxes-and-a-four-day-work-week/",
+      "pubDate": "Mon, 06 Apr 2026 15:55:55 +0000",
+      "source": "TechCrunch AI",
+      "lang": "zh",
+      "is_manual": false
+    },
+    {
+      "title": "AI抢饭碗怎么办？OpenAI：要收机器人税，给全民发钱！",
+      "summary": "OpenAI最近抛出了一个大胆的经济构想：要对AI利润征税，建立公共财富基金，甚至推行四天工作周。这不是天方夜谭，而是OpenAI对AI引发失业潮的开出的药方。在AI技术狂飙突进的今天，我们该如何看待这场正在到来的经济变革？",
+      "deep_analysis": "OpenAI这次真的把话说开了。在一份关于AI经济影响的内部报告中，他们不再只谈技术进步，而是直接面对一个尖锐问题：如果AI真的把大量工作干了，那普通人怎么办？他们的答案是：重构整个经济分配体系。\n\n具体来说，OpenAI提议对AI系统的利润征收“AI税”，用这部分钱建立公共财富基金，每个公民都能从中受益。同时，他们建议将标准工作周缩短到四天，让人类从事更有价值、更有创造性的工作。这套方案本质上是在资本主义框架内引入社会主义式的再分配机制，不得不说是一种相当大胆的混合实验。\n\n这个消息在业界引发了激烈讨论。支持者认为，这是科技公司对社会责任的主动承担，毕竟AI造成的失业不能全让普通人扛。但批评者则质疑：企业真的会乖乖交税吗？财富基金的管理效率谁来保障？四天工作周会不会只是中产阶级的幻想？\n\n从行业角度看，OpenAI的这番表态意味着AI公司正在从单纯的技术竞争转向社会治理层面的竞争。未来几年，如何回答“AI到底会让谁受益”这个问题，可能比模型能力本身更重要。各国政府也会加快相关立法，AI税收、自动化失业保险、数据主权这些议题都会提上日程。\n\n对于我们普通人来说，与其焦虑AI会不会取代你的工作，不如早点思考：在AI时代，你的不可替代性在哪里？创造力、情感联结、复杂决策，这些仍是人类的长板。同时也要关注政策走向，因为最终决定AI红利如何分配的，正是这些还在襁褓中的制度设计。",
+      "tags": [
+        "AI经济",
+        "OpenAI",
+        "机器人税",
+        "未来工作"
+      ],
+      "target_audience": "关注AI和职场变化的读者",
+      "original_title": "OpenAI’s vision for the AI economy: public wealth funds, robot taxes, and a four-day workweek",
       "original_snippet": "OpenAI proposes taxes on AI profits, public wealth funds, and expanded safety nets to address job loss and inequality, blending redistribution with capitalism as policymakers debate AI’s economic impact.",
       "link": "https://techcrunch.com/2026/04/06/openais-vision-for-the-ai-economy-public-wealth-funds-robot-taxes-and-a-four-day-work-week/",
       "pubDate": "Mon, 06 Apr 2026 15:55:55 +0000",
@@ -3462,7 +3560,7 @@
       "slug": "the-creator-of-claude-code-just-revealed-his-workflow-and-developers-are-losing-"
     }
   ],
-  "total": 215,
-  "fetchedAt": "2026-04-06T19:07:16.586Z",
+  "total": 220,
+  "fetchedAt": "2026-04-06T22:06:00.789Z",
   "version": "3.0"
 }
