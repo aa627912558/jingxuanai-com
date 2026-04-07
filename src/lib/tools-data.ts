@@ -2467,6 +2467,396 @@ export const TOOLS_DATA: AiTool[] = [
     ],
     related_tools: ["adcreative-ai", "anyword", "copymatic"],
   },
+  {
+    id: "jasper",
+    icon: "/tool-icons/jasper.png",
+    slug: "jasper",
+    name: "Jasper",
+    website: "https://www.jasper.ai",
+    description: "AI营销文案生成神器，支持博客、社交媒体、广告等多种内容创作",
+    type: "写作AI",
+    affiliateUrl: "https://www.jasper.ai",
+    commissionRate: "首年30%续佣",
+    features: [
+      "多场景文案模板：涵盖博客文章、社交媒体、广告文案、产品描述等50+模板",
+      "品牌声音训练：上传品牌指南，AI学习品牌调性，生成风格一致的内容",
+      "多语言支持：支持30+语言创作，一键翻译和本地化内容",
+      "SEO集成：与Surfer SEO无缝对接，生成搜索引擎友好的内容",
+      "团队协作：支持多人实时编辑和评论，提升团队内容生产效率"
+    ],
+    usage_guide: "第一步：注册与工作区创建\\n访问 jasper.ai，点击 Start Free Trial 注册账号。\\n登录后创建 Workspace（工作区），输入公司/品牌名称和网站地址。\\n进入Brand Setup，上传品牌指南文档（风格指南、tone of voice等），AI会学习品牌特征。\\n\\n第二步：选择模板创建内容\\n点击 New Content，选择模板类型：\\n- Blog Post：长篇博客文章（输入标题和大纲，AI生成完整文章）\\n- Social Media Content：社媒帖子（支持 Twitter/LinkedIn/Facebook 等）\\n- Ad Copy：广告文案（Google Ads、Facebook Ads等）\\n- Product Description：产品描述\\n- 其他模板：邮件主题、FAQ、视频脚本等\\n\\n第三步：输入关键信息\\n以 Blog Post 为例：\\n1. 输入文章标题（越长越精准，AI理解越准确）\\n2. 选择语言（支持30+语言）\\n3. 输入内容简介/大纲\\n4. 选择语气（Tone）：Professional/Friendly/Witty/Empathetic 等\\n5. 选择SEO关键词（可选）\\n\\n第四步：生成与编辑\\n点击 Generate，AI生成内容后进入编辑器：\\n- Commands：输入指令微调内容\\n- Rephrase：改写选中段落\\n- Extend：扩展选中内容\\n- Shorten：精简选中内容\\n满意后点击 Approve 确认内容。\\n\\n第五步：导出与发布\\n点击 Copy 或 Download（支持TXT/DOCX/PDF）。\\n若连接了 Surfer SEO，内容会自动进行SEO评分和优化建议。",
+    use_cases: [
+      "营销团队：批量生成广告文案、邮件营销内容、社交媒体帖子",
+      "内容运营：快速生产SEO友好的博客文章，保持更新频率",
+      "跨境电商：产品描述本地化，一键生成多语言版本"
+    ],
+    pros: [
+      "模板丰富，覆盖营销全场景，入手门槛低",
+      "Brand Voice功能强大，适合品牌方长期使用",
+      "SEO集成（Surfer）让内容既有质量又有排名",
+      "支持30+语言，跨境内容创作效率极高",
+      "团队协作功能完善，适合营销团队使用"
+    ],
+    cons: [
+      "价格较高，Business计划$499/月起，免费版功能受限",
+      "AI生成内容偶尔会有事实错误，需人工审核",
+      "对中文内容支持不如英文地道",
+      "长篇内容（3000字以上）连贯性有所下降",
+      "对于纯技术/学术写作支持有限"
+    ],
+    related_tools: ["copy-ai", "writesonic", "rytr"],
+  },
+  {
+    id: "capcut",
+    icon: "/tool-icons/capcut.png",
+    slug: "capcut",
+    name: "CapCut",
+    website: "https://www.capcut.com",
+    description: "字节跳动旗下AI智能视频编辑工具，支持网页端和桌面端，免费功能强大",
+    type: "视频AI",
+    affiliateUrl: "https://www.capcut.com",
+    commissionRate: "暂无公开affiliate计划",
+    features: [
+      "AI智能剪辑：自动识别视频精彩片段，一键生成剪辑成品",
+      "视频抠像：AI自动去除背景，支持绿幕和复杂背景",
+      "文字转视频（Text to Video）：输入文字描述生成对应视频画面",
+      "AI配音与翻译：一键生成配音，支持多语言翻译和嘴型同步",
+      "海量素材库：内置贴纸、转场、特效、滤镜，音乐库实时更新"
+    ],
+    usage_guide: "第一步：访问与注册\\n打开 capcut.com，点击立即开始使用（无需注册也可使用基础功能）。\\n推荐注册账号，登录后可同步项目和高级功能。\\n进入主界面：模板（Templates）、编辑器（Editor）、AI工具（AI Tools）三大模块。\\n\\n第二步：快速模板制作\\n点击 Templates，进入模板库：\\n- 按类别浏览：社交媒体（TikTok/Instagram/YouTube）、电商、教育、商业\\n找到合适模板后，点击 Use Template，上传自己的素材（照片/视频），AI自动套用模板。\\n适合：没有剪辑经验的用户，3分钟出成品。\\n\\n第三步：自主编辑器\\n点击 Editor，进入专业剪辑界面：\\n基础编辑：导入素材、添加到时间线、剪辑片段、调整顺序。\\nAI功能：\\n- AI抠像（Remove Background）：上传商品图，AI自动去背景\\n- AI超清画质（Upscale）：提升视频分辨率，最高支持4K\\n- AI生成配音：在视频中添加AI人声旁白\\n- AI字幕：上传视频自动识别生成字幕，准确率约95%\\n\\n第四步：AI翻译配音\\n点击 Tools → AI Translation：选择配音语言（30+种）、声音风格，勾选 Translate Subtitles 同步翻译字幕。\\n\\n第五步：发布与导出\\n点击 Export：选择分辨率（720p/1080p/4K），点击 Export 下载 MP4 或一键发布到 TikTok/Instagram。",
+    use_cases: [
+      "跨境电商：制作多语言产品视频，TikTok批量运营",
+      "内容创作者：快速剪辑日常Vlog，提升发布频率",
+      "营销人员：快速制作推广短视频，支持多平台适配"
+    ],
+    pros: [
+      "完全免费：基础功能全部免费，对个人创作者友好",
+      "AI功能丰富：抠像、配音、字幕、翻译均免费使用",
+      "模板库庞大：每周更新热门模板，跟上趋势",
+      "多端同步：支持网页端、桌面端（Mac/Windows）、手机APP",
+      "中文化界面：中国用户上手无门槛"
+    ],
+    cons: [
+      "免费版有水印（可通过导出设置选择去除方式）",
+      "长视频（超过10分钟）处理速度较慢",
+      "对电脑配置有一定要求，复杂项目偶有卡顿",
+      "专业影视剪辑功能不如Premiere Pro完善",
+      "移动端APP功能比网页端更丰富，跨平台体验有差异"
+    ],
+    related_tools: ["pika-labs", "runway", "fliki"],
+  },
+  {
+    id: "ideogram",
+    icon: "/tool-icons/ideogram.png",
+    slug: "ideogram",
+    name: "Ideogram",
+    website: "https://ideogram.ai",
+    description: "AI图像生成工具，以卓越的文字渲染能力著称，支持多种艺术风格",
+    type: "图片AI",
+    affiliateUrl: "https://ideogram.ai",
+    commissionRate: "暂无公开affiliate计划",
+    features: [
+      "文字渲染领先：业内公认的AI图像文字渲染最强，支持在图像中生成准确文字",
+      "四大风格模式：Magic Mode（综合）、Realistic（真实照片）、Design（设计）、3D Render（三维渲染）",
+      "风格参照（Style Prompt）：通过参考图像精准控制输出风格",
+      "提示词优化：AI自动理解和优化用户输入的描述词",
+      "支持生成不同尺寸：16:9、1:1、9:16等，适配不同使用场景"
+    ],
+    usage_guide: "第一步：注册与界面\\n访问 ideogram.ai，点击 Sign In 注册（支持 Google 账号登录）。\\n新用户每日免费100次生成额度。\\n主界面左侧为提示词输入框，中间是风格选择，右侧是历史记录。\\n\\n第二步：输入提示词\\n在输入框中用英文描述你想要的图像：\\n示例1：\"A cute cat wearing sunglasses, surfing on a wave, colorful, fun\"\\n示例2（文字渲染）：\"A poster with text 'SUMMER SALE' surrounded by tropical flowers\"\\n提示词技巧：越具体越好，使用逗号分隔多个描述元素，加入艺术风格关键词。\\n\\n第三步：选择风格和参数\\nMagic Mode（默认）：综合最强，什么都能生成\\nRealistic：逼真照片风格\\nDesign：适合海报、插画、平面设计\\n3D Render：三维动画风格\\n可选参数：Aspect Ratio（16:9/1:1/9:16），Magic Prompt（推荐开启）。\\n\\n第四步：生成与查看结果\\n点击 Generate，AI在30-60秒内生成4张图像：\\nVary (Low/High)：对选中图像进行变化\\nRemix：对选中图像进行重新生成\\nUpscale：放大图像到更高分辨率\\n\\n第五步：下载与使用\\n点击 Download 下载PNG格式图像。推荐在 Upscale 后下载以获得最佳清晰度。",
+    use_cases: [
+      "设计师：快速生成海报、配图、插画素材",
+      "营销人员：生成产品图、社交媒体配图、品牌素材",
+      "AI爱好者：文字渲染实验（如生成带文字的文化衫效果图）"
+    ],
+    pros: [
+      "文字渲染能力业内领先，解决其他AI工具文字变形问题",
+      "Magic Mode综合能力强，什么风格都能驾驭",
+      "每日免费100次，学生党和爱好者友好",
+      "Remix功能实用，保持构图的同时探索不同风格",
+      "界面简洁，操作直观，无需复杂提示词即可生成优质图像"
+    ],
+    cons: [
+      "每日免费100张额度用完后需付费（$8/月起）",
+      "复杂人体结构（如多手指）问题仍存在",
+      "中文提示词支持不如英文，需要翻译后输入",
+      "与 Midjourney 相比，艺术风格多样性稍逊",
+      "暂无官方API，不适合批量自动化生产"
+    ],
+    related_tools: ["midjourney", "adobe-firefly", "leonardo-ai"],
+  },
+  {
+    id: "cohere",
+    icon: "/tool-icons/cohere.png",
+    slug: "cohere",
+    name: "Cohere",
+    website: "https://cohere.ai",
+    description: "企业级大语言模型API平台，提供文本生成、语义搜索、分类等AI能力",
+    type: "AI大模型",
+    affiliateUrl: "https://cohere.ai",
+    commissionRate: "20%续佣",
+    features: [
+      "Command系列模型：Command R/R+专为企业工作流设计，支持检索增强生成（RAG）",
+      "Embeddings模型：文本向量化，支持语义搜索、文本分类、聚类分析",
+      "多语言支持：覆盖100+语言，对中文支持优于多数竞品",
+      "企业级安全：SOC 2认证，数据不留存，支持私有部署",
+      "Playground在线测试：无需编程即可在线测试所有模型能力"
+    ],
+    usage_guide: "第一步：注册与获取API Key\\n访问 cohere.ai，点击 Sign Up 注册账号（支持邮箱或Google）。\\n登录后进入 Dashboard，点击 API Keys → Create API Key。\\n复制保存好API Key（格式：xxxxx-xxxxx-...），不要泄露。\\n\\n第二步：在线Playground体验\\n点击 Playground 进入在线测试界面：\\n左侧选择模型，中间输入提示词，右侧实时查看生成结果。\\n适合：在正式接入前测试模型效果，确定最合适的模型。\\n\\n第三步：Python接入示例\\n安装SDK：pip install cohere\\n文本生成：\\nimport cohere\\nco = cohere.Client('YOUR_API_KEY')\\nresponse = co.generate(model='command-r-plus', prompt='写一篇关于AI在医疗领域应用的文章大纲', max_tokens=500)\\nprint(response.generations[0].text)\\n语义搜索（Embeddings）：\\nembeddings = co.embed(texts=['query text', 'document 1', 'document 2'], model='embed-english-v3.0').embeddings\\n# 计算余弦相似度找出最相关的文档\\n\\n第四步：企业应用场景\\nRAG（检索增强生成）：用 Embeddings 将企业文档向量化存储，用户提问时先检索相关文档，再将检索结果注入Prompt。\\n文本分类：response = co.classify(inputs=['这是一条客户反馈'], model='embed-english-v3.0')",
+    use_cases: [
+      "开发者：快速接入LLM能力到自有应用",
+      "企业：构建RAG知识库问答系统",
+      "数据团队：文本分类、情感分析、语义搜索"
+    ],
+    pros: [
+      "Command R+在RAG场景表现优秀，企业级应用首选",
+      "Embeddings模型对中文支持好，语义搜索效果佳",
+      "企业级安全标准，数据合规有保障",
+      "多语言能力强，支持100+语言",
+      "Playground体验好，无需编程即可测试"
+    ],
+    cons: [
+      "需要编程基础，非技术用户上手有门槛",
+      "免费额度有限（90天$1体验额度），正式使用需付费",
+      "模型能力与GPT-4相比在某些复杂推理任务上有差距",
+      "API文档对新手不够友好",
+      "社区和教程资源不如OpenAI丰富"
+    ],
+    related_tools: ["claude", "perplexity", "kimi"],
+  },
+  {
+    id: "longshot",
+    icon: "/tool-icons/longshot.png",
+    slug: "longshot",
+    name: "LongShot",
+    website: "https://www.longshot.ai",
+    description: "AI SEO内容优化写作工具，帮助营销人员创作搜索引擎友好内容",
+    type: "写作AI",
+    affiliateUrl: "https://www.longshot.ai",
+    commissionRate: "30%续佣",
+    features: [
+      "实时SEO评分：边写边看SEO得分，实时优化关键词密度和分布",
+      "AI长篇内容生成：支持3000字以上高质量文章一键生成",
+      "事实核查（Fact Check）：AI自动核查生成内容的事实准确性",
+      "多平台适配：支持生成博客、Medium、WordPress等多个平台格式",
+      "品牌定制：学习品牌风格，生成风格一致的品牌内容"
+    ],
+    usage_guide: "第一步：注册与关键词设置\\n访问 longshot.ai，点击 Start Free Trial 注册。\\n登录后点击 New Content → Blog Article，输入目标关键词（Seed Keyword），如\"best AI writing tools 2025\"。\\n\\n第二步：AI研究阶段\\n点击 Generate Outline，AI自动进行关键词研究和内容规划：\\n1. Related Keywords：相关关键词建议\\n2. Headings：文章大纲结构（H2/H3层级）\\n3. Questions：用户关心的相关问题（FAQ来源）\\n4. Stats：可引用的相关数据点\\n可手动编辑大纲，添加/删除/重新排序章节。\\n\\n第三步：逐章节生成内容\\n点击 Generate Content，AI根据大纲逐章节生成内容。\\n右侧 SEO Tips 面板实时显示：关键词密度（建议1-2%）、可读性评分、推荐关键词变体、缺失的相关问题。\\n\\n第四步：事实核查\\n生成完整文章后，点击 Fact Check 标签：AI标出文章中的事实声明，并标注可信度。点击可疑声明查看AI的分析和修改建议。\\n\\n第五步：复制或发布\\n点击 Copy 复制全文。点击 Direct Publish 可直接发布到 WordPress（需连接账号）。点击 Multilingual 可将文章翻译成其他语言。",
+    use_cases: [
+      "内容营销人员：批量生产SEO友好的博客文章",
+      "SEO从业者：创作高排名内容，获取有机流量",
+      "站长：定期更新网站内容，提升搜索引擎可见度"
+    ],
+    pros: [
+      "SEO与写作深度集成，边写边优化，无需二次SEO操作",
+      "长篇内容（3000字+）生成质量稳定",
+      "事实核查功能降低内容风险",
+      "支持多语言，适合做外贸SEO",
+      "提供现成的内容模板，效率高"
+    ],
+    cons: [
+      "免费版功能受限，高级SEO功能需付费（$19/月起）",
+      "生成内容偶有重复表达，需要人工润色",
+      "对非常细分专业领域的内容生成质量有限",
+      "界面加载速度有时较慢",
+      "中文内容支持不如英文，英文SEO效果更佳"
+    ],
+    related_tools: ["jasper", "surfer-seo", "writesonic"],
+  },
+  {
+    id: "freepik",
+    icon: "/tool-icons/freepik.png",
+    slug: "freepik",
+    name: "Freepik",
+    website: "https://www.freepik.com",
+    description: "全球领先的设计素材平台，新增AI图像生成和AI背景移除功能",
+    type: "图片AI",
+    affiliateUrl: "https://www.freepik.com/affiliates",
+    commissionRate: "30%续佣",
+    features: [
+      "AI图像生成（AI Image Generator）：输入文字描述生成高质量图片",
+      "AI背景移除（AI Background Remover）：一键精准去除图片背景",
+      "AI图像放大（AI Image Upscaler）：将低分辨率图片放大至4K不失真",
+      "海量素材库：超过2000万个矢量图、插画、照片、视频资源",
+      "多格式支持：PSD/AI/EPS/SVG/PNG等格式可下载"
+    ],
+    usage_guide: "第一步：注册与订阅\\n访问 freepik.com，点击 Join Now 注册（免费账号每日可下载5个素材）。\\n推荐升级 Premium（$8.25/月）：无限制下载所有素材+AI功能。\\n\\n第二步：使用AI图像生成\\n点击顶部 AI Tools → AI Image Generator：\\n1. 输入英文提示词（描述越详细越好）\\n2. 选择风格：Photo/Illustration/Vector Art/3D\\n3. 选择比例：1:1/16:9/9:16等\\n4. 点击 Generate，AI生成4张候选图\\n\\n提示词技巧：加入风格词如 hyperrealistic, flat design, isometric, watercolor 等。\\n\\n第三步：AI背景移除\\n点击 AI Tools → Background Remover：上传图片（支持 JPG/PNG，最大10MB），AI自动识别主体并移除背景（约5秒），点击 Download 下载透明背景PNG。\\n适用场景：电商产品图、人像照片、宣传海报素材处理。\\n\\n第四步：素材搜索与下载\\n在搜索框输入关键词（如\"business meeting\"）：可筛选文件类型、颜色、方向、尺寸。免费账号每天5个素材下载（带水印），Premium无限制。\\n\\n第五步：AI图像放大\\n点击 AI Tools → AI Upscaler：上传低分辨率图片，选择放大倍数（2x/4x/8x），点击 Start，处理完成后下载高清版本。",
+    use_cases: [
+      "设计师：获取高质量素材和AI生成图像",
+      "电商卖家：快速处理产品图，移除背景，放大图片",
+      "营销人员：快速制作配图、社交媒体素材"
+    ],
+    pros: [
+      "素材库规模庞大，涵盖各类设计需求",
+      "AI功能实用，背景移除和图像放大效果专业",
+      "免费账号每天5个素材，对轻度用户友好",
+      "Premium订阅性价比高（$8.25/月），AI功能全包",
+      "素材可商用（需遵守许可协议）"
+    ],
+    cons: [
+      "免费版下载素材有水印",
+      "AI图像生成质量不如 Midjourney/DALL-E",
+      "热门素材多人使用，容易出现\"撞衫\"",
+      "国内访问速度不稳定",
+      "素材版权条款需仔细阅读，不同许可差异大"
+    ],
+    related_tools: ["remove-bg", "midjourney", "ideogram"],
+  },
+  {
+    id: "tome",
+    icon: "/tool-icons/tome.png",
+    slug: "tome",
+    name: "Tome",
+    website: "https://tome.app",
+    description: "AI驱动的演示文稿工具，用对话式交互生成精美PPT和叙事内容",
+    type: "效率办公",
+    affiliateUrl: "https://tome.app",
+    commissionRate: "比例依协议",
+    features: [
+      "AI生成演示文稿：输入主题或大纲，AI自动生成完整PPT",
+      "对话式创作：像聊天一样用自然语言迭代修改内容",
+      "嵌入式AI助手（DAP）：内置GPT-4，随时在页面中调用AI辅助创作",
+      "实时协作：支持多人同时编辑同一文档，评论和反馈功能完善",
+      "丰富的嵌入能力：支持嵌入Figma、YouTube、Twitter、代码块等"
+    ],
+    usage_guide: "第一步：注册与登录\\n访问 tome.app，点击 Get Started 注册（支持 Google/Apple 账号登录）。\\n免费账号可创建无限数量的文档，每个文档最多500张幻灯片。\\n\\n第二步：AI生成演示文稿\\n点击 Create with AI 或直接输入主题：\\n示例输入：\"AI在教育行业的应用趋势分析\"\\nAI自动生成封面页（自动配图）、按逻辑章节生成内页、生成结语页。\\n\\n第三步：对话式编辑\\n与AI对话来修改内容：\\n- \"在第二页后添加一个新章节关于成本分析\"\\n- \"把第三页的图换成科技感的\"\\n- \"增加一个数据对比页面\"\\nAI理解上下文，连续对话保持一致性。\\n\\n第四步：DAP（内置AI助手）\\n按空格键或在任意位置点击+，选择 Ask AI：写作助手、翻译、问答、代码编写或解释。\\n\\n第五步：嵌入和发布\\n点击+添加嵌入内容：Figma设计稿、YouTube/视频、Twitter/社交内容、代码块。\\n完成后点击 Share，选择发布权限（公开/私密）。",
+    use_cases: [
+      "产品经理：快速制作产品介绍、roadmap演示",
+      "创业者：投资人Pitch Deck，快速生成叙事清晰的PPT",
+      "内容创作者：图文并茂的长篇叙事内容"
+    ],
+    pros: [
+      "AI生成PPT效率极高，5分钟出完整演示",
+      "对话式交互直观自然，无需学习成本",
+      "DAP助手功能强大，可直接在页面中调用AI",
+      "嵌入能力丰富，内容展示维度多",
+      "界面设计精美，生成内容自带高颜值"
+    ],
+    cons: [
+      "AI生成内容偏向通用模板，深度定制需大量手动调整",
+      "中文内容生成质量不如英文",
+      "离线无法使用（完全基于云端）",
+      "嵌入视频/音频有格式和大小限制",
+      "相比PowerPoint，专业动画和过渡效果有限"
+    ],
+    related_tools: ["gamma", "beautiful-ai", "sendsteps"],
+  },
+  {
+    id: "notebook-lm",
+    icon: "/tool-icons/notebook-lm.png",
+    slug: "notebook-lm",
+    name: "NotebookLM",
+    website: "https://notebooklm.google",
+    description: "Google实验室推出的AI研究助手，支持上传文档并生成个性化AI问答",
+    type: "AI大模型",
+    affiliateUrl: "https://notebooklm.google",
+    commissionRate: "暂无affiliate计划",
+    features: [
+      "多文档AI分析：上传PDF、Google Docs、网页URL，AI深度理解内容",
+      "对话式问答：基于上传文档即时回答问题，附来源引用",
+      "AI播客（Audio Overview）：将文档内容转化为两人对话的AI播客",
+      "自动摘要：长文档一键生成结构化摘要和关键要点",
+      "来源追踪：所有回答都标注引用来源，可溯源核查"
+    ],
+    usage_guide: "第一步：访问与注册\\n访问 notebooklm.google（Google账号直接登录，无需额外注册）。\\n点击 Try NotebookLM 或 Sign in with Google，进入工作区。\\n\\n第二步：创建笔记本\\n点击 New Notebook：\\n1. 输入笔记本名称（如\"AI论文研究\"、\"产品竞品分析\"）\\n2. 上传源文件：支持 PDF（最多50MB）、TXT、Google Docs链接、网页URL\\n3. 支持同时上传多个文档，构建研究资料库\\n上传后AI会自动处理（读取+理解），处理完成后显示来源列表。\\n\\n第三步：AI对话问答\\n在对话框输入问题，AI基于上传的文档即时回答：\\n示例：\"这篇文章的主要研究结论是什么？\"\\n示例：\"对比两篇论文中关于模型训练的方法差异\"\\n回答特点：每个回答末尾标注来源（Source chips），点击可跳转到原文位置。支持连续追问，AI会记住上下文。\\n\\n第四步：生成AI播客\\n点击 Audio Overview（侧边栏）：点击 Generate，AI自动将文档内容转化为对话式播客。两个AI声音（一人扮演专家，一人扮演好奇的听众），对话自然流畅。适合：在通勤/运动时\"听\"论文和报告。\\n\\n第五步：摘要和笔记\\n点击 Summarize：Brief Summary（简短摘要）、Detailed Summary（详细摘要）、Key Topics（关键主题列表）、Study Guide（生成学习指南）。",
+    use_cases: [
+      "学术研究者：快速阅读和对比多篇论文",
+      "产品经理：上传竞品文档，进行结构化竞品分析",
+      "内容创作者：将长文章转化为播客素材"
+    ],
+    pros: [
+      "完全免费，无需订阅，任何人可用",
+      "来源引用机制可靠，AI回答有据可查",
+      "Audio Overview功能独特，学术论文可\"听\"",
+      "支持多文档联合分析，跨文档对比能力强",
+      "Google账号直接使用，无需额外学习成本"
+    ],
+    cons: [
+      "仅支持英文（Audio Overview和部分功能），中文文档支持有限",
+      "上传文档数量和大小有限制",
+      "无法实时联网搜索，信息仅限上传文档",
+      "没有离线模式，必须联网使用",
+      "缺乏导出功能，不能把AI回答导出为正式文档"
+    ],
+    related_tools: ["perplexity", "chatpdf", "cohere"],
+  },
+  {
+    id: "colossyan",
+    icon: "/tool-icons/colossyan.png",
+    slug: "colossyan",
+    name: "Colossyan",
+    website: "https://www.colossyan.com",
+    description: "AI数字人视频生成平台，支持多语言配音和逼真虚拟形象创建",
+    type: "视频AI",
+    affiliateUrl: "https://www.colossyan.com",
+    commissionRate: "比例依协议",
+    features: [
+      "100+ AI虚拟形象：覆盖不同年龄、性别、职业、种族的多元形象",
+      "多语言配音：支持120+语言，一键生成多语言版本视频",
+      "场景库：内置办公室、教室、会议室等多种视频背景",
+      "脚本AI辅助：输入主题AI帮你撰写讲解脚本",
+      "团队工作流：企业版支持团队协作和品牌资产管理"
+    ],
+    usage_guide: "第一步：注册与界面\\n访问 colossyan.com，点击 Start Free Trial 注册。\\n免费试用生成3个视频（含水印）。\\n登录后主界面：左侧模板库，中间预览，右侧属性设置。\\n\\n第二步：选择虚拟形象\\n点击 Actors，进入形象库：按性别/年龄/风格筛选，点击 Preview 查看形象说话效果，选择后点击 Select 添加到项目。\\n推荐形象：40+岁商务人士（企业培训场景）、年轻活力（营销场景）。\\n\\n第三步：编写/输入脚本\\n在 Script 输入框编写视频讲解内容。也可以点击 Write with AI，输入主题让AI帮你生成脚本。\\n脚本技巧：每段不超过3句话，重要信息放在开头，数字和专有名词要发音清晰。\\n\\n第四步：选择语言和声音\\n点击 Settings：Language（选择配音语言，120+种）、Voice（选择具体声音）、Speed（语速调整，0.8x-1.2x）。\\n高级设置：Auto-translate（一键翻译）、Pronunciation（自定义发音）。\\n\\n第五步：选择场景和自定义\\n点击 Scene 选择视频背景：办公室、会议室、教室、新闻演播室等。支持自定义背景图片/视频。\\n在 Timeline 可添加：多个数字人同屏、背景音乐、字幕显示。\\n\\n第六步：预览和导出\\n点击 Preview 预览完整视频，确认数字人口型同步和文字无误。满意后点击 Produce，AI开始生成（约3-5分钟）。点击 Download，支持 MP4（720p/1080p）。",
+    use_cases: [
+      "企业培训：制作多语言员工培训视频，降低培训成本",
+      "跨境营销：产品介绍视频本地化，触达全球市场",
+      "教育机构：批量生产课程讲解视频"
+    ],
+    pros: [
+      "120+语言支持，数字人本地化效率极高",
+      "逼真的虚拟形象，适合正式商务场景",
+      "脚本AI辅助功能实用，减少内容创作时间",
+      "无需拍摄，普通人也能制作专业视频",
+      "企业版支持品牌资产管理，适合大企业使用"
+    ],
+    cons: [
+      "免费版功能受限，正式使用$19/月起",
+      "数字人动作相对有限（主要是上半身），复杂场景表现有限",
+      "中文数字人的自然度和英语版本有差距",
+      "最长视频10分钟，超长内容需分段处理",
+      "生成速度较慢，高峰期需排队等待"
+    ],
+    related_tools: ["heygen", "synthesia", "d-id"],
+  },
+  {
+    id: "sendsteps",
+    icon: "/tool-icons/sendsteps.png",
+    slug: "sendsteps",
+    name: "Sendsteps",
+    website: "https://www.sendsteps.com",
+    description: "荷兰AI演示文稿工具，自动将内容转化为互动式演示，支持观众参与",
+    type: "效率办公",
+    affiliateUrl: "https://www.sendsteps.com",
+    commissionRate: "比例依协议",
+    features: [
+      "AI自动生成PPT：输入主题或上传文档，AI自动生成完整演示文稿",
+      "互动功能：内置投票、问答、词云生成等互动工具，观众可实时参与",
+      "多语言支持：支持100+语言，中文内容生成质量好",
+      "在线演示模式：实时共享演示链接，观众无需下载任何软件",
+      "分析报告：演示结束后提供观众参与度和反馈数据分析"
+    ],
+    usage_guide: "第一步：注册\\n访问 sendsteps.com，点击 Get Started Free 注册。\\n支持教育版（Teachers）和商务版（Business），选择适合的版本。\\n\\n第二步：AI创建演示\\n点击 Create Presentation，选择创建方式：\\n- Write your topic：直接输入主题\\n- Upload document：上传 Word/PowerPoint/PDF\\n- Paste text：粘贴已有内容\\n以 Write your topic 为例：输入主题\"2025年数字营销趋势\"，点击 Create AI Presentation，AI自动生成8-15页演示文稿。\\n\\n第三步：编辑和调整\\n进入编辑器后：点击任意文本框可直接编辑，点击 Add Slide 添加新页，点击 Themes 更换演示主题和配色，点击 Elements 添加图表、图片、视频等。\\nAI辅助修改：选中文字 → 点击 Improve Writing → AI优化表达。\\n\\n第四步：添加互动元素\\n点击 Interactions 添加互动工具：\\n- Poll（投票）：设置问题+选项，观众实时投票\\n- Word Cloud（词云）：观众输入词汇，实时生成词云\\n- Q&A：观众匿名提问，讲者选择回答\\n- Quiz：知识小测验，测试观众理解程度\\n这些互动元素会让观众通过手机扫码参与。\\n\\n第五步：在线演示\\n点击 Present Online：系统生成专属演示链接和二维码，观众用手机扫码即可加入（无需安装APP）。\\n演示过程中，观众可实时参与投票/问答。演示结束后，点击 Analytics 查看观众互动数据报告：参与率、各问题回答分布、观众反馈摘要。",
+    use_cases: [
+      "教师：课堂互动教学，学生实时参与答题和讨论",
+      "企业培训：培训课程加入互动测验，测试学习效果",
+      "会议演讲：观众通过手机实时提问，提升互动参与度"
+    ],
+    pros: [
+      "AI自动生成演示文稿，效率极高",
+      "互动功能独特，观众参与感强",
+      "无需观众安装任何软件，扫码即可参与",
+      "演示结束后有完整数据分析报告",
+      "支持100+语言，中文支持好"
+    ],
+    cons: [
+      "免费版互动功能有限制（投票次数、观众数量）",
+      "设计模板数量相比Canva等平台较少",
+      "高级分析功能需要付费版本",
+      "对复杂长篇演示支持不如PowerPoint",
+      "网络不稳定时演示体验受影响"
+    ],
+    related_tools: ["gamma", "tome", "beautiful-ai"],
+  },
 ]
 
 
