@@ -1,6 +1,25 @@
 {
   "news": [
     {
+      "title": "Google Gemini也出”笔记本“功能，这是要跟ChatGPT正面刚？",
+      "summary": "Google在2026年4月为Gemini推出了Notebooks功能，用户可以把文件、对话记录、自定义指令等整合到一个”笔记本“中，AI在对话时能自动调取这些上下文。这功能像极了ChatGPT 2024年推出的Projects，巨头之间的AI竞赛进入新阶段。",
+      "deep_analysis": "Google这次真的坐不住了。Gemini新增的Notebooks功能，本质上就是一个让AI记住“背景资料”的工具。你可以把相关文件、之前的对话、甚至自己写的特别指令一股脑丢进去，然后跟Gemini聊天时，它自动就能理解你在说什么，不用每次都重复解释。这功能听起来是不是特别眼熟？没错，ChatGPT在2024年就已经推出了Projects，功能几乎一模一样。 说白了，这就是Google在抄作业。但这抄作业背后，其实藏着很深的门道。AI助手发展到现在这个阶段，大家都已经意识到一个关键问题：如何在多轮对话中保持“记忆”？总不能让用户每次开头都说一遍“我之前跟你说过的那个项目”吧？OpenChatGPT通过Projects解决了这个问题，现在Google也给出了自己的答案。 这件事对行业的影响蛮大的。首先，这意味着AI助手正在从单纯的“问答工具”进化成真正的“工作伙伴”。以前你问一句它答一句，现在你可以把自己积累的所有资料都喂给它，它就能帮你完成更复杂的任务。其次，这种“上下文整合”能力将成为AI助手的标配，以后哪家没这个功能，可能就不好意思说自己是AI助手了。 那普通人该怎么应对这波趋势？我的建议是：拥抱它，但别盲目。首先，你可以开始有意识地整理自己的“知识库”，比如把常用的指令、参考文档分门别类存好。其次，别把所有东西都往里丢，AI也是需要“减负”的，垃圾信息太多反而会影响回答质量。最后，如果你重度依赖某个AI工具，不妨关注它的最新功能更新，这波红利能帮你提升不少效率。 至于未来，这种“个人知识库”式的功能肯定会越来越强大。可能会出现AI帮你自动整理、归纳、优化这些资料，甚至不同设备之间同步。到时候，AI助手就不只是个聊天对象，而是真正成为你的“第二大脑”了。",
+      "tags": [
+        "Google Gemini",
+        "AI助手",
+        "Notebooks",
+        "ChatGPT"
+      ],
+      "target_audience": "AI爱好者和科技从业者",
+      "original_title": "Gemini gets notebooks to help you organize projects",
+      "original_snippet": "Google's Gemini is getting a feature called \"notebooks\" to help you organize things about certain topics in a single place while using the AI chatbot, the company announced on Wednesday. You can pull in things like files, past conversations, and custom instructions into notebooks that Gemini can then use as context while you're talking with it. \nNotebooks sound a lot like ChatGPT's Projects feature, which launched in 2024 and similarly lets users store things about a certain topic in one spot. G",
+      "link": "https://www.theverge.com/tech/909031/google-gemini-notebooks-notebooklm",
+      "pubDate": "2026-04-09T00:06:12.000Z",
+      "source": "The Verge AI",
+      "lang": "zh",
+      "is_manual": false
+    },
+    {
       "title": "发条短信就能指挥AI做事？Poke要把AI代理干成人人可用的\"瑞士军刀\"",
       "summary": "一款叫Poke的产品正在用最接地气的方式把AI代理带进普通人的生活——不需要下载App，不用学技术门槛，只要会发短信就能指挥AI帮你干活。这波操作会让AI从极客玩具变成大众工具吗？",
       "deep_analysis": "最近TechCrunch报道了一家叫Poke的公司，他们的做法相当激进：让AI代理变得像发短信一样简单。你没听错，就是那个你每天用来聊天、收验证码的短信功能，现在可以用来指挥AI帮你处理各种事务了。\n\n说白了，Poke想要解决的是一个很现实的问题：现在AI代理虽然火，但使用门槛还是太高了。要么得下载专门的App，要么得注册账号、研究各种设置，稍微复杂点的还得写提示词。普通用户想用AI帮忙干点活，折腾半天可能还没开始就放弃了。\n\nPoke的思路很简单：既然人人都会发短信，那就把AI装进短信里。用户不用学任何新技术，任务描述往短信里一发，AI就开始工作了。报销、预约、整理文档、自动化处理——这些以前需要专业人士才能搞定的操作，现在普通人动动手指就能完成。\n\n这让我想到一个趋势：AI工具正在经历一场\"民主化\"运动。从最早的命令行界面，到图形界面，再到现在的自然语言交互，每一步都是把技术门槛往下砍。Poke这波操作，本质上是在把AI代理从\"专业人士的工具\"变成\"普通人的日常助手\"。\n\n当然，机遇和挑战并存。便捷性的代价可能是功能深度和定制化的牺牲，毕竟短信这个载体能承载的信息有限。但对于90%不需要复杂功能的普通用户来说，能用、好用可能比什么都重要。\n\n对于我们普通人来说，这意味着AI不再是那个高高在上的概念，而是真的可以走进日常生活的实用工具。与其担心AI会取代什么，不如先学会怎么让它帮自己干活。毕竟，当工具变简单了，第一个尝鲜的人往往能吃到最大的红利。",
@@ -12,6 +31,25 @@
       ],
       "target_audience": "想了解AI的普通用户",
       "original_title": "Poke makes AI agents as easy as sending a text",
+      "original_snippet": "Poke brings AI agents to everyday users via text message by handling tasks and automations without complex setup, apps, or technical know-how.",
+      "link": "https://techcrunch.com/2026/04/08/poke-makes-ai-agents-as-easy-as-sending-a-text/",
+      "pubDate": "Wed, 08 Apr 2026 21:05:13 +0000",
+      "source": "TechCrunch AI",
+      "lang": "zh",
+      "is_manual": false
+    },
+    {
+      "title": "用短信就能指挥AI干活？Poke把自动化门槛踩到泥里了",
+      "summary": "一款名为Poke的AI agent产品正在颠覆人们对自动化的认知——用户不再需要学习复杂操作，不用下载APP，甚至不需要懂技术，只要像发短信一样编辑文字，就能让AI帮你处理各种任务和自动化流程。这标志着AI agent正在从极客玩具真正走向普通人的日常生活。",
+      "deep_analysis": "当我第一次看到Poke这个产品时，心里想的是：这不就是Siri或小爱同学的增强版吗？但仔细看完报道后发现，Poke要做的不仅仅是语音助手，而是一个彻底去掉“技术门槛”的自动化工具。\\n\\n想想我们用过的大多数自动化工具要么需要复杂的设置界面，要么需要写代码写脚本，稍微高级一点的像IFTTT、Zapier，看起来已经很简单了但还是需要用户理解“触发条件”和“执行动作”这些概念。Poke的思路是：把这些全部砍掉，用户只需要告诉AI我想做什么，用自然语言就行。\\n\\n这对行业意味着什么？我觉得这可能是AI agent走向大众化的一个重要节点。TechCrunch的报道提到Poke目标用户是“ everyday users",
+      "tags": [
+        "AI agent",
+        "自动化工具",
+        "人工智能",
+        "科技趋势"
+      ],
+      "target_audience": "科技爱好者",
+      "original_title": "AI agent Poke makes setting up automations as easy as sending a text",
       "original_snippet": "Poke brings AI agents to everyday users via text message by handling tasks and automations without complex setup, apps, or technical know-how.",
       "link": "https://techcrunch.com/2026/04/08/poke-makes-ai-agents-as-easy-as-sending-a-text/",
       "pubDate": "Wed, 08 Apr 2026 21:05:13 +0000",
@@ -40,6 +78,26 @@
       "is_manual": false
     },
     {
+      "title": "OpenAI向华盛顿抛出经济方案：美国政府会买账吗？",
+      "summary": "OpenAI近期向美国政策制定者提交了一系列经济提案，试图在AI监管浪潮中争取更多话语权。华盛顿方面对这些提案反应复杂，既有对技术创新支持的期待，也有对数据安全、垄断风险和就业冲击的担忧。这场AI巨头与政府的博弈，将深刻影响未来行业走向。",
+      "deep_analysis": "大家好，我是你们的老朋友，今天来聊聊AI界的一个大新闻——OpenAI最近向华盛顿提交了一份经济提案，引发了政策圈的热议。\n\n说白了，这就是AI公司在试图给自己的未来发展铺路。OpenAI作为当前最火的AI企业，主动向政策制定者抛出橄榄枝，显然是想在监管风暴来临之前，先占个好位置。\n\n那么华盛顿方面是怎么看的呢？我总结了一下，主要有三种态度：第一种是欢迎派，认为AI企业愿意主动参与政策讨论是好事，毕竟技术创新需要良好的政策环境；第二种是怀疑派，担心这些提案背后是否真的为公共利益考虑，还是纯粹为了保护企业自身利益；第三种是观望派，想看看其他AI公司会出什么牌，然后再做判断。\n\n这件事对行业的影响是深远的。首先，它标志着AI行业从“野蛮生长”正式进入“政策博弈”阶段，以前是技术先行，现在是政策先行。其次，OpenAI主动出击的做法，可能会成为其他AI公司的参考模板，未来我们可能会看到更多类似的经济提案。\n\n对普通读者来说，这意味着AI将更深入地渗透到我们的经济生活中，政策变化可能影响到你我的工作机会、数据隐私、甚至日常使用的AI产品形态。作为普通用户，我们能做的可能是多关注相关政策动态，理解这场博弈背后的逻辑。\n\n未来趋势很可能是：AI公司会越来越积极地参与政策制定，而政府也会在鼓励创新和防范风险之间寻找平衡。这是一场持久战，结果如何，让我们拭目以待。",
+      "tags": [
+        "OpenAI",
+        "AI监管",
+        "华盛顿政策",
+        "科技前沿",
+        "行业分析"
+      ],
+      "target_audience": "科技爱好者、从业者、政策关注者",
+      "original_title": "OpenAI made economic proposals — here’s what DC thinks of them",
+      "original_snippet": "Happy ceasefire day and welcome to Regulator, a newsletter for Verge subscribers about Big Tech's rocky journey through the world of politics. If you're not a subscriber yet, you can do so here, but my only request is that you sign up before Donald Trump decides to revisit his previous threats toward Iran and kickstart World War III.\nI'm back after being waylaid last week by the deadly combo of a moderate cold and the beginning of pollen season. (Twenty-one percent of the District's acreage is t",
+      "link": "https://www.theverge.com/column/908880/openai-made-economic-proposals-heres-what-dc-thinks-of-them",
+      "pubDate": "2026-04-08T20:14:00.000Z",
+      "source": "The Verge AI",
+      "lang": "zh",
+      "is_manual": false
+    },
+    {
       "title": "AWS同时“脚踏两条船”：既投OpenAI又投Anthropic，葫芦里卖的什么药？",
       "summary": "AWS老板近日解释了为何同时投资AI领域两大竞争对手——OpenAI和Anthropic——是合理的\"冲突\"。作为云计算巨头，AWS表示早已习惯与合作伙伴竞争，这种看似矛盾的投资策略背后，藏着怎样的AI布局野心？",
       "deep_analysis": "这条新闻看似简单，实则暴露了AI行业一个有趣的\"三角关系\"：AWS既想抱紧OpenAI这个当红炸子鸡，又不想错过Anthropic这个后起之秀。表面上看这是\"脚踩两条船\"，但仔细一品，你会发现这其实是AWS的聪明之处。\n\n先说说AWS的处境。云计算市场竞争激烈，微软有OpenAI这张王牌，Google也有DeepMind，而AWS虽然在传统云计算领域是老大哥，但在AI大模型这一波浪潮里，起步确实慢了一拍。在这种情况下，AWS选择\"双向下注\"，不管最后谁赢，自己都不会掉队。这叫什么？这叫\"不要把鸡蛋放在一个篮子里\"的经典商业智慧。\n\n更深层次来看，AWS老板提到的\"与合作伙伴竞争\"文化，其实揭示了一个残酷真相：在AI时代，云计算厂商和AI模型公司之间的关系已经越来越微妙。他们既是合作关系——AI公司需要云计算平台的算力支持；又是竞争关系——双方都在觊觎对方的市场。这种既合作又竞争的状态，恰恰是AI行业最真实的生态。\n\n对行业的影响显而易见。AWS这种\"通吃\"策略会让AI竞争更加激烈，也会让云计算格局更加复杂。中小型AI公司可能会更加依赖AWS的平台，而大模型公司之间的竞争也会因为AWS的\"平衡术\"变得更加微妙。\n\n至于未来，我觉得这种\"多线投资\"的模式可能会成为常态。AI行业还在快速洗牌，谁也说准哪家公司能笑到最后。AWS作为\"老江湖\"，显然深谙此道。\n\n对于我们普通从业者来说，最重要的启示可能是：不要急于站队。这个行业变化太快，今天的领头羊明天可能就被超越。保持开放学习的心态，关注技术本身而非站队，或许是最明智的选择。",
@@ -51,6 +109,26 @@
         "AI投资"
       ],
       "target_audience": "AI从业者和科技爱好者",
+      "original_title": "AWS boss explains why investing billions in both Anthropic and OpenAI is an OK conflict",
+      "original_snippet": "AWS has an ingrained culture of handling competition, he explained, because the cloud giant also competes with its partners.",
+      "link": "https://techcrunch.com/2026/04/08/aws-boss-explains-why-investing-billions-in-both-anthropic-and-openai-is-an-ok-conflict/",
+      "pubDate": "Wed, 08 Apr 2026 20:09:14 +0000",
+      "source": "TechCrunch AI",
+      "lang": "zh",
+      "is_manual": false
+    },
+    {
+      "title": "AWS同时下注OpenAI和Anthropic：巨头\\\"脚踏两条船\\\"是愚蠢还是聪明？",
+      "summary": "AWS创始人Adam Selipsky近日解释了一个看似矛盾的战略：AWS同时向OpenAI和Anthropic投入数十亿美元。这两家AI公司明明是死对头，AWS为何要\\\"脚踏两条船\\\"？原来云巨头早已习惯与合作伙伴竞争，这种\\\"竞合\\\"关系在AI时代变得尤为微妙。",
+      "deep_analysis": "你方唱罢我登场，AI江湖再起波澜。这次的主角不是某个新产品，而是AWS——这位云计算老大哥的骚操作：它同时向OpenAI和Anthropic砸钱，而且一砸就是几十亿美元。\n\n很多人第一反应是：AWS是不是疯了？这两家公司可是死对头啊！Anthropic的Claude当初就是对标OpenAI的GPT系列，两家公司在AI大模型市场上打得不可开交。你AWS作为金主爸爸，居然两边都讨好？到底是几个意思？\n\n别急着说AWS脑子进水。咱们先看看Adam Selipsky是怎么解释的。这位AWS掌门人说了四个字：\\\"竞合关系\\\"。啥意思？就是说AWS早就习惯了这种情况——它同时和合作伙伴竞争，也和竞争对手合作。听起来有点绕，但细想一下，这不就是商业世界的常态吗？\n\n你想啊，AWS的云计算业务 itself 就是在和客户竞争的同时又为他们提供服务。微软Azure、Google Cloud不也都在干类似的事？所以AWS觉得，同时投资两个AI玩家，有啥好奇怪的？\n\n但我觉得吧，AWS这波操作背后没那么简单。首先，AI大模型现在是谁也输不起的赛道。OpenAI有先发优势和ChatGPT的流量加持，Anthropic则被认为在安全性和可控性上更胜一筹。两者谁也说不准将来谁会赢。与其押注单一选手，不如两边下注——这叫什么？这叫\\\"风险对冲\\\"！不把鸡蛋放在一个篮子里，巨头的基本操作而已。\n\n其次，这反映出AI行业的一个更深层趋势：云服务商和AI公司的关系正在重构。以前是云服务商提供算力，AI公司是客户；现在AI公司成了香饽饽，云服务商上赶着投资绑定，唯恐落后一步就被竞争对手抢走。这种\\\"甜蜜的烦恼\\\"，恰恰说明了AI在整个科技生态中的核心地位。\n\n那对咱们普通人有啥影响？短期看，AWS这波操作不会让普通用户感受到啥变化。但长期来说，云巨头们争相投资AI公司，意味着AI技术的迭代速度会更快，应用场景会更丰富。毕竟有竞争才有进步嘛！\n\n最后我说一句：在这个AI时代，没有任何公司能独自吃完所有蛋糕。合作与竞争并存，机遇与风险同在，这才是真实的商业世界。AWS用实际行动给咱们上了一课：别非黑即白地看问题，灵活的\\\"脚踏两条船\\\"有时候才是真聪明。",
+      "tags": [
+        "AWS",
+        "AI投资",
+        "OpenAI",
+        "Anthropic",
+        "云计算"
+      ],
+      "target_audience": "科技爱好者和从业者",
       "original_title": "AWS boss explains why investing billions in both Anthropic and OpenAI is an OK conflict",
       "original_snippet": "AWS has an ingrained culture of handling competition, he explained, because the cloud giant also competes with its partners.",
       "link": "https://techcrunch.com/2026/04/08/aws-boss-explains-why-investing-billions-in-both-anthropic-and-openai-is-an-ok-conflict/",
@@ -90,6 +168,25 @@
         "行业趋势"
       ],
       "target_audience": "科技爱好者、从业者",
+      "original_title": "Tubi is the first streamer to launch a native app within ChatGPT",
+      "original_snippet": "Tubi becomes the first streaming service to offer an app integration within ChatGPT, the AI chatbot that millions of users turn to for answers.",
+      "link": "https://techcrunch.com/2026/04/08/tubi-is-the-first-streamer-to-launch-a-native-app-within-chatgpt/",
+      "pubDate": "Wed, 08 Apr 2026 18:23:06 +0000",
+      "source": "TechCrunch AI",
+      "lang": "zh",
+      "is_manual": false
+    },
+    {
+      "title": "ChatGPT里直接刷剧？这次、Tubi把流媒体战争的火，烧到了AI地盘",
+      "summary": "流媒体平台Tubi成了第一个在ChatGPT里推出原生应用的产品，这意味着用户在AI对话框里就能直接刷视频了。表面看是功能创新，实则是流媒体分发权的争夺战——当AI成了新的入口，那些曾经被搜索引擎把持的流量逻辑，正在被彻底改写。",
+      "deep_analysis": "先想象一个场景：你打开ChatGPT，不是为了问问题，而是为了刷剧。这听起来有点魔幻，但Tubi告诉你，这件事已经发生了。\n\n这家隶属于福克斯的流媒体平台，最近干了一件让整个行业都坐不住的事——成为第一个在ChatGPT里上架原生应用的产品。用户现在可以直接在ChatGPT的对话界面里浏览Tubi的内容库，点开就能看。这不是简单的链接跳转，而是真正的“应用内应用”。\n\n但我更关心的不是这个功能本身有多酷，而是它背后暴露的一个残酷事实：流媒体平台已经慌到没朋友了。\n\n你想啊，TikTok抢走了年轻用户的注意力，Netflix的订阅增长不断放缓，各个平台都在为存量市场竞争得头破血流。现在突然冒出来一个ChatGPT，月活好几亿，用户每天跟它聊好几轮——这不等于是另一个流量洼地吗？Tubi这一波操作，本质上是在提前卡位，是在告诉整个行业：AI将成为下一个应用分发入口，谁先占坑，谁就有的玩。\n\n这让我想到一个更深的趋势：应用商店的模式正在被AI重新定义。过去我们下载软件，去App Store；现在我们想要什么服务，直接问AI。ChatGPT现在的插件生态，相当于当年的应用商店，而Tubi这种流媒体公司的入驻，相当于第一批吃螃蟹的开发者。历史总是押韵的，只是换成了一张更智能的票。\n\n当然，这个事没那么简单。流媒体公司心里清楚，在AI平台上做内容分发，意味着要把用户关系的控制权让出一部分给AI。这就像当年把所有鸡蛋放进搜索引擎的篮子一样，风险不低。但不入场又不行，因为用户的注意力在哪里，商业模式就得跟到哪里。这是典型的创新者困境，不是主动求变，而是被逼上梁山。\n\n所以对普通用户来说这件事意味着什么？你刷视频的方式可能会慢慢变。以前是打开一个APP，点进去，一顿滑；以后可能是问AI一句“有什么好看的”，AI根据你的口味推一个，你就能直接看。越来越懒，越来越快。这个趋势不可逆。\n\n对行业的从业者们，我的建议是：别再盯着传统渠道了，AI端的用户体验、交互设计、推荐算法，这些能力可能比内容本身还重要。未来的竞争，不在内容库里，而在对话窗口里。",
+      "tags": [
+        "AI应用",
+        "流媒体",
+        "ChatGPT",
+        "行业趋势"
+      ],
+      "target_audience": "AI爱好者和科技从业者",
       "original_title": "Tubi is the first streamer to launch a native app within ChatGPT",
       "original_snippet": "Tubi becomes the first streaming service to offer an app integration within ChatGPT, the AI chatbot that millions of users turn to for answers.",
       "link": "https://techcrunch.com/2026/04/08/tubi-is-the-first-streamer-to-launch-a-native-app-within-chatgpt/",
@@ -4788,7 +4885,7 @@
       "slug": "the-creator-of-claude-code-just-revealed-his-workflow-and-developers-are-losing-"
     }
   ],
-  "total": 283,
-  "fetchedAt": "2026-04-08T22:06:39.770Z",
+  "total": 288,
+  "fetchedAt": "2026-04-09T01:08:08.694Z",
   "version": "3.0"
 }
