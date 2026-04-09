@@ -1,6 +1,44 @@
 {
   "news": [
     {
+      "title": "马斯克为何死磕奥特曼？OpenAI内斗背后的真相与行业警示",
+      "summary": "马斯克再次向OpenAI发难，这次不仅要求 Altman 退出董事会，还要求他交出所有股权收益，Greg Brockman 也被卷入。这场持续多年的AI巨头内斗，究竟是马斯克的个人执念，还是关乎整个AI行业未来的治理问题？本文深度解读这场纷争背后的多重博弈。",
+      "deep_analysis": "这场风波绝非简单的个人恩怨，而是AI行业权力格局的一次大洗牌。马斯克此次不再纠缠于赔偿问题，而是直接剑指奥特曼的董事会席位和股权，本质上是要将 OpenAI 从一个非营利组织彻底拉回OpenAI创立之初的理想轨道——开源、公益、非营利。\n\n问题的核心在于，OpenAI 当年从非营利转型为有限营利架构后，允许微软深度入局并获得控制权，这完全背离了马斯克的初心。他当年愤而离开，正是因为预见到了今天的局面——一个打着开源旗号、却本质上被商业资本绑定的AI巨头。现在旧事重提，是要给 Altman 施压，更是向整个行业宣告：AI的治理不能由少数人说了算了。\n\n对行业的影响是深远的。此次纷争暴露了AI领域最根本的张力：理想主义与商业现实之间的不可调和。OpenAI 的「有限营利」模式正在被越来越多的AI公司效仿，但这套模式的合法性正受到质疑。监管机构会怎么看？投资者会怎么想？从业者又该何去何从？这些都是接下来几年必须回答的问题。\n\n作为一个普通从业者或关注AI的读者，我们不需要站队，但需要看清这场纷争背后的行业逻辑。AI已经渗透到我们生活的方方面面，它的治理方式将直接决定这项技术的未来走向。我们能做的，是保持关注、理性思考，不要被情绪化的舆论带节奏。",
+      "tags": [
+        "OpenAI",
+        "马斯克",
+        " Altman",
+        "AI治理"
+      ],
+      "target_audience": "AI从业者和科技关注者",
+      "original_title": "马斯克死磕奥特曼：赔款我不要，但他必须离开OpenAI董事会",
+      "original_snippet": "Greg Brockman也被要求交出所有股权收益",
+      "link": "https://www.qbitai.com/2026/04/398071.html",
+      "pubDate": "Thu, 09 Apr 2026 03:41:25 +0000",
+      "source": "量子位",
+      "lang": "zh",
+      "is_manual": false
+    },
+    {
+      "title": "Meta十亿烧出第一个多模态大模型： Llama的仇，这次能报了？",
+      "summary": "Meta砸下亿元组建天团，花了九个月交出首个大模型成绩单。这次不再是Llama系列，而是直接瞄准原生多模态。技术团队由余家辉、宋飏、Jason Wei领衔，看得出Meta在大模型战场上的野心与紧迫感。",
+      "deep_analysis": "这条新闻看似简单，背后却藏着Meta憋了两年的一股气。2023年Llama开源的时候，圈内一片叫好，但实际用起来，业界普遍反馈就是——能用，但不够强。生成效果、推理能力、多模态支持，哪一样拿出来都打不了 GPT-4 和 Claude。这口气，Meta显然咽不下去。\n\n 亿元天团这个说法，听起来夸张，但Meta确实在AI人才上砸了血本。余家辉、宋飏、Jason Wei这三个名字，在圈内有技术光环。耗时九个月交出的第一个成品剑指原生多模态，说明Meta不想再跟在别人后面做“改良版”，而是要重新定义路。原生多模态意味着从模型架构层面就把文本、图像、语音等等各种模态融为一体，而不是像现在大多数模型那样——先训练文本，再外挂一个图像生成器。这种架构上的跃迁，才是真正的技术分水岭。\n\n 对行业的影响有多大？假如Meta这把真成了，全球大模型格局必然会重新洗牌。OpenAI、Google、Anthropic三足鼎立的局面会出现裂痕。更关键的是，原生多模态如果真能打穿，那意味着AI从“能说会道”进化到“能看会认会说”，这个能力跃迁会把应用场景拓宽十倍都不止。自动驾驶、医疗诊断、教育交互这些领域，都会迎来质变。\n\n 读者该怎么看这件事？我的判断是别急着下结论。九个月做出成果，效率不低，但大模型这行最大的教训就是—— Demo 强没用，要看真实场景下的稳定性。Llama 当年也是开场惊艳，后面被各种吐槽。Meta 这次能不能真的“一雪前耻”，关键不在技术发布会，在于三个月后还有没有人用。\n\n 趋势上可以确定的是，多模态一定是今年所有大模型厂家的必争之地。Meta 带头冲锋，后面 Google 和 OpenAI 不会坐视。这场仗越打，普通用户其实是受益的——模型会越来越便宜，越来越好用。但对于从业者来说，跟不上节奏的风险也在加大。",
+      "tags": [
+        "Meta AI",
+        "大模型",
+        "多模态",
+        "Llama"
+      ],
+      "target_audience": "AI从业者与科技爱好者",
+      "original_title": "Meta亿元天团首个大模型交卷！余家辉宋飏Jason Wei耗时九个月，一雪Llama前耻",
+      "original_snippet": "主打原生多模态",
+      "link": "https://www.qbitai.com/2026/04/398020.html",
+      "pubDate": "Thu, 09 Apr 2026 01:49:48 +0000",
+      "source": "量子位",
+      "lang": "zh",
+      "is_manual": false
+    },
+    {
       "title": "Google Gemini也出”笔记本“功能，这是要跟ChatGPT正面刚？",
       "summary": "Google在2026年4月为Gemini推出了Notebooks功能，用户可以把文件、对话记录、自定义指令等整合到一个”笔记本“中，AI在对话时能自动调取这些上下文。这功能像极了ChatGPT 2024年推出的Projects，巨头之间的AI竞赛进入新阶段。",
       "deep_analysis": "Google这次真的坐不住了。Gemini新增的Notebooks功能，本质上就是一个让AI记住“背景资料”的工具。你可以把相关文件、之前的对话、甚至自己写的特别指令一股脑丢进去，然后跟Gemini聊天时，它自动就能理解你在说什么，不用每次都重复解释。这功能听起来是不是特别眼熟？没错，ChatGPT在2024年就已经推出了Projects，功能几乎一模一样。 说白了，这就是Google在抄作业。但这抄作业背后，其实藏着很深的门道。AI助手发展到现在这个阶段，大家都已经意识到一个关键问题：如何在多轮对话中保持“记忆”？总不能让用户每次开头都说一遍“我之前跟你说过的那个项目”吧？OpenChatGPT通过Projects解决了这个问题，现在Google也给出了自己的答案。 这件事对行业的影响蛮大的。首先，这意味着AI助手正在从单纯的“问答工具”进化成真正的“工作伙伴”。以前你问一句它答一句，现在你可以把自己积累的所有资料都喂给它，它就能帮你完成更复杂的任务。其次，这种“上下文整合”能力将成为AI助手的标配，以后哪家没这个功能，可能就不好意思说自己是AI助手了。 那普通人该怎么应对这波趋势？我的建议是：拥抱它，但别盲目。首先，你可以开始有意识地整理自己的“知识库”，比如把常用的指令、参考文档分门别类存好。其次，别把所有东西都往里丢，AI也是需要“减负”的，垃圾信息太多反而会影响回答质量。最后，如果你重度依赖某个AI工具，不妨关注它的最新功能更新，这波红利能帮你提升不少效率。 至于未来，这种“个人知识库”式的功能肯定会越来越强大。可能会出现AI帮你自动整理、归纳、优化这些资料，甚至不同设备之间同步。到时候，AI助手就不只是个聊天对象，而是真正成为你的“第二大脑”了。",
@@ -9,6 +47,25 @@
         "AI助手",
         "Notebooks",
         "ChatGPT"
+      ],
+      "target_audience": "AI爱好者和科技从业者",
+      "original_title": "Gemini gets notebooks to help you organize projects",
+      "original_snippet": "Google's Gemini is getting a feature called \"notebooks\" to help you organize things about certain topics in a single place while using the AI chatbot, the company announced on Wednesday. You can pull in things like files, past conversations, and custom instructions into notebooks that Gemini can then use as context while you're talking with it. \nNotebooks sound a lot like ChatGPT's Projects feature, which launched in 2024 and similarly lets users store things about a certain topic in one spot. G",
+      "link": "https://www.theverge.com/tech/909031/google-gemini-notebooks-notebooklm",
+      "pubDate": "2026-04-09T00:06:12.000Z",
+      "source": "The Verge AI",
+      "lang": "zh",
+      "is_manual": false
+    },
+    {
+      "title": "Google Gemini竟然抄ChatGPT作业？AI笔记本大战再升级",
+      "summary": "Google在2026年4月为Gemini推出了Notebooks功能，允许用户将文件、对话记录和自定义指令整合到单一项目中，为AI对话提供上下文。这被业界视为紧跟ChatGPT 2024年推出的Projects功能。两大AI巨头在“上下文管理”赛道的竞争加剧，或将重新定义人机交互方式。",
+      "deep_analysis": "聊聊这场“笔记本大战”背后的事",
+      "tags": [
+        "Google Gemini",
+        "AI工具",
+        "ChatGPT",
+        "产品竞争"
       ],
       "target_audience": "AI爱好者和科技从业者",
       "original_title": "Gemini gets notebooks to help you organize projects",
@@ -58,6 +115,25 @@
       "is_manual": false
     },
     {
+      "title": "一条短信就能指挥AI干活：这家公司要把AI变成每个人的私人助理",
+      "summary": "当所有人还在讨论AI Agent应该怎么搭建时，Poke已经把它做成了每个人都用得起的短信服务。用户只需发条短信，AI就能帮你处理任务、安排日程、自动执行操作，无需下载APP、无需懂技术。这不仅是交互方式的变革，更意味着AI从极客的玩具变成了真正的大众工具。",
+      "deep_analysis": "想象一下，你给一个号码发条消息说“帮我订一张下周去上海的机票”，然后就有人帮你搞定一切——但这个“有人”不是真人，而是一个AI Agent。这，就是Poke正在做的事情。\n\n这家来自TechCrunch AI报道的公司，做了一件看似简单但意义深远的事：让AI Agent的交互界面回归到最基础的短信。你不需要学习任何新工具，不需要下载任何APP，甚至不需要知道什么是大模型。发条短信，AI就开始干活了。\n\n这意味着什么？意味着AI的普及壁垒被彻底打破了。在此之前，用AI帮你做事需要什么？你需要会用ChatGPT，需要能访问API，甚至需要写代码调用各种工具。门槛高到让绝大多数普通人望而却步。但Poke告诉你：门槛其实可以低到只需要你会发短信。\n\n这让我想到一个类比：当年iPhone把智能手机从商务人士的专业工具变成了老太太都能玩的电子产品，靠的不是更强大的硬件，而是极简的触控交互。Poke正在AI领域做类似的事情——不是比拼模型能力谁更强，而是比拼谁能让更多人用上AI。这条路，可能比单纯卷参数更有意义。\n\n从行业角度看，Poke的出现揭示了一个重要趋势：AI的下一阶段竞争，正在从“模型能力”转向“用户体验”。当各大厂商都在吹自己的模型多厉害时，普通人关心的其实是“能不能让我更省事”。短信这种几乎人人都会用的交互方式，恰恰戳中了这个痛点。可以预见，接下来会有更多产品走“低门槛”路线，AI不再是少数人的专属，而是真正开始“接地气”。\n\n当然，这里也有值得警惕的地方。短信交互能承载的复杂度有限，AI的理解和执行能力边界在哪里？当用户期望被拉高，但AI实际表现跟不上时，失望感可能会更强烈。另外，数据隐私、任务执行的准确性、权限控制等问题，也需要Poke这类产品认真对待。\n\n对普通人来说，这波AI普及浪潮意味着：你可以不会写代码、不用学新工具，但只要会发消息，就能享受AI带来的便利。这不是你要不要拥抱AI的问题，而是AI已经找上门来了。最好的应对方式不是抗拒，而是尽早体验、尽早适应，找到让自己生活和工作更高效的使用方式。毕竟，当AI变得像发短信一样简单时，它就不再是未来的可能性，而是当下的必备技能了。",
+      "tags": [
+        "AI Agent",
+        "短信交互",
+        "技术普及",
+        "产品创新"
+      ],
+      "target_audience": "对AI感兴趣的普通用户",
+      "original_title": "Poke makes using AI agents as easy as sending a text",
+      "original_snippet": "Poke brings AI agents to everyday users via text message by handling tasks and automations without complex setup, apps, or technical know-how.",
+      "link": "https://techcrunch.com/2026/04/08/poke-makes-ai-agents-as-easy-as-sending-a-text/",
+      "pubDate": "Wed, 08 Apr 2026 21:05:13 +0000",
+      "source": "TechCrunch AI",
+      "lang": "zh",
+      "is_manual": false
+    },
+    {
       "title": "OpenAI闯华盛顿：科技巨头与政策制定者的首次正面交锋",
       "summary": "OpenAI向美国政府提交经济提案，首次以行业领导者姿态介入政策制定。华盛顿各方反应不一，显示出AI监管框架仍存在激烈博弈。这不仅关乎OpenAI自身，更将影响整个AI产业的未来走向。",
       "deep_analysis": "这则看似简单的新闻背后，藏着AI行业权力格局转变的深层逻辑。OpenAI不再是那个只专注技术研发的实验室，而是开始主动出击，试图在美国经济政策制定中占据一席之地。\n\n首先需要理解，OpenAI这次提交的提案究竟意味着什么。从华盛顿的反应来看，这不会是一份普通的经济建议书，更像是AI行业与传统经济政策体系的一次碰撞。想想看，一个成立不到十年的公司，现在竟然开始给政府支招了，这本身就说明了AI在整个经济体中的分量正在急剧上升。\n\n对行业的影响是深远的。OpenAI这一举动等于在告诉整个AI圈：技术问题最终要转化为政策问题。如果提案被采纳，可能会为其他AI公司参与政策制定提供范本。但反过来，如果提案引发争议，也可能招致更严格的监管压力。这就是所谓的风险与机遇并存。\n\n从发展趋势来看，AI公司介入政策制定将成为常态。过去几年，我们看到的是政府在追赶AI的发展速度，未来几年，很可能是AI公司主动塑造政策环境。这种角色转换会深刻改变AI行业的竞争逻辑——不再只是技术和产品的竞争，还包括政策影响力的竞争。\n\n对于普通读者来说，最实际的启示是：如果你关注AI行业，不能只看技术进展，更要关注政策动向。OpenAI这一步棋，很可能开启了一个潘多拉盒子——既可能让行业发展更顺畅，也可能带来更多不确定性。作为从业者或关注者，保持对政策变化的敏感度，将变得和关注技术突破一样重要。",
@@ -86,6 +162,26 @@
         "AI监管",
         "华盛顿政策",
         "科技前沿",
+        "行业分析"
+      ],
+      "target_audience": "科技爱好者、从业者、政策关注者",
+      "original_title": "OpenAI made economic proposals — here’s what DC thinks of them",
+      "original_snippet": "Happy ceasefire day and welcome to Regulator, a newsletter for Verge subscribers about Big Tech's rocky journey through the world of politics. If you're not a subscriber yet, you can do so here, but my only request is that you sign up before Donald Trump decides to revisit his previous threats toward Iran and kickstart World War III.\nI'm back after being waylaid last week by the deadly combo of a moderate cold and the beginning of pollen season. (Twenty-one percent of the District's acreage is t",
+      "link": "https://www.theverge.com/column/908880/openai-made-economic-proposals-heres-what-dc-thinks-of-them",
+      "pubDate": "2026-04-08T20:14:00.000Z",
+      "source": "The Verge AI",
+      "lang": "zh",
+      "is_manual": false
+    },
+    {
+      "title": "OpenAI向华盛顿抛出经济炸弹：美国政坛买不买账？",
+      "summary": "OpenAI近期向华盛顿提交了一份关于AI经济影响的白皮书，提出了一系列政策建议。然而，美国政坛对这些提议反应复杂，部分议员持保留态度。这份提案不仅关乎AI行业未来走向，更涉及就业、监管和国家竞争力的深层博弈。",
+      "deep_analysis": "大家好，我是科技博主。今天要聊的这件事，可能会决定未来十年美国AI产业的走向。\n\n先说说背景。OpenAI最近向华盛顿提交了一份详细的经济提案，内容涉及AI对就业市场的影响、政府采购政策、以及AI基础设施投资等多个维度。这不是简单的技术建议，而是一份关于AI时代美国经济战略的完整蓝图。\n\n那华盛顿是怎么看的呢？说实话，反应挺微妙的。部分议员认可OpenAI在AI领域的领头羊地位，认为应该给企业更多发展空间。但也有不少声音持谨慎态度，主要担心几个问题：AI大规模替代人工后就业怎么办？数据安全和隐私怎么保障？美国AI巨头会不会形成垄断？\n\n这事儿对行业的影响非常大。首先，它标志着AI公司开始从单纯的技术竞争转向政策博弈。未来谁能影响政策制定，谁就拥有更大的话语权。其次，这也反映了AI行业和政府之间的博弈进入新阶段——不是简单的监管与被监管，而是要共同塑造AI时代的游戏规则。\n\n那么未来会怎么发展？我判断有几个趋势：一是AI相关立法会加速推进，各国都在抢着制定规则；二是就业结构调整会比预期更快，基础性岗位确实会受到冲击；三是AI基础设施会成为新的国家战略资源，谁掌握了算力，谁就掌握了未来。\n\n作为普通人，我们应该怎么办？我的建议是：别慌，但也不能躺平。AI不会马上取代所有人，但它会重塑很多行业。最好的策略是保持学习心态，培养AI难以替代的能力，比如创造力、复杂问题解决能力、人际沟通能力等。同时也要关注政策动向，因为政策走向会影响你的行业和机会。\n\n总之，OpenAI这一步棋下得很有深意。华盛顿怎么接招，可能比技术本身更能决定AI的未来。",
+      "tags": [
+        "OpenAI",
+        "AI政策",
+        "华盛顿",
+        "经济影响",
         "行业分析"
       ],
       "target_audience": "科技爱好者、从业者、政策关注者",
@@ -4885,7 +4981,7 @@
       "slug": "the-creator-of-claude-code-just-revealed-his-workflow-and-developers-are-losing-"
     }
   ],
-  "total": 288,
-  "fetchedAt": "2026-04-09T01:08:08.694Z",
+  "total": 293,
+  "fetchedAt": "2026-04-09T04:07:06.900Z",
   "version": "3.0"
 }
