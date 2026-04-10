@@ -1,6 +1,103 @@
 {
   "news": [
     {
+      "title": "阿尔特曼“二进宫”：OpenAI史上最大危机的得与失",
+      "summary": "OpenAI CEO萨姆·阿尔特曼曾被董事会突然解雇，仅数天后又火速回归。The New Yorker最新深度报道揭示了这场“宫斗”背后的权力博弈，以及外界对阿尔特曼领导能力的质疑。这不仅是OpenAI的内部动荡，更是整个AI行业治理模式的重大考验。",
+      "deep_analysis": "这场持续不到一周的“解雇-回归”大戏，可能是2026年AI圈最劲爆的新闻。阿尔特曼被踢出自己创办的公司，然后又强势回归——这种剧情连电视剧都不敢这么写。但表象之下，问题的本质远比“宫斗”复杂得多。\n\n从商业角度看，阿尔特曼绝对是OpenAI的灵魂人物。他能在短短几年内把一个非营利研究机构变成估值千亿的科技巨头，靠的不仅是技术眼光，更有极强的融资和外交能力。微软的百亿投资、苹果的战略合作，几乎都是他一手推动的。董事会选择在这个时间点“清洗”他，要么是内部矛盾已经彻底无法调和，要么是有人认为AI安全考量必须让位于商业扩张。\n\n但真正值得我们思考的，是AI治理这个深层次问题。OpenAI从创立之初就打着“造福人类”的旗号，结果却是创始团队内部撕裂、资本势力长驱直入。这说明什么？说明在巨大的商业利益面前，任何理想主义都可能变成口号。阿尔特曼对商业化的激进态度，和部分董事会成员对AI安全的高度警惕，形成了不可调和的张力。\n\n对于我们普通观察者来说，这场风波释放了一个重要信号：AI行业已经进入“后理想主义时代”。过去我们总说AI公司有使命愿景背书，但现在资本的力量、竞争的压力正在重新定义什么叫做“正确的事”。未来几年，我们大概率会看到更多类似的内部动荡——不是OpenAI一家的问题，而是整个行业的共性挑战。\n\n作为普通读者，我的建议是：少关注短期的人事变动，多观察行业格局的变化。阿尔特曼是否真的是“合适的领路人”并不重要，重要的是AI行业需要建立一套更透明、更制衡的治理机制。毕竟，我们让渡给AI公司的权力越大，对它们的监督就应该越严格。",
+      "tags": [
+        "OpenAI",
+        "萨姆·阿尔特曼",
+        "AI治理",
+        "科技公司权力"
+      ],
+      "target_audience": "AI行业关注者",
+      "original_title": "Fear and loathing at OpenAI",
+      "original_snippet": "Sam Altman's tenure at OpenAI has been… messy. Messy to the point where Altman was briefly fired from his role as CEO, only to be reinstated days later, at which point he began reshaping the organization permanently. This week, The New Yorker published a deep look at Altman, his time at OpenAI, and the questions about whether he's the right person to be in charge of a technology as important and transformative as artificial intelligence.\n\nVerge subscribers, don't forget you get exclusive access ",
+      "link": "https://www.theverge.com/podcast/909621/openai-sam-altman-drama-vergecast",
+      "pubDate": "2026-04-10T12:23:18.000Z",
+      "source": "The Verge AI",
+      "lang": "zh",
+      "is_manual": false
+    },
+    {
+      "title": "科幻作家Jeff VanderMeer联手MIT：、AI模型为何「可怕到不敢发布」？",
+      "summary": "MIT Technology Review最新简报披露了两个重磅内容：一是科幻作家Jeff VanderMeer的太空题材新作，二是AI圈关于『危险模型是否该发布』的激烈争论。随着AI能力狂飙突进，越来越多的模型被认为存在泄露、滥用甚至失控风险，整个行业正面临前所未有的发布伦理大考。",
+      "deep_analysis": "先说说Jeff VanderMeer这个短篇。Constellations讲的是一艘飞船坠毁在敌意星球上，唯一幸存者的故事——典型 VanderMeer式的科幻叙事，荒诞中透着对人类处境的深刻隐喻。但相比这篇小说，更值得科技圈关注的其实是简报标题后半句：AI models too scary to release。这五个词背后，是AI行业正在发酵的一场静默革命。\n\n你们发现没有，过去一年AI圈的画风彻底变了。往年是拼了命地发新模型、秀benchmark分数，现在呢？ Anthropic、Google DeepMind、OpenAI这些头部玩家，开始频繁讨论一个词：release。这里的release不是指发论文，而是指公开发布模型权重、API接口或者训练方法。为什么？因为很多人开始意识到，某些AI模型的能力已经强到「可怕」的程度——不是比喻，是真的可怕。比如某些模型可以轻松生成伪造身份、策划网络攻击、编写生物武器相关的内容。当AI输出这些内容时，研究者自己都后背发凉。\n\n这场争论的本质就一个核心问题：AI能力有没有红线？如果有，谁来画？在过去，开源是AI行业的天条，封闭是政治不正确。但现在，情况变了。Meta的LLaMA泄露事件给所有人提了个醒：你永远无法阻止模型被下载、传播、微调。与其幻想完美控制，不如一开始就慎之又慎。这不是胆怯，是成熟。\n\n我判断，接下来一到两年，AI行业会进入一个「有限开放」的新阶段。具体表现可能是：基础能力模型可以发，但危险能力要加锁；API可以开，但调用频率和内容审查要做足；论文可以发，但关键训练技巧可能要藏。这不是什么开倒车，恰恰是AI从「技术炫耀」走向「责任担当」的标志。\n\n对于普通读者，你不需要懂技术细节，但需要明白一件事：AI已经不只是个好用的工具，它正在变成一个需要被认真对待的系统性风险源。下次看到「某个模型因为太危险被推迟发布」的新闻，别急着骂厂商营销或者装神弄鬼——他们可能只是在做一些更难但正确的事。",
+      "tags": [
+        "AI安全",
+        "OpenAI",
+        "大模型发布",
+        "AI伦理",
+        "科技新闻"
+      ],
+      "target_audience": "对AI感兴趣的科技爱好者",
+      "original_title": "The Download: an exclusive Jeff VanderMeer story and AI models too scary to release",
+      "original_snippet": "This is today’s edition of The Download, our weekday newsletter that provides a daily dose of what’s going on in the world of technology. Constellations  —Constellations is a short story by Jeff VanderMeer, the author of the critically acclaimed, bestselling Southern Reach series.   A spacecraft has crash-landed on a hostile planet. The only survivors…",
+      "link": "https://www.technologyreview.com/2026/04/10/1135618/the-download-jeff-vandermeer-short-story-and-ai-models-too-danger-to-release/",
+      "pubDate": "Fri, 10 Apr 2026 12:10:00 +0000",
+      "source": "MIT Technology Review",
+      "lang": "zh",
+      "is_manual": false
+    },
+    {
+      "title": "当AI穿上白大褂：虚拟诊室让医学生提前'执业'，是革命还是噱头？",
+      "summary": "紫荆智康近日发布\\\"紫荆AI医院\\\"线上虚拟诊室，正式向医生和医学生开放。该系统通过AI技术模拟真实诊疗场景，为医学教育提供全新实践平台。这一举措或将深刻改变传统医学人才培养模式，但同时也引发关于AI能否真正替代临床经验的讨论。",
+      "deep_analysis": "这个消息看似简单，细读之下却相当值得玩味。紫荆智康发布的\\\"紫荆AI医院\\\"线上虚拟诊室，核心价值不在于让AI去给人看病，而在于给医学生提供了一个\\\"零风险\\\"的练兵场。大家知道，医学教育最大的痛点就是实践机会有限——病人不可能让你反复练手，实习医生想在真正的诊疗中积累经验简直难上加难。而这个虚拟诊室恰好解决了这个尴尬，它用AI模拟出各种病例场景，让医学生可以在虚拟环境中练诊断、练沟通、练临床思维。\n\n从行业影响来看，我觉得这是医学教育数字化的一个重要信号。传统医学教育长期依赖\\\"师父带徒弟\\\"的模式，培养一个合格的医生周期太长、成本太高。而AI虚拟诊室的出现，相当于给每个医学生配了一个永不疲倦、永远耐心的\\\"AI导师\\\"。这不仅能大幅缩短培养周期，更重要的是能让医学生在正式执业前就积累足够的临床经验。从另一个角度说，这对医疗资源欠发达地区尤其有意义——基层医生可以通过虚拟诊室获得在大医院才能接触到的典型病例诊疗经验。\n\n但我必须提醒一句：虚拟诊室再逼真终究是模拟，永远无法完全复现真实临床中的复杂性和不确定性。真正的诊疗需要面对活生生的人，需要处理各种意外情况，这些是AI目前无法替代的。所以我认为这个系统的定位应该是\\\"补充\\\"而非\\\"替代\\\"传统医学教育，它是医学生成长路上很好的辅助工具，但不能成为偷懒的借口。\n\n至于未来发展趋势，我认为这只是AI入侵医疗领域的第一步。往后可能会看到更高级的应用，比如AI辅助诊断决策、个性化治疗方案推荐等等。但不管技术如何发展，医疗的核心始终是人的关怀和判断，AI做得再好也就是个高效的助手。最后我想说，对于医学生和年轻医生而言，拥抱这项技术就是拥抱未来——别把AI当成竞争对手，而是把它当成让自己变得更强大的工具。对于普通患者来说，也不用过度担心AI会抢医生的饭碗，在可预见的未来，一个有温度的真人医生依然是你最可靠的选择。",
+      "tags": [
+        "AI医疗",
+        "虚拟诊室",
+        "医学教育",
+        "技术创新"
+      ],
+      "target_audience": "医学生、从业者、科技爱好者",
+      "original_title": "紫荆智康发布“紫荆AI医院”线上虚拟诊室",
+      "original_snippet": "面向医生和医学生开放使用",
+      "link": "https://www.qbitai.com/2026/04/399366.html",
+      "pubDate": "Fri, 10 Apr 2026 11:42:34 +0000",
+      "source": "量子位",
+      "lang": "zh",
+      "is_manual": false
+    },
+    {
+      "title": "Z世代开始“讨厌”AI：一边抱怨一边离不开",
+      "summary": "盖洛普最新报告显示，约1600名14-29岁美国年轻人对AI的热情明显消退，尽管AI已深度嵌入学习和工作，但抵触情绪持续上升。这一代“数字原住民”对AI正从追捧转向复杂：需要它，但不再爱它。",
+      "deep_analysis": "看到这份盖洛普报告，我第一时间想到的不是AI技术本身出了什么问题，而是这背后折射出的一代人真实的心态变化。想想看，Z世代是谁？他们是从小把智能手机当玩具、把社交媒体当家常便饭的一代人。按理说，AI应该是他们的“主场”，但数据却给了我们一个响亮的反问：事情并没有那么简单。\n\n这份调查最扎心的结论是什么？不是Z世代不用AI了，而是他们用得很“拧巴”——一边用，一边烦。想想你身边的年轻人是不是这样？写作业用AI，做ppt用AI，甚至写个请假条也要让ChatGPT润色一下。但同时你会听到他们抱怨：“AI写的东西太水了”“感觉自己在作弊”“总觉得自己被工具控制了”。这种拧巴感，其实是一种很真实的成长痛。\n\n为什么会出现这种状况？我认为有三个深层原因。首先，AI从“新奇玩具”变成了“必备工具”，这个身份转换带来的心理落差是巨大的。之前大家觉得AI酷炫、能秀，现在变成了老师布置作业要用、单位要求提交的材料要用，这种被动接受的压迫感自然会转化为抵触。其次，Z世代比任何一代人都更擅长识别“套路”，他们很快就发现AI输出的内容有模板感、有机械味，那种“我用AI偷懒”的道德焦虑比实际工作负担更让人难受。最后，也是最关键的——AI并没有真的让他们的生活变轻松多少。作业还是那么多，工作压力还是那么大，AI更像是在不断提醒他们：“你可以做得更好但你现在在偷懒”。\n\n那这对整个AI行业意味着什么？我觉得短期阵痛难免。年轻用户是AI产品最大的潜在传播者，如果这批人都“爱的存款”在减少，对整个行业的增长预期肯定有影响。但长期来看，这反而可能是件好事——去掉滤镜后的AI行业，才能真正进入健康发展的轨道。用户变理性了，厂商就必须得更争气，不能再靠概念炒作，得拿出真东西。\n\n至于未来会怎么发展，我觉得有几个趋势值得关注。第一，“反AI”工具和“AI检测”类服务会火，年轻人会想要更多掌控感。第二，AI教育会从“怎么用”转向“怎么用好”，批判性思维才是核心竞争力。第三，可能会有新一代的AI产品专门针对Z世代的审美和价值观进行设计，不再追求“全能”，而是追求“懂我”。\n\n给普通读者的建议其实很简单：别把AI想得太高大上，它就是一个工具；也別把它想得太不堪，它确实能帮上忙。关键在于，你得保持主导权，别被工具带着跑。学会问AI问题、质疑AI的答案、利用AI放大自己的能力，这才是这个时代真正的“AI素养”。",
+      "tags": [
+        "Z世代",
+        "AI态度",
+        "盖洛普调查",
+        "人工智能"
+      ],
+      "target_audience": "对AI感兴趣的年轻人",
+      "original_title": "Gen Z’s love-hate relationship with AI",
+      "original_snippet": "Gen Z is increasingly disillusioned with AI - just not enough to stop using it. \nA new Gallup report released this week, based on responses from nearly 1,600 people ages 14 to 29 across the US, suggests the hype is wearing off for the digital-native generation as AI becomes more embedded in school and work. Enthusiasm is falling and resentment is growing, even as many young people feel they still need to use the technology. \nGallup's poll, conducted in February and March this year, found Gen Z's",
+      "link": "https://www.theverge.com/ai-artificial-intelligence/909687/gen-z-doesnt-like-ai-gallup",
+      "pubDate": "2026-04-10T11:23:28.000Z",
+      "source": "The Verge AI",
+      "lang": "zh",
+      "is_manual": false
+    },
+    {
+      "title": "三项全球冠军！星动纪元暴打PI团队，具身智能迎来洗牌时刻",
+      "summary": "具身智能领域迎来历史性时刻。星动纪元在「具身奥林匹克」评测中击败PI团队，一举拿下三项全球冠军。从实验室到真实场景，具身智能的商用竞速已经拉开帷幕。",
+      "deep_analysis": "这可能是具身智能赛道最劲爆的消息了。星动纪元这个名字，可能很多朋友还不太熟，但它一顿操作直接拿下了三项全球冠军，干掉了之前业内公认的PI团队。PI是谁？那是之前在具身智能领域横着走的存在啊。\n\n先说说这个「具身奥林匹克」是个啥。简单理解，就是给机器人搞的一场大考，考的不是别的，正是它能不能像人一样在真实世界里干活。从抓取物体到导航避障，从灵巧操作到長期任务，考验的是机器人真正的「动手能力」而非PPT上的参数。\n\n星动纪元凭啥能赢？核心技术点上，他们可能在数据效率、仿真到真实的迁移（sim2real）、或者动作规划上找到了突破口。具身智能这行当，论文发再多不算本事，关键看机器人能不能在厨房里给你端盘菜、在仓库里搬箱子。技术的终极价值，确实在于实用。\n\n对行业的影响是啥？第一，资本和市场会更疯狂地往具身智能里砸钱，因为终于有团队证明了这条路能跑通。第二，PI团队及其他玩家估计要被打醒了，之前的技术优势可能正在被快速追赶。第三，机器人商用化的临界点可能真的来了，接下来两三年我们很可能看到更多落地的服务机器人。\n\n那我们该不该慌？我的建议是：别慌，但得动起来。如果你是从业者，赶紧看看自己的技术路线有没有被颠覆的风险。如果你是投资者，别只看PR稿，去看看产品真机演示。如果你是普通观众，准备好迎接家里有机器人帮你干活的日子吧，可能比想象中来得快。\n\n有意思的是，PI团队之前可是被视为具身智能的标杆，结果说被超车就被超车。这个领域变化之快，足以说明AI竞争的本质——没有永远的王者，只有持续的创新。",
+      "tags": [
+        "具身智能",
+        "星动纪元",
+        "机器人",
+        "AI竞赛",
+        "行业动态"
+      ],
+      "target_audience": "科技爱好者",
+      "original_title": "击败PI！星动纪元登顶具身奥林匹克，狂揽三项全球冠军",
+      "original_snippet": "技术的终极价值，在于实用",
+      "link": "https://www.qbitai.com/2026/04/399351.html",
+      "pubDate": "Fri, 10 Apr 2026 10:32:05 +0000",
+      "source": "量子位",
+      "lang": "zh",
+      "is_manual": false
+    },
+    {
       "title": "Copilot按钮批量消失：微软在Windows上下的什么棋？",
       "summary": "微软开始从Windows 11应用中移除Copilot按钮，Notepad、Snipping Tool等应用先后“下架”这一AI入口。消息看似简单，实则折射出微软AI战略的重大调整——从“疯狂铺量”转向“精准克制”。这一变化对普通用户、开发者乃至整个AI行业都意味深长。",
       "deep_analysis": "很多人可能还没注意到，微软悄然在Windows 11上动了一场“外科手术”。不是系统更新，不是新功能上线，而是一次针对Copilot按钮的“大清理”。在最新的Windows Insiders版本中，Notepad的Copilot按钮被悄悄移除，取而代之的是一个不起眼的“写作工具”菜单；Snipping Tool里那个曾经显眼的存在，当你选中截图区域后也不再弹出Copilot。这些变化看似零散，实则是一个明确信号：微软正在重新审视自己在Windows上铺设的AI入口。\n\n说白了，Copilot在过去两年里被微软像撒胡椒面一样到处添加——开始菜单有、任务栏有、Office有、Edge有，几乎每个角落都想让你“随时召唤AI”。这种策略在推广期确实起到了教育市场的作用，但也带来了一个严重后果：用户疲劳。你打开一个简单的记事本想写点东西，结果旁边站着一个巨大的Copilot按钮；你想截个图，结果弹窗问你要不要AI帮你处理。这种体验，用一个词形容就是“过度”。用户真正需要的不是一个无处不在的AI，而是恰到好处的AI。\n\n微软这次主动做减法，释放了一个重要信号：AI产品的竞争已经进入新阶段，不再是“谁家入口多”的粗放比拼，而是“谁家体验好”的精细化较量。Copilot按钮的消失不等于Copilot能力被削弱——实际上，写作工具、截图智能处理这些功能依然存在，只是被藏进了更自然的菜单层级里。这是一种“能力下沉”，让AI从前台明星变成后台助手。用户需要时能找到，不需要时不碍眼。\n\n这个转变对行业的影响是深远的。过去一年，国内外大厂都在疯狂给产品加AI功能，加按钮、加入口、加弹窗，似乎不摆出“AI native”的姿态就是落伍。但微软这一招等于告诉业界：别再自嗨了，用户要的是体验，不是按钮。短期来看，可能会有一批厂商跟进反思，重新审视自己的AI产品设计；长期来看，AI功能会更多地“润物细无声”地融入现有产品，而不是以独立功能强行刷存在感。\n\n对于普通用户来说，这次变化其实是好消息。你的Windows电脑不会变得更“笨”，反而可能会用起来更清爽。那些曾经让你觉得碍眼的按钮消失了，但真正好用的AI能力并没有离开，它们只是换了一种更低调的方式为你服务。对于开发者而言，信号也很明确：别再一门心思堆AI入口了，多想想你的AI功能怎么才能真正融入用户的工作流，怎么才能做到“用户需要时自然出现”。\n\n至于Copilot的未来，我认为微软不会放弃这个品牌，但一定会更加克制地使用它。未来的Windows，Copilot大概率会成为一个“按需召唤”的助手，而不是一个到处刷存在感的图标。微软正在用行动证明：AI不是这么玩的。",
@@ -5758,7 +5855,7 @@
       "slug": "the-creator-of-claude-code-just-revealed-his-workflow-and-developers-are-losing-"
     }
   ],
-  "total": 333,
-  "fetchedAt": "2026-04-10T10:09:53.095Z",
+  "total": 338,
+  "fetchedAt": "2026-04-10T13:08:13.605Z",
   "version": "3.0"
 }
