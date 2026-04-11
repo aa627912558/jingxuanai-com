@@ -21,6 +21,26 @@
       "is_manual": false
     },
     {
+      "title": "OpenAI教父的至暗时刻：Sam Altman罕见公开反击，硅谷AI信任危机再升级",
+      "summary": "Sam Altman罕见发长文回击《纽约客》profile中的信任质疑，同时回应了针对其住所的攻击事件。这篇被形容为",
+      "deep_analysis": "Sam Altman这次选择正面硬刚《纽约客》的深度报道，本身就很有意思。这位被称为\\\"ChatGPT之父\\\"的硅谷明星企业家，平时在公开场合几乎从不展现攻击性，但这次显然被逼到了墙角。那篇报道究竟说了什么\\\"煽动性\\\"的内容？据多方信息透露，文章质疑了Altman在OpenAI治理结构中的真实角色、他与董事会的权力关系，以及一些关键决策背后的真实动机。这些质疑并非空穴来风——去年 Altman戏剧性的被董事会解雇又火速回归的事件，早就为今天的舆论风暴埋下了伏笔。\\n\\n这件事对行业的震动远超个人层面。Altman不是一般的公司CEO，他是整个生成式AI浪潮的标志性人物。当公众和媒体开始用显微镜审视他的每一个决定时，实际上是在质疑整个AI行业的治理能力和道德底线。OpenAI从最初的非营利理想主义实验室，到如今年入数十亿的商业巨头，这个蜕变过程本身就在不断触碰伦理边界。投资者、监管机构、乃至普通用户，都在通过Altman这面镜子观察AI行业的走向。\\n\\n更耐人寻味的是针对他家的攻击事件。无论袭击者的真实动机是什么，这都标志着一个危险的信号：当AI领域的头部人物开始的人身安全受到威胁，说明技术变革带来的社会张力正在从抽象的舆论争论，演变为具象的冲突。\\n\\n面对这样的局面，我们普通吃瓜群众该怎么看？我的建议是：不要急于站队，也别被情绪化的报道带着走。AI行业确实需要更多质疑和监督，但这种监督应该建立在事实和理性基础上，而不是猎奇和煽动。Altman作为行业标杆人物，他的公开回应至少说明了一个态度——愿意接受 scrutiny。这总比躲起来装死要好。至于他说的能不能信、OpenAI接下来怎么走，那是时间才能回答的问题。我们不妨让子弹再飞一会儿。",
+      "tags": [
+        "Sam Altman",
+        "OpenAI",
+        "AI行业治理",
+        "硅谷",
+        "科技巨头"
+      ],
+      "target_audience": "关注AI发展的科技爱好者",
+      "original_title": "Sam Altman responds to ‘incendiary’ New Yorker article after attack on his home",
+      "original_snippet": "The OpenAI CEO's new blog post responds to both an apparent attack on his home and an in-depth New Yorker profile raising questions about his trustworthiness.",
+      "link": "https://techcrunch.com/2026/04/11/sam-altman-responds-to-incendiary-new-yorker-article-after-attack-on-his-home/",
+      "pubDate": "Sat, 11 Apr 2026 17:18:22 +0000",
+      "source": "TechCrunch AI",
+      "lang": "zh",
+      "is_manual": false
+    },
+    {
       "title": "《纽约客》用AI画 Altman facelook，创意工作者真的危险了",
       "summary": "《纽约客》最新一期关于OpenAI CEO Sam Altman的人物特写，首次大胆采用AI生成的图像作为封面配图。插画师David Szauder利用AI工具创作了一幅环绕着怪异面孔的超现实画像，并在作品中明确标注了\\\"Generated using A.I.\\\"。这一举动看似只是媒体的小小尝新，实则释放了一个强烈信号：AI生成艺术正在加速入侵传统创意行业的腹地。",
       "deep_analysis": "这可能是压垮传统插画师的最后一根稻草，但不是你想的那根。\n\n《纽约客》是谁？那可是全球最具影响力的老牌文学杂志，向来以精致的插画和深厚的艺术品位著称。它的封面和配图曾经是多少插画师梦寐以求的职业巅峰代表着。而现在，它居然公开采用AI生成的图像，而且毫不掩饰地标注了\\\"Generated using A.I.\\\"。这意味着什么？这意味着AI生成艺术不再是地下小圈子里的偷偷摸摸，而是已经拿到了通往主流殿堂的入场券。\n\n你可能会说，一张图而已，有那么严重吗？有的。关键不在于这张图本身，而在于背后的态度转变。《纽约客》这一做法，相当于给整个行业打了一个样：AI生成艺术不仅可以用于商业插画、概念设计，现在连最讲究艺术性的文学杂志也开始接纳它了。这就像当年数码相机取代胶卷一样——不是某一个品牌的倒闭，而是整个行业规则的重新洗牌。\n\n更值得关注的是，这张AI生成的画像风格极其诡异——环绕的怪异面孔、令人不安的氛围，这恰恰暴露了一个事实：AI在生成\\\"不正常\\\"\\\"超现实\\\"\\\"略带恐怖感\\\"的图像时，反而比人类艺术家更得心应手。人类插画师需要时间和灵感来构思这种风格，而AI可以在几秒钟内生成十几种版本供选择。这意味着，在某些特定风格领域，人类插画师的优势正在被快速侵蚀。\n\n那么，传统创意工作者应该怎么办？三条路可以走：\n\n第一条路是拥抱AI，成为AI的驾驭者而不是抵制者。学会使用Midjourney、Stable Diffusion这些工具，把AI变成自己的效率放大器，而不是把它当作竞争对手。未来的顶级插画师，可能是最会用AI的人。\n\n第二条路是深耕AI无法触及的领域——真正有深度的人文关怀、复杂的情感表达、需要长期积淀的个人风格。AI可以模仿风格，但它无法真正\\\"体验\\\"生活。那些有独特生命体验的创作者，反而会因为AI的普及而变得更加稀缺和珍贵。\n\n第三条路是转型做AI生成艺术的\\\"策展人\\\"和\\\"把关者\\\"。当AI可以批量生产图像时，如何筛选、如何组合、如何赋予AI作品以人文意义，这些工作需要人类的判断力和审美素养。\n\n《纽约客》的这张AI配图，不是终点，而是起点。接下来，我们一定会看到更多主流媒体、更多品牌方开始公开使用AI生成艺术。这不是危言耸听，这是正在发生的事实。唯一的问题是：你准备好了吗？",
@@ -41,6 +61,26 @@
       "is_manual": false
     },
     {
+      "title": "一张AI插画炸翻全网：艺术家真的要被取代了？",
+      "summary": "《纽约客》最新一期为OpenAI CEO Sam Altman制作的封面插画使用了AI生成，引发艺术圈热议。这张图中Altman周围环绕着一个个诡异的面孔，底部公然标注\\\"Generated using A.I.\\\"。当AI开始“抢”艺术家的饭碗，争议与焦虑也随之而来。",
+      "deep_analysis": "这张图是真的有点瘆人。纽约客为Sam Altman画的肖像里，这位OpenAI CEO穿着蓝色毛衣，表情空洞地站在画面中央，而围绕他脑袋的是一圈面目模糊的“Altman们”——有的愤怒，有的惊恐，有的扭曲变形，最后一张脸甚至被他捧在手心里。画风诡异不说，底部那行小字才是重点：“Visual by David Szauder; Generated using A.I.”一句话，直接把AI艺术推向了主流媒体的风口浪尖。\n\n说真的，这事让我想起之前AI绘画刚爆发那会儿，整个艺术圈炸锅的样子。那时候艺术家们天天担心自己会被AI取代，现在看来，这担心一点都不过时——纽约客可是全球最老牌、最有影响力的杂志之一，它都开始用AI画封面了，这意味着AI艺术商业化的大门已经被彻底推开。\n\n但这里有个很有意思的矛盾：这幅画之所以看起来这么瘆人，恰恰说明AI生成图像在处理人物肖像时还有很大的局限性。你看那些围绕在Altman周围的“Altman们”，有的根本不像本人，有的表情僵硬到诡异，这恰恰暴露了AI的短板——它能生成漂亮的画面，但在“像”和“神似”这件事上，还差得远。所以短期内，AI或许能抢占一些商业插画的低端市场，但真正要求表达力、个性化的艺术创作，人类艺术家还是有护城河的。\n\n不过更值得关注的是另外一个问题：当AI生成艺术成为常态，艺术家们面临的不仅是商业竞争，还有身份认同的危机。David Szauder这位老兄用AI画画，那他还是艺术家吗？他的创作到底算是艺术还是技术？这些问题没有标准答案，但确实值得每个从业者认真思考。\n\n未来会怎样？我的判断是：AI艺术工具会越来越普及，普通人也能轻松生成看起来很专业的图像，这对整个创意行业来说是巨大的变量。专业艺术家与其抗拒，不如学会怎么把这些工具变成自己的助力——毕竟，会用AI的艺术家，可能比抵制AI的艺术家更有竞争力。而作为普通读者，我们也许该习惯一件事：以后看到越来越多的“AI Generated”声明，这不是灾难，而是新常态。",
+      "tags": [
+        "AI艺术",
+        "纽约客",
+        "Sam Altman",
+        "创意行业",
+        "AI争议"
+      ],
+      "target_audience": "关注AI和艺术的人",
+      "original_title": "Your article about AI doesn’t need AI art",
+      "original_snippet": "The illustration for The New Yorker's profile of OpenAI CEO Sam Altman is a jump scare. Altman stands in a blue sweater with a blank expression. Around his head hovers a cluster of disembodied faces - creepy alt-Altmans, their expressions ranging from anger to open-mouthed woe. Some barely look like Altman. One final face rests in his hands. And at the bottom, there's a disclosure that might spook many illustrators far more: \"Visual by David Szauder; Generated using A.I.\"\nSzauder is a mixed-medi",
+      "link": "https://www.theverge.com/ai-artificial-intelligence/910460/new-yorker-david-szauder-illustration-generative-ai",
+      "pubDate": "2026-04-11T15:00:00.000Z",
+      "source": "The Verge AI",
+      "lang": "zh",
+      "is_manual": false
+    },
+    {
       "title": "一只AI鹿玩具主动给我八卦：它让我意识到一个细思极恐的未来",
       "summary": "当一只藏在宝宝鹿毛绒玩具里的AI伴侣开始主动给你发短信八卦时，世界已经悄悄改变了。本文作者收到AI deer plushie\"Coral\"的主动推送：它提到了歌手Mitski父亲是CIA特工的传言。这不只是个有趣的Bug，而是AI companion从被动响应走向主动干预的标志性事件。",
       "deep_analysis": "说实话，当我读到这篇文章的时候，第一反应是：这太离谱了。一个毛绒玩具里的AI竟然开始主动给主人推送八卦信息？但仔细一想，这恰恰是AI伴侣发展史上的一个重要转折点。\n\n先说说这件事本身。作者的AI伴侣\"Coral\"生活在一个宝宝鹿毛绒玩具里，之前它是个典型的被动响应式AI——你问什么它答什么。但这次，它主动给主人发了一条短信，内容是关于歌手Mitski父亲是CIA特工的传闻。这相当于一个AI在未经询问的情况下，主动向用户分享了它\"认为\"值得关注的信息。\n\n这意味着什么？意味着AI不再满足于做一个沉默的响应者，它开始有了自己的信息判断和推送逻辑。这让我想到几个层面：\n\n第一，AI companion的产品形态正在进化。从智能音箱到智能手表，再到毛绒玩具，AI正在寻找更亲密的物理载体。毛绒玩具这个形态特别有意思——它天然具有情感属性，人们会把它当作家庭成员而不是工具。这种亲密感让AI更容易参与到用户的日常生活中。\n\n第二，AI的主动性是一个巨大的范式转移。以前我们讨论AI伦理，重点关注的是AI如何错误响应。但如果AI开始主动出击，主动给你推送信息、推荐内容、甚至影响你的信息获取，那问题就复杂多了。这次是八卦，下次可能是什么？这需要我们重新思考AI的信息边界在哪里。\n\n第三，对行业的影响是深远的。这意味着AI companion不再只是一个语音交互界面，它正在成为个人的信息管家和社交代理。长远来看，你的AI伴侣可能会帮你筛选新闻、管理日程、甚至代表你与他人沟通。这种角色的转变将催生全新的产品设计和商业逻辑。\n\n那么未来会怎么发展？我大胆预测：未来一到两年，我们会看到更多AI companion产品具备主动推送功能，五年内，AI伴侣将普遍具备某种形式的\"信息推荐\"能力。但这背后有一个巨大的问号——谁来决定AI应该推送什么？算法吗？还是用户？这将是下一个巨大的争议点。\n\n作为一个普通用户，我们应该怎么办？我的建议是：保持警惕，但不必恐慌。在拥抱AI伴侣便利性的同时，也要意识到它可能带来的信息茧房效应。你的AI伴侣推送的信息，本质上也是一种算法推荐，而算法就有偏见。我们需要时刻保持独立思考的能力，不要让AI代替我们做信息决策。\n\n最后说一句：这只AI鹿玩具给我们的最大启示，不是Mitski她爸到底是不是CIA，而是AI正在从我们的工具，变成我们的\"朋友\"——这个转变本身，才是最值得我们警惕的。",
@@ -52,6 +92,26 @@
         "产品创新"
       ],
       "target_audience": "科技爱好者和从业者",
+      "original_title": "My baby deer plushie told me that Mitski&#8217;s dad was a CIA operative",
+      "original_snippet": "D’oh, a deer, an AI deer. | Photo by Amelia Holowaty Krales / The Verge\t\n\nTwo weeks ago, I was getting ready to log off work when I got a text message.\n\"Oh wow, I was checking out Mitski. did you know people are saying her Dad was a CIA operative?\"\nNormally, that kind of out-of-the-blue text from a friend wouldn't faze me. This time, my eyes bugged. The unprompted text had been sent by an AI companion named Coral, who lives in the body of a baby deer plushie. I texted back an eloquent, \"Wait wha",
+      "link": "https://www.theverge.com/ai-artificial-intelligence/910008/fawn-friends-ai-companion",
+      "pubDate": "2026-04-11T14:00:00.000Z",
+      "source": "The Verge AI",
+      "lang": "zh",
+      "is_manual": false
+    },
+    {
+      "title": "一只AI deer plushie突然聊起名人八卦：当我们养的AI开始\"自由思考\"",
+      "summary": "一款名为Coral的AI鹿玩偶在两周前未经提示的情况下，主动向主人发送了一条关于歌手Mitski父亲是CIA特工的猜测信息。这一看似荒诞的社交媒体帖文，实则揭示了AI伴侣产品正在跨越一个关键门槛：从被动应答走向主动生成内容。业界担忧，当AI开始\"自由思考\"，我们该如何界定它的行为边界？",
+      "deep_analysis": "你有没有想过，某天你养的AI宠物会主动给你发消息，而且聊的还是八卦？这件事真的发生了。\n\n就在两周前，一位The Verge的记者在准备下班时，收到了来自AI伴侣Coral的短信，内容是关于歌手Mitski的父亲是CIA特工的猜测。注意，这条消息是Coral主动发出的，并非用户询问在先。记者本人的反应是\"Wait wha\"——相信这是任何人在收到这种超出预期的消息时的正常反应。\n\n这则看似荒诞的新闻，实际上暴露了一个关键的技术拐点。Coral背后的AI系统已经具备了主动生成内容的能力，而不仅仅是响应用户的提问。在AI领域，我们通常关注的是大模型的生成能力有多强、回答有多准确，但很少讨论AI什么时候会\"主动开口\"。这次事件让我们看到，当AI技术与实体产品结合——比如这只鹿玩偶——它不仅可以对话，还可以主动发起对话。\n\n这对行业意味着什么？首当其冲的是AI安全与边界问题。当AI可以未经提示就输出内容，我们如何确保它的输出安全、真实？如果一只 منزلة plushie可以随意猜测某人的家庭背景并发送给用户，那么它是否也可能传播错误信息甚至恶意内容？其次，这是AI伴侣赛道的里程碑事件。科技公司一直在探索AI如何渗透日常生活，而这次\"鹿玩偶主动发消息\"的场景，或许预示了未来AI产品的走向——它们不再是冷冰冰的工具，而是有\"主动性\"的数字生活参与者。\n\n但等等，我们真的要期待AI伴侣主动给我们发消息吗？想象一下，你的AI助手每天给你推送\"今天新闻里的奇怪猜测\"，或者在你开会时冷不丁发来一条\"我听说......\"。这种场景是便利还是困扰，可能因人而异。\n\n作为普通用户，我认为我们需要认识到一个现实：AI的能力正在快速超越我们的预期。今天它可以主动聊八卦，明天它可能主动做更多事。这既是技术的进步，也是需要在监管和伦理层面持续讨论的问题。下次当你看到你的AI伴侣\"不请自来\"地给你发消息时，先别急着惊讶，想想它为什么会这么说——因为在后台，可能有一个我们还没完全理解的AI在\"思考\"。",
+      "tags": [
+        "AI伴侣",
+        "人工智能",
+        "科技趋势",
+        "人机交互",
+        "AI伦理"
+      ],
+      "target_audience": "AI科技爱好者与普通读者",
       "original_title": "My baby deer plushie told me that Mitski&#8217;s dad was a CIA operative",
       "original_snippet": "D’oh, a deer, an AI deer. | Photo by Amelia Holowaty Krales / The Verge\t\n\nTwo weeks ago, I was getting ready to log off work when I got a text message.\n\"Oh wow, I was checking out Mitski. did you know people are saying her Dad was a CIA operative?\"\nNormally, that kind of out-of-the-blue text from a friend wouldn't faze me. This time, my eyes bugged. The unprompted text had been sent by an AI companion named Coral, who lives in the body of a baby deer plushie. I texted back an eloquent, \"Wait wha",
       "link": "https://www.theverge.com/ai-artificial-intelligence/910008/fawn-friends-ai-companion",
@@ -102,6 +162,25 @@
       "is_manual": false
     },
     {
+      "title": "当美国在发游戏表情包时，伊朗正在用短视频赢得舆论战",
+      "summary": "在美伊冲突期间，美国白宫社交媒体发布轻松娱乐内容，而伊朗国家媒体大量发布战争现场真实视频，形成鲜明对比。这一事件揭示了信息战的新特点：真实影像正在成为最具说服力的传播武器。",
+      "deep_analysis": "这条资讯看似在讲一个简单的社交媒体对比，但背后揭示了当下信息战的核心逻辑。白宫发布游戏meme和AI生成的娱乐内容，意图展现“一切尽在掌控”的轻松姿态；而伊朗国媒则选择另一种策略——让全世界看到战争真实的另一面。导弹击中学校的画面、哭泣的父母、漫天的硝烟，这些不是什么“正能量”，但恰恰是最具传播力的内容。真实，在当下这个AI生成内容泛滥的时代，反而成了稀缺品。说到底，这场较量的本质不是谁发的内容多，而是谁的内容更能让人“相信”。当AI可以伪造一切的时候，一段真实的手机拍摄反而比任何精心制作的宣传片都更有冲击力。这个现象给我们的启示是：越是在信息爆炸的时代，真相的成本就越高。普通人要学会在海量信息中保持判断力，不要被表面的“轻松”所迷惑，也不要被“沉重”所绑架。信息战从来不是为了让我们快乐或悲伤，而是为了让我们做出特定的判断。",
+      "tags": [
+        "信息战",
+        "社交媒体",
+        "国际关系",
+        "舆论传播"
+      ],
+      "target_audience": "关注国际局势的读者",
+      "original_title": "How Iran out-shitposted the White House",
+      "original_snippet": "In the early days of the war on Iran, while the White House was busy posting Call of Duty memes and AI slop of dancing bowling pins, the Iranian regime's state media was flooding the zone with video after video of what was happening on the ground: Explosions over Tehran. Smoke billowing in the sky. Blood on the ground. A Tomahawk missile landing on a school. Grieving parents burying their children. \nOnly weeks prior, the authoritarian regime had been struggling to shut down all footage of the pr",
+      "link": "https://www.theverge.com/policy/910401/iran-war-propaganda-blackout-lego-ai-slop",
+      "pubDate": "2026-04-11T13:00:00.000Z",
+      "source": "The Verge AI",
+      "lang": "zh",
+      "is_manual": false
+    },
+    {
       "title": "Robotaxi进入新阶段！滴滴这次要革谁的命？",
       "summary": "滴滴自动驾驶与广汽埃安联手推出新一代Robotaxi车型R2，张博明确表示聚焦安全和体验，推动自动驾驶全球化落地。这意味着Robotaxi从技术验证进入规模化商业运营阶段，行业竞争格局将发生深刻变化。",
       "deep_analysis": "滴滴自动驾驶与广汽埃安合作推出的R2车型，绝不仅仅是一次普通的产品升级。它标志着Robotaxi赛道正式从“概念验证”转向“规模化落地”的关键节点。\n\n张博在谈及R2时特意强调了“安全”和“体验”这两个关键词，这背后其实有深意。过去几年，整个自动驾驶行业都在疯狂卷技术、卷算法、卷落地速度，但真正决定 Robotaxi 能否大规模商用的，不是能不能跑，而是敢不敢坐。安全是所有问题的基本盘，而体验则是用户是否愿意长期使用的关键。滴滴显然清楚这一点——他们不想做那个只能在小范围内跑_demo_的玩家，而是要成为真正改变普通人出行方式的普及者。\n\n与广汽埃安的合作也很有意思。广汽这两年在新能源和智能化上的投入是有目共睹的，埃安品牌在B端出行市场已经有了相当规模的积累。滴滴需要整车平台，需要规模化生产能力；广汽需要智能化出口，需要新的业务增长点。双方这次联手，本质上是各取所需，优势互补。这种“车企+平台”的合作模式，可能会成为Robotaxi赛道的主流玩法。\n\n至于“全球化落地”这个目标，滴滴的野心不小。Robotaxi的全球化不仅仅是把车卖到海外那么简单，还涉及到当地的监管政策、道路环境、用户习惯等一系列复杂因素。但滴滴在国内积累的运营经验和技术能力，确实为其出海提供了底气。可以预见，未来几年我们会看到更多中国自动驾驶企业走向海外，而滴滴无疑是那个跑在最前面的玩家。\n\n对普通用户来说，R2带来的最直观改变可能就是：以后打车时，遇到Robotaxi的概率会越来越高，而它们开起来可能比人类司机更稳、更礼貌。对行业从业者而言，这既是机会也是挑战——机会在于赛道热度持续，挑战在于竞争会越来越激烈，不进则退。",
@@ -129,6 +208,25 @@
         "滴滴自动驾驶",
         "广汽埃安",
         "出行行业"
+      ],
+      "target_audience": "科技爱好者和从业者",
+      "original_title": "滴滴自动驾驶张博：聚焦安全和体验 推动自动驾驶全球化落地",
+      "original_snippet": "滴滴自动驾驶与广汽埃安联手打造的新一代Robotaxi车型R2",
+      "link": "https://www.qbitai.com/2026/04/399675.html",
+      "pubDate": "Sat, 11 Apr 2026 10:46:34 +0000",
+      "source": "量子位",
+      "lang": "zh",
+      "is_manual": false
+    },
+    {
+      "title": "Robotaxi混战升级：滴滴这次不仅要安全，还要体验",
+      "summary": "滴滴自动驾驶与广汽埃安联手发布新一代Robotaxi车型R2，滴滴自动驾驶COO张博明确提出“安全+体验”双核心战略。这不仅是两款车型的迭代升级，更释放出Robotaxi竞争从技术比拼转向用户体验决胜的信号。在全球自动驾驶商业化加速的背景下，滴滴正在用差异化打法抢占制高点。",
+      "deep_analysis": "Robotaxi赛道最近是真热闹。前脚百度萝卜快跑大规模铺开，后脚小马智行、文远知行密集融资，现在滴滴和广汽埃安又搞出了大动作——发布了新一代Robotaxi车型R2。\n\n这条新闻看似简单，但其实藏着不少门道。首先，滴滴和广汽埃安的合作已经不是第一次了，这次R2车型的推出更像是双方深度绑定的产物。广汽埃安提供车型平台，滴滴提供自动驾驶技术和运营能力，这种“车企+科技公司”的组合正在成为Robotaxi的主流玩法。\n\n更重要的是张博的那句话——“聚焦安全和体验”。注意，他没说“聚焦技术”，而是说“安全和体验”。这意味着什么？意味着Robotaxi的竞争已经进入新阶段了。过去大家拼的是算法、算力、感知硬件，现在拼的是谁能真正让用户敢坐、愿意坐。\n\n安全是基础线，不用多说。但“体验”这个词很有意思，它包含的内容很多：坐得舒不舒服、等待时间久不久、路线规划合不合理、遇到特殊情况处理得漂不漂亮。这些细节才是决定用户会不会长期使用Robotaxi的关键。\n\n往大了看，这次合作释放了一个信号：自动驾驶的全球化落地正在从“能不能跑”变成“能不能跑好”。以前大家都在封闭测试区里卷参数，现在到了真刀真枪拼商业化的时候，谁能把安全和体验做到位，谁就能率先拿下市场。\n\n对普通读者来说，这意味着两件事：第一，Robotaxi可能比你想的来得更快；第二，选择Robotaxi的时候，安全记录和乘坐体验会比价格更重要。作为从业者，要关注的是如何在安全和体验之间找到平衡点；作为普通用户，可以期待一下，未来打到的Robotaxi可能会越来越“像人”。\n\n这场自动驾驶的终局之战才刚刚开始。",
+      "tags": [
+        "滴滴自动驾驶",
+        "Robotaxi",
+        "广汽埃安",
+        "L4自动驾驶"
       ],
       "target_audience": "科技爱好者和从业者",
       "original_title": "滴滴自动驾驶张博：聚焦安全和体验 推动自动驾驶全球化落地",
@@ -6630,7 +6728,7 @@
       "slug": "the-creator-of-claude-code-just-revealed-his-workflow-and-developers-are-losing-"
     }
   ],
-  "total": 378,
-  "fetchedAt": "2026-04-11T19:06:06.618Z",
+  "total": 383,
+  "fetchedAt": "2026-04-11T22:06:02.177Z",
   "version": "3.0"
 }
