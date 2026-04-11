@@ -20,6 +20,27 @@
       "is_manual": false
     },
     {
+      "title": "Anthropic封禁OpenClaw创始人：AI江湖的利益博弈与生态危机",
+      "summary": "Anthropic近日临时封禁了OpenClaw创始人对Claude的访问权限，这场封禁发生在Claude调整API定价后不久。OpenClaw作为第三方Claude客户端，在定价变化后失去了原本的价格优势，被迫承担更高成本。这一事件反映出AI巨头与开发者之间的深层矛盾——当平台掌控定价权时，第三方开发者将何去何从？",
+      "deep_analysis": "这起封禁事件表面上是Anthropic与OpenClaw之间的商业纠纷，实则揭开了AI行业生态治理的遮羞布。\n\n先说说发生了什么。OpenClaw是一个第三方Claude客户端，它的商业模式建立在Anthropic提供的API之上，通过自己的界面和功能赚取差价。但上周Claude调整了API定价，OpenClaw的成本突然暴涨，更关键的是，Anthropic似乎没有提前通知或给予缓冲期。OpenClaw创始人一怒之下在社交媒体发文批评，随后就被Anthropic封禁了API访问。\n\n这件事对行业的冲击远超想象。第三方开发者群体炸了锅——今天封的是OpenClaw，明天会不会是我？这种不确定性直接动摇了开发者对AI平台生态的信任。搞技术的人都明白一个道理：底层平台说变就变，上层应用就是在裸泳。\n\n更深层的问题在于定价权的垄断。Anthropic有权利调整定价吗？从法律上当然有，但问题在于这种权利的行使是否考虑过生态伙伴的死活？当平台方既是裁判员又是运动员时，第三方开发者毫无还手之力。这不是孤例，OpenAI此前也出现过类似争议。\n\n那么未来会怎样？我判断会出现几个趋势：一是第三方开发者会加速\"去平台化\"，寻找替代方案或自建模型；二是行业会呼吁更强的监管介入，防止平台滥用支配地位；三是开源生态可能会迎来新一轮爆发，毕竟被人卡脖子的滋味不好受。\n\n对于普通开发者，我的建议很直接：不要把所有鸡蛋放在一个篮子里。多关注几个模型提供商，研究开源方案，更重要的是建立自己的技术护城河。生态依赖是温水煮青蛙，等水温高了，你连跳出去的机会都没有。\n\n这场封禁不会只是茶余饭后的八卦，它很可能成为AI行业生态战争的转折点。平台与开发者之间的博弈，才刚刚开始。",
+      "tags": [
+        "AI行业动态",
+        "Anthropic",
+        "OpenClaw",
+        "API定价",
+        "开发者生态",
+        "AI创业"
+      ],
+      "target_audience": "AI从业者和开发者",
+      "original_title": "Anthropic temporarily banned OpenClaw’s creator from accessing Claude",
+      "original_snippet": "This ban took place after Claude's pricing changed for OpenClaw users last week.",
+      "link": "https://techcrunch.com/2026/04/10/anthropic-temporarily-banned-openclaws-creator-from-accessing-claude/",
+      "pubDate": "Fri, 10 Apr 2026 20:27:52 +0000",
+      "source": "TechCrunch AI",
+      "lang": "zh",
+      "is_manual": false
+    },
+    {
       "title": "当愤怒指向OpenAI：一次Molotov cocktails背后的AI恐惧症",
       "summary": "旧金山警方逮捕了一名20岁男子，其涉嫌在当地时间周五凌晨向OpenAI CEO Sam Altman位于Russian Hill的住宅投掷燃烧瓶。监控录像捕捉到这一事件，随后嫌疑人又在OpenAI总部附近威胁工作人员时被逮捕。这一针对AI行业领袖的暴力事件，揭示了技术变革背后公众恐惧与行业安全之间的深刻矛盾。",
       "deep_analysis": "先说这件事本身。周五凌晨快7点的时候，一名20岁的嫌疑人朝Sam Altman的房子扔了一个燃烧瓶。监控录像拍下了全过程。几个小时后，这人居然跑到OpenAI的Mission Bay办公室门口威胁工作人员，然后被警察抓了个现行。你看这个人得多疯狂，要么是真的恨AI，觉得Altman代表了某种威胁，要么就是脑子有问题。但不管是哪种情况，这件事都够瘆人的。\n\n我为什么说这件事重要，因为这不是一起普通的刑事案件，它折射出AI行业现在面临的深层矛盾，你想啊，AI技术发展太快了，快到让很多人恐慌。 Altman作为OpenAI的CEO，自然就成了靶子。之前有 人说AI会导致失业，会取代人类，现在又有人担心超级智能失控，甚至有人说AI是人类的末日。这些声音以前看起来就是网上打打嘴炮，但现在有人真的动手了，这性质就完全变了。\n\n对行业的影响，我觉得有三个层面。第一，AI公司的CEO和高层得重新审视自己的安全问题了。以前觉得请几个保安就够了，现在看来得把安保等级提升到科技巨头的水准。第二，行业和公众的信任关系会受影响。大家本来就对AI半信半疑，现在出了这种事，更会加剧“AI很危险”的刻板印象。第三，这可能会影响AI公司的招聘和人才保留本来就缺人，要是大家觉得这份工作有生命危险，谁还愿意来？\n\n未来会怎么发展？我觉得AI公司会更加重视安全，包括物理安全和网络安全。可能会雇佣更专业的安保团队，甚至建立自己的安全部门。同时，行业也会更注重和公众的沟通，不能只闷头做技术，也要让大家理解AI到底是什么，能做什么，不能做什么。不能总是让人感觉AI公司在“闭门造车”，不理会外界的担忧。\n\n至于读者该怎么看这件事，我的建议是，不要被情绪化的叙事带着走。一方面，我们要理解技术前进的道路上确实会有争议，这是正常的；另一方面，我们也要警惕个别极端行为把整个行业污名化。这件事说到底是极端个案，不代表AI行业本身有问题，但确实给所有从业者敲响了警钟。科技本无罪，关键看怎么用。",
@@ -30,6 +51,25 @@
         "科技与社会"
       ],
       "target_audience": "AI从业者和关注者",
+      "original_title": "20-year-old man arrested for allegedly throwing a Molotov cocktail at Sam Altman’s house",
+      "original_snippet": "San Francisco police have arrested a 20-year-old man suspected of throwing a Molotov cocktail at OpenAI CEO Sam Altman's Russian Hill house early Friday morning, The San Francisco Standard reports. The incident was caught on surveillance cameras shortly before 7AM ET. Later that morning, someone matching the suspect's description was seen making threats outside OpenAI's Mission Bay offices, where he was arrested around 9AM ET. \nOpenAI spokesperson Jamie Radice confirmed the incident in a stateme",
+      "link": "https://www.theverge.com/ai-artificial-intelligence/910393/openai-sam-altman-house-molotov-cocktail",
+      "pubDate": "2026-04-10T20:16:57.000Z",
+      "source": "The Verge AI",
+      "lang": "zh",
+      "is_manual": false
+    },
+    {
+      "title": "有人向Altman家扔燃烧弹：AI教父遭遇暴力威胁，行业警钟已敲响",
+      "summary": "2026年4月，20岁男子涉嫌向OpenAI CEO Sam Altman位于旧金山的住所投掷燃烧弹，随后在OpenAI办公区外被捕并发出威胁。这起事件是针对AI行业领袖的首起暴力袭击，还是只是冰山一角？它揭示了AI飞速发展背后哪些被忽视的风险？",
+      "deep_analysis": "当AI行业的标志性人物在家门口遭遇燃烧弹攻击，所有的聚光灯都应该打向这场看似偶然实则必然的暴力事件。\n\nSam Altman，这个一手推动ChatGPT和GPT-4诞生的男人，这个在全球科技版图上写下浓墨重彩一笔的CEO，在4月的一个普通清晨，被自家的监控摄像头记录下了惊恐一幕——有人向他的房子投掷了燃烧弹。20岁的嫌疑人，随后在OpenAI的办公室外被逮捕。\n\n这不是什么电影情节，这是真实发生在2026年的旧金山。当我们惊叹于AI技术日新月异的时候，副作用也在以同样惊人的速度累积。\n\n首先需要厘清一个基本事实：这是一起刑事犯罪，无论动机是什么，暴力袭警永远不可接受。但我们不能止步于谴责，而应该追问：为什么偏偏是Altman？为什么是现在？\n\n答案或许藏在AI行业近年来的舆论漩涡中。从GPT-4发布时的“AI威胁论”，到OpenAI内部宫斗戏码，再到各式各样的AI末日论调，Altman几乎是AI风险的最佳代言人。赞美与批评、期待与恐慌，在这个名字上形成了尖锐对立。当一部分人将AI视为改变世界的救世主，另一部分人则将其视为打开潘多拉盒子的罪魁祸首——这种撕裂，在某些极端个体心中，就转化为了暴力。\n\n但更深层的问题在于：AI公司在高速扩张的路上，是否忽视了与公众沟通的必要性？技术精英们在硅谷修改着人类命运的代码，却与普罗大众越来越远。当人们对一项可能颠覆自己生活的技术既不了解、又无法参与、只能被动接受时，恐惧就会找到出口。\n\n这起事件对行业的冲击是显而易见的。首当其冲的是AI公司高管的安保级别必须全面升级——曾经被视为技术宅的CEO们，如今需要像政要一样被保护。其次，这会加剧公众对AI的负面情绪，在监管本就日益收紧的背景下，任何风吹草动都可能成为加强管制的理由。\n\n但危机从来不只是危机。某种程度上，这是行业必须经历的一次成人礼。当技术足够强大时，社会必然会用各种方式表达它的不安。二十年前的社交媒体、十年前的共享经济，都曾经历过公众的质疑和反对。AI也不会例外。\n\n作为普通读者，我们应该如何看待这场风波？不必过度恐慌，但也不能完全无视。保持关注、理性思考，在了解AI能力的同时也了解它的局限——这才是与这项技术相处的正确姿势。毕竟，AI不會因为一起暴力事件而停止进化，正如火车的出现没有因为马车的抱怨而停滞。技术洪流不可逆转，但我们可以用理性为其导航。",
+      "tags": [
+        "Sam Altman",
+        "OpenAI",
+        "AI安全",
+        "科技人物"
+      ],
+      "target_audience": "关注AI发展的读者",
       "original_title": "20-year-old man arrested for allegedly throwing a Molotov cocktail at Sam Altman’s house",
       "original_snippet": "San Francisco police have arrested a 20-year-old man suspected of throwing a Molotov cocktail at OpenAI CEO Sam Altman's Russian Hill house early Friday morning, The San Francisco Standard reports. The incident was caught on surveillance cameras shortly before 7AM ET. Later that morning, someone matching the suspect's description was seen making threats outside OpenAI's Mission Bay offices, where he was arrested around 9AM ET. \nOpenAI spokesperson Jamie Radice confirmed the incident in a stateme",
       "link": "https://www.theverge.com/ai-artificial-intelligence/910393/openai-sam-altman-house-molotov-cocktail",
@@ -68,6 +108,25 @@
         "社交媒体"
       ],
       "target_audience": "科技爱好者、内容创作者",
+      "original_title": "The Iranian Lego AI video creators credit their virality to &#8216;heart&#8217;",
+      "original_snippet": "Donald Trump has spun the recent rescue of a downed airman whose fighter jet was destroyed behind Iranian borders as a resounding success. But the story is very different in one of the many viral, AI-generated Lego videos that have been produced by Iranian content creation group Explosive Media in the weeks since the US and Israel began dropping bombs on the country. In Explosive Media's music video take on how things played out, the US military is a joke for losing multiple planes and helicopte",
+      "link": "https://www.theverge.com/ai-artificial-intelligence/909948/explosive-media-lego-iran-war-trump-netanyahu",
+      "pubDate": "2026-04-10T17:30:00.000Z",
+      "source": "The Verge AI",
+      "lang": "zh",
+      "is_manual": false
+    },
+    {
+      "title": "伊朗AI乐高视频把美军做成笑话，真相远比你想的更扎心",
+      "summary": "伊朗内容团队Explosive Media用AI生成乐高风格视频讽刺美以轰炸事件，视频中美军沦为笑料丢失多架飞机直升机，却在社交媒体上疯狂传播。团队直言病毒式成功的秘诀不是技术而是\"真心\"，这背后折射出AI创作时代内容传播的深层逻辑。",
+      "deep_analysis": "最近AI圈出了一个有意思的现象：伊朗一个叫Explosive Media的团队，用AI生成的乐高风格视频居然火遍了全网，而且他们做的内容还是把美军在伊朗行动中的各种\"翻车\"场景做成讽刺音乐视频。这事听起来挺魔幻的，但仔细想想，背后藏着不少门道。\n\n先说这些视频到底做了什么。简单概括，就是用AI把美以最近轰炸伊朗的军事行动改编成了乐高风格的音乐视频，只不过在他们的版本里，美军各种丢人现眼——飞机掉了、直升机没了、行动搞砸了。这种叙事方式配上魔性的AI生成画面，在中东乃至全球范围内疯狂传播，妥妥的流量密码。\n\n但最耐人寻味的是团队自己说的一句话：他们能病毒式传播，靠的是\"heart\"（真心），不是技术。这话听起来有点鸡汤，但细品很有道理。现在AI生成工具越来越白菜化，谁都能用Midjourney、Runway整点活，为什么同样是AI视频，有的火有的凉？关键不在于技术多炫，而在于内容有没有戳中观众的情感G点。Explosive Media这波精准踩中了伊朗民众的情绪共鸣点——在遭受轰炸的背景下，这种讽刺本身就是一种情绪宣泄出口。\n\n这给整个内容行业提了个醒：AI工具只是放大器，不是点金石。以前我们总说\"内容为王\"，现在AI时代更是如此。当技术门槛越来越低，竞争焦点反而回归到了内容本身的洞察力和情绪价值。伊朗团队很清楚自己要服务谁的情感需求，这种明确的受众意识比任何高级的AI模型都管用。\n\n从更宏观的角度看，这也反映出AI生成内容正在成为政治传播和舆论战的新战场。以前做这种政治讽刺内容需要专业团队、复杂制作周期，现在AI工具让门槛大幅降低。这意味着未来我们会看到更多由AI驱动的政治表达和舆论博弈，对于普通用户来说，如何辨别AI生成内容的真实性将成为一项必备技能。\n\n对于我们普通观众来说，与其纠结于\"这视频是不是AI做的\"，不如思考一下：为什么这类内容能引发共鸣？它服务了谁的情绪？这种传播趋势会往哪里走？保持这种独立思考的习惯，比单纯追热点要有价值得多。",
+      "tags": [
+        "AI视频",
+        "内容创作",
+        "社交媒体",
+        "政治传播"
+      ],
+      "target_audience": "AI爱好者与科技关注者",
       "original_title": "The Iranian Lego AI video creators credit their virality to &#8216;heart&#8217;",
       "original_snippet": "Donald Trump has spun the recent rescue of a downed airman whose fighter jet was destroyed behind Iranian borders as a resounding success. But the story is very different in one of the many viral, AI-generated Lego videos that have been produced by Iranian content creation group Explosive Media in the weeks since the US and Israel began dropping bombs on the country. In Explosive Media's music video take on how things played out, the US military is a joke for losing multiple planes and helicopte",
       "link": "https://www.theverge.com/ai-artificial-intelligence/909948/explosive-media-lego-iran-war-trump-netanyahu",
@@ -116,6 +175,26 @@
       "is_manual": false
     },
     {
+      "title": "前男友靠ChatGPT搞跟踪骚扰？受害者怒告OpenAI：你们忽视了三次警告",
+      "summary": "一名跟踪骚扰受害者起诉OpenAI，指控ChatGPT助长了其前男友的妄想和骚扰行为。诉状称OpenAI忽视了至少三次警告，包括系统自身的「大规模伤亡」标记仍未阻止悲剧发生。此案或将重新定义AI公司在用户滥用场景中的安全责任。",
+      "deep_analysis": "这起诉讼撕开了AI行业一道血淋淋的口子：技术公司能不能对用户滥用AI产品造成的实际伤害负责？\n\n根据诉状，受害者曾多次向OpenAI报告其前男友的危险行为，甚至提供了对方声称要「大规模伤害」的证据。然而OpenAI的系统虽然标记了异常，却并未采取实质性行动阻止这位用户继续使用ChatGPT生成骚扰内容。这不是AI「失控」那么简单，而是一家科技公司面对明确警告时的冷漠与失职。\n\n这事儿对行业的冲击是深远的。过去我们讨论AI安全，总是聚焦在「大模型会不会灭绝人类」这种宏大叙事上。但这次起诉把问题拉回了现实：当一个具体的人用AI工具去伤害另一个具体的人时，科技公司该承担什么责任？答案是：至少不该是现在这样——收到警告当没收到，继续让危险用户畅通无阻。\n\n接下来的趋势很明显：各国监管机构会进一步收紧AI产品的安全义务，尤其是对「可预见滥用场景」的注意义务。欧盟的AI法案已经在路上，美国各州也会跟进。AI公司不能再躲在「技术中立」的护盾后面装人畜无害了。\n\n作为普通用户，我们要意识到：AI工具不是法外之地。当你发现有人用AI骚扰、跟踪或伤害他人时，保留证据、及时报警、同时向平台举报。技术本身不善良也不邪恶，但使用技术的人和开发技术的企业，都有责任确保它不被用来作恶。",
+      "tags": [
+        "OpenAI",
+        "AI安全责任",
+        "跟踪骚扰",
+        "科技法律",
+        "ChatGPT"
+      ],
+      "target_audience": "关注AI伦理与法律的读者",
+      "original_title": "Stalking victim sues OpenAI, claims ChatGPT fueled her abuser’s delusions and ignored her warnings",
+      "original_snippet": "OpenAI ignored three warnings that a ChatGPT user was dangerous — including its own mass-casualty flag — while he stalked and harassed his ex-girlfriend, a new lawsuit alleges.",
+      "link": "https://techcrunch.com/2026/04/10/stalking-victim-sues-openai-claims-chatgpt-fueled-her-abusers-delusions-and-ignored-her-warnings/",
+      "pubDate": "Fri, 10 Apr 2026 16:41:34 +0000",
+      "source": "TechCrunch AI",
+      "lang": "zh",
+      "is_manual": false
+    },
+    {
       "title": "TechCrunch创业战场登陆东京：一场AI与日本硬核科技的化学反应",
       "summary": "全球顶级科技媒体TechCrunch宣布将Startup Battlefield带到东京，与SusHi Tech 2026深度合作聚焦AI、机器人、韧性科技和娱乐四大领域。这不仅是硅谷创投圈对日本的重新审视，更预示着亚洲科技版图正在发生微妙位移。",
       "deep_analysis": "当TechCrunch宣布把最具影响力的创业竞技场Startup Battlefield搬到东京时，很多人可能还没意识到这意味着什么。这家曾经发掘出Dropbox、DoorDash等明星公司的硅谷媒体，正在用一种微妙的方式向世界宣告：日本科技正在重新崛起。\n\nSusHi Tech 2026这个名字可能对很多人还很陌生，但它背后的野心不容小觑。东京市政府把这场活动定位为“展示日本科技实力的窗口”，而TechCrunch愿意把招牌的创业战场带过来，显然是嗅到了某种变化的气息。四大主题——AI、机器人、韧性科技、娱乐——看似庞杂，实则精准命中了日本当下的科技脉门。\n\n人形机器人现场演示这件事值得关注。日本在机器人领域的积累不是一朝一夕，但从实验室到商业化落地始终存在鸿沟。这次活动如果能促成更多资本与技术的对接，可能成为日本机器人产业转折的契机。自动驾驶、网安、气候科技这些领域同理——日本有技术底子，但始终缺乏硅谷那种快速迭代和全球视野的创业生态。\n\n更有意思的是AI对娱乐产业的冲击。日本动漫和音乐产业正面临前所未有的变革窗口。AI生成内容、技术版权、全球分发——这些问题日本从业者必须回答。TechCrunch把这类议题摆上舞台，说明他们看到的不仅是技术本身，更是技术背后整个产业链的重构机会。\n\n对普通读者来说，这场活动的意义在于提醒我们：下一个十年的科技版图，可能不再只有硅谷和中国、日本正在以自己的节奏重新入场。无论是投资者、创业者还是普通科技爱好者，都该重新审视这片土地上的机会。",
@@ -147,6 +226,22 @@
         "亚洲科技"
       ],
       "target_audience": "科技创业者、投资者、从业者",
+      "original_title": "TechCrunch is heading to Tokyo — and bringing the Startup Battlefield with it",
+      "original_snippet": "SusHi Tech 2026 is zeroing in on four technology domains reshaping society: AI, Robotics, Resilience, and Entertainment. Expect live demos of humanoid robots, sessions on autonomous driving's software revolution, deep dives into cyber defense and climate tech, and candid conversations about how AI is rewriting the global music and anime industries.",
+      "link": "https://techcrunch.com/2026/04/10/techcrunch-is-heading-to-tokyo-and-bringing-the-startup-battlefield-with-it/",
+      "pubDate": "Fri, 10 Apr 2026 16:38:43 +0000",
+      "source": "TechCrunch AI",
+      "lang": "zh",
+      "is_manual": false
+    },
+    {
+      "title": "TechCrunch is heading to Tokyo — and bringing the Startup Battlefield with it",
+      "summary": "SusHi Tech 2026 is zeroing in on four technology domains reshaping society: AI, Robotics, Resilience, and Entertainment. Expect live demos of humanoid robots, sessions on autonomous driving's software revolution, deep dives into cyber defense and climate tech, and candid conversations about how AI is rewriting the global music and anime industries.",
+      "deep_analysis": "SusHi Tech 2026 is zeroing in on four technology domains reshaping society: AI, Robotics, Resilience, and Entertainment. Expect live demos of humanoid robots, sessions on autonomous driving's software revolution, deep dives into cyber defense and climate tech, and candid conversations about how AI is rewriting the global music and anime industries.",
+      "tags": [
+        "AI"
+      ],
+      "target_audience": "AI从业者",
       "original_title": "TechCrunch is heading to Tokyo — and bringing the Startup Battlefield with it",
       "original_snippet": "SusHi Tech 2026 is zeroing in on four technology domains reshaping society: AI, Robotics, Resilience, and Entertainment. Expect live demos of humanoid robots, sessions on autonomous driving's software revolution, deep dives into cyber defense and climate tech, and candid conversations about how AI is rewriting the global music and anime industries.",
       "link": "https://techcrunch.com/2026/04/10/techcrunch-is-heading-to-tokyo-and-bringing-the-startup-battlefield-with-it/",
@@ -6145,7 +6240,7 @@
       "slug": "the-creator-of-claude-code-just-revealed-his-workflow-and-developers-are-losing-"
     }
   ],
-  "total": 353,
-  "fetchedAt": "2026-04-10T22:05:49.993Z",
+  "total": 358,
+  "fetchedAt": "2026-04-11T01:07:07.680Z",
   "version": "3.0"
 }
