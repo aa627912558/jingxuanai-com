@@ -1,6 +1,65 @@
 {
   "news": [
     {
+      "title": "OpenAI CEO被投燃烧瓶：科技巨头人身安全引热议",
+      "summary": "OpenAI首席执行官Sam Altman位于旧金山的住所于凌晨遭遇燃烧瓶袭击，所幸无人受伤。这是继去年CEO遭董事会突袭罢免后又一次重大安全事件，引发业界对科技领袖人身安全的深度担忧。",
+      "deep_analysis": "当科技圈最具影响力的人物住所被投掷燃烧瓶，整个硅谷都该警醒了。Sam Altman这次遭遇的绝不仅仅是单纯的安全威胁，而是科技行业权力游戏的一个危险信号。",
+      "tags": [
+        "Sam Altman",
+        "OpenAI",
+        "科技安全",
+        "AI行业"
+      ],
+      "target_audience": "科技爱好者、从业者",
+      "original_title": "奥特曼遭遇死亡威胁：凌晨家中被投燃烧瓶",
+      "original_snippet": "所幸无人受伤",
+      "link": "https://www.qbitai.com/2026/04/399473.html",
+      "pubDate": "Sat, 11 Apr 2026 02:19:13 +0000",
+      "source": "量子位",
+      "lang": "zh",
+      "is_manual": false
+    },
+    {
+      "title": "中国00后团队搞出全球第一的具身模型，这事比想象中更让人激动",
+      "summary": "一支00后创业团队竟然在全球具身智能领域拿下了第一！灵初智能用10万小时的人类交互数据，训练出了目前最接近人类行为模式的机器人AI模型。这意味着机器人不再只是机械执行命令，而是真正能理解人类意图、模仿人类行为。AI的下半场，可能就是属于这种能“感知世界”的机器人。",
+      "deep_analysis": "先说清楚发生了什么。量子位最近报道了一家叫灵初智能的公司，是由00后创业者创立的新公司，他们发布了一个10万小时的人类交互数据集，然后基于这个数据集训练出的具身模型，在全球范围内取得了领先地位。这个成绩不是靠堆参数、堆算力，而是实实在在拿到了高质量的人类行为数据。\n\n这件事的意义远超表面。首先，具身模型和咱们之前聊的大语言模型完全不是一回事。语言模型是在互联网文本上训练的，它knows everything but understands nothing。而具身模型需要理解物理世界，需要知道杯子怎么拿、门怎么开、楼梯怎么下——这才是真正的人工智能“理解”。过去几年，全球科技公司都在砸钱做这个方向，但核心瓶颈一直没有解决：没有足够多、足够好的真实人类交互数据。\n\n灵初智能这次做对了两件事。第一，他们拿到了10万小时的数据，这个规模在行业里是领先的，而且更重要的是，这些数据是真实的人类与环境交互的数据，不是合成数据或者模拟数据。第二，他们敢用一个00后团队来做这件事，没有大公司的包袱，反而少了很多限制。\n\n对行业的影响我认为有几个层面。第一，中国在具身智能这个赛道上，已经从跟随变成了领跑，这给了整个行业很大的信心。第二，数据正在成为继算力之后新的核心竞争力，谁拥有高质量的人类行为数据，谁就拥有未来的AI。第三，机器人公司以后可能不需要自己出海量数据了，可以直接用这些数据训练基础模型。\n\n那么读者应该怎么看这件事？我的判断是，具身智能这个方向在未来3-5年会迎来爆发。现在的AI能说会道，但未来的AI必须会动、能干实事。不管你是的行业从业者还是普通读者，都要关注这个趋势。对于做AI的人来说，数据的价值会在接下来几年远超模型架构的价值。对于普通人来说，机器人进入家庭的速度可能比我们想象的要快。\n\n最后说一句，00后都已经在改变AI的格局了，咱们还有什么理由不努力？",
+      "tags": [
+        "具身智能",
+        "机器人AI",
+        "灵初智能",
+        "AI创业",
+        "人工智能前沿"
+      ],
+      "target_audience": "AI从业者和科技爱好者",
+      "original_title": "中国具身模型狂揽全球第一！机器人的人类数据时代来了",
+      "original_snippet": "10万小时数据集，00后创业灵初智能一战成名",
+      "link": "https://www.qbitai.com/2026/04/399417.html",
+      "pubDate": "Sat, 11 Apr 2026 02:07:08 +0000",
+      "source": "量子位",
+      "lang": "zh",
+      "is_manual": false
+    },
+    {
+      "title": "0思考数据也能刷爆SOTA？陈丹琦团队让视觉推理进入「暴力美学」时代",
+      "summary": "刘壮与陈丹琦团队发布了开源视觉推理RL框架，用大规模数据训练替代传统思维链策略，在0思考数据的情况下刷新SOTA。这是否意味着视觉推理领域也要开始「数据为王」的军备竞赛？",
+      "deep_analysis": "当所有人都在卷Chain-of-Thought、Self-CoT、Monte Carlo Tree Search这些「思考」技巧时，刘壮和陈丹琦团队反其道而行之，用一个看似简单却极其暴力的方法刷新了视觉推理的SOTA——不用任何思考数据，照样吊打全场。\n\n这个名为Vision-RL的开源框架核心逻辑非常直白：既然语言模型可以通过大规模预训练涌现出推理能力，那视觉模型为什么不行？他们把视觉问题也做成了「数据规模」的游戏，用海量多样化的视觉推理数据直接训练策略模型，跳过了中间那个让人头疼的思维链设计环节。结果呢？在零样本推理任务上，性能直接登顶。\n\n这背后反映的趋势其实很明显：AI领域正在从「雕花」转向「堆料」。过去我们花大量时间设计prompt、设计thinking模式、设计搜索算法，现在发现与其在模型架构上抠搜，不如直接给够数据让模型自己学。这不是什么新发现，但在视觉推理这个「烧数据」出了名难的领域，陈丹琦团队证明了这条路走得通，意义就不一样了。\n\n对行业的影响有两个层面。短期来看，视觉推理的门槛会被大幅拉低——开源框架+不需要标注思维过程=更多玩家可以入局。长期来看，这场「数据军备竞赛」才刚刚开始，谁能拿到更多高质量视觉推理数据，谁就可能占据领先位置。可以预见，接下来各大厂会疯狂卷数据标注和数据合成，合成数据、仿真环境、数据清洗这些赛道要火。\n\n作为普通从业者或者关注者，我的建议是：别慌着追新框架，先看看自己手头有没有数据可用。这波红利的本质不是算法创新，而是数据基建。模型开源了大家都能用，但你能不能跑出好效果，取决于你有多少高质量数据。有数据资源的团队可以狂欢了，没有数据优势的或许该思考怎么另辟蹊径。",
+      "tags": [
+        "视觉推理",
+        "强化学习",
+        "开源框架",
+        "陈丹琦",
+        "数据驱动"
+      ],
+      "target_audience": "AI从业者与技术爱好者",
+      "original_title": "刘壮陈丹琦新作：开源通用视觉推理RL框架，0思考数据刷新SOTA",
+      "original_snippet": "广泛的数据是视觉推理强化学习Scaling的主要驱动力",
+      "link": "https://www.qbitai.com/2026/04/399393.html",
+      "pubDate": "Sat, 11 Apr 2026 01:23:42 +0000",
+      "source": "量子位",
+      "lang": "zh",
+      "is_manual": false
+    },
+    {
       "title": " Anthropic封禁OpenClaw创始人：AI定价战争背后的生态危机",
       "summary": "Anthropic近期封禁了OpenClaw创建者访问Claude的权限，事发于Claude对OpenClaw用户定价调整后。这一事件暴露了AI行业第三方开发者与平台之间的深层矛盾：当AI公司可以随时改变API定价并禁止开发者访问时，整个AI应用生态正面临严重的平台依赖风险。",
       "deep_analysis": "这场看似简单的封禁事件，实际上撕开了AI行业光鲜表面下的的一道伤疤。OpenClaw作为一个依赖Claude API的第三方工具，它的命运被Anthropic这一纸禁令轻松拿捏，这让我想到一个尖锐的问题：当你的产品命脉掌握在别人手里人家可以随时切断的时候，这个行业还健康吗？\n\n先说说发生了什么。OpenClaw是一个利用Claude API构建的工具，上周Anthropic调整了对OpenClaw用户的定价政策，随后干脆直接封禁了OpenClaw创始人的访问权限。这种做法在商业世界里其实并不罕见，但发生在一个标榜要构建AI生态系统的公司身上，不得不说有点讽刺意味。\n\n对行业的影响是多层面的。最直接的影响是给所有依赖AI API的开发者敲响警钟。当平台可以因为商业策略调整就随意切断开发者的访问时，每一个基于第三方AI API构建的产品都像是建在沙子上随时可能倒塌。这次封禁的不是某个恶意行为者，而是一个有正当需求的第三方开发者，只是因为商业条款谈不拢就被踢出牌桌，这传递出了一个危险的信号——在AI领域，平台和开发者之间的权力是完全不对等的。\n\n从更深层次来看，这反映了AI行业商业模式的根本困境。Anthropic作为Claude的运营方，需要在商业化和生态培育之间寻找平衡，但显然他们选择了更保守的路线。价格调整可能是为了优化收入结构，但直接封禁创始人，这种做法过于简单粗暴，不仅伤害了具体的一个开发者，也伤害了整个开发者社区对平台的信任。\n\n未来发展趋势会怎样？我觉得几个方向值得关注。首先，类似的事情不会是个例，随着更多AI公司面临商业化压力，平台和开发者之间的冲突会越来越多。其次，可能会有开发者开始有意愿寻找替代方案，减少对单一平台的依赖，这会促进多模型时代的真正到来。第三，监管或者行业自律可能会被提上议程，因为这种任意封禁的行为长期来看不利于整个AI应用生态的发展。\n\n对于普通读者，如果你正在使用或计划构建基于AI API的应用，我的建议是：不要把所有鸡蛋放在一个篮子里。关注多个AI平台的发展，保持自己产品的可迁移性。同时，也要注意政策风险，理解平台服务条款的商业逻辑。在这个行业还不够成熟的当下，保持清醒的风险意识不是消极，而是必要的生存智慧。",
@@ -41,6 +100,26 @@
       "is_manual": false
     },
     {
+      "title": "Anthropic突然封禁OpenClaw创始人：这届AI公司也开始搞「店大欺客」了？",
+      "summary": "Anthropic在Claude调整API定价后，直接封禁了OpenClaw项目创建者的访问权限，引发开发者社区震荡。这不是简单的商业纠纷，而是AI时代平台与开发者之间话语权争夺的缩影。当AI公司掌握了绝对的技术垄断，封禁第三方开发者可能只是一个开始。",
+      "deep_analysis": "这事儿说起来有点魔幻现实主义的味道。OpenClaw这个项目本身就是基于Claude构建的工具，结果 Anthropic 一句话就把人家创建者的账号给停了，就因为上周 Claude 改了API定价政策。\n\n很多人可能还不太清楚发生了什么。简单来说，就是 Anthropic 作为 Claude 的亲妈，觉得 OpenClaw 用自己的API用的太爽了，或者赚的太多了，现在想从这口锅里分更多肉。于是改了定价策略，结果 OpenClaw 一下子成本爆炸创始人肯定不干啊，出来说了几句。然后 Anthropic 直接掀桌子——滚，不让你用了。\n\n这事儿往深里看，其实暴露了AI行业一个巨大的隐患：平台的绝对霸权。开发者辛辛苦苦基于你的API做应用，结果你说封就封，一点缓冲都没有。今天是 OpenClaw，明天换成任何一个依赖 Claude API 的第三方应用，谁能保证自己不会是下一个？这就是典型的「我造的梯子，我想什么时候撤就什么时候撤」。\n\n从行业影响来说，这次封禁事件绝对会成为标志性事件。它告诉了所有AI开发者一个血淋淋的道理：永远不要把所有鸡蛋放在一个篮子里。不管你现在用的是 Claude 也好 GPT 也罢抑或其他什么模型，都得给自己留后路。这次被封了，大不了换一家；但如果整个行业都养成这种随便封禁开发者的风气，那才叫可怕。\n\n未来发展趋势很可能会往两个方向走。一是出现更多开源的替代方案，大家不想再被API绑架；二是会出现专门提供「 AI 仲裁」服务的第三方平台，调停平台和开发者之间的纠纷。但说句实在话的，这种事情法律层面很难界定，因为人家平台有最终解释权。\n\n那普通开发者该怎么办？我的建议很直接：第一，不要把命运绑在任何一个平台身上，学会随时切换；第二，能用开源方案解决的，坚决不用商业API；第三，做应用的时候把「可迁移性」放在第一位，今天能用不代表以后一直能用。这个圈子变化太快，今天的合作伙伴，明天可能就成了封禁你的对手。",
+      "tags": [
+        "AI行业动态",
+        "Anthropic",
+        "OpenClaw",
+        "API定价争议",
+        "开发者生态"
+      ],
+      "target_audience": "AI从业者和开发者",
+      "original_title": "Anthropic temporarily banned OpenClaw’s creator from accessing Claude",
+      "original_snippet": "This ban took place after Claude's pricing changed for OpenClaw users last week.",
+      "link": "https://techcrunch.com/2026/04/10/anthropic-temporarily-banned-openclaws-creator-from-accessing-claude/",
+      "pubDate": "Fri, 10 Apr 2026 20:27:52 +0000",
+      "source": "TechCrunch AI",
+      "lang": "zh",
+      "is_manual": false
+    },
+    {
       "title": "当愤怒指向OpenAI：一次Molotov cocktails背后的AI恐惧症",
       "summary": "旧金山警方逮捕了一名20岁男子，其涉嫌在当地时间周五凌晨向OpenAI CEO Sam Altman位于Russian Hill的住宅投掷燃烧瓶。监控录像捕捉到这一事件，随后嫌疑人又在OpenAI总部附近威胁工作人员时被逮捕。这一针对AI行业领袖的暴力事件，揭示了技术变革背后公众恐惧与行业安全之间的深刻矛盾。",
       "deep_analysis": "先说这件事本身。周五凌晨快7点的时候，一名20岁的嫌疑人朝Sam Altman的房子扔了一个燃烧瓶。监控录像拍下了全过程。几个小时后，这人居然跑到OpenAI的Mission Bay办公室门口威胁工作人员，然后被警察抓了个现行。你看这个人得多疯狂，要么是真的恨AI，觉得Altman代表了某种威胁，要么就是脑子有问题。但不管是哪种情况，这件事都够瘆人的。\n\n我为什么说这件事重要，因为这不是一起普通的刑事案件，它折射出AI行业现在面临的深层矛盾，你想啊，AI技术发展太快了，快到让很多人恐慌。 Altman作为OpenAI的CEO，自然就成了靶子。之前有 人说AI会导致失业，会取代人类，现在又有人担心超级智能失控，甚至有人说AI是人类的末日。这些声音以前看起来就是网上打打嘴炮，但现在有人真的动手了，这性质就完全变了。\n\n对行业的影响，我觉得有三个层面。第一，AI公司的CEO和高层得重新审视自己的安全问题了。以前觉得请几个保安就够了，现在看来得把安保等级提升到科技巨头的水准。第二，行业和公众的信任关系会受影响。大家本来就对AI半信半疑，现在出了这种事，更会加剧“AI很危险”的刻板印象。第三，这可能会影响AI公司的招聘和人才保留本来就缺人，要是大家觉得这份工作有生命危险，谁还愿意来？\n\n未来会怎么发展？我觉得AI公司会更加重视安全，包括物理安全和网络安全。可能会雇佣更专业的安保团队，甚至建立自己的安全部门。同时，行业也会更注重和公众的沟通，不能只闷头做技术，也要让大家理解AI到底是什么，能做什么，不能做什么。不能总是让人感觉AI公司在“闭门造车”，不理会外界的担忧。\n\n至于读者该怎么看这件事，我的建议是，不要被情绪化的叙事带着走。一方面，我们要理解技术前进的道路上确实会有争议，这是正常的；另一方面，我们也要警惕个别极端行为把整个行业污名化。这件事说到底是极端个案，不代表AI行业本身有问题，但确实给所有从业者敲响了警钟。科技本无罪，关键看怎么用。",
@@ -70,6 +149,25 @@
         "科技人物"
       ],
       "target_audience": "关注AI发展的读者",
+      "original_title": "20-year-old man arrested for allegedly throwing a Molotov cocktail at Sam Altman’s house",
+      "original_snippet": "San Francisco police have arrested a 20-year-old man suspected of throwing a Molotov cocktail at OpenAI CEO Sam Altman's Russian Hill house early Friday morning, The San Francisco Standard reports. The incident was caught on surveillance cameras shortly before 7AM ET. Later that morning, someone matching the suspect's description was seen making threats outside OpenAI's Mission Bay offices, where he was arrested around 9AM ET. \nOpenAI spokesperson Jamie Radice confirmed the incident in a stateme",
+      "link": "https://www.theverge.com/ai-artificial-intelligence/910393/openai-sam-altman-house-molotov-cocktail",
+      "pubDate": "2026-04-10T20:16:57.000Z",
+      "source": "The Verge AI",
+      "lang": "zh",
+      "is_manual": false
+    },
+    {
+      "title": "燃烧弹袭警OpenAI总部：Sam Altman遭攻击背后的AI安全隐忧",
+      "summary": "旧金山警方逮捕了一名20岁男子，其涉嫌在4月10日凌晨向OpenAI CEO Sam Altman位于俄罗斯山的住宅投掷燃烧弹。监控录像捕捉到嫌疑人在早上7点前实施袭击，随后在OpenAI办公室附近被捕。该事件标志着AI行业领袖首次遭遇如此直接的人身攻击，引发业内对技术权力与社会矛盾的深度担忧。",
+      "deep_analysis": "当科技行业的权力巅峰人物遭遇燃烧弹袭击，整个AI圈都需要停下脚步思考一些问题。这不是一起普通的刑事案件，而是一个足以改变行业走向的警示信号。\n\n先说说事情本身。一个20岁的年轻人，带着自制燃烧弹深夜闯入旧金山顶级豪宅区，对准现任全球最有价值AI公司CEO的住所下手。监控录像清晰地记录了这一切，嫌疑人随后甚至主动出现在OpenAI的办公楼前，仿佛在刻意制造第二轮戏剧性冲突。从作案手法到后续行为，这个人显然不是在随机发泄，而是在用最极端的方式表达某种态度。\n\n但问题是，这个人到底在反对什么？是对OpenAI技术安全的不信任，是对AI发展方向的愤怒，还是 simply 对科技精英阶层的仇恨？虽然没有更多背景信息，但我们不妨思考一个更大的图景：随着ChatGPT、GPT-4这些划时代产品进入公众生活，OpenAI和Sam Altman已经从一个科技公司CEO变成了某种意义上的社会权力象征。全球数亿人每天与AI对话，无数人的工作因此面临重塑，这种影响力的背后必然伴随着巨大的争议和反对声音。\n\n这起事件对行业的冲击是多层面的。首先是安全问题，曾经只在科幻电影里出现的“AI领袖人身威胁”如今变成了现实，所有科技公司高管都必须重新评估自己和家人的安全风险。其次是舆论压力，这次袭击可能会让本就对AI保持警惕的公众更加怀疑：看吧，连创始人自己都不安全，凭什么相信你们的技术是安全的？\n\n更深层来看，这一击燃烧弹折射出的是整个AI行业面临的社会信任危机。过去一年，我们看到各国政府加班加点制定AI监管规则，看到学者联名呼吁暂停强大AI系统的训练，看到艺术家、作家对AI生成内容的版权担忧。这些看似抽象的社会矛盾，最终很可能具象化在某个CEO的家门口。\n\n对于我们普通人来说，这件事提醒我们几个道理。第一，科技发展从来不是在一个真空环境里进行的，所有技术突破都会在社会层面引发连锁反应。第二，不要盲目崇拜任何技术领袖，他们也是普通人，也会面临人身安全威胁。第三，关注AI的发展方向和治理问题，因为这真的会影响我们每一个人的生活。\n\n最后我想说的是，暴力永远不是表达意见的正确方式。但作为AI从业者和关注者，我们应该从这起事件中看到更深层的东西：当AI技术的影响力越来越大，社会对它的期待和恐惧也在同步增长。如何让技术的发展真正服务于人类，而不是制造新的对立和危险，这是整个行业都需要回答的问题。",
+      "tags": [
+        "Sam Altman",
+        "OpenAI",
+        "AI安全",
+        "科技伦理"
+      ],
+      "target_audience": "AI从业者和科技爱好者",
       "original_title": "20-year-old man arrested for allegedly throwing a Molotov cocktail at Sam Altman’s house",
       "original_snippet": "San Francisco police have arrested a 20-year-old man suspected of throwing a Molotov cocktail at OpenAI CEO Sam Altman's Russian Hill house early Friday morning, The San Francisco Standard reports. The incident was caught on surveillance cameras shortly before 7AM ET. Later that morning, someone matching the suspect's description was seen making threats outside OpenAI's Mission Bay offices, where he was arrested around 9AM ET. \nOpenAI spokesperson Jamie Radice confirmed the incident in a stateme",
       "link": "https://www.theverge.com/ai-artificial-intelligence/910393/openai-sam-altman-house-molotov-cocktail",
@@ -6240,7 +6338,7 @@
       "slug": "the-creator-of-claude-code-just-revealed-his-workflow-and-developers-are-losing-"
     }
   ],
-  "total": 358,
-  "fetchedAt": "2026-04-11T01:07:07.680Z",
+  "total": 363,
+  "fetchedAt": "2026-04-11T07:06:41.646Z",
   "version": "3.0"
 }
