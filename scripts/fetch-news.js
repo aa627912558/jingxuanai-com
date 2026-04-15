@@ -51,31 +51,45 @@ async function callMiniMax(messages, maxTokens) {
     messages: messages,
   }
 
-  const response = await fetch(MINIMAX_API_URL, {
-    method: 'POST',
-    headers: {
-      'Authorization': 'Bearer ' + MINIMAX_API_KEY,
-      'Content-Type': 'application/json',
-      'anthropic-version': '2023-06-01',
-      'x-api-key': MINIMAX_API_KEY,
-    },
-    body: JSON.stringify(payload),
-  })
+  // 超时控制：60秒
+  const controller = new AbortController()
+  const timeoutId = setTimeout(() => controller.abort(), 60000)
 
-  if (!response.ok) {
-    const errorText = await response.text()
-    throw new Error('MiniMax API error: ' + response.status + ' - ' + errorText)
+  try {
+    const response = await fetch(MINIMAX_API_URL, {
+      method: 'POST',
+      headers: {
+        'Authorization': 'Bearer ' + MINIMAX_API_KEY,
+        'Content-Type': 'application/json',
+        'anthropic-version': '2023-06-01',
+        'x-api-key': MINIMAX_API_KEY,
+      },
+      body: JSON.stringify(payload),
+      signal: controller.signal,
+    })
+    clearTimeout(timeoutId)
+
+    if (!response.ok) {
+      const errorText = await response.text()
+      throw new Error('MiniMax API error: ' + response.status + ' - ' + errorText)
+    }
+
+    const result = await response.json()
+
+    if (result.base_resp && result.base_resp.status_code !== 0) {
+      throw new Error('MiniMax API error: ' + (result.base_resp.status_msg || 'unknown'))
+    }
+
+    const content = result.content || []
+    const textBlocks = content.filter(c => c.type === 'text')
+    return textBlocks.map(c => c.text).join('')
+  } catch (err) {
+    clearTimeout(timeoutId)
+    if (err.name === 'AbortError') {
+      throw new Error('MiniMax API timeout after 60s')
+    }
+    throw err
   }
-
-  const result = await response.json()
-
-  if (result.base_resp && result.base_resp.status_code !== 0) {
-    throw new Error('MiniMax API error: ' + (result.base_resp.status_msg || 'unknown'))
-  }
-
-  const content = result.content || []
-  const textBlocks = content.filter(c => c.type === 'text')
-  return textBlocks.map(c => c.text).join('')
 }
 
 /**
