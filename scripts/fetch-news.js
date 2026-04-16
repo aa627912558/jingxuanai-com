@@ -290,18 +290,36 @@ async function fetchAllFeeds() {
 
 /**
  * 读取现有 news-data.json，保留所有文章
+ * 尝试多个路径，确保无论从哪个目录运行都能找到
  */
 function loadExistingNews() {
-  var outPath = path.join(process.cwd(), 'public', 'news-data.json')
-  try {
-    if (fs.existsSync(outPath)) {
-      var data = JSON.parse(fs.readFileSync(outPath, 'utf-8'))
-      console.log('[load] 现有 ' + (data.news || []).length + ' 篇文章')
-      return data.news || []
+  // 尝试多个可能的路径
+  var possiblePaths = [
+    path.join(process.cwd(), 'public', 'news-data.json'),
+    path.join(__dirname, '..', 'public', 'news-data.json'),
+    '/Users/jinsy/projects/jingxuanai-com/public/news-data.json'
+  ]
+  
+  for (var i = 0; i < possiblePaths.length; i++) {
+    var outPath = possiblePaths[i]
+    try {
+      if (fs.existsSync(outPath)) {
+        var content = fs.readFileSync(outPath, 'utf-8')
+        if (content.trim().length === 0) {
+          console.log('[load] 路径 ' + i + ' 文件为空，跳过')
+          continue
+        }
+        var data = JSON.parse(content)
+        var news = data.news || []
+        console.log('[load] 从 ' + outPath + ' 加载了 ' + news.length + ' 篇文章')
+        return news
+      }
+    } catch (e) {
+      console.log('[load] 路径 ' + i + ' (' + outPath + ') 失败: ' + e.message)
     }
-  } catch (e) {
-    console.error('[load] 读取现有文件失败: ' + e.message)
   }
+  
+  console.error('[load] 警告：无法找到现有news-data.json，将创建新文件')
   return []
 }
 
