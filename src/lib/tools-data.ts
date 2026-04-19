@@ -2857,6 +2857,90 @@ export const TOOLS_DATA: AiTool[] = [
     ],
     related_tools: ["gamma", "tome", "beautiful-ai"],
   },
+
+  {
+    id: "codeium",
+    icon: "/tool-icons/codeium.png",
+    slug: "codeium",
+    name: "Codeium",
+    website: "https://codeium.com",
+    description: "免费AI代码补全插件，支持70+语言，VS Code/Cursor直接使用",
+    type: "编程代码",
+    affiliateUrl: "https://codeium.com",
+    commissionRate: "暂无数据",
+    features: [
+      "完全免费无限制：个人开发者永久免费，无代码行数限制",
+      "支持70+编程语言：Python、JavaScript、TypeScript、Go、Rust等主流语言",
+      "多编辑器支持：VS Code、JetBrains、Neovim、Vim、Emacs、Jupyter等",
+      "本地离线模式：隐私代码无需上传网络，本地处理保障安全",
+      "智能代码补全：根据上下文预测下一行代码，减少重复输入"
+    ],
+    usage_guide: "第一步：安装插件\nVS Code：打开扩展商店，搜索 Codeium，点击安装并启用。\nCursor：进入 Settings → Extensions → Codeium，安装插件。\nJetBrains：在 Plugin Marketplace 搜索 Codeium 安装。\n\n第二步：登录账号（可选）\n按 Ctrl+Shift+A（Mac: Cmd+Shift+A）打开 Codeium 命令面板，选择 Sign In。免费注册后可以获得更好的代码建议。也可以跳过登录继续使用基础功能。\n\n第三步：开始编码\n正常编码时，Codeium 会自动在灰色中给出代码建议，按 Tab 键采纳建议。\n按 Tab：采纳当前建议\n按 Esc：拒绝当前建议\n按 Alt+]：查看下一个建议\n按 Alt+[：查看上一个建议\n\n第四步：聊天提问（Ctrl+Shift+G）\n按 Ctrl+Shift+G 打开 Codeium Chat 侧边栏，用自然语言提问：\n- "解释这段代码做什么"\n- "帮我写一个排序函数"\n- "这段代码有什么bug吗"\n\n第五步：自定义设置\n按 Ctrl+Shift+A → Codeium: Configure Extension：\n- Debounce Time：建议延迟（默认250ms）\n- Use Local Model：启用本地模型（无需网络）\n- Language: Chinese：切换中文界面",
+    use_cases: [
+      "个人开发者：免费获得高质量代码补全，无需付费订阅",
+      "学生编程：学习阶段借助AI提示，理解代码逻辑",
+      "隐私项目：本地模式处理敏感代码，数据不上传"
+    ],
+    pros: [
+      "完全免费，Copilot等竞品需付费订阅",
+      "支持语言多达70+，覆盖主流和小众语言",
+      "本地离线模式保护代码隐私",
+      "轻量级，性能占用低，不影响编辑器流畅度",
+      "支持几乎所有主流编辑器"
+    ],
+    cons: [
+      "补全质量在复杂场景下不如Copilot",
+      "部分高级功能需要登录账号",
+      "对中文注释理解能力有限",
+      "企业版功能（如团队代码库分析）不如Copilot完善",
+      "有时建议不够精确，需要手动调整"
+    ],
+    related_tools: ["cursor", "tabnine", "codeium"],
+  },
+
+
+  {
+    id: "codeium",
+    icon: "/tool-icons/codeium.png",
+    slug: "codeium",
+    name: "Codeium",
+    website: "https://codeium.com",
+    description: "免费AI代码补全插件，支持70+语言，VS Code/Cursor直接使用",
+    type: "编程代码",
+    affiliateUrl: "https://codeium.com",
+    commissionRate: "暂无数据",
+    features: [
+      "完全免费无限制：个人开发者永久免费，无代码行数限制",
+      "支持70+编程语言：Python、JavaScript、TypeScript、Go、Rust等主流语言",
+      "多编辑器支持：VS Code、JetBrains、Neovim、Vim、Emacs、Jupyter等",
+      "本地离线模式：隐私代码无需上传网络，本地处理保障安全",
+      "智能代码补全：根据上下文预测下一行代码，减少重复输入"
+    ],
+    usage_guide: "第一步：安装插件\nVS Code：打开扩展商店，搜索 Codeium，点击安装并启用。\nCursor：进入 Settings → Extensions → Codeium，安装插件。\nJetBrains：在 Plugin Marketplace 搜索 Codeium 安装。\n\n第二步：登录账号（可选）\n按 Ctrl+Shift+A（Mac: Cmd+Shift+A）打开 Codeium 命令面板，选择 Sign In。免费注册后可以获得更好的代码建议。也可以跳过登录继续使用基础功能。\n\n第三步：开始编码\n正常编码时，Codeium 会自动在灰色中给出代码建议，按 Tab 键采纳建议。\n按 Tab：采纳当前建议\n按 Esc：拒绝当前建议\n按 Alt+]：查看下一个建议\n按 Alt+[：查看上一个建议\n\n第四步：聊天提问（Ctrl+Shift+G）\n按 Ctrl+Shift+G 打开 Codeium Chat 侧边栏，用自然语言提问：\n- "解释这段代码做什么"\n- "帮我写一个排序函数"\n- "这段代码有什么bug吗"\n\n第五步：自定义设置\n按 Ctrl+Shift+A → Codeium: Configure Extension：\n- Debounce Time：建议延迟（默认250ms）\n- Use Local Model：启用本地模型（无需网络）\n- Language: Chinese：切换中文界面",
+    use_cases: [
+      "个人开发者：免费获得高质量代码补全，无需付费订阅",
+      "学生编程：学习阶段借助AI提示，理解代码逻辑",
+      "隐私项目：本地模式处理敏感代码，数据不上传"
+    ],
+    pros: [
+      "完全免费，Copilot等竞品需付费订阅",
+      "支持语言多达70+，覆盖主流和小众语言",
+      "本地离线模式保护代码隐私",
+      "轻量级，性能占用低，不影响编辑器流畅度",
+      "支持几乎所有主流编辑器"
+    ],
+    cons: [
+      "补全质量在复杂场景下不如Copilot",
+      "部分高级功能需要登录账号",
+      "对中文注释理解能力有限",
+      "企业版功能（如团队代码库分析）不如Copilot完善",
+      "有时建议不够精确，需要手动调整"
+    ],
+    related_tools: ["cursor", "tabnine", "codeium"],
+  },
+
+  },
+  // === 新增22个工具 2026-04-19 ===
 ]
 
 
